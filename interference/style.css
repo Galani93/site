@@ -1,0 +1,28 @@
+
+.upload_file .form-group{
+    margin-bottom: 0!important;
+}
+.upload_file .dropify-wrapper{
+    height: 75px!important;
+}
+.upload_file .card-body{
+    padding: 0 10px 10px 0!important;
+}
+h4.title-firm{
+    height: 68px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+
+    -webkit-line-clamp: 3;
+    -moz-line-clamp: 3;
+    line-clamp: 3;
+
+}
