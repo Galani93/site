@@ -23,3 +23,7 @@ h4.title-firm{
     line-clamp: 3;
 
 }
+.btn-search{
+    display: flex!important;
+    justify-content: flex-end!important;
+}
