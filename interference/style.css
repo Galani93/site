@@ -10,17 +10,14 @@
 }
 h4.title-firm{
     height: 68px;
+    max-width: 185px;
     overflow: hidden;
     text-overflow: ellipsis;
-
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     box-orient: vertical;
-
     display: -moz-box;
     display: -webkit-box;
-    display: box;
-
     -webkit-line-clamp: 3;
     -moz-line-clamp: 3;
     line-clamp: 3;
