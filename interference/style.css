@@ -26,3 +26,13 @@ h4.title-firm{
     display: flex!important;
     justify-content: flex-end!important;
 }
+.successfully{
+background: green;
+    color: white;
+    padding: 5px;
+}
+.unsuccessfully{
+    background: black;
+    color: white;
+    padding: 5px;
+}
