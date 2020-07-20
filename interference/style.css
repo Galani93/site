@@ -1,12 +1,15 @@
 .upload_file .form-group{
     margin-bottom: 0!important;
 }
+
 .upload_file .dropify-wrapper{
     height: 75px!important;
 }
+
 .upload_file .card-body{
     padding: 0 10px 10px 0!important;
 }
+
 h4.title-firm{
     height: 68px;
     max-width: 185px;
@@ -26,6 +29,7 @@ h4.title-firm{
     display: flex!important;
     justify-content: flex-end!important;
 }
+
 .successfully{
    background: green;
     color: white;
@@ -40,6 +44,7 @@ h4.title-firm{
 .table thead th {
     text-align: center!important;
 }
+
 .table td {
     text-align: center!important;
 }
