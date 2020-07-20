@@ -36,3 +36,9 @@ background: green;
     color: white;
     padding: 5px;
 }
+.table thead th {
+    text-align: center!important;
+}
+.table td {
+    text-align: center!important;
+}
