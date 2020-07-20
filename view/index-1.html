@@ -137,7 +137,6 @@
                         <div class="float-right">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="javascript:void(0);"> Գործընկերներ </a></li>
-                                <li class="breadcrumb-item"><a href="javascript:void(0);"> Դիտել</a></li>
                                 <li class="breadcrumb-item active"> Ստեղծել </li>
                             </ol>
                         </div>
@@ -153,7 +152,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body"><h4 class="mt-0 header-title">Ավելացնել</h4>
-                            <form class="needs-validation" novalidate>
+                            <form class="needs-validation">
                                 <div class="form-row">
                                     <div class="col-md-10 mb-3"><label for="validationCustom01">Կազմակերպության անվանում</label> <input
                                             type="text" class="form-control" id="validationCustom01"
@@ -161,18 +160,19 @@
                                         <div class="invalid-feedback">Խնդրում ենք տրամադրել Կազմակերպության անվանում</div>
                                     </div><!--end col-->
                                     <div class="col-md-4 mb-3"><label for="validationCustom02">Հեռախոսահամար</label>
-                                        <input type="tel" class="form-control" id="validationCustom02" placeholder="+374 99 99 99 99" required>
+                                        <input type="tel" class="form-control" id="validationCustom02" placeholder="+374 99 99 99 99" required >
                                         <div class="invalid-feedback">Խնդրում ենք տրամադրել Հեռախոսահամար</div>
                                     </div><!--end col-->
-                                    <div class="col-md-4 mb-3"><label for="validationCustomUsername">Էլ․ փոստ</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend"><span class="input-group-text"id="inputGroupPrepend">@</span>
-                                            </div>
-                                            <input type="text" class="form-control" id="validationCustomUsername"
-                                                   placeholder="Email" aria-describedby="inputGroupPrepend" required>
-                                            <div class="invalid-feedback">Խնդրում ենք ընտրել Էլ․ փոստ</div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Էլ․ փոստ</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Էլ․ փոստ">
                                         </div>
-                                    </div><!--end col--></div><!--end form-row-->
+
+                                    </div>
+
+
+                                    <!--end col--></div><!--end form-row-->
                                 <div class="form-row">
                                     <div class="col-md-4 mb-3"><label for="validationCustom03">Հասցե</label> <input
                                             type="text" class="form-control" id="validationCustom03" placeholder="City"
@@ -215,7 +215,7 @@
                                         <div class="invalid-feedback">Դուք պետք է համաձայնեք նախքան ներկայացնելը:</div>
                                     </div>
                                 </div><!--end form-group-->
-                                <button class="btn btn-gradient-primary" type="submit">Ավելացնել</button>
+                                <button type="submit" class="btn btn-gradient-primary">Ավելացնել</button>
                             </form>
                             <!--end form-->
 

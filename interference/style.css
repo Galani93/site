@@ -27,15 +27,16 @@ h4.title-firm{
     justify-content: flex-end!important;
 }
 .successfully{
-background: green;
+   background: green;
     color: white;
     padding: 5px;
 }
 .unsuccessfully{
     background: black;
     color: white;
-    padding: 5px;
+    padding: 5px 9px;
 }
+
 .table thead th {
     text-align: center!important;
 }
