@@ -48,3 +48,7 @@ h4.title-firm{
 .table td {
     text-align: center!important;
 }
+
+.table-pad td{
+    padding: 5px!important;
+}
