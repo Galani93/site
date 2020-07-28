@@ -152,13 +152,14 @@
                         <div class="card-body"><h4 class="mt-0 header-title">Ավելացնել</h4>
                             <form class="needs-validation">
                                 <div class="form-row">
-                                    <div class="col-md-10 mb-3"><label for="">Կազմակերպության անվանում</label>
+                                    <div class="col-md-10 mb-3">
+                                        <label for="">Կազմակերպության անվանում</label>
                                         <input type="text" class="form-control" id="" placeholder="Անվանում"  required>
                                         <div class="invalid-feedback">Խնդրում ենք տրամադրել Կազմակերպության անվանում</div>
                                     </div><!--end col-->
                                     <div class="col-md-4 mb-3">
-                                        <label for="">Հեռախոսահամար</label>
-                                        <input type="tel" class="form-control"  placeholder="+374 99 99 99 99"  pattern="^\+?[374][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" >
+                                        <label for="phone">Հեռախոսահամար</label>
+                                        <input type="tel" class="form-control"  id="phone" name="phone" placeholder="+374 99 99 99 99" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                                         <div class="invalid-feedback">Խնդրում ենք տրամադրել Հեռախոսահամար</div>
                                     </div><!--end col-->
                                     <div class="col-md-4 mb-3">
@@ -179,7 +180,7 @@
                                     </div><!--end col-->
                                     <div class="col-md-4 col-sm-4">
                                         <label class="control-label">Ընտրել գործունեության ոլորտը</label>
-                                        <select name="car[1][make]" class="form-control">
+                                        <select name="car[1][make]" class="form-control" required>
                                             <option value="volkswagon" selected="">Ընտրել</option>
                                             <option value="volkswagon">Ընտրել 1</option>
                                             <option value="honda" >Ընտրել 2</option>
@@ -213,16 +214,6 @@
                     </div><!--end card-->
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
