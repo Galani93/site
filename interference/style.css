@@ -57,3 +57,57 @@ h4.title-firm{
 {
     max-height: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fc table {
+    width: 100%;
+    box-sizing: border-box;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+}
+
+
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fc-view, .fc-view > table {
+    position: relative;
+    z-index: 1;
+}
+
+
+.fc-view-container {
+    position: relative;
+}
