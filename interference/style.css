@@ -101,7 +101,9 @@ h4.title-firm{
     margin-top: 40px;
 }
 
-
+.title-text, .header-title{
+    text-transform: none!important;
+}
 
 
 

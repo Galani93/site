@@ -2469,7 +2469,7 @@
                                 <div class="col-lg-8 col-md-10">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="mt-0 header-title">Անհրաժեշտ է լրացնել *-ով նշված դաշտերը</h4>
+                                            <h4 class="mt-0 header-title">Անհրաժեշտ Է լրացնել *-ով նշված դաշտերը</h4>
                                             <p class="text-muted mb-3"></p>
                                             <form class="form-parsley" action="#" novalidate="">
 
@@ -2485,13 +2485,14 @@
                                                 </div>
                                                 <!--end form-group-->
                                                 <div class="form-group">
-                                                    <label>Կազմակերպության անվանումը *</label>
+                                                    <label>Կազմակերպության անվանում *</label>
                                                     <input placeholder="Կազմակերպության անվանումը" type="text" name="form-control"  class="form-control" value="" required>
                                                     <select name="company_type" class="form-control mt-2">
+                                                        <option selected value="Ընտրել">Ընտրել</option>
                                                         <option  value="">Այլ</option>
                                                         <option   value="ՊՈԱԿ">ՊՈԱԿ</option>
                                                         <option   value="ՍՊԸ">ՍՊԸ</option>
-                                                        <option selected  value="ՓԲԸ">ՓԲԸ</option>
+                                                        <option   value="ՓԲԸ">ՓԲԸ</option>
                                                         <option   value="ՀՈԱԿ">ՀՈԱԿ</option>
                                                         <option   value="Հիմնադրամ">Հիմնադրամ</option>
                                                         <option   value="Համայնք">Համայնք</option>
@@ -2506,10 +2507,11 @@
                                                     <label>Կազմակերպության անվանումը ռուսերեն*</label>
                                                     <input placeholder="Название компании на русском языке" type="text" name="company_name_ru" class="form-control" value="" required>
                                                     <select name="company_type_ru" class="form-control mt-2">
+                                                        <option selected value="Выбрать">Выбрать</option>
                                                         <option   value="">Другое</option>
                                                         <option   value="ГНКО">ГНКО</option>
                                                         <option   value="ООО">ООО</option>
-                                                        <option selected  value="ЗАО">ЗАО</option>
+                                                        <option   value="ЗАО">ЗАО</option>
                                                         <option   value="ОНКО">ОНКО</option>
                                                         <option   value="фонд">фонд</option>
                                                         <option   value="община">община</option>
@@ -2531,8 +2533,8 @@
                                                 <div class="form-group">
                                                     <label>Գործունեության հասցե ռուսերեն*</label>
                                                     <div class="input-user">
-                                                        <input placeholder="Марз" type="text" name="company_region" class="user_name_short" value="">
-                                                        <input placeholder="Город / Деревня" type="text" name="company_city" class="user_name_short" value="" required>
+                                                        <input placeholder="Область" type="text" name="company_region" class="user_name_short" value="">
+                                                        <input placeholder="Город / Село" type="text" name="company_city" class="user_name_short" value="" required>
                                                         <input placeholder="Адрес" type="text" name="company_address" class="user_name_short" value="" required>
                                                     </div>
 
@@ -2565,13 +2567,14 @@
 
                                                 <div class="form-group">
                                                     <label>Տնօրենի Անուն Ազգանուն ռուսերեն*</label>
-                                                    <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="Директор Имя Фамилия на русском языке">
+                                                    <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="Имя Фамилия на русском языке">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Գնման ձևը *</label>
                                                     <select name="gnman_dzev" class="form-control">
-                                                        <option selected value="1">Թղթային</option>
-                                                        <option  value="2">Էլեկտրոնային</option>
+                                                        <option selected value="1">Ընտրել</option>
+                                                        <option  value="2">Թղթային</option>
+                                                        <option  value="3">Էլեկտրոնային</option>
                                                     </select>
                                                 </div>
 
