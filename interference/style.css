@@ -57,13 +57,49 @@ h4.title-firm{
 {
     max-height: 100px;
 }
+/*************************************************
+**************************************************
+**************************************************/
+.input-user{
+    display: flex;
+    justify-content: space-between;
+}
+.user_name_short{
+    border: 1px solid #e8ebf3;
+    border-radius: .25rem;
+    border-bottom: 1px solid #e8ebf3;
+    -webkit-transition: border-color 0s ease-out;
+    transition: border-color 0s ease-out;
+    background-color: #fff;
+}
+.user_name_short{
+    display: block;
+    width: 33%;
+    height: calc(1.8em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .845rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #303e67;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e8ebf3;
+    border-radius: .25rem;
+    -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+}
 
+#settings_detail .dropify-wrapper.has-preview {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+}
 
-
-
-
-
-
+.input-file-now-custom-2{
+    margin-top: 40px;
+}
 
 
 
