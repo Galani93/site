@@ -64,6 +64,9 @@ h4.title-firm{
     display: flex;
     justify-content: space-between;
 }
+.calendar-1{
+    padding-left: 0;
+}
 .user_name_short{
     border: 1px solid #e8ebf3;
     border-radius: .25rem;
@@ -170,5 +173,8 @@ h4.title-firm{
 }
 .main-menu-inner .menu-body .nav-item.mm-active .menu-arrow i:before {
     content: "\57"!important;
-
+}
+.invoice-head.invoice-head-pet{
+    display: flex;
+    justify-content: center;
 }
