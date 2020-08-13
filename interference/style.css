@@ -67,6 +67,18 @@ h4.title-firm{
 .calendar-1{
     padding-left: 0;
 }
+.diagram{
+    padding-left: 0;
+    padding-right: 0;
+}
+.diagram .card{
+    margin-top: 35px;
+}
+.slimScrollDiv01{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
 .user_name_short{
     border: 1px solid #e8ebf3;
     border-radius: .25rem;
