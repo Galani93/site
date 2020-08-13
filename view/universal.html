@@ -1,368 +1,32 @@
+<div class="tab-pane fade" id="settings_detail">
+    <div class="row">
+        <div class="col-lg-8 col-md-10">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="mt-0 header-title">Անհրաժեշտ Է լրացնել *-ով նշված դաշտերը</h4>
+                    <p class="text-muted mb-3"></p>
+                    <form class="form-parsley" action="#" novalidate="">
 
-<style>
-    .toggle {
-        position: relative;
-        display: block;
-        float: left;
-        width: 40px;
-        height: 20px;
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        transform: translate3d(0, 0, 0);
-        margin-top:10px;
-    }
-    .toggle:before {
-        content: "";
-        position: relative;
-        top: 3px;
-        left: 3px;
-        width: 34px;
-        height: 14px;
-        display: block;
-        background: #9A9999;
-        border-radius: 8px;
-        transition: background 0.2s ease;
-    }
-    .toggle span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        display: block;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
-        transition: all 0.2s ease;
-    }
-    .toggle span:before {
-        content: "";
-        position: absolute;
-        display: block;
-        margin: -18px;
-        width: 56px;
-        height: 56px;
-        background: rgba(79, 46, 220, 0.5);
-        border-radius: 50%;
-        transform: scale(0);
-        opacity: 1;
-        pointer-events: none;
-    }
-
-    #cbx:checked + .toggle:before {
-        /* background: #fff; */
-    }
-    #cbx:checked + .toggle span {
-        background: #fff;
-        transform: translateX(20px);
-        transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
-        box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
-    }
-    #cbx:checked + .toggle span:before {
-        transform: scale(1);
-        opacity: 0;
-        transition: all 0.4s ease;
-    }
-
-    .center {
-        background: #1e7bb7;
-        margin-top: 15px;
-        color: #fff;
-        display: inline-block;
-        width: 100%;
-        float: left;
-        font-size: 13px;
-        padding: 10px;
-    }
-    p.chrtik_text {
-        float: left;
-        margin: 0 4px;
-        text-align:center
-    }
-    p.chrtik_text.inactive_chrxk {
-        color: #ccc;
-    }
-</style>
-<html lang="hy">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.itender.am/favicon.ico">
-    <link rel="icon" type="image/png" href="https://www.itender.am/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://www.itender.am/favicon-16x16.png" sizes="16x16">
-    <title>
-        iTender
-    </title>
-    <link rel="stylesheet" href="https://www.itender.am/library/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="https://www.itender.am/library/datatables.net-bs/css/dataTables.bootstrap.min.css" />
-    <link rel="stylesheet" href="https://www.itender.am/css/swiper.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <link rel="stylesheet" href="https://www.itender.am/css/style.css?v=1.1.27" type="text/css" media="all">
-
-    <!-- carusel -->
-    <link rel="stylesheet" href="https://www.itender.am/css/carusel.css" type="text/css">
-    <script type="text/javascript" src="https://www.itender.am/js/jquery.min.js"></script>
-    <script src="https://www.itender.am/library/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="https://www.itender.am/library/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://www.itender.am/js/owl.carousel.js"></script>
-
-    <!-- end carusel -->
-    <style>
-        .page {
-
-            padding-left: 0;
-            padding-right: 0;
-
-        }
-    </style>
-    <script src="https://www.itender.am/js/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://www.itender.am/css/sweetalert.css">
-    <!-- CK Editor -->
-    <script src="https://www.itender.am/admin/ckeditor/ckeditor.js"></script>
-    <meta property="og:title" content="iTender">
-    <meta property="og:image" content="https://www.itender.am/images/hayt_share.png">
-    <meta property="og:description" content="Համակարգը նախատեսված է, որպեսզի գնորդները գնումներ կատարելիս կազմակերպեն մրցույթներ, իսկ վաճառողները՝ մասնակցեն այդ մրցույթներին՝ ներկայացնելով իրենց առաջարկները: ">
-    <meta property="og:url" content="https://www.itender.am/">
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113141413-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-113141413-1');
-    </script>
-
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ea385c2ecbc4242c62227fcd0/277a3ee5f873345dca6ae0591.js");</script>
-</head>
-<body class="bodyready account-page">
-
-
-
-<!-- <div id="home-top" class="clearfix">
-     <p>OneSingle Testing</p>
-     <br>
-     <button id="subscribe" class="button" onclick="subscribeOneSignal()">Subscribe </button>
-     <button id="unsubscribe" class="button" onclick="unSubscribeOneSignal()">Unsubscribe </button>
- </div>
- <style>
-     .button {
-         background-color: #008CBA;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;cursor: pointer;
-     }
- </style>-->
-<div class="mobile_menu">
-    <ul>
-        <li ><a href="https://www.itender.am/">Գլխավոր</a></li>
-        <li ><a href="https://www.itender.am/all">Տենդերներ</a></li>
-        <li ><a href="https://www.itender.am/vichakagroutyoun">Վիճակագրություն</a></li>
-        <!--<li ><a href="<?/*=base_url()*/?>priceRequests">Հարցումներ</a></li>
-   --><li ><a href="https://www.itender.am/page/itender-kanonakarg">Կանոնակարգ </a></li>
-        <li ><a href="https://www.itender.am/page/teghekatvoutyoun">Տեղեկատվություն</a></li>
-        <!--<li ><a href="https://www.itender.am/page/vichakagroutyoun">Վիճակագրություն</a></li>-->
-
-        <li ><a href="https://www.itender.am/page/ognoutyoun">Օգնություն</a></li>
-        <li ><a href="https://www.itender.am/rating">Ձեր կարծիքը</a></li>
-
-        <li ><a href="https://www.itender.am/contact">Կապ</a></li>
-
-    </ul>
-</div>
-<div class="mobile_header">
-
-    <div class="mobile_header_top">
-        <div class="mobile_header_top_left">
-            <div class="logo">
-
-                <a href="https://www.itender.am/"><img src="https://www.itender.am/logo.png"></a>
-            </div>
-
-
-        </div>
-        <div class="mobile_header_top_right">
-            <div class="menu_button">
-                <hr>
-                <hr>
-                <hr>
-            </div>
-        </div>
-    </div>
-    <div class="mobile_header_bottom">
-        <div class="lozung">
-            Զգա մրցակցության առավելությունը
-        </div>
-        <div class="mobile_header_search_button">
-            <a class="search_button"></a>
-        </div>
-        <div class="mobile_header_bottom_right">
-            <div class="login">
-                <div class="button-wrap1"><a href="https://www.itender.am/account" data-dialog="somedialog" class="trigger" style="cursor: pointer">Իմ էջը</a></div>
-            </div>
-            <div class="registration">
-                <div class="button-wrap"><a href="https://www.itender.am/logout" data-dialog="somedialog2" class="trigger" style="cursor: pointer">Ելք</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mobile_header_search">
-        <form action="https://www.itender.am/search/" method="get">
-            <input type="text" name="search_text" class="search_input" placeholder="Որոնում" autocomplete="off" oninput="get_company_by_number(this)">
-
-            <input type="submit" class="search_button" value="">
-        </form>
-    </div>
-</div>
-
-
-<div class="header" id="navbar">
-    <div class="header_center">
-        <div class="logo">
-            <a href="https://www.itender.am/"><img src="https://www.itender.am/logo.png"></a>
-        </div>
-        <div class="lozung">
-            Զգա մրցակցության առավելությունը
-        </div>
-
-
-        <div class="login">
-            <div class="button-wrap1"><a href="https://www.itender.am/account" data-dialog="somedialog" class="trigger" style="cursor: pointer">Իմ էջը</a></div>
-        </div>
-        <div class="registration">
-            <div class="button-wrap"><a href="https://www.itender.am/logout" data-dialog="somedialog2" class="trigger" style="cursor: pointer">Ելք</a>
-            </div>
-        </div>
-        <div class="desctop_header_search_button">
-            <a class="search_button"></a>
-        </div>
-        <div class="header_search hidden">
-            <form action="https://www.itender.am/search/" method="get">
-                <input type="text" name="search_text" class="search_input" placeholder="Որոնում" autocomplete="off" oninput="get_company_by_number(this)">
-                <input type="submit" class="search_button" value="">
-            </form>
-
-        </div>
-        <div class="state_user_account">
-            <div class="state_user_name">
-                <a href="https://www.itender.am/account/settings">ՋՐԱՅԻՆ ԿԱՌՈՒՅՑՆԵՐԻ ՓԲԸ</a>
-            </div>
-        </div>
-    </div>
-    <div class="menu">
-        <ul>
-            <li ><a href="https://www.itender.am/">Գլխավոր</a></li>
-            <li ><a href="https://www.itender.am/all">Տենդերներ</a></li>
-            <li ><a href="https://www.itender.am/vichakagroutyoun">Վիճակագրություն</a></li>
-            <!--<li ><a href="<?/*=base_url()*/?>priceRequests">Հարցումներ</a></li>
-           --><li ><a href="https://www.itender.am/page/itender-kanonakarg">Կանոնակարգ </a></li>
-            <li ><a href="https://www.itender.am/page/teghekatvoutyoun">Տեղեկատվություն</a></li>
-            <!--<li ><a href="https://www.itender.am/page/vichakagroutyoun">Վիճակագրություն</a></li>-->
-
-            <li ><a href="https://www.itender.am/page/ognoutyoun">Օգնություն</a></li>
-            <li ><a href="https://www.itender.am/rating">Ձեր կարծիքը</a></li>
-
-            <li ><a href="https://www.itender.am/contact">Կապ</a></li>
-            <li class="tej_gic"><a class="tej_gic_a">Թեժ գիծ</a></li>
-
-        </ul>
-    </div>
-
-</div>
-<div class="page full_width">
-    <div class="page_center">
-
-        <div class="page_accaunt_left">
-            <div class="subfrombottom myaccaunt55 mn_2">
-
-                <a class="tender_menu_a tender_gen_menu">Պլանավորում <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                <ul class="hidden_tender_block hidden">
-                    <li><a href="https://www.itender.am/account/viewSalePlan">Գնումների պլան</a></li>
-                    <li>
-                        <a href="https://www.itender.am/account/subdivision">Պատասխանատու ստորաբաժանում</a>
-                    </li>
-
-                </ul>
-
-                <a class="tender_menu_a tender_gen_menu">Կազմակերպում <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                <ul class="hidden_tender_block hidden">
-
-                    <li>
-                        <a class="tender_menu_head">Մեկ Անձ</a>
-                        <ul>
-                            <li><a href="https://www.itender.am/account/stateContractsOffers">Գնման գործընթացներ</a></li>
-                            <li><a href="https://www.itender.am/account/organizeProcess">Կազմակերպել նոր գնման գործընթացը</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="tender_menu_head">Մրցակցային</a>
-                        <ul>
-                            <li><a href="https://www.itender.am/account/mrcakcayinAll">Ընթացիկ գործընթացներ</a></li>
-                            <li><a href="https://www.itender.am/account/mrcakcayinAdd">Ստեղծել նորը</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <a class="tender_menu_a tender_gen_menu">Պայմանագրերի կառավարում <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                <ul class="hidden_tender_block hidden">
-
-                    <li>
-                        <ul class="">
-                            <li> <a href="https://www.itender.am/account/signedContracts">Մեկ Անձ </a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="">
-                            <li> <a>Մրցակցային</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <a href="javascript:void(0)" class="close_menu_sub"></a>
-        </div>
-        <div class="page_accaunt_right">
-
-            <div class="state_caaount_content">
-
-
-                <div class="ic_mr">Անձնական տվյալներ</div>
-                <div class=""></div>
-                <div class="user_glob_settings">
-
-                    <div class="mek_andz_count">
-                        <p class="hushum">Մեկ անձ</p>
-                        <p>Անսահմանափակ ընթացակարգեր</p>
-                    </div>
-                    <div class="mrcakcayin_patet">
-                        <p class="hushum">Մրցակցային</p>
-                        <p>Անսահմանափակ ընթացակարգեր</p>
-                    </div>
-
-                </div>
-
-                <div class="user_glob_settings">
-                    <p class="hushum">Անհրաժեշտ է լրացնել *-ով նշված դաշտերը</p>
-                    <form action="" class="settings_form_user" method="post">
-
-
-
-                        <div class="form-row">
+                        <div class="form-group">
                             <label>Էլ. փոստ *</label>
-                            <input  style="width: 350px;" type="email" placeholder="Էլ. փոստ" class="user_name reg_mail" value="hayk_khazaryan@mail.ru" name="user_email" required/>
+                            <div>
+                                <input type="email" class="form-control" required="" parsley-type="email" placeholder="Էլ. փոստ">
+                            </div>
                         </div>
-                        <div class="form-row">
+                        <div class="form-group">
                             <label>Հեռախոս *</label>
-                            <input  style="width: 350px;" type="text" placeholder="Հեռախոս Օրինակ՝ 077248811" onkeypress="return isNumberKeyHvhh(event)" class="user_name reg_phone txtboxToFilter" value="099033539" name="user_phone" required/>
+                            <input type="tel" class="form-control" required="" placeholder="077 22 22 77">
                         </div>
-                        <div class="form-row">
-                            <label>Կազմակերպության անվանումը *</label>
-                            <input placeholder="Կազմակերպության անվանումը" type="text" name="user_name" disabled class="user_name masnakic_user_name" value="ՋՐԱՅԻՆ ԿԱՌՈՒՅՑՆԵՐԻ" required>
-                            <select name="company_type" class="user_name user_name_short">
+                        <!--end form-group-->
+                        <div class="form-group">
+                            <label>Կազմակերպության անվանում *</label>
+                            <input placeholder="Կազմակերպության անվանումը" type="text" name="form-control"  class="form-control" value="" required>
+                            <select name="company_type" class="form-control mt-2">
+                                <option selected value="Ընտրել">Ընտրել</option>
                                 <option  value="">Այլ</option>
                                 <option   value="ՊՈԱԿ">ՊՈԱԿ</option>
                                 <option   value="ՍՊԸ">ՍՊԸ</option>
-                                <option selected  value="ՓԲԸ">ՓԲԸ</option>
+                                <option   value="ՓԲԸ">ՓԲԸ</option>
                                 <option   value="ՀՈԱԿ">ՀՈԱԿ</option>
                                 <option   value="Հիմնադրամ">Հիմնադրամ</option>
                                 <option   value="Համայնք">Համայնք</option>
@@ -370,14 +34,18 @@
                                 <option   value="Հ/Կ">Հ/Կ</option>
                             </select>
                         </div>
-                        <div class="form-row">
+                        <!--end form-group-->
+
+                        <!--end form-group-->
+                        <div class="form-group">
                             <label>Կազմակերպության անվանումը ռուսերեն*</label>
-                            <input placeholder="Կազմակերպության անվանումը ռուսերեն" type="text" name="company_name_ru" class="user_name masnakic_user_name" value="ВОДНЫХ СТРУКТУР" required>
-                            <select name="company_type_ru" class="user_name user_name_short">
+                            <input placeholder="Название компании на русском языке" type="text" name="company_name_ru" class="form-control" value="" required>
+                            <select name="company_type_ru" class="form-control mt-2">
+                                <option selected value="Выбрать">Выбрать</option>
                                 <option   value="">Другое</option>
                                 <option   value="ГНКО">ГНКО</option>
                                 <option   value="ООО">ООО</option>
-                                <option selected  value="ЗАО">ЗАО</option>
+                                <option   value="ЗАО">ЗАО</option>
                                 <option   value="ОНКО">ОНКО</option>
                                 <option   value="фонд">фонд</option>
                                 <option   value="община">община</option>
@@ -385,273 +53,94 @@
                                 <option   value="Հ/Կ">Հ/Կ</option>
                             </select>
                         </div>
-                        <div class="form-row">
-                            <label>Կազմակերպության հապավումը *</label>
-                            <input placeholder="Կազմակերպության հապավումը" type="text" name="company_short" class="user_name" value="ՋԿ" required>
-                        </div>
-                        <div class="form-row">
-                            <label>Կազմակերպության հապավումը ռուսերեն*</label>
-                            <input placeholder="Կազմակերպության հապավումը ռուսերեն" type="text" name="company_short_ru" class="user_name" value="JK" required>
-                        </div>
-                        <div class="form-row">
+                        <!--end form-group-->
+                        <div class="form-group">
                             <label>Գործունեության հասցե *</label>
-                            <input placeholder="Մարզ" type="text" name="company_region" class="user_name user_name_short" value="Երևան">
-                            <input placeholder="Քազաք / Գյուղ" type="text" name="company_city" class="user_name user_name_short" value="ք. Երևան" required>
-                            <input style="margin-left: 0 !important;" placeholder="Հասցե" type="text" name="company_address" class="user_name user_name_long" value="Հալաբյան 31/2" required>
+                            <div class="input-user">
+                                <input placeholder="Մարզ" type="text" name="company_region" class="user_name_short" value="">
+                                <input placeholder="Քազաք / Գյուղ" type="text" name="company_city" class="user_name_short" value="" required>
+                                <input placeholder="Հասցե" type="text" name="company_address" class="user_name_short" value="" required>
+                            </div>
+
                         </div>
-                        <div class="form-row">
+
+                        <div class="form-group">
                             <label>Գործունեության հասցե ռուսերեն*</label>
-                            <input placeholder="Մարզ ռուսերեն" type="text" name="company_region_ru" class="user_name company_region_ru user_name_short" value="Ереван">
-                            <input placeholder="Քազաք / Գյուղ ռուսերեն" type="text" name="company_city_ru" class="user_name company_city_ru user_name_short" value="г. Ереван" required>
-                            <input style="margin-left: 0 !important;" placeholder="Հասցե ռուսերեն" type="text" name="company_address_ru" class="user_name company_address_ru user_name_long" value="Алабян 31/2" required>
+                            <div class="input-user">
+                                <input placeholder="Область" type="text" name="company_region" class="user_name_short" value="">
+                                <input placeholder="Город / Село" type="text" name="company_city" class="user_name_short" value="" required>
+                                <input placeholder="Адрес" type="text" name="company_address" class="user_name_short" value="" required>
+                            </div>
+
                         </div>
 
-
-                        <div class="form-row">
+                        <div class="form-group">
                             <label>Բանկը / Գանձապետարան *</label>
-                            <input placeholder="Բանկը / Գանձապետարան" type="text" name="bank_name" class="user_name" value="«Հայբիզնեսբանկ» ՓԲԸ " required>
+                            <div>
+                                <input data-parsley-type="number" type="text" class="form-control" required="" placeholder="Բանկը / Գանձապետարան">
+                            </div>
                         </div>
-                        <div class="form-row">
+                        <div class="form-group">
                             <label>Բանկը / Գանձապետարան ռուսերեն*</label>
-                            <input placeholder="Բանկը / Գանձապետարան ռուսերեն" type="text" name="bank_name_ru" class="user_name" value="ЗАО "АРМБИЗНЕСБАНК"" required>
+                            <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="Банк / Казначейство на русском языке">
                         </div>
-                        <div class="form-row">
+                        <div class="form-group">
                             <label>Հաշվեհամար *</label>
-                            <input placeholder="Հաշվեհամար" type="text" name="bank_account" maxlength="16" onkeypress="return isNumberKeyHvhh(event)" class="user_address" value="1150005747030100" required>
+                            <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="Հաշվեհամար">
                         </div>
-                        <div class="form-row">
+
+                        <div class="form-group">
                             <label>ՀՎՀՀ *</label>
-                            <input placeholder="ՀՎՀՀ" type="text"  class="user_address" maxlength="8" onkeypress="return isNumberKeyHvhh(event)" value="00009812" disabled required>
+                            <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="ՀՎՀՀ">
                         </div>
-                        <div class="form-row">
+
+                        <div class="form-group">
                             <label>Տնօրենի Անուն Ազգանուն *</label>
-                            <input placeholder="Անուն Ազգանուն" type="text" name="director_name" class="user_hvhh" value="Ա. Տեր-Թովմասյան" required>
+                            <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="Անուն Ազգանուն">
                         </div>
-                        <div class="form-row">
+
+                        <div class="form-group">
                             <label>Տնօրենի Անուն Ազգանուն ռուսերեն*</label>
-                            <input placeholder="Անուն Ազգանուն ռուսերեն" type="text" name="director_name_ru" class="user_hvhh" value="А. Тер-Товмасян" required>
+                            <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="Имя Фамилия на русском языке">
                         </div>
-                        <div class="form-row">
+                        <div class="form-group">
                             <label>Գնման ձևը *</label>
-                            <select name="gnman_dzev">
-                                <option selected value="1">Թղթային</option>
-                                <option  value="2">Էլեկտրոնային</option>
+                            <select name="gnman_dzev" class="form-control">
+                                <option selected value="1">Ընտրել</option>
+                                <option  value="2">Թղթային</option>
+                                <option  value="3">Էլեկտրոնային</option>
                             </select>
                         </div>
 
+                        <div class="form-group mb-0">
+                            <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">Պահպանել</button>
+                        </div>
+                        <!--end form-group-->
+                    </form><!--end form-->
+                </div><!--end card-body-->
+            </div>
+            <!--end card-->
+        </div>
+        <div class="col-lg-4 col-md-2">
 
-
-
-
-                        <input type="submit" name="save_user" value="Պահպանել" id="send_order">
-                    </form>
+            <div class="card">
+                <div class="card-body"><h4 class="mt-0 header-title">Ավելացնել լուսանկար</h4>
+                    <div class="dropify-wrapper has-preview">
+                        <div class="dropify-message">
+                            <p></p>
+                            <p class="dropify-error"></p>
+                        </div>
+                    </div>
+                    <input type="file" id="input-file-now-custom-2 " class="dropify" data-height="500" accept="image/jpeg,image/png,image/gif">
+                    <div id="preview"></div>
                 </div>
 
-                <div class="user_pass_settings">
-                    <p class="change_pass_title">Փոխել գաղտնաբառը</p>
-                    <form action="" method="post">
-                        <div class="form-row">
-                            <label>Ներկայիս գաղտնաբառը</label>
-                            <input type="password" name="current_pass" class="input_text">
-                            <span class="manr_hushum">Եթե գրանցվել եք facebook-ի միջոցով, այս դաշտը դատարկ թողեք</span>
-                        </div>
-                        <div class="form-row">
-                            <label>Նոր գաղտնաբառը</label>
-                            <input type="password" name="new_pass" class="input_text">
-                        </div>
-                        <div class="form-row">
-                            <label>Կրկնել գաղտնաբառը</label>
-                            <input type="password" name="repeat_pass" class="input_text">
-                        </div>
-                        <input type="submit" name="save_new_password" value="Փոխել" id="send_order">
-                    </form>
-                </div>
-
-                <script>
-
-                    window.fbAsyncInit = function() {
-                        FB.init({
-                            appId      : '344176486385110',
-                            xfbml      : true,
-                            version    : 'v2.6'
-                        });
-
-                        FB.Event.subscribe('messenger_checkbox', function(e) {
-                            console.log("messenger_checkbox event");
-                            console.log(e);
-
-                            if (e.event == 'rendered') {
-                                console.log("Plugin was rendered");
-                            } else if (e.event == 'checkbox') {
-                                var checkboxState = e.state;
-                                console.log("Checkbox state: " + checkboxState);
-                            } else if (e.event == 'not_you') {
-                                console.log("User clicked 'not you'");
-                            } else if (e.event == 'hidden') {
-                                console.log("Plugin was hidden");
-                            }
-
-                        });
-                    };
-
-                </script>                                </div>
-
-
-
-        </div>
-    </div>
-</div>
-<div class="footer">
-    <div class="footer_center">
-        <div class="fmenu">
-            <ul>
-                <li><a href="https://www.itender.am/">Գլխավոր</a></li>
-                <li><a href="https://www.itender.am/tenders">Տենդերներ</a></li>
-                <li><a href="https://www.itender.am/priceRequests">Հարցումներ</a></li>
-                <li><a href="https://www.itender.am/page/itender-kanonakarg">Կանոնակարգ </a></li>
-                <li><a href="https://www.itender.am/page/teghekatvoutyoun">Տեղեկատվություն</a></li>
-                <li><a href="https://www.itender.am/vichakagroutyoun">Վիճակագրություն</a></li>
-
-                <li><a href="https://www.itender.am/page/ognoutyoun">Օգնություն</a></li>
-                <li><a href="https://www.itender.am/rating">Գնահատում</a></li>
-
-                <li><a href="https://www.itender.am/contact">Կապ</a></li>
-            </ul>
-        </div>
-        <div class="flinks">
-            <p class="flink_t">Հղումներ</p>
-            <ul>
-                <li><a href="https://protender.am/" target="_blank">protender.am</a></li>
-                <li><a href="https://egprocurement.am/" target="_blank">egprocurement.am</a></li>
-            </ul>
-            <hr>
-            <p class="flink_t">Կոնտակտներ</p>
-            <li><a>+374 10 24 49 74</a></li>
-            <li><a>+374 99 24 49 74</a></li>
-            <li><a>+374 41 24 49 74</a></li>
-            <li><a>info@itender.am</a></li>
-        </div>
-        <div class="footer_bottom">
-            <div class="search_bar">
-                <form action="https://www.itender.am/search/" method="get">
-                    <input type="text" name="search_text" class="search_input" placeholder="Որոնում" autocomplete="off" oninput="get_company_by_number(this)">
-                    <input type="submit" class="search_button" value="">
-                </form>
-
-            </div>
-            <div class="fotter_soc">
-                <a target="_blank" href="https://web.facebook.com/ProTender/"><img src="https://www.itender.am/images/fb.png"></a>
-                <a href="#"><img src="https://www.itender.am/images/tw.png"></a>
-                <a href="#"><img src="https://www.itender.am/images/gp.png"></a>
-                <a target="_blank" href="https://www.linkedin.com/company/11787444/admin/updates/"><img src="https://www.itender.am/images/in.png"></a>
-                <a href="#"><img src="https://www.itender.am/images/it.png"></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCD3gwb1H1NE9qujwPzCd3pg?view_as=subscriber"><img src="https://www.itender.am/images/yt.png"></a>
-            </div>
-            <div class="logo">
-                <a href="https://www.itender.am/"><img src="https://www.itender.am/logo.png"></a>
             </div>
 
         </div>
+
     </div>
-    <div class="footer1">
-        <div class="footer1_center">
-            <div class="footer1_left">
-                <a href="https://masterweb.am" target="_blanck"><img src="https://www.itender.am/masterweb.png"></a>
-            </div>
-            <div class="footer1_right">
-                © 2018-2020 Բոլոր հեղինակային իրավունքները պաշտպանված են
-            </div>
-        </div>
-    </div>
-
+    <!--end row-->
 </div>
-<div class="state_doenload_limit_popup">
-    <div class="package_limit_request_popup_contain">
-        <p>Հարգելի գործընկեր</p>
-
-        <span>Այս հնարավորությունը հասանելի է գրանցված <strong style="color: #1f7bb7">Մասնավոր ընկերությունների</strong> համար</span>
-
-        <div class="package_limit_request_popup_btns">
-            <a class="close_state_doenload_limit_popup">Լավ</a>
-            <a href="https://www.itender.am/login/?l=1"  class="open_request_btn">Մուտք / գրանցում</a>
-        </div>
-    </div>
-
-</div>
-<div class="package_limit_naxahashiv_popup">
-    <div class="package_limit_request_popup_contain">
-        <p>Հարգելի գործընկեր</p>
-
-        <span>Այս հնարավորությունը հասանելի կլինի <strong style="color: #1f7bb7">Մասնավոր ընկերության</strong> <strong>«Գոլդ»</strong> փաթեթ ընտրելու դեպքում</span>
-
-        <div class="package_limit_request_popup_btns">
-            <a class="close_package_limit_naxahashiv_popup">Լավ</a>
-            <a href="https://www.itender.am/login/?l=1"  class="open_request_btn">Մուտք / գրանցում</a>
-        </div>
-    </div>
-
-</div>
-<div class="package_limit_request_popup">
-    <div class="package_limit_request_popup_contain">
-        <p>Հարգելի գործընկեր</p>
-
-        <span>Այս հնարավորությունը հասանելի կլինի <strong style="color: #1f7bb7">Մասնավոր ընկերության</strong> <strong>«Պրեմիում»</strong> կամ <strong>«Գոլդ»</strong> փաթեթ ընտրելու դեպքում</span>
-
-
-        <div class="package_limit_request_popup_btns">
-            <a class="close_package_limit_request_popup">Լավ</a>
-            <a href="https://www.itender.am/login/?l=1"  class="open_request_btn">Մուտք / գրանցում</a>
-
-        </div>
-    </div>
-
-</div>
-<!-- daterangepicker -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" type="text/javascript"></script>
-<script src="https://www.itender.am/admin/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
-<!-- datepicker -->
-<script src="https://www.itender.am/admin/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
-<!-- datetimepicker -->
-<script src="https://www.itender.am/admin/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="https://www.itender.am/js/script.js?v=1.1.42"></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/59787f2c5dfc8255d623f061/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-    })();
-
-    $(document).on("click", ".select_cats_in_home", function () {
-        $(".hidden_choose_cats").slideToggle(200);
-    });
-    $(document).on("click", ".select_tender_cats_in_home", function () {
-        $(".hidden_tender_choose_cats").slideToggle(200);
-    });
-    $(document).on("click", ".open_unlimit_tenders", function () {
-        var cat = $(this).attr("data-cat");
-        $(".hidden_unlimit_tender_" + cat).slideToggle(500);
-        $(this).toggleClass("close_unlimit_tenders");
-    });
-
-</script>
-
-<div class="tej_gic_block">
-    <div class="close_tej_gic_block"><i class="fa fa-times" aria-hidden="true"></i></div>
-    <h3>Թեժ գծի հեռախոսահամարներ</h3>
-    <p><i class="fa fa-phone" aria-hidden="true"></i> 094 24 49 70</p>
-    <p><i class="fa fa-phone" aria-hidden="true"></i> 091 24 49 70</p>
-</div>
-<div class="fb-customerchat"
-     page_id="106766589485861"
-     greeting_dialog_display="hide">
-</div>
-<a href="#" class="scrollup">Scroll</a>
-<!--End of Tawk.to Script-->
-</body>
-
-</html>
+<button type="reset" class="btn btn-gradient-danger waves-effect m-l-5">
+    <a href="procurement-plan.html" class="a-plan">Հաջորդ</a></button>

@@ -105,24 +105,6 @@ h4.title-firm{
     text-transform: none!important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .fc table {
     width: 100%;
     box-sizing: border-box;
@@ -148,4 +130,41 @@ h4.title-firm{
 
 .fc-view-container {
     position: relative;
+}
+.responsible .form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.responsible .form-group label{
+    font-weight: 400;
+    color: #656d9a;
+    font-size: 13px;
+    width: 185px;
+}
+.responsible .form-group .user_name_short{
+    width: 50%;
+    margin: 0 10px;
+}
+.responsible .form-group .input-user{
+    width: 80%;
+}
+.responsible .form-group .input-user.input-user-02{
+
+    flex-wrap: wrap;
+
+}
+
+.responsible .form-group .input-user-02 .user_name_short{
+    width: 45%;
+    margin:  10px;
+}
+.btn-gradient-danger .a-plan{
+    color: #fff;
+    -webkit-box-shadow: 0 7px 14px 0 rgba(239,77,86,0.5);
+    box-shadow: 0 7px 14px 0 rgba(239,77,86,0.5);
+    border: none;
+}
+.a-plan:hover{
+    color: #fff;
 }
