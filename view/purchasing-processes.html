@@ -36,7 +36,7 @@
                     <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
             </a>
-            <a href="#MetricaApps" class="nav-link active" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Պլանավորում">
+            <a href="#MetricaApps" class="nav-link " data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Պլանավորում">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                      class="feather feather-grid align-self-center menu-icon icon-dual">
@@ -47,7 +47,7 @@
                 </svg>
             </a>
             <!--end MetricaApps-->
-            <a href="#MetricaUikit" class="nav-link" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Կազմակերպում">
+            <a href="#MetricaUikit" class="nav-link active" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Կազմակերպում">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                      class="feather feather-package align-self-center menu-icon icon-dual">
@@ -104,8 +104,8 @@
                     <!--                        </li>-->
                     <!--                    </ul>-->
                 </div>
-                <div id="MetricaApps" class="main-icon-menu-pane mm-active active">
-                    <div class="title-box  active"><h6 class="menu-title">Պլանավորում</h6></div>
+                <div id="MetricaApps" class="main-icon-menu-pane ">
+                    <div class="title-box  "><h6 class="menu-title">Պլանավորում</h6></div>
                     <ul class="nav metismenu in mm-show">
                         <li class="nav-item">
                             <a class="nav-link" href="#"><span class="w-100"> Գնումների Պլան</span></a>
@@ -120,13 +120,13 @@
                         <!--                        <li class="nav-item"><a class="nav-link" href="../apps/invoice.html">Invoice</a></li>-->
                     </ul>
                 </div>
-                <div id="MetricaUikit" class="main-icon-menu-pane">
-                    <div class="title-box"><h6 class="menu-title">Կազմակերպում</h6></div>
+                <div id="MetricaUikit" class="main-icon-menu-pane mm-active active">
+                    <div class="title-box active"><h6 class="menu-title">Կազմակերպում</h6></div>
                     <ul class="nav metismenu">
                         <li class="nav-item"><a class="nav-link" href="#"><span class="w-100">Պետական մեկ անձ</span><span
                                 class="menu-arrow"><i class="dripicons-chevron-down"></i></span></a>
                             <ul class="nav-second-level mm-collapse" aria-expanded="false">
-                                <li><a href="purchasing-processes.html"> Ընթացիկ գնման գործընթացներ</a></li>
+                                <li><a href="#"> Ընթացիկ գնման գործընթացներ</a></li>
                                 <li><a href="#">Կազմակերպել գնման գործընթաց</a></li>
 
                             </ul>
@@ -414,186 +414,230 @@
 <div class="page-wrapper">
 
     <div class="page-content-tab">
-        <div class="container-fluid"><!-- Page-Title -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title-box">
+                    <div class="float-right">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active"><a href="#">Ընթացիկ գնման գործընթացներ</a></li>
+                            <li class="breadcrumb-item">Կազմակերպել գնման գործընթացմ</li>
+                        </ol>
+                    </div>
+                    <h4 class="page-title">Ընթացիկ գնման գործընթացներ</h4>
+                </div><!--end page-title-box-->
+            </div><!--end col-->
+        </div>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="page-title-box">
-                        <div class="float-right">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Գնումների Պլան</a></li>
-                                <li class="breadcrumb-item active">Պատասխանատու ստորաբաժանում</li>
-                            </ol>
-                        </div>
-                        <h4 class="page-title">Ընթացիկ գնման գործընթացներ</h4>
-                    </div><!--end page-title-box-->
-                </div><!--end col-->
+                <div class="col-12">
+                    <h4 class="mt-0 mb-2 header-title">Tabs &amp; Accordions</h4>
+                    <p class="text-muted mb-3">Documentation and examples for how to use Bootstrap’s included navigation components.
+                        Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+                    </p>
+                </div> <!-- end col -->
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <form class="form-parsley responsible " action="#" novalidate="">
-
-                                    <div class="form-group">
-                                        <label>Ղեկավար *</label>
-                                        <div class="input-user">
-                                            <input placeholder="Անուն Ազգանուն" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Պաշտոն" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Ղեկավար ռուսերեն*</label>
-                                        <div class="input-user">
-                                            <input placeholder="Имя Фамилия" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Должность" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Անդամ *</label>
-                                        <div class="input-user">
-                                            <input placeholder="Անուն Ազգանուն" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Պաշտոն" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Անդամ ռուսերեն*</label>
-                                        <div class="input-user">
-                                            <input placeholder="Имя Фамилия" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Должность" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="form-group">
-                                        <label>Անդամ</label>
-                                        <div class="input-user">
-                                            <input placeholder="Անուն Ազգանուն" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Պաշտոն" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Անդամ ռուսերեն</label>
-                                        <div class="input-user">
-                                            <input placeholder="Имя Фамилия" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Должность" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Անդամ</label>
-                                        <div class="input-user">
-                                            <input placeholder="Անուն Ազգանուն" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Պաշտոն" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Անդամ ռուսերեն</label>
-                                        <div class="input-user">
-                                            <input placeholder="Имя Фамилия" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Должность" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Գնումների համակարգող *</label>
-                                        <div class="input-user input-user-02">
-                                            <input placeholder="Անուն Ազգանուն" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Պաշտոն" type="text" name="company_address" class="user_name_short" value="" required>
-                                            <input type="tel" class="user_name_short" required="" placeholder="Հեռախոս">
-                                            <input type="email" class="user_name_short" required="" parsley-type="email" placeholder="Էլ. փոստ">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Գնումների համակարգող <br> ռուսերեն*</label>
-                                        <div class="input-user input-user-02">
-                                            <input placeholder="Имя Фамилия" type="text" name="company_city" class="user_name_short" value="" required>
-                                            <input placeholder="Должность" type="text" name="company_address" class="user_name_short" value="" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group mb-0">
-                                        <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">Ստեղծել</button>
-                                        <button type="reset" class="btn btn-gradient-danger waves-effect m-l-5">
-                                            <a href="procurement-plan.html" class="a-plan">Հաջորդ</a>
-                                        </button>
-                                    </div>
-                                    <!--end form-group-->
-                                </form><!--end form-->
-                            </div><!--end card-body-->
-                        </div>
-                        <!--end card-->
-                    </div>
-                <div class="col-lg-5 col-md-6">
+                <div class="col-md-12 col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <form class="form-parsley responsible " action="#" novalidate="">
-                                <div class="form-group mb-5">
-                                    <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">Նշել բոլորը</button>
-                                    <button type="reset" class="btn btn-gradient-danger waves-effect m-l-5">
-                                        <a href="#" class="a-plan">Ջնջել</a>
-                                    </button>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" class="delate-checkbox" name="subdivision[]" data-value="21">
-                                    <a target="_blank" href="https://www.itender.am/createSubDivisionPdf/?id=21">Հրաման N1 </a>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" class="delate-checkbox" name="subdivision[]" data-value="58">
-                                    <a target="_blank" href="https://www.itender.am/createSubDivisionPdf/?id=58">Հրաման N2 </a>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" class="delate-checkbox" name="subdivision[]" data-value="60">
-                                    <a target="_blank" href="https://www.itender.am/createSubDivisionPdf/?id=60">Հրաման N3 </a>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" class="delate-checkbox" name="subdivision[]" data-value="61">
-                                    <a target="_blank" href="https://www.itender.am/createSubDivisionPdf/?id=61">Հրաման N4 </a>
-                                </div>
 
-                                <div class="form-group mb-2 mt-4">
-                                    <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">Տեսնել ավելին</button>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-selected="false">Անվանումը</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-selected="false">Ապրանք</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-selected="false">Ծառայություն</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#settings01" role="tab" aria-selected="false">Աշխատանք</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane p-3" id="home" role="tabpanel">
+                                    <p class="mb-0 text-muted">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="card">
+                                                    <div class="card-body"><h4 class="mt-0 header-title">Child rows
+                                                        example</h4>
+                                    <p class="text-muted mb-3">The DataTables API has a number of methods for attaching
+                                        child rows to a parent row in the DataTable. This can be used to show additional
+                                        information about a row, useful for cases where you wish to convey more
+                                        information about a row than there is space for in the host table.</p>
+                                    <div id="child_rows_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="dataTables_length" id="child_rows_length"><label>Show
+                                                    <select name="child_rows_length" aria-controls="child_rows"
+                                                            class="custom-select custom-select-sm form-control form-control-sm">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select> entries</label></div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div id="child_rows_filter" class="dataTables_filter">
+                                                    <label>Search:<input type="search"
+                                                                         class="form-control form-control-sm"
+                                                                         placeholder=""
+                                                                         aria-controls="child_rows"></label></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <table id="child_rows"
+                                                       class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
+                                                       style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
+                                                       role="grid" aria-describedby="child_rows_info">
+                                                    <thead>
+                                                    <tr role="row">
+                                                        <th class="details-control sorting_disabled" rowspan="1"
+                                                            colspan="1" style="width: 34px;" aria-label=""></th>
+                                                        <th class="sorting_asc" tabindex="0" aria-controls="child_rows"
+                                                            rowspan="1" colspan="1" style="width: 265px;"
+                                                            aria-sort="ascending"
+                                                            aria-label="Name: activate to sort column descending">Name
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
+                                                            rowspan="1" colspan="1" style="width: 403px;"
+                                                            aria-label="Position: activate to sort column ascending">
+                                                            Position
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
+                                                            rowspan="1" colspan="1" style="width: 246px;"
+                                                            aria-label="Office: activate to sort column ascending">
+                                                            Office
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
+                                                            rowspan="1" colspan="1" style="width: 164px;"
+                                                            aria-label="Salary: activate to sort column ascending">
+                                                            Salary
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
+                                                            rowspan="1" colspan="1" style="width: 164px;"
+                                                            aria-label="Salary: activate to sort column ascending">
+                                                            Salary
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
+                                                            rowspan="1" colspan="1" style="width: 164px;"
+                                                            aria-label="Salary: activate to sort column ascending">
+                                                            Salary
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
+                                                            rowspan="1" colspan="1" style="width: 164px;"
+                                                            aria-label="Salary: activate to sort column ascending">
+                                                            Salary
+                                                        </th>
+
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr role="row" class="odd">
+                                                        <td class=" details-control" tabindex="0"></td>
+                                                        <td class="sorting_1">Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>$86,000</td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class=" details-control" tabindex="0"></td>
+                                                        <td class="sorting_1">Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class=" details-control" tabindex="0"></td>
+                                                        <td class="sorting_1">Tiger Nixon</td>
+                                                        <td>System Architect</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>$320,800</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-5">
+                                                <div class="dataTables_info" id="child_rows_info" role="status"
+                                                     aria-live="polite">Showing 1 to 3 of 3 entries
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-7">
+                                                <div class="dataTables_paginate paging_simple_numbers"
+                                                     id="child_rows_paginate">
+                                                    <ul class="pagination">
+                                                        <li class="paginate_button page-item previous disabled"
+                                                            id="child_rows_previous"><a href="#"
+                                                                                        aria-controls="child_rows"
+                                                                                        data-dt-idx="0" tabindex="0"
+                                                                                        class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="paginate_button page-item active"><a href="#"
+                                                                                                        aria-controls="child_rows"
+                                                                                                        data-dt-idx="1"
+                                                                                                        tabindex="0"
+                                                                                                        class="page-link">1</a>
+                                                        </li>
+                                                        <li class="paginate_button page-item next disabled"
+                                                            id="child_rows_next"><a href="#" aria-controls="child_rows"
+                                                                                    data-dt-idx="2" tabindex="0"
+                                                                                    class="page-link">Next</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        <footer class="footer text-center text-sm-left">© 2019 - 2020 Metrica
-            <span class="text-muted d-none d-sm-inline-block float-right">Crafted with
-                <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
-        </footer>
-        <!--end footer-->
+                            </div>
+                        </div><!-- end col --></div>
+                                    </p>
+                                </div>
+                                <div class="tab-pane p-3" id="profile" role="tabpanel">
+                                    <p class="mb-0 text-muted">
+                                        Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                        single-origin coffee squid.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cumque cupiditate
+                                        deleniti ducimus enim eveniet excepturi expedita facere fugiat, id in incidunt, ipsum laboriosam laudantium mollitia praesentium quibusdam quidem quod.
+                                    </p>
+                                </div>
+                                <div class="tab-pane p-3 active" id="settings" role="tabpanel">
+                                    <p class="text-muted mb-0">
+                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex, facere illo ipsa libero maiores molestias mollitia omnis perspiciatis porro sunt vel,
+                                        vitae? Aliquid aperiam assumenda debitis dolor excepturi facilis harum impedit libero, molestiae natus officia, omnis quidem tempore voluptas!
+                                    </p>
+                                </div>
+                                <div class="tab-pane p-4 active" id="settings01" role="tabpanel">
+                                    <p class="text-muted mb-0">
+                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex, facere illo ipsa libero maiores molestias mollitia omnis perspiciatis porro sunt vel,
+                                        vitae? Aliquid aperiam assumenda debitis dolor excepturi facilis harum impedit libero, molestiae natus officia, omnis quidem tempore voluptas!
+                                    </p>
+                                </div>
+                            </div>
+        </div>
     </div>
-    <footer class="footer text-center text-sm-left">&copy; 2019 - 2020 Metrica
-        <span class="text-muted d-none d-sm-inline-block float-right">Crafted with
+
+
+        <footer class="footer text-center text-sm-left">&copy; 2019 - 2020 Metrica
+            <span class="text-muted d-none d-sm-inline-block float-right">Crafted with
             <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
-    </footer>
+        </footer>
 
 
 </div>
 
 
-<!-- jQuery  -->
+    <!-- jQuery  -->
+<!-- end page-wrapper --><!-- jQuery  -->
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/jquery-ui.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
@@ -601,10 +645,20 @@
 <script src="../assets/js/waves.js"></script>
 <script src="../assets/js/feather.min.js"></script>
 <script src="../assets/js/jquery.slimscroll.min.js"></script>
-<script src="../plugins/apexcharts/apexcharts.min.js"></script><!-- Parsley js -->
-<script src="../plugins/parsleyjs/parsley.min.js"></script>
-<script src="../assets/pages/jquery.validation.init.js"></script><!-- App js -->
-<script src="../assets/js/jquery.core.js"></script>
+<script src="../plugins/apexcharts/apexcharts.min.js"></script><!-- Required datatable js -->
+<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script><!-- Buttons examples -->
+<script src="../plugins/datatables/dataTables.buttons.min.js"></script>
+<script src="../plugins/datatables/buttons.bootstrap4.min.js"></script>
+<script src="../plugins/datatables/jszip.min.js"></script>
+<script src="../plugins/datatables/pdfmake.min.js"></script>
+<script src="../plugins/datatables/vfs_fonts.js"></script>
+<script src="../plugins/datatables/buttons.html5.min.js"></script>
+<script src="../plugins/datatables/buttons.print.min.js"></script>
+<script src="../plugins/datatables/buttons.colVis.min.js"></script><!-- Responsive examples -->
+<script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+<script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+<script src="../assets/pages/jquery.datatable.init.js"></script><!-- App js -->
 <script src="../assets/js/app.js"></script>
 </div>
 </body>
