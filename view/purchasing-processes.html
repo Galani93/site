@@ -436,194 +436,137 @@
                     </p>
                 </div> <!-- end col -->
             </div>
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="card-body">
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-pills nav-justified" role="tablist">
+                              <li class="nav-item waves-effect waves-light">
+                                  <a class="nav-link" data-toggle="tab" href="#home-1" role="tab" aria-selected="false">Անվանումը</a>
+                              </li>
+                              <li class="nav-item waves-effect waves-light">
+                                  <a class="nav-link" data-toggle="tab" href="#profile-1" role="tab" aria-selected="false">Ապրանք</a>
+                              </li>
+                              <li class="nav-item waves-effect waves-light">
+                                  <a class="nav-link" data-toggle="tab" href="#settings-1" role="tab" aria-selected="false">Ծառայություն</a>
+                              </li>
+                              <li class="nav-item waves-effect waves-light">
+                                  <a class="nav-link" data-toggle="tab" href="#settings-2" role="tab" aria-selected="false">Աշխատանք</a>
+                              </li>
+                          </ul>
 
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-selected="false">Անվանումը</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-selected="false">Ապրանք</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-selected="false">Ծառայություն</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#settings01" role="tab" aria-selected="false">Աշխատանք</a>
-                                </li>
-                            </ul>
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                              <div class="tab-pane p-3" id="home-1" role="tabpanel"></div>
+                              <div class="tab-pane p-3" id="profile-1" role="tabpanel">
+                                  <div class="row">
+                                      <div class="col-12">
+                                          <div class="card">
+                                              <div class="card-body">
 
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane p-3" id="home" role="tabpanel">
-                                    <p class="mb-0 text-muted">
-                                        <div class="row">
-                                            <div class="col-10">
-                                                <div class="card">
-                                                    <div class="card-body"><h4 class="mt-0 header-title">Child rows
-                                                        example</h4>
-                                    <p class="text-muted mb-3">The DataTables API has a number of methods for attaching
-                                        child rows to a parent row in the DataTable. This can be used to show additional
-                                        information about a row, useful for cases where you wish to convey more
-                                        information about a row than there is space for in the host table.</p>
-                                    <div id="child_rows_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-6">
-                                                <div class="dataTables_length" id="child_rows_length"><label>Show
-                                                    <select name="child_rows_length" aria-controls="child_rows"
-                                                            class="custom-select custom-select-sm form-control form-control-sm">
-                                                        <option value="10">10</option>
-                                                        <option value="25">25</option>
-                                                        <option value="50">50</option>
-                                                        <option value="100">100</option>
-                                                    </select> entries</label></div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-6">
-                                                <div id="child_rows_filter" class="dataTables_filter">
-                                                    <label>Search:<input type="search"
-                                                                         class="form-control form-control-sm"
-                                                                         placeholder=""
-                                                                         aria-controls="child_rows"></label></div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <table id="child_rows"
-                                                       class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
-                                                       style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
-                                                       role="grid" aria-describedby="child_rows_info">
-                                                    <thead>
-                                                    <tr role="row">
-                                                        <th class="details-control sorting_disabled" rowspan="1"
-                                                            colspan="1" style="width: 34px;" aria-label=""></th>
-                                                        <th class="sorting_asc" tabindex="0" aria-controls="child_rows"
-                                                            rowspan="1" colspan="1" style="width: 265px;"
-                                                            aria-sort="ascending"
-                                                            aria-label="Name: activate to sort column descending">Name
-                                                        </th>
-                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
-                                                            rowspan="1" colspan="1" style="width: 403px;"
-                                                            aria-label="Position: activate to sort column ascending">
-                                                            Position
-                                                        </th>
-                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
-                                                            rowspan="1" colspan="1" style="width: 246px;"
-                                                            aria-label="Office: activate to sort column ascending">
-                                                            Office
-                                                        </th>
-                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
-                                                            rowspan="1" colspan="1" style="width: 164px;"
-                                                            aria-label="Salary: activate to sort column ascending">
-                                                            Salary
-                                                        </th>
-                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
-                                                            rowspan="1" colspan="1" style="width: 164px;"
-                                                            aria-label="Salary: activate to sort column ascending">
-                                                            Salary
-                                                        </th>
-                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
-                                                            rowspan="1" colspan="1" style="width: 164px;"
-                                                            aria-label="Salary: activate to sort column ascending">
-                                                            Salary
-                                                        </th>
-                                                        <th class="sorting" tabindex="0" aria-controls="child_rows"
-                                                            rowspan="1" colspan="1" style="width: 164px;"
-                                                            aria-label="Salary: activate to sort column ascending">
-                                                            Salary
-                                                        </th>
 
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr role="row" class="odd">
-                                                        <td class=" details-control" tabindex="0"></td>
-                                                        <td class="sorting_1">Ashton Cox</td>
-                                                        <td>Junior Technical Author</td>
-                                                        <td>San Francisco</td>
-                                                        <td>$86,000</td>
-                                                    </tr>
-                                                    <tr role="row" class="even">
-                                                        <td class=" details-control" tabindex="0"></td>
-                                                        <td class="sorting_1">Garrett Winters</td>
-                                                        <td>Accountant</td>
-                                                        <td>Tokyo</td>
-                                                        <td>$170,750</td>
-                                                    </tr>
-                                                    <tr role="row" class="odd">
-                                                        <td class=" details-control" tabindex="0"></td>
-                                                        <td class="sorting_1">Tiger Nixon</td>
-                                                        <td>System Architect</td>
-                                                        <td>Edinburgh</td>
-                                                        <td>$320,800</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-5">
-                                                <div class="dataTables_info" id="child_rows_info" role="status"
-                                                     aria-live="polite">Showing 1 to 3 of 3 entries
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-7">
-                                                <div class="dataTables_paginate paging_simple_numbers"
-                                                     id="child_rows_paginate">
-                                                    <ul class="pagination">
-                                                        <li class="paginate_button page-item previous disabled"
-                                                            id="child_rows_previous"><a href="#"
-                                                                                        aria-controls="child_rows"
-                                                                                        data-dt-idx="0" tabindex="0"
-                                                                                        class="page-link">Previous</a>
-                                                        </li>
-                                                        <li class="paginate_button page-item active"><a href="#"
-                                                                                                        aria-controls="child_rows"
-                                                                                                        data-dt-idx="1"
-                                                                                                        tabindex="0"
-                                                                                                        class="page-link">1</a>
-                                                        </li>
-                                                        <li class="paginate_button page-item next disabled"
-                                                            id="child_rows_next"><a href="#" aria-controls="child_rows"
-                                                                                    data-dt-idx="2" tabindex="0"
-                                                                                    class="page-link">Next</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end col --></div>
-                                    </p>
-                                </div>
-                                <div class="tab-pane p-3" id="profile" role="tabpanel">
-                                    <p class="mb-0 text-muted">
-                                        Food truck fixie locavore, accusamus mcsweeney's marfa nulla
-                                        single-origin coffee squid.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cumque cupiditate
-                                        deleniti ducimus enim eveniet excepturi expedita facere fugiat, id in incidunt, ipsum laboriosam laudantium mollitia praesentium quibusdam quidem quod.
-                                    </p>
-                                </div>
-                                <div class="tab-pane p-3 active" id="settings" role="tabpanel">
-                                    <p class="text-muted mb-0">
-                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex, facere illo ipsa libero maiores molestias mollitia omnis perspiciatis porro sunt vel,
-                                        vitae? Aliquid aperiam assumenda debitis dolor excepturi facilis harum impedit libero, molestiae natus officia, omnis quidem tempore voluptas!
-                                    </p>
-                                </div>
-                                <div class="tab-pane p-4 active" id="settings01" role="tabpanel">
-                                    <p class="text-muted mb-0">
-                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex, facere illo ipsa libero maiores molestias mollitia omnis perspiciatis porro sunt vel,
-                                        vitae? Aliquid aperiam assumenda debitis dolor excepturi facilis harum impedit libero, molestiae natus officia, omnis quidem tempore voluptas!
-                                    </p>
-                                </div>
-                            </div>
-        </div>
+                                                  <div id="child_rows_wrapper"
+                                                       class="dataTables_wrapper dt-bootstrap4 no-footer">
+
+                                                      <div class="row">
+                                                          <div class="col-sm-12">
+                                                              <table id="child_rows"
+                                                                     class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
+                                                                     style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
+                                                                     role="grid" aria-describedby="child_rows_info">
+                                                                  <thead>
+                                                                  <tr role="row">
+                                                                      <th class="details-control sorting_disabled"
+                                                                          rowspan="1" colspan="1" style="width: 16px;"
+                                                                          aria-label=""></th>
+                                                                      <th class="sorting_asc" tabindex="0"
+                                                                          aria-controls="child_rows" rowspan="1"
+                                                                          colspan="1" style="width: 173px;"
+                                                                          aria-sort="ascending">
+                                                                          Ծածկագիր
+                                                                      </th>
+                                                                      <th class="sorting" tabindex="0"
+                                                                          aria-controls="child_rows" rowspan="1"
+                                                                          colspan="1" style="width: 271px;"
+                                                                          aria-label="Position: activate to sort column ascending">
+                                                                          Կատեգորիա
+                                                                      </th>
+                                                                      <th class="sorting" tabindex="0"
+                                                                          aria-controls="child_rows" rowspan="1"
+                                                                          colspan="1" style="width: 160px;"
+                                                                          aria-label="Office: activate to sort column ascending">
+                                                                          Գնային առաջարկի ժամկետ
+                                                                      </th>
+                                                                      <th class="sorting" tabindex="0"
+                                                                          aria-controls="child_rows" rowspan="1"
+                                                                          colspan="1" style="width: 103px;"
+                                                                          aria-label="Salary: activate to sort column ascending">
+                                                                          Վերջնաժամկետ
+                                                                      </th>
+                                                                      <th class="sorting" tabindex="0"
+                                                                          aria-controls="child_rows" rowspan="1"
+                                                                          colspan="1" style="width: 103px;"
+                                                                          aria-label="Salary: activate to sort column ascending">
+                                                                          Ստատուսը
+                                                                      </th>
+                                                                      <th class="sorting" tabindex="0"
+                                                                          aria-controls="child_rows" rowspan="1"
+                                                                          colspan="1" style="width: 103px;"
+                                                                          aria-label="Salary: activate to sort column ascending">
+                                                                          Մասնակիցներ
+                                                                      </th>
+                                                                  </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                  <tr role="row" class="odd">
+                                                                      <td class=" details-control" tabindex="0"></td>
+                                                                      <td class="sorting_1">Ashton Cox</td>
+                                                                      <td>Junior Technical Author</td>
+                                                                      <td>San Francisco</td>
+                                                                      <td>$86,000</td>
+
+                                                                  </tr>
+                                                                  <tr role="row" class="even">
+                                                                      <td class=" details-control" tabindex="0"></td>
+                                                                      <td class="sorting_1">Garrett Winters</td>
+                                                                      <td>Accountant</td>
+                                                                      <td>Tokyo</td>
+                                                                      <td>$170,750</td>
+
+
+                                                                  </tr>
+                                                                  <tr role="row" class="odd">
+                                                                      <td class=" details-control" tabindex="0"></td>
+                                                                      <td class="sorting_1">Tiger Nixon</td>
+                                                                      <td>System Architect</td>
+                                                                      <td>Edinburgh</td>
+                                                                      <td>$320,800</td>
+
+                                                                  </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                          </div>
+                                                      </div>
+
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div><!-- end col --></div>
+                              </div>
+                              <div class="tab-pane p-3 " id="settings-1" role="tabpanel">
+
+                              </div>
+                              <div class="tab-pane p-3 " id="settings-2" role="tabpanel">
+                                  <p class="text-muted mb-0">
+                                      Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
+                                  </p>
+                              </div>
+                          </div>
+                      </div><!--end card-body-->
+                  </div><!--end card-->
+              </div>
+          </div>
     </div>
 
 
