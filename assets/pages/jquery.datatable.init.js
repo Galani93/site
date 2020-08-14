@@ -1,21 +1,6 @@
-function format(t) {
-    return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
-        '<tr>' +
-        '<td>Full name:</td>' +
-        '<td>' + t.name + "</td>" +
-        "</tr>" +
-        "<tr>" +
-        "<td>Extension number:</td>" +
-        "<td>" + t.extn + "</td>" +
-        "</tr>" +
-        "<tr>" +
-        "<td>Extra info:</td>" +
-        "<td>And any further details here (images etc)...</td>" +
-        "</tr>" +
-        "</table>"
-}
 
 $(document).ready(function () {
+
     $("#datatable").DataTable(), $(document).ready(function () {
         $("#datatable2").DataTable()
     }), $("#datatable-buttons").DataTable({
@@ -25,45 +10,95 @@ $(document).ready(function () {
         createdRow: function (t, a, e) {
             15e4 < 1 * a[5].replace(/[\$,]/g, "") && $("td", t).eq(5).addClass("highlight")
         }
-    })
-}), $(document).ready(function () {
-    var e = $("#child_rows").DataTable({
-        data: testdata.data,
-        select: "single",
-        columns: [{
-            className: "details-control",
-            orderable: !1,
-            data: null,
-            defaultContent: ""
-        }, {data: "name"}, {data: "position"}, {data: "office"}, {data: "salary"}],
-        order: [[1, "asc"]]
     });
-    $("#child_rows tbody").on("click", "td.details-control", function () {
-        var t = $(this).closest("tr"), a = e.row(t);
-        a.child.isShown() ? (a.child.hide(), t.removeClass("shown")) : (a.child(format(a.data())).show(), t.addClass("shown"))
-    })
-});
+
+
+
+
+    var updateTableArr = [
+        "#child_rows1",
+        "#child_rows2",
+        "#child_rows3",
+    ];
+    var updateTable = function ($id) {
+        var e = $($id).DataTable({
+            data: testdata.data,
+            select: "single",
+            columns: [{
+                className: "details-control",
+                orderable: !1,
+                data: null,
+                defaultContent: ""
+            }, {data: "name"}, {data: "position"}, {data: "office"}, {data: "salary"},{data: "extn2"},{data: "extn3"}],
+            order: [[1, "asc"]]
+        });
+        $($id +" tbody").on("click", "td.details-control", function () {
+            var t = $(this).closest("tr"), a = e.row(t);
+            a.child.isShown() ? (a.child.hide(), t.removeClass("shown")) : (a.child(format(a.data())).show(), t.addClass("shown"))
+        });
+    };
+
+    updateTableArr.map(updateTable);
+
+
+
+    function format(t) {
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+            '<tr>' +
+            '<td>Չափաբաժին</td>' +
+            '<td>' + "</td>" +
+            "</tr>" +
+            "<tr>" +
+            "<td>Անվանում</td>" +
+            "<td>" + t.name  + "</td>" +
+            "</tr>" +
+            "<" + "tr>" +
+            "<td>Քանակ</td>" +
+            "<td></td>" +
+            "</tr>" +
+            "<tr>" +
+            "<td>Չափման միավոր</td>" +
+            "<td></td>" +
+            "</tr>" +
+            "<tr>" +
+            "<td>Նախահաշիվ</td>" +
+            "<td></td>" +
+            "</tr>" +
+            "</table>"
+    }
+
+})
+
 var testdata = {
     data: [{
-        name: "Tiger Nixon",
-        position: "System Architect",
-        salary: "$320,800",
-        start_date: "2011/04/25",
-        office: "Edinburgh",
-        extn: "5421"
+        name: "ՋԿ-ՄԱԱՇՁԲ-19/8",
+        position: "կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ",
+        salary: "",
+        start_date: "2019-11-25 18:26:48",
+        office: "2019-11-03 02:24:58",
+        extn: "0",
+        extn2: "Ավարտված",
+        extn3: "0",
     }, {
-        name: "Garrett Winters",
-        position: "Accountant",
-        salary: "$170,750",
-        start_date: "2011/07/25",
-        office: "Tokyo",
-        extn: "8422"
+        name: "ՋԿ-ՄԱԱՇՁԲ-19/6",
+        position: "կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ",
+        salary: "",
+        start_date: "2019-11-25 18:26:48",
+        office: "2019-11-03 02:24:58",
+        extn: "0",
+        extn2: "Չկայացած",
+        extn3: "0",
     }, {
-        name: "Ashton Cox",
-        position: "Junior Technical Author",
-        salary: "$86,000",
-        start_date: "2009/01/12",
-        office: "San Francisco",
-        extn: "1562"
+        name: "ՋԿ-ՄԱԱՇՁԲ-19/4",
+        position: "կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ",
+        salary: "",
+        start_date: "2019-11-25 18:26:48",
+        office: "2019-11-03 02:24:58",
+        extn: "0",
+        extn2: "Ավարտված",
+        extn3: "0",
     }]
 };
+
+
+

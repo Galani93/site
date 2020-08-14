@@ -1,16 +1,24 @@
 function format(t) {
     return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
         '<tr>' +
-        '<td>Full name:</td>' +
+        '<td>Չափաբաժին</td>' +
         '<td>' + t.name + "</td>" +
         "</tr>" +
         "<tr>" +
-        "<td>Extension number:</td>" +
+        "<td>Անվանում</td>" +
         "<td>" + t.extn + "</td>" +
+        "</tr><" +
+        "tr>" +
+        "<td>Քանակ</td>" +
+        "<td>And any further details here (images etc)...</td>" +
         "</tr>" +
         "<tr>" +
-        "<td>Extra info:</td>" +
-        "<td>And any further details here (images etc)...</td>" +
+        "<td>Չափման միավոր</td>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td>Նախահաշիվ</td>" +
+        "<td></td>" +
         "</tr>" +
         "</table>"
 }
@@ -43,6 +51,7 @@ $(document).ready(function () {
         a.child.isShown() ? (a.child.hide(), t.removeClass("shown")) : (a.child(format(a.data())).show(), t.addClass("shown"))
     })
 });
+
 var testdata = {
     data: [{
         name: "Tiger Nixon",
@@ -50,20 +59,26 @@ var testdata = {
         salary: "$320,800",
         start_date: "2011/04/25",
         office: "Edinburgh",
-        extn: "5421"
+        extn: "5421",
+        extn2: "5421",
+        extn3: "5421",
     }, {
         name: "Garrett Winters",
         position: "Accountant",
         salary: "$170,750",
         start_date: "2011/07/25",
         office: "Tokyo",
-        extn: "8422"
+        extn: "5421",
+        extn2: "5421",
+        extn3: "5421",
     }, {
         name: "Ashton Cox",
         position: "Junior Technical Author",
         salary: "$86,000",
         start_date: "2009/01/12",
         office: "San Francisco",
-        extn: "1562"
+        extn: "5421",
+        extn2: "5421",
+        extn3: "5421",
     }]
 };
