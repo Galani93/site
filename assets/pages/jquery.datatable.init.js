@@ -13,6 +13,25 @@ $(document).ready(function () {
             15e4 < 1 * a[5].replace(/[\$,]/g, "") && $("td", t).eq(5).addClass("highlight")
         }
     })
+
+    $("#datatable-buttons01").DataTable({
+        lengthChange: !1,
+        buttons: ["copy", "excel", "pdf", "colvis"]
+    }).buttons().container().appendTo("#datatable-buttons_wrapper01 .col-md-6:eq(0)"), $("#row_callback").DataTable({
+        createdRow: function (t, a, e) {
+            15e4 < 1 * a[5].replace(/[\$,]/g, "") && $("td", t).eq(5).addClass("highlight")
+        }
+    })
+
+
+    $("#datatable-buttons02").DataTable({
+        lengthChange: !1,
+        buttons: ["copy", "excel", "pdf", "colvis"]
+    }).buttons().container().appendTo("#datatable-buttons_wrapper02 .col-md-6:eq(0)"), $("#row_callback").DataTable({
+        createdRow: function (t, a, e) {
+            15e4 < 1 * a[5].replace(/[\$,]/g, "") && $("td", t).eq(5).addClass("highlight")
+        }
+    })
 }), $(document).ready(function () {
     var e = $("#child_rows").DataTable({
         data: testdata.data,
