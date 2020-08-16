@@ -468,41 +468,11 @@
                                       <div class="col-12">
                                           <div class="card">
                                               <div class="card-body">
-                                                  <a href="/admin/user/create" id="but_add"
-                                                     class="btn btn-primary float-right mb-5">Ստեղծել</a>
+
                                                   <div class="table-responsive mb-2">
-                                                      <div id="datatable-buttons_wrapper"
-                                                           class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                                          <div class="dt-buttons btn-group">
-                                                              <button class="btn btn-primary buttons-copy buttons-html5"
-                                                                      tabindex="0" aria-controls="datatable-buttons"
-                                                                      type="button"><span>Copy</span></button>
-                                                              <button class="btn btn-primary buttons-excel buttons-html5"
-                                                                      tabindex="0" aria-controls="datatable-buttons"
-                                                                      type="button"><span>Excel</span></button>
-                                                              <button class="btn btn-primary buttons-pdf buttons-html5"
-                                                                      tabindex="0" aria-controls="datatable-buttons"
-                                                                      type="button"><span>PDF</span></button>
-                                                              <button class="btn btn-primary buttons-collection dropdown-toggle buttons-colvis"
-                                                                      tabindex="0" aria-controls="datatable-buttons"
-                                                                      type="button" aria-haspopup="true"><span>Column visibility</span>
-                                                              </button>
-                                                          </div>
-                                                          <div id="datatable-buttons_filter" class="dataTables_filter">
-                                                              <label>Search:<input type="search"
-                                                                                   class="form-control form-control-sm"
-                                                                                   placeholder=""
-                                                                                   aria-controls="datatable-buttons"></label>
-                                                          </div>
-                                                          <div class="dataTables_length" id="datatable-buttons_length">
-                                                              <label>Show <select name="datatable-buttons_length"
-                                                                                  aria-controls="datatable-buttons"
-                                                                                  class="custom-select custom-select-sm form-control form-control-sm">
-                                                                  <option value="10">10</option>
-                                                                  <option value="50">50</option>
-                                                                  <option value="100">100</option>
-                                                                  <option value="-1">All</option>
-                                                              </select> entries</label></div>
+                                                      <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+
+
                                                           <div id="datatable-buttons_processing"
                                                                class="dataTables_processing card"
                                                                style="display: none;">Processing...
@@ -517,20 +487,20 @@
                                                                       aria-controls="datatable-buttons" rowspan="1"
                                                                       colspan="1" style="width: 195px;"
                                                                       aria-sort="ascending"
-                                                                      aria-label="Անվանում: activate to sort column descending">
-                                                                      Անվանում
+                                                                      aria-label="Ծածկագիր: activate to sort column descending">
+                                                                      Ծածկագիր
                                                                   </th>
                                                                   <th class="sorting" tabindex="0"
                                                                       aria-controls="datatable-buttons" rowspan="1"
                                                                       colspan="1" style="width: 236px;"
-                                                                      aria-label="Էլ-հասցե: activate to sort column ascending">
-                                                                      Էլ-հասցե
+                                                                      aria-label="Կատեգորիա: activate to sort column ascending">
+                                                                      Կատեգորիա
                                                                   </th>
                                                                   <th class="sorting" tabindex="0"
                                                                       aria-controls="datatable-buttons" rowspan="1"
                                                                       colspan="1" style="width: 175px;"
-                                                                      aria-label="Հեռախոս: activate to sort column ascending">
-                                                                      Հեռախոս
+                                                                      aria-label="Գնային առաջարկի ժամկետ: activate to sort column ascending">
+                                                                      Գնային առաջարկի ժամկետ
                                                                   </th>
 
 
@@ -538,24 +508,24 @@
                                                                   <th class="sorting" tabindex="0"
                                                                       aria-controls="datatable-buttons" rowspan="1"
                                                                       colspan="1" style="width: 168px;"
-                                                                      aria-label="Գրանցման ամսաթիվ: activate to sort column ascending">
-                                                                      Գրանցման ամսաթիվ
+                                                                      aria-label="Վերջնաժամկետ: activate to sort column ascending">
+                                                                      Վերջնաժամկետ
                                                                   </th>
                                                                   <th class="sorting" tabindex="0"
                                                                       aria-controls="datatable-buttons" rowspan="1"
                                                                       colspan="1" style="width: 67px;"
-                                                                      aria-label="Բալանս: activate to sort column ascending">
-                                                                      Բալանս
+                                                                      aria-label="  Ստատուսը: activate to sort column ascending">
+                                                                      Ստատուսը
                                                                   </th>
                                                                   <th class="sorting" tabindex="0"
                                                                       aria-controls="datatable-buttons" rowspan="1"
                                                                       colspan="1" style="width: 104px;"
-                                                                      aria-label="Կատեգորիա: activate to sort column ascending">
-                                                                      Կատեգորիա
+                                                                      aria-label="Մասնակիցներ: activate to sort column ascending">
+                                                                      Մասնակիցներ
                                                                   </th>
                                                                   <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                                      style="width: 0px; display: none;"
-                                                                      aria-label="Action">Action
+                                                                      style="width:50px; display: none;"
+                                                                      aria-label="Action">
                                                                   </th>
                                                               </tr>
                                                               </thead>
@@ -568,17 +538,15 @@
 
                                                                   <td></td>
                                                                   <td>0</td>
-                                                                  <td style=""><a href="#85" data-id="85"
-                                                                                  class="btn btn-xs btn-primary viewCategory"><i
-                                                                          class="fa fa-eye"></i></a></td>
-                                                                  <td style="display: none;"><a
-                                                                          href="/admin/user/85/edit"
-                                                                          class="btn btn-xs btn-primary"><i
-                                                                          class="fa fa-edit"></i> Խմբագրել</a> <a
-                                                                          href="#" data-tablename="userTable"
-                                                                          data-href="/admin/user/delete/85"
-                                                                          class="btn btn-xs btn-danger waves-effect waves-light deleteItem"><i
-                                                                          class="fa fa-trash"></i> Ջնջել</a></td>
+                                                                  <td style="">
+                                                                      <a href="#85" data-id="85" class="viewCategory">
+                                                                         0
+                                                                      </a>
+                                                                  </td>
+                                                                  <td style="display: none;">
+                                                                      <a href="/admin/user/85/edit" class="btn btn-xs btn-primary">
+                                                                          <i class="fa fa-eye"></i> Դիտել</a>
+                                                                  </td>
                                                               </tr>
                                                               <tr role="row" class="even">
                                                                   <td class="sorting_1" tabindex="0">Anika Luettgen
@@ -589,17 +557,13 @@
 
                                                                   <td></td>
                                                                   <td>14000</td>
-                                                                  <td style=""><a href="#45" data-id="45"
-                                                                                  class="btn btn-xs btn-primary viewCategory"><i
-                                                                          class="fa fa-eye"></i></a></td>
+                                                                  <td style="">0</td>
                                                                   <td style="display: none;"><a
                                                                           href="/admin/user/45/edit"
                                                                           class="btn btn-xs btn-primary"><i
-                                                                          class="fa fa-edit"></i> Խմբագրել</a> <a
-                                                                          href="#" data-tablename="userTable"
-                                                                          data-href="/admin/user/delete/45"
-                                                                          class="btn btn-xs btn-danger waves-effect waves-light deleteItem"><i
-                                                                          class="fa fa-trash"></i> Ջնջել</a></td>
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
                                                               </tr>
                                                               <tr role="row" class="odd">
                                                                   <td class="sorting_1" tabindex="0">Antwon Barton</td>
@@ -608,17 +572,13 @@
 
                                                                   <td></td>
                                                                   <td>0</td>
-                                                                  <td style=""><a href="#76" data-id="76"
-                                                                                  class="btn btn-xs btn-primary viewCategory"><i
-                                                                          class="fa fa-eye"></i></a></td>
+                                                                  <td style="">0</td>
                                                                   <td style="display: none;"><a
                                                                           href="/admin/user/76/edit"
-                                                                          class="btn btn-xs btn-primary"><i
-                                                                          class="fa fa-edit"></i> Խմբագրել</a> <a
-                                                                          href="#" data-tablename="userTable"
-                                                                          data-href="/admin/user/delete/76"
-                                                                          class="btn btn-xs btn-danger waves-effect waves-light deleteItem"><i
-                                                                          class="fa fa-trash"></i> Ջնջել</a></td>
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
                                                               </tr>
                                                               <tr role="row" class="even">
                                                                   <td class="sorting_1" tabindex="0">Billie Mayer Sr.
@@ -628,17 +588,13 @@
 
                                                                   <td></td>
                                                                   <td>14000</td>
-                                                                  <td style=""><a href="#32" data-id="32"
-                                                                                  class="btn btn-xs btn-primary viewCategory"><i
-                                                                          class="fa fa-eye"></i></a></td>
+                                                                  <td style="">0</td>
                                                                   <td style="display: none;"><a
                                                                           href="/admin/user/32/edit"
-                                                                          class="btn btn-xs btn-primary"><i
-                                                                          class="fa fa-edit"></i> Խմբագրել</a> <a
-                                                                          href="#" data-tablename="userTable"
-                                                                          data-href="/admin/user/delete/32"
-                                                                          class="btn btn-xs btn-danger waves-effect waves-light deleteItem"><i
-                                                                          class="fa fa-trash"></i> Ջնջել</a></td>
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
                                                               </tr>
                                                               <tr role="row" class="odd">
                                                                   <td class="sorting_1" tabindex="0">Bridie Herzog</td>
@@ -647,86 +603,18 @@
 
                                                                   <td></td>
                                                                   <td>0</td>
-                                                                  <td style=""><a href="#64" data-id="64"
-                                                                                  class="btn btn-xs btn-primary viewCategory"><i
-                                                                          class="fa fa-eye"></i></a></td>
+                                                                  <td style="">0</td>
                                                                   <td style="display: none;"><a
                                                                           href="/admin/user/64/edit"
-                                                                          class="btn btn-xs btn-primary"><i
-                                                                          class="fa fa-edit"></i> Խմբագրել</a> <a
-                                                                          href="#" data-tablename="userTable"
-                                                                          data-href="/admin/user/delete/64"
-                                                                          class="btn btn-xs btn-danger waves-effect waves-light deleteItem"><i
-                                                                          class="fa fa-trash"></i> Ջնջել</a></td>
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
                                                               </tr>
 
 
                                                               </tbody>
                                                           </table>
-                                                          <div class="dataTables_info" id="datatable-buttons_info"
-                                                               role="status" aria-live="polite">Showing 1 to 10 of 95
-                                                              entries
-                                                          </div>
-                                                          <div class="dataTables_paginate paging_simple_numbers"
-                                                               id="datatable-buttons_paginate">
-                                                              <ul class="pagination">
-                                                                  <li class="paginate_button page-item previous disabled"
-                                                                      id="datatable-buttons_previous"><a href="#"
-                                                                                                         aria-controls="datatable-buttons"
-                                                                                                         data-dt-idx="0"
-                                                                                                         tabindex="0"
-                                                                                                         class="page-link">Previous</a>
-                                                                  </li>
-                                                                  <li class="paginate_button page-item active"><a
-                                                                          href="#" aria-controls="datatable-buttons"
-                                                                          data-dt-idx="1" tabindex="0"
-                                                                          class="page-link">1</a></li>
-                                                                  <li class="paginate_button page-item "><a href="#"
-                                                                                                            aria-controls="datatable-buttons"
-                                                                                                            data-dt-idx="2"
-                                                                                                            tabindex="0"
-                                                                                                            class="page-link">2</a>
-                                                                  </li>
-                                                                  <li class="paginate_button page-item "><a href="#"
-                                                                                                            aria-controls="datatable-buttons"
-                                                                                                            data-dt-idx="3"
-                                                                                                            tabindex="0"
-                                                                                                            class="page-link">3</a>
-                                                                  </li>
-                                                                  <li class="paginate_button page-item "><a href="#"
-                                                                                                            aria-controls="datatable-buttons"
-                                                                                                            data-dt-idx="4"
-                                                                                                            tabindex="0"
-                                                                                                            class="page-link">4</a>
-                                                                  </li>
-                                                                  <li class="paginate_button page-item "><a href="#"
-                                                                                                            aria-controls="datatable-buttons"
-                                                                                                            data-dt-idx="5"
-                                                                                                            tabindex="0"
-                                                                                                            class="page-link">5</a>
-                                                                  </li>
-                                                                  <li class="paginate_button page-item disabled"
-                                                                      id="datatable-buttons_ellipsis"><a href="#"
-                                                                                                         aria-controls="datatable-buttons"
-                                                                                                         data-dt-idx="6"
-                                                                                                         tabindex="0"
-                                                                                                         class="page-link">…</a>
-                                                                  </li>
-                                                                  <li class="paginate_button page-item "><a href="#"
-                                                                                                            aria-controls="datatable-buttons"
-                                                                                                            data-dt-idx="7"
-                                                                                                            tabindex="0"
-                                                                                                            class="page-link">10</a>
-                                                                  </li>
-                                                                  <li class="paginate_button page-item next"
-                                                                      id="datatable-buttons_next"><a href="#"
-                                                                                                     aria-controls="datatable-buttons"
-                                                                                                     data-dt-idx="8"
-                                                                                                     tabindex="0"
-                                                                                                     class="page-link">Next</a>
-                                                                  </li>
-                                                              </ul>
-                                                          </div>
                                                       </div>
                                                   </div>
 
@@ -737,11 +625,327 @@
                                   </div>
                               </div>
                               <div class="tab-pane p-3 " id="settings-1" role="tabpanel">
+                                  <div class="row">
+                                      <div class="col-12">
+                                          <div class="card">
+                                              <div class="card-body">
 
+                                                  <div class="table-responsive mb-2">
+                                                      <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+
+
+                                                          <div id="datatable-buttons_processing"
+                                                               class="dataTables_processing card"
+                                                               style="display: none;">Processing...
+                                                          </div>
+                                                          <table id="datatable-buttons"
+                                                                 class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline collapsed"
+                                                                 style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
+                                                                 role="grid" aria-describedby="datatable-buttons_info">
+                                                              <thead>
+                                                              <tr role="row">
+                                                                  <th class="sorting_asc" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 195px;"
+                                                                      aria-sort="ascending"
+                                                                      aria-label="Ծածկագիր: activate to sort column descending">
+                                                                      Ծածկագիր
+                                                                  </th>
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 236px;"
+                                                                      aria-label="Կատեգորիա: activate to sort column ascending">
+                                                                      Կատեգորիա
+                                                                  </th>
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 175px;"
+                                                                      aria-label="Գնային առաջարկի ժամկետ: activate to sort column ascending">
+                                                                      Գնային առաջարկի ժամկետ
+                                                                  </th>
+
+
+
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 168px;"
+                                                                      aria-label="Վերջնաժամկետ: activate to sort column ascending">
+                                                                      Վերջնաժամկետ
+                                                                  </th>
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 67px;"
+                                                                      aria-label="  Ստատուսը: activate to sort column ascending">
+                                                                      Ստատուսը
+                                                                  </th>
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 104px;"
+                                                                      aria-label="Մասնակիցներ: activate to sort column ascending">
+                                                                      Մասնակիցներ
+                                                                  </th>
+                                                                  <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                      style="width:50px; display: none;"
+                                                                      aria-label="Action">
+                                                                  </th>
+                                                              </tr>
+                                                              </thead>
+                                                              <tbody>
+
+                                                              <tr role="row" class="odd">
+                                                                  <td class="sorting_1" tabindex="0">Angie Runte</td>
+                                                                  <td>leonard71@nicolas.biz</td>
+                                                                  <td>7408918045777</td>
+
+                                                                  <td></td>
+                                                                  <td>0</td>
+                                                                  <td style="">
+                                                                      <a href="#85" data-id="85" class="viewCategory">
+                                                                          0
+                                                                      </a>
+                                                                  </td>
+                                                                  <td style="display: none;">
+                                                                      <a href="/admin/user/85/edit" class="btn btn-xs btn-primary">
+                                                                          <i class="fa fa-eye"></i> Դիտել</a>
+                                                                  </td>
+                                                              </tr>
+                                                              <tr role="row" class="even">
+                                                                  <td class="sorting_1" tabindex="0">Anika Luettgen
+                                                                      III
+                                                                  </td>
+                                                                  <td>ondricka.daniela@hotmail.com</td>
+                                                                  <td>(665) 697-6351 x968</td>
+
+                                                                  <td></td>
+                                                                  <td>14000</td>
+                                                                  <td style="">0</td>
+                                                                  <td style="display: none;"><a
+                                                                          href="/admin/user/45/edit"
+                                                                          class="btn btn-xs btn-primary"><i
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
+                                                              </tr>
+                                                              <tr role="row" class="odd">
+                                                                  <td class="sorting_1" tabindex="0">Antwon Barton</td>
+                                                                  <td>darrell.swift@yahoo.com</td>
+                                                                  <td>1-854-528-7303 x57098</td>
+
+                                                                  <td></td>
+                                                                  <td>0</td>
+                                                                  <td style="">0</td>
+                                                                  <td style="display: none;"><a
+                                                                          href="/admin/user/76/edit"
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
+                                                              </tr>
+                                                              <tr role="row" class="even">
+                                                                  <td class="sorting_1" tabindex="0">Billie Mayer Sr.
+                                                                  </td>
+                                                                  <td>acole@price.com</td>
+                                                                  <td>608.881.8346 x3857</td>
+
+                                                                  <td></td>
+                                                                  <td>14000</td>
+                                                                  <td style="">0</td>
+                                                                  <td style="display: none;"><a
+                                                                          href="/admin/user/32/edit"
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
+                                                              </tr>
+                                                              <tr role="row" class="odd">
+                                                                  <td class="sorting_1" tabindex="0">Bridie Herzog</td>
+                                                                  <td>fritsch.daren@yahoo.com</td>
+                                                                  <td>659.512.7524</td>
+
+                                                                  <td></td>
+                                                                  <td>0</td>
+                                                                  <td style="">0</td>
+                                                                  <td style="display: none;"><a
+                                                                          href="/admin/user/64/edit"
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
+                                                              </tr>
+
+
+                                                              </tbody>
+                                                          </table>
+                                                      </div>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- end col -->
+                                  </div>
                               </div>
                               <div class="tab-pane p-3 " id="settings-2" role="tabpanel">
 
+                                  <div class="row">
+                                      <div class="col-12">
+                                          <div class="card">
+                                              <div class="card-body">
 
+                                                  <div class="table-responsive mb-2">
+                                                      <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+
+
+                                                          <div id="datatable-buttons_processing"
+                                                               class="dataTables_processing card"
+                                                               style="display: none;">Processing...
+                                                          </div>
+                                                          <table id="datatable-buttons"
+                                                                 class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline collapsed"
+                                                                 style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
+                                                                 role="grid" aria-describedby="datatable-buttons_info">
+                                                              <thead>
+                                                              <tr role="row">
+                                                                  <th class="sorting_asc" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 195px;"
+                                                                      aria-sort="ascending"
+                                                                      aria-label="Ծածկագիր: activate to sort column descending">
+                                                                      Ծածկագիր
+                                                                  </th>
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 236px;"
+                                                                      aria-label="Կատեգորիա: activate to sort column ascending">
+                                                                      Կատեգորիա
+                                                                  </th>
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 175px;"
+                                                                      aria-label="Գնային առաջարկի ժամկետ: activate to sort column ascending">
+                                                                      Գնային առաջարկի ժամկետ
+                                                                  </th>
+
+
+
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 168px;"
+                                                                      aria-label="Վերջնաժամկետ: activate to sort column ascending">
+                                                                      Վերջնաժամկետ
+                                                                  </th>
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 67px;"
+                                                                      aria-label="  Ստատուսը: activate to sort column ascending">
+                                                                      Ստատուսը
+                                                                  </th>
+                                                                  <th class="sorting" tabindex="0"
+                                                                      aria-controls="datatable-buttons" rowspan="1"
+                                                                      colspan="1" style="width: 104px;"
+                                                                      aria-label="Մասնակիցներ: activate to sort column ascending">
+                                                                      Մասնակիցներ
+                                                                  </th>
+                                                                  <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                      style="width:50px; display: none;"
+                                                                      aria-label="Action">
+                                                                  </th>
+                                                              </tr>
+                                                              </thead>
+                                                              <tbody>
+
+                                                              <tr role="row" class="odd">
+                                                                  <td class="sorting_1" tabindex="0">Angie Runte</td>
+                                                                  <td>leonard71@nicolas.biz</td>
+                                                                  <td>7408918045777</td>
+
+                                                                  <td></td>
+                                                                  <td>0</td>
+                                                                  <td style="">
+                                                                      <a href="#85" data-id="85" class="viewCategory">
+                                                                          0
+                                                                      </a>
+                                                                  </td>
+                                                                  <td style="display: none;">
+                                                                      <a href="/admin/user/85/edit" class="btn btn-xs btn-primary">
+                                                                          <i class="fa fa-eye"></i> Դիտել</a>
+                                                                  </td>
+                                                              </tr>
+                                                              <tr role="row" class="even">
+                                                                  <td class="sorting_1" tabindex="0">Anika Luettgen
+                                                                      III
+                                                                  </td>
+                                                                  <td>ondricka.daniela@hotmail.com</td>
+                                                                  <td>(665) 697-6351 x968</td>
+
+                                                                  <td></td>
+                                                                  <td>14000</td>
+                                                                  <td style="">0</td>
+                                                                  <td style="display: none;"><a
+                                                                          href="/admin/user/45/edit"
+                                                                          class="btn btn-xs btn-primary"><i
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
+                                                              </tr>
+                                                              <tr role="row" class="odd">
+                                                                  <td class="sorting_1" tabindex="0">Antwon Barton</td>
+                                                                  <td>darrell.swift@yahoo.com</td>
+                                                                  <td>1-854-528-7303 x57098</td>
+
+                                                                  <td></td>
+                                                                  <td>0</td>
+                                                                  <td style="">0</td>
+                                                                  <td style="display: none;"><a
+                                                                          href="/admin/user/76/edit"
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
+                                                              </tr>
+                                                              <tr role="row" class="even">
+                                                                  <td class="sorting_1" tabindex="0">Billie Mayer Sr.
+                                                                  </td>
+                                                                  <td>acole@price.com</td>
+                                                                  <td>608.881.8346 x3857</td>
+
+                                                                  <td></td>
+                                                                  <td>14000</td>
+                                                                  <td style="">0</td>
+                                                                  <td style="display: none;"><a
+                                                                          href="/admin/user/32/edit"
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
+                                                              </tr>
+                                                              <tr role="row" class="odd">
+                                                                  <td class="sorting_1" tabindex="0">Bridie Herzog</td>
+                                                                  <td>fritsch.daren@yahoo.com</td>
+                                                                  <td>659.512.7524</td>
+
+                                                                  <td></td>
+                                                                  <td>0</td>
+                                                                  <td style="">0</td>
+                                                                  <td style="display: none;"><a
+                                                                          href="/admin/user/64/edit"
+                                                                          class="btn btn-xs btn-primary">
+                                                                      <i class="fa fa-eye"></i> Դիտել</a>
+
+                                                                  </td>
+                                                              </tr>
+
+
+                                                              </tbody>
+                                                          </table>
+                                                      </div>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- end col -->
+                                  </div>
                               </div>
                           </div>
                       </div>

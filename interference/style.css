@@ -236,3 +236,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     content: '-';
     background-color: #d33333;
 }
+.dtr-details{
+    text-align: left;
+}
