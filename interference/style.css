@@ -193,6 +193,16 @@ h4.title-firm{
         flex-direction: column;
     }
 }
+
+@media (max-width: 500px) {
+
+    .card-table .btn-group, .btn-group-vertical{
+      display: none;
+  }
+    .card-table #datatable-buttons_filter{
+        display: none;
+    }
+}
 .btn-gradient-danger .a-plan{
     color: #fff;
     -webkit-box-shadow: 0 7px 14px 0 rgba(239,77,86,0.5);
@@ -253,4 +263,8 @@ div#datatable-buttons01_filter{
 div#datatable-buttons02_filter{
     display: flex;
     justify-content: flex-end;
+}
+
+.card-body.card-table{
+    padding: 16px 5px!important;
 }
