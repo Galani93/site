@@ -198,10 +198,26 @@ h4.title-firm{
 
     .card-table .btn-group, .btn-group-vertical{
       display: none;
-  }
+    }
     .card-table #datatable-buttons_filter{
         display: none;
     }
+    .card-table #datatable-buttons01_filter{
+        display: none;
+    }
+    .card-table  #datatable-buttons02_filter{
+        display: none;
+    }
+
+    .sorting_1 .fa-plus-circle{
+        display: inline!important;
+        color: #303e67;
+        padding: 10px;
+    }
+}
+
+.sorting_1 .fa-plus-circle{
+    display: none;
 }
 .btn-gradient-danger .a-plan{
     color: #fff;
@@ -223,29 +239,30 @@ h4.title-firm{
     overflow-x: hidden;
 }
 
-table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
-    top: 12px;
-    left: 4px;
-    height: 14px;
-    width: 14px;
-    display: block;
-    position: absolute;
-    color: white;
-    border: 2px solid white;
-    border-radius: 14px;
-    box-shadow: 0 0 3px #444;
-    box-sizing: content-box;
-    text-align: center;
-    text-indent: 0 !important;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 14px;
-    content: '+';
-    background-color: #0275d8;
-}
-table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
-    content: '-';
-    background-color: #d33333;
-}
+/*table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {*/
+/*    top: 12px;*/
+/*    left: 4px;*/
+/*    height: 14px;*/
+/*    width: 14px;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    color: white;*/
+/*    border: 2px solid white;*/
+/*    border-radius: 14px;*/
+/*    box-shadow: 0 0 3px #444;*/
+/*    box-sizing: content-box;*/
+/*    text-align: center;*/
+/*    text-indent: 0 !important;*/
+/*    font-family: 'Courier New', Courier, monospace;*/
+/*    line-height: 14px;*/
+/*    content: '+';*/
+/*    background-color: #0275d8;*/
+/*}*/
+/*table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before {*/
+/*    content: '-';*/
+/*    background-color: #d33333;*/
+/*}*/
+
 .dtr-details{
     text-align: left;
 }
