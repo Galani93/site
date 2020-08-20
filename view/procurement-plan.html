@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Պլանավորում</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
+    <meta content="" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <!-- App css -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/metisMenu.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css">
+    <link href="../interference/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+
+
+<div class="leftbar-tab-menu mm-active active">
+    <div class="main-icon-menu in mm-show">
+        <a href="../crm/crm-index.html" class="logo logo-metrica d-block text-center"><span>
+            <img src="../assets/images/logo-sm.png" alt="logo-small" class="logo-sm"></span>
+        </a>
+        <nav class="nav">
+            <a href="#MetricaDashboard" class="nav-link " data-toggle="tooltip-custom" data-placement="right"
+               data-trigger="hover" title="" data-original-title="Գլխավոր">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-monitor align-self-center menu-icon icon-dual">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+            </a>
+            <a href="#MetricaApps" class="nav-link  active" data-toggle="tooltip-custom" data-placement="right"
+               data-trigger="hover" title="" data-original-title="Պլանավորում">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-grid align-self-center menu-icon icon-dual">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+            </a>
+            <!--end MetricaApps-->
+            <a href="#MetricaUikit" class="nav-link" data-toggle="tooltip-custom" data-placement="right"
+               data-trigger="hover" title="" data-original-title="Կազմակերպում">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-package align-self-center menu-icon icon-dual">
+                    <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+            </a>
+            <!--end MetricaUikit-->
+            <a href="#MetricaPages" class="nav-link" data-toggle="tooltip-custom" data-placement="right"
+               data-trigger="hover" title="" data-original-title="Պայմանագրի կառավարում">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-copy align-self-center menu-icon icon-dual">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </a>
+
+            <a href="#MetricaHelp" class="nav-link" data-toggle="tooltip-custom" data-placement="right"
+               data-trigger="hover" title="" data-original-title="Լայվ օգնություն">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-copy align-self-center menu-icon icon-dual">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </a>
+
+        </nav><!--end nav-->
+
+    </div><!--end main-icon-menu-->
+    <div class="main-menu-inner active"><!-- LOGO -->
+        <div class="topbar-left"><a href="../crm/crm-index.html" class="logo"><span><img
+                src="../assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark"> <img
+                src="../assets/images/logo.png" alt="logo-large" class="logo-lg logo-light"></span></a></div>
+        <!--end logo-->
+        <div class="slimScrollDiv mm-active active"
+             style="position: relative; overflow: hidden; width: auto; height: 937px;">
+            <div class="menu-body slimscroll mm-show" style="overflow: hidden; width: auto; height: 937px;">
+                <div id="MetricaDashboard" class="main-icon-menu-pane">
+                    <div class="title-box "><h6 class="menu-title">Գլխավոր</h6></div>
+                    <!--                    <ul class="nav">-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../analytics/analytics-index.html">Analytic</a>-->
+                    <!--                        </li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../crypto/crypto-index.html">Crypto</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../crm/crm-index.html">CRM</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../projects/projects-index.html">Project</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../ecommerce/ecommerce-index.html">Ecommerce</a>-->
+                    <!--                        </li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../helpdesk/helpdesk-index.html">Helpdesk</a>-->
+                    <!--                        </li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../hospital/hospital-index.html">Hospital</a>-->
+                    <!--                        </li>-->
+                    <!--                    </ul>-->
+                </div>
+                <div id="MetricaApps" class="main-icon-menu-pane mm-active active">
+                    <div class="title-box  "><h6 class="menu-title">Պլանավորում</h6></div>
+                    <ul class="nav metismenu in mm-show">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="procurement-plan.html"><span class="w-100"> Գնումների Պլան</span></a>
+                            <!--                            <ul class="nav-second-level mm-collapse" aria-expanded="false">-->
+                            <!--                                <li><a href="../apps/email-inbox.html"></a></li>-->
+                            <!--                                <li><a href="../apps/email-read.html"></a></li>-->
+                            <!--                            </ul>-->
+                        </li><!--end nav-item-->
+                        <li class="nav-item"><a class="nav-link" href="responsible-unit.html">Պատասխանատու
+                            ստորաբաժանում</a></li>
+                        <!--                        <li class="nav-item active"><a class="nav-link active" href="../apps/contact-list.html">Contact List</a></li>-->
+                        <!--                        <li class="nav-item"><a class="nav-link" href="../apps/calendar.html">Calendar</a></li>-->
+                        <!--                        <li class="nav-item"><a class="nav-link" href="../apps/invoice.html">Invoice</a></li>-->
+                    </ul>
+                </div>
+                <div id="MetricaUikit" class="main-icon-menu-pane ">
+                    <div class="title-box active">
+                        <h6 class="menu-title">Կազմակերպում</h6>
+                    </div>
+                    <ul class="nav metismenu">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><span class="w-100">Պետական մեկ անձ</span>
+                                <span class="menu-arrow"><i class="dripicons-chevron-down"></i></span>
+                            </a>
+                            <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                <li><a href="purchasing-processes.html"> Ընթացիկ գնման գործընթացներ</a></li>
+                                <li><a href="#">Կազմակերպել գնման գործընթաց</a></li>
+                            </ul>
+                        </li><!--end nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="w-100">Մրցակցային</span>
+                                <span class="menu-arrow"><i class="dripicons-chevron-down"></i></span>
+                            </a>
+                            <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                <li><a href="#">Ընթացիկ գնման գործընթացներ</a></li>
+                                <li><a href="#">Կազմակերպել գնման գործընթաց</a></li>
+                            </ul>
+                        </li>
+                        <!--                        <li class="nav-item"><a class="nav-link" href="#"><span class="w-100">Forms</span><span-->
+                        <!--                                class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>-->
+                        <!--                            <ul class="nav-second-level mm-collapse" aria-expanded="false">-->
+                        <!--                                <li><a href="../others/forms-elements.html">Basic Elements</a></li>-->
+                        <!--                                <li><a href="../others/forms-advanced.html">Advance Elements</a></li>-->
+                        <!--                                <li><a href="../others/forms-validation.html">Validation</a></li>-->
+                        <!--                                <li><a href="../others/forms-wizard.html">Wizard</a></li>-->
+                        <!--                                <li><a href="../others/forms-editors.html">Editors</a></li>-->
+                        <!--                                <li><a href="../others/forms-repeater.html">Repeater</a></li>-->
+                        <!--                                <li><a href="../others/forms-x-editable.html">X Editable</a></li>-->
+                        <!--                                <li><a href="../others/forms-uploads.html">File Upload</a></li>-->
+                        <!--                                <li><a href="../others/forms-img-crop.html">Image Crop</a></li>-->
+                        <!--                            </ul>-->
+                        <!--                        </li>-->
+                        <!--                        <li class="nav-item"><a class="nav-link" href="#"><span class="w-100">Charts</span><span-->
+                        <!--                                class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>-->
+                        <!--                            <ul class="nav-second-level mm-collapse" aria-expanded="false">-->
+                        <!--                                <li><a href="../others/charts-apex.html">Apex</a></li>-->
+                        <!--                                <li><a href="../others/charts-morris.html">Morris</a></li>-->
+                        <!--                                <li><a href="../others/charts-chartist.html">Chartist</a></li>-->
+                        <!--                                <li><a href="../others/charts-flot.html">Flot</a></li>-->
+                        <!--                                <li><a href="../others/charts-peity.html">Peity</a></li>-->
+                        <!--                                <li><a href="../others/charts-chartjs.html">Chartjs</a></li>-->
+                        <!--                                <li><a href="../others/charts-sparkline.html">Sparkline</a></li>-->
+                        <!--                                <li><a href="../others/charts-knob.html">Jquery Knob</a></li>-->
+                        <!--                                <li><a href="../others/charts-justgage.html">JustGage</a></li>-->
+                        <!--                            </ul>-->
+                        <!--                        </li>-->
+                        <!--                        <li class="nav-item"><a class="nav-link" href="#"><span class="w-100">Tables</span><span-->
+                        <!--                                class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>-->
+                        <!--                            <ul class="nav-second-level mm-collapse" aria-expanded="false">-->
+                        <!--                                <li><a href="../others/tables-basic.html">Basic</a></li>-->
+                        <!--                                <li><a href="../others/tables-datatable.html">Datatables</a></li>-->
+                        <!--                                <li><a href="../others/tables-responsive.html">Responsive</a></li>-->
+                        <!--                                <li><a href="../others/tables-footable.html">Footable</a></li>-->
+                        <!--                                <li><a href="../others/tables-jsgrid.html">Jsgrid</a></li>-->
+                        <!--                                <li><a href="../others/tables-dragger.html">Dragger</a></li>-->
+                        <!--                                <li><a href="../others/tables-editable.html">Editable</a></li>-->
+                        <!--                            </ul>-->
+                        <!--                        </li>-->
+                        <!--                        <li class="nav-item"><a class="nav-link" href="#"><span class="w-100">Icons</span><span-->
+                        <!--                                class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>-->
+                        <!--                            <ul class="nav-second-level mm-collapse" aria-expanded="false">-->
+                        <!--                                <li><a href="../others/icons-materialdesign.html">Material Design</a></li>-->
+                        <!--                                <li><a href="../others/icons-dripicons.html">Dripicons</a></li>-->
+                        <!--                                <li><a href="../others/icons-fontawesome.html">Font awesome</a></li>-->
+                        <!--                                <li><a href="../others/icons-themify.html">Themify</a></li>-->
+                        <!--                                <li><a href="../others/icons-feather.html">Feather</a></li>-->
+                        <!--                                <li><a href="../others/icons-typicons.html">Typicons</a></li>-->
+                        <!--                                <li><a href="../others/icons-emoji.html">Emoji <i class="em em-ok_hand"></i></a></li>-->
+                        <!--                            </ul>-->
+                        <!--                        </li>-->
+                        <!--                        <li class="nav-item"><a class="nav-link" href="#"><span class="w-100">Maps</span><span-->
+                        <!--                                class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>-->
+                        <!--                            <ul class="nav-second-level mm-collapse" aria-expanded="false">-->
+                        <!--                                <li><a href="../others/maps-google.html">Google Maps</a></li>-->
+                        <!--                                <li><a href="../others/maps-leaflet.html">Leaflet Maps</a></li>-->
+                        <!--                                <li><a href="../others/maps-vector.html">Vector Maps</a></li>-->
+                        <!--                            </ul>-->
+                        <!--                        </li>-->
+                        <!--                        <li class="nav-item"><a class="nav-link" href="#"><span-->
+                        <!--                                class="w-100">Email Templates</span><span class="menu-arrow"><i-->
+                        <!--                                class="mdi mdi-chevron-right"></i></span></a>-->
+                        <!--                            <ul class="nav-second-level mm-collapse" aria-expanded="false">-->
+                        <!--                                <li><a href="../others/email-templates-basic.html">Basic Action Email</a></li>-->
+                        <!--                                <li><a href="../others/email-templates-alert.html">Alert Email</a></li>-->
+                        <!--                                <li><a href="../others/email-templates-billing.html">Billing Email</a></li>-->
+                        <!--                            </ul>-->
+                        <!--                        </li>-->
+                        <!--                        -->
+
+                    </ul>
+
+                </div>
+                <div id="MetricaPages" class="main-icon-menu-pane">
+                    <div class="title-box"><h6 class="menu-title">Պայմանագրի կառավարում</h6></div>
+                    <!--                    <ul class="nav">-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-profile.html">Profile</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-tour.html">Tour</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-timeline.html">Timeline</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-treeview.html">Treeview</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-starter.html">Starter Page</a>-->
+                    <!--                        </li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-pricing.html">Pricing</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-blogs.html">Blogs</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-faq.html">FAQs</a></li>-->
+                    <!--                        <li class="nav-item"><a class="nav-link" href="../pages/pages-gallery.html">Gallery</a></li>-->
+                    <!--                    </ul>-->
+                </div>
+                <div id="MetricaHelp" class="main-icon-menu-pane">
+                    <div class="title-box"><h6 class="menu-title">Լայվ օգնություն</h6></div>
+                </div>
+            </div>
+            <div class="slimScrollBar"
+                 style="background: rgba(162, 177, 208, 0.13); width: 7px; position: absolute; top: 0px; opacity: 1; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 869px;"></div>
+            <div class="slimScrollRail"
+                 style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+        </div><!--end menu-body--></div><!-- end main-menu-inner--></div>
+
+
+<div class="topbar"><!-- Navbar -->
+    <nav class="navbar-custom">
+        <ul class="list-unstyled topbar-nav float-right mb-0">
+            <li class="hidden-sm"><a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown"
+                                     href="javascript: void(0);" role="button" aria-haspopup="false"
+                                     aria-expanded="false">English <img src="../assets/images/flags/us_flag.jpg"
+                                                                        class="ml-2" height="16" alt="">
+                <i class="dripicons-chevron-down"></i></a>
+                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                                                  href="javascript: void(0);"><span>German </span><img
+                        src="../assets/images/flags/germany_flag.jpg" alt="" class="ml-2 float-right" height="14"></a><a
+                        class="dropdown-item" href="javascript: void(0);"><span>Italian </span><img
+                        src="../assets/images/flags/italy_flag.jpg" alt="" class="ml-2 float-right" height="14"></a><a
+                        class="dropdown-item" href="javascript: void(0);"><span>French </span><img
+                        src="../assets/images/flags/french_flag.jpg" alt="" class="ml-2 float-right" height="14"></a><a
+                        class="dropdown-item" href="javascript: void(0);"><span>Spanish </span><img
+                        src="../assets/images/flags/spain_flag.jpg" alt="" class="ml-2 float-right" height="14"></a><a
+                        class="dropdown-item" href="javascript: void(0);"><span>Russian </span><img
+                        src="../assets/images/flags/russia_flag.jpg" alt="" class="ml-2 float-right" height="14"></a>
+                </div>
+            </li>
+            <li class="dropdown notification-list">
+                <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#"
+                   role="button" aria-haspopup="false" aria-expanded="false">
+                    <i class="dripicons-bell"></i> <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-lg pt-0"><h6
+                        class="dropdown-item-text font-15 m-0 py-3 bg-primary text-white d-flex justify-content-between align-items-center">
+                    Ծանուցումներ <span class="badge badge-light badge-pill">2</span></h6>
+                    <div class="slimScrollDiv"
+                         style="position: relative; overflow: hidden; width: auto; height: 937px;">
+                        <div class="slimscroll notification-list" style="overflow: hidden; width: auto; height: 937px;">
+                            <!-- item--> <a href="#" class="dropdown-item py-3"><small
+                                class="float-right text-muted pl-2">2 min ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-primary"><i class="la la-cart-arrow-down text-white"></i></div>
+                                <div class="media-body align-self-center ml-2 text-truncate"><h6
+                                        class="my-0 font-weight-normal text-dark">Your order is placed</h6><small
+                                        class="text-muted mb-0">Dummy text of the printing and industry.</small></div>
+                                <!--end media-body--></div><!--end media--> </a><!--end-item--><!-- item--> <a href="#"
+                                                                                                               class="dropdown-item py-3"><small
+                                class="float-right text-muted pl-2">10 min ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-success"><i class="la la-group text-white"></i></div>
+                                <div class="media-body align-self-center ml-2 text-truncate"><h6
+                                        class="my-0 font-weight-normal text-dark">Meeting with designers</h6><small
+                                        class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                </div><!--end media-body--></div><!--end media--> </a><!--end-item--><!-- item--> <a
+                                href="#" class="dropdown-item py-3"><small class="float-right text-muted pl-2">40 min
+                            ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-pink"><i class="la la-list-alt text-white"></i></div>
+                                <div class="media-body align-self-center ml-2 text-truncate"><h6
+                                        class="my-0 font-weight-normal text-dark">UX 3 Task complete.</h6><small
+                                        class="text-muted mb-0">Dummy text of the printing.</small></div>
+                                <!--end media-body--></div><!--end media--> </a><!--end-item--><!-- item--> <a href="#"
+                                                                                                               class="dropdown-item py-3"><small
+                                class="float-right text-muted pl-2">1 hr ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-warning"><i class="la la-truck text-white"></i></div>
+                                <div class="media-body align-self-center ml-2 text-truncate"><h6
+                                        class="my-0 font-weight-normal text-dark">Your order is placed</h6><small
+                                        class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                </div><!--end media-body--></div><!--end media--> </a><!--end-item--><!-- item--> <a
+                                href="#" class="dropdown-item py-3"><small class="float-right text-muted pl-2">2 hrs
+                            ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-info"><i class="la la-check-circle text-white"></i></div>
+                                <div class="media-body align-self-center ml-2 text-truncate"><h6
+                                        class="my-0 font-weight-normal text-dark">Payment Successfull</h6><small
+                                        class="text-muted mb-0">Dummy text of the printing.</small></div>
+                                <!--end media-body--></div><!--end media--> </a><!--end-item--></div>
+                        <div class="slimScrollBar"
+                             style="background: rgba(162, 177, 208, 0.13); width: 7px; position: absolute; top: 0px; opacity: 1; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div>
+                        <div class="slimScrollRail"
+                             style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+                    </div><!-- All--> <a href="javascript:void(0);" class="dropdown-item text-center text-primary">View
+                        all <i class="fi-arrow-right"></i></a></div>
+            </li>
+            <li class="dropdown"><a class="nav-link dropdown-toggle waves-effect waves-light nav-user"
+                                    data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                    aria-expanded="false"><img src="../assets/images/users/user-4.jpg"
+                                                               alt="profile-user" class="rounded-circle"> <span
+                    class="ml-1 nav-user-name hidden-sm">Amelia <i class="dripicons-chevron-down"></i></span></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="state-user.html"><i class="dripicons-user text-muted mr-2"></i>
+                        Profile</a>
+                    <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
+                    <a class="dropdown-item" id="settings_detail_tab" href="#settings_detail" data-toggle="pill"><i
+                            class="dripicons-gear text-muted mr-2"></i> Անձնական տվյալներ</a>
+                    <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a></div>
+            </li>
+            <li class="mr-2"><a href="#" class="nav-link" data-toggle="modal" data-animation="fade"
+                                data-target=".modal-rightbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-align-right align-self-center">
+                    <line x1="21" y1="10" x2="7" y2="10"></line>
+                    <line x1="21" y1="6" x2="3" y2="6"></line>
+                    <line x1="21" y1="14" x2="3" y2="14"></line>
+                    <line x1="21" y1="18" x2="7" y2="18"></line>
+                </svg>
+            </a></li>
+        </ul><!--end topbar-nav-->
+        <ul class="list-unstyled topbar-nav mb-0">
+            <li><a href="../analytics/analytics-index.html"><span class="responsive-logo"><img
+                    src="../assets/images/logo-sm.png" alt="logo-small" class="logo-sm align-self-center"
+                    height="34"></span></a></li>
+            <li>
+                <button class="button-menu-mobile nav-link waves-effect waves-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-menu align-self-center">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </li>
+            <li class="dropdown"><a class="nav-link dropdown-toggle waves-effect waves-light nav-user"
+                                    data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                    aria-expanded="false"><span
+                    class="ml-1 p-2 bg-soft-classic nav-user-name hidden-sm rounded">System <i
+                    class="dripicons-chevron-down"></i></span></a>
+                <div class="dropdown-menu dropdown-xl dropdown-menu-left p-0">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-6">
+                            <div class="text-center system-text"><h4 class="text-white">The Poworfull Dashboard</h4>
+                                <p class="text-white">See all the pages Metrica.</p><a
+                                        href="https://mannatthemes.com/metrica/" class="btn btn-sm btn-pink mt-2">See
+                                    Dashboard</a></div>
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="../assets/images/dashboard/dash-1.png"
+                                                                           class="d-block img-fluid" alt="..."></div>
+                                    <div class="carousel-item"><img src="../assets/images/dashboard/dash-4.png"
+                                                                    class="d-block img-fluid" alt="..."></div>
+                                    <div class="carousel-item"><img src="../assets/images/dashboard/dash-2.png"
+                                                                    class="d-block img-fluid" alt="..."></div>
+                                    <div class="carousel-item"><img src="../assets/images/dashboard/dash-3.png"
+                                                                    class="d-block img-fluid" alt="..."></div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-12 col-lg-6">
+                            <div class="divider-custom mb-0">
+                                <div class="divider-text bg-light">All Dashboard</div>
+                                <div class="p-4">
+                                    <div class="row">
+                                        <div class="col-6"><a class="dropdown-item mb-2"
+                                                              href="../analytics/analytics-index.html">Analytics</a> <a
+                                                class="dropdown-item mb-2" href="../crypto/crypto-index.html">Crypto</a>
+                                            <a class="dropdown-item mb-2" href="../crm/crm-index.html">CRM</a> <a
+                                                    class="dropdown-item"
+                                                    href="../projects/projects-index.html">Project</a></div>
+                                        <div class="col-6"><a class="dropdown-item mb-2"
+                                                              href="../ecommerce/ecommerce-index.html">Ecommerce</a> <a
+                                                class="dropdown-item mb-2" href="../helpdesk/helpdesk-index.html">Helpdesk</a>
+                                            <a class="dropdown-item" href="../hospital/hospital-index.html">Hospital</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--end col--></div><!--end row--></div>
+                </div>
+            </li>
+            <li class="hide-phone app-search">
+                <form role="search" class=""><input type="text" id="AllCompo" placeholder="Search..."
+                                                    class="form-control ui-autocomplete-input" autocomplete="off"> <a
+                        href=""><i class="fas fa-search"></i></a></form>
+            </li>
+        </ul>
+    </nav><!-- end navbar--></div>
+
+
+<div class="page-wrapper">
+
+    <div class="page-content-tab">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title-box">
+                    <div class="float-right">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active"> Գնումների Պլան</li>
+                            <li class="breadcrumb-item">Պատասխանատու ստորաբաժանում</li>
+                        </ol>
+                    </div>
+                    <h4 class="page-title">Գնումների Պլան</h4>
+                </div><!--end page-title-box-->
+            </div><!--end col-->
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="mt-0 mb-2 header-title">Անվանումը</h4>
+                </div> <!-- end col -->
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills nav-justified" role="tablist">
+                                <!--                              <li class="nav-item waves-effect waves-light">-->
+                                <!--                                  <a class="nav-link active" data-toggle="tab" href="#home-1" role="tab" aria-selected="false">Անվանումը</a>-->
+                                <!--                              </li>-->
+                                <li class="nav-item waves-effect waves-light">
+                                    <a class="nav-link" data-toggle="tab" href="#profile-1" role="tab"
+                                       aria-selected="false">Ապրանք</a>
+                                </li>
+                                <li class="nav-item waves-effect waves-light">
+                                    <a class="nav-link" data-toggle="tab" href="#settings-1" role="tab"
+                                       aria-selected="false">Ծառայություն</a>
+                                </li>
+                                <li class="nav-item waves-effect waves-light">
+                                    <a class="nav-link" data-toggle="tab" href="#settings-2" role="tab"
+                                       aria-selected="false">Աշխատանք</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+
+                                <div class="tab-pane p-3" id="profile-1" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div id=""
+                                                 class="jstree jstree-1 jstree-default jstree-checkbox-no-clicked jstree-checkbox-selection"
+                                                 role="tree" aria-multiselectable="true" tabindex="0"
+                                                 aria-activedescendant="1" aria-busy="false">
+                                                <ul class="jstree-container-ul jstree-children" role="group">
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="1_anchor" aria-expanded="false" id="1"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="1_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                             role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#14000000 հանքարդյունաբերությանը
+                                                        վերաբերող արտադրանք, հիմնական մետաղներ և հարակից արտադրանք</a>
+                                                    </li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="150_anchor" aria-expanded="false" id="150"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="150_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                               role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#15000000 սննդամթերք, ըմպելիք,
+                                                        ծխախոտ և հարակից արտադրանք</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="509_anchor" aria-expanded="false" id="509"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="509_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                               role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#16000000 գյուղատնտեսական
+                                                        սարքավորումներ</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="574_anchor" aria-expanded="false" id="574"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="574_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                               role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#18000000 հագուստ, կոշկեղեն,
+                                                        ուղեբեռի հետ կապված առարկաներ և պարագաներ</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="799_anchor" aria-expanded="false" id="799"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="799_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                               role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#19000000 կաշի և կտորներ, պլաստմասսե
+                                                        և կաուչուկից առարկաներ</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="912_anchor" aria-expanded="false" id="912"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="912_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                               role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#22000000 տպագիր նյութեր և հարակից
+                                                        արտադրանք</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="1056_anchor" aria-expanded="false" id="1056"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="1056_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#24000000 քիմիական արտադրանք</a>
+                                                    </li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="1380_anchor" aria-expanded="false" id="1380"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="1380_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#25000000 սնանկության գործերով
+                                                        կառավարիչներից ձեռքբերվող ապրանքներ</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="1384_anchor" aria-expanded="false" id="1384"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="1384_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#30000000 գրասենյակային և
+                                                        համակարգչային մեքենաներ, սարքավորումներ և նյութեր` բացառությամբ
+                                                        կահույքի և ծրագրային ապահովման</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="1845_anchor" aria-expanded="false" id="1845"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="1845_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#31000000 էլեկտրական մեքենաներ,
+                                                        սարքավորումներ, սարքեր և սպառման առարկաներ; լուսավորություն</a>
+                                                    </li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="2358_anchor" aria-expanded="false" id="2358"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="2358_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#32000000 ռադիո, հեռուստացուցային,
+                                                        հաղորդակցության, հեռահաղորդակցության և հարակից սարքեր</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="2584_anchor" aria-expanded="false" id="2584"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="2584_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#33000000 բժշկական սարքեր, դեղեր և
+                                                        անձնական հիգիենայի պարագաներ</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="3812_anchor" aria-expanded="false" id="3812"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="3812_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#34000000 տրանսպորտային սարքեր և
+                                                        օժանդակ տրանսպորտային ապրանքներ</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="4244_anchor" aria-expanded="false" id="4244"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="4244_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#35000000 անվտանգության,
+                                                        հակահրդեհային, ոստիկանական և պաշտպանական սարքեր</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="4482_anchor" aria-expanded="false" id="4482"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="4482_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#37000000 երաժշտական գործիքներ,
+                                                        սպորտային ապրանքներ, խաղեր, խաղալիքներ, ձեռքի աշխատանքներ,
+                                                        կերպարվեստի նյութեր և պարագաներ</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="4843_anchor" aria-expanded="false" id="4843"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="4843_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#38000000 լաբորատորիայի, օպտիկական և
+                                                        ճշգրիտ սարքեր (բացառությամբ` ապակյա իրերի)</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="5177_anchor" aria-expanded="false" id="5177"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="5177_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#39000000 կահույք (ներառյալ`
+                                                        գրասենյակային կահույքը), կահավորանք, կենցաղային տեխնիկա
+                                                        (բացառությամբ` լուսավորության) և մաքրման համար նախատեսված
+                                                        արտադրանք</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="5693_anchor" aria-expanded="false" id="5693"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="5693_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#41000000 հավաքած և զտված ջուր</a>
+                                                    </li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="5699_anchor" aria-expanded="false" id="5699"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="5699_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#42000000 արդյունաբերական
+                                                        սարքավորումներ</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="6222_anchor" aria-expanded="false" id="6222"
+                                                        class="jstree-node  jstree-closed"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="6222_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#43000000 հանքարդյունաբերության,
+                                                        քարի արդյունահանման, շինարարական սարքեր</a></li>
+                                                    <li role="treeitem" aria-selected="false" aria-level="1"
+                                                        aria-labelledby="6359_anchor" aria-expanded="false" id="6359"
+                                                        class="jstree-node  jstree-closed jstree-last"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1"
+                                                            id="6359_anchor"><i class="jstree-icon jstree-checkbox"
+                                                                                role="presentation"></i><i
+                                                            class="jstree-icon jstree-themeicon"
+                                                            role="presentation"></i>#44000000 շինարարական կառույցներ և
+                                                        նյութեր; շինարարության օժանդակ արտադրանք
+                                                        (բացառությամբ`էլեկտրական սարքավորումների)</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane p-3 " id="settings-1" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="tree" id="tree">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end col -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane p-3 " id="settings-2" role="tabpanel">
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                                <div
+                                                     class="jstree jstree-1 jstree-default jstree-checkbox-no-clicked jstree-checkbox-selection"
+                                                     role="tree" aria-multiselectable="true" tabindex="0"
+                                                     aria-activedescendant="6959" aria-busy="false">
+                                                    <ul class="jstree-container-ul jstree-children" role="group">
+                                                        <li role="treeitem" aria-selected="false" aria-level="1"
+                                                            aria-labelledby="6959_anchor" aria-expanded="false"
+                                                            id="6959" class="jstree-node  jstree-closed jstree-last"><i
+                                                                class="jstree-icon jstree-ocl"
+                                                                role="presentation"></i><a class="jstree-anchor"
+                                                                                           href="#" tabindex="-1"
+                                                                                           id="6959_anchor"><i
+                                                                class="jstree-icon jstree-checkbox"
+                                                                role="presentation"></i><i
+                                                                class="jstree-icon jstree-themeicon"
+                                                                role="presentation"></i>#45000000 շինարարական
+                                                            աշխատանքներ</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        <!-- end col -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer text-center text-sm-left">&copy; 2019 - 2020 Metrica
+            <span class="text-muted d-none d-sm-inline-block float-right">Crafted with
+            <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+        </footer>
+
+
+    </div>
+
+</div>
+    <!-- jQuery  -->
+    <!-- end page-wrapper --><!-- jQuery  -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../Metrika-Master/itenderHtml-master/plugins/treeview/jstree.min.js"></script>
+
+
+
+    <script src="../assets/pages/jquery.treeview.init.js"></script>
+    <script src="../assets/js/metismenu.min.js"></script>
+    <script src="../assets/js/waves.js"></script>
+    <script src="../assets/js/feather.min.js"></script>
+    <script src="../assets/js/jquery.slimscroll.min.js"></script>
+    <script src="../plugins/apexcharts/apexcharts.min.js"></script><!-- Required datatable js -->
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script><!-- Buttons examples -->
+    <script src="../plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="../plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables/jszip.min.js"></script>
+    <script src="../plugins/datatables/pdfmake.min.js"></script>
+    <script src="../plugins/datatables/vfs_fonts.js"></script>
+    <script src="../plugins/datatables/buttons.html5.min.js"></script>
+    <script src="../plugins/datatables/buttons.print.min.js"></script>
+    <script src="../plugins/datatables/buttons.colVis.min.js"></script><!-- Responsive examples -->
+    <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="../assets/pages/jquery.datatable.init.js"></script><!-- App js -->
+    <script src="../assets/js/app.js"></script>
+
+<script>
+
+    $(function () {
+        "use strict";
+        $("#jstree").jstree(), $("#jstree-checkbox").jstree({
+            checkbox: {keep_selected_style: !1},
+            plugins: ["checkbox"]
+        })
+    });
+</script>
+
+
+<script>
+
+
+    $(".main-icon-menu-pane").removeClass("active");
+    $(".parentMenu").removeClass("active");
+    $(".subMenuItem").children(".active").parents(".main-icon-menu-pane").addClass("active");
+    $(".parentMenu[href='#"+$(".subMenu").children(".active").attr("id")+"']").addClass("active");
+
+
+
+    $(document).on("click", ".warningLink",function (event) {
+        event.preventDefault();
+        text   = $(this).data("text");
+        footer = $(this).data("footer");
+        Swal.fire({ icon: "warning", title: "Oops...", text: text, footer: footer });
+    });
+    $(document).on("click", ".deleteItem",function (event) {
+        event.preventDefault();
+        href = $(this).data("href");
+        remove = $(this).data("remove");
+        this_ = $(this);
+        Swal.fire({
+            title: "Համոզված ես?",
+            text: "Դուք չեք կարողանա վերադարձնել դա!",
+            type: "warning",
+            showCancelButton: !0,
+            confirmButtonColor: "$success",
+            cancelButtonColor: "$danger",
+            confirmButtonText: "Այո!",
+            cancelButtonText: "Չեղարկել!",
+        }).then(function (t) {
+            if(t.value){
+                $.ajax({
+                    type: "GET",
+                    url: href,
+                    dataType: "json",
+                    success: function (data) {
+                        if(data.status){
+                            this_.parents("tr").remove();
+                            if (remove != null){
+                                this_.parents(remove).remove();
+                            }
+                            t.value && Swal.fire("ՋՆՋՎԱԾ Է!", "Հաջողությամբ ջնջվել է.", "success");
+                        }else{
+                            Swal.fire({ icon: "error", title: "Oops...", text: "Ինչ որ բան այնպես չգնաց!", footer: "" });
+                        }
+                    },
+                    error:function(){
+                        Swal.fire({ icon: "error", title: "Oops...", text: "Ինչ որ բան այնպես չգնաց!", footer: "" });
+                    }
+                });
+            }
+        });
+        return false;
+
+    });
+
+</script>
+
+<script src="../plugins/treeview/jstree.min.js"></script>
+
+<script src="../plugins/dropify/js/dropify.min.js"></script>
+<script src="../assets/pages/jquery.form-upload.init.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.1/tinymce.min.js"></script>
+
+<script src="http://159.203.181.199/assets/back/assets/pages/jquery.form-editor.init.js?12ewqdsdcv"></script>
+
+
+<script>
+    $("#youtube_link").on("change", function () {
+        $("#iframeYoutube").attr("src",$(this).val());
+    });
+
+    $(".dataTime").bootstrapMaterialDatePicker({format:"YYYY-MM-DD HH:mm:ss"});
+
+
+    $('#tree').jstree({
+        "plugins" : [ "search" ,"checkbox"],
+        "checkbox" : { "three_state": false, "keep_selected_style" : false },
+        'core' : {
+            data : function (node, cb) {
+                $.ajax({ url : "/admin/cpv/tree/json/1","dataType" : "json" }).done(function (data) {
+                    x = [];
+                    children = [];
+
+                    $.each( data, function( i, val ) {
+                        children = getJson(val.children);
+                        x[i] = { "id" : val.id, "text" : "#"+val.code+" "+val.name, "children":children };
+                    })
+                    cb(x);
+                });
+            }
+        }
+    });
+
+
+    $(".append").on('click',function(event) {
+        checked  = $("#tree").jstree("get_checked",true);
+
+        for (let index = 0; index < checked.length; index++) {
+            $("#cpvSelect").append("<option selected value='"+checked[index].id+"'>"+checked[index].text+"</option>");
+        }
+
+    })
+
+
+    $(".cpvCat").on('click',function(event) {
+        event.preventDefault();
+        /* Act on the event */
+
+        type = $(this).data("type");
+        $("#cpvCatText").text($(this).text());
+
+        $('#tree').jstree(true).settings.core.data = function (node, cb) {
+            $.ajax({ url : "/admin/cpv/tree/json/"+type,"dataType" : "json" }).done(function (data) {
+                x = [];
+                children = [];
+
+                $.each( data, function( i, val ) {
+                    children = getJson(val.children);
+                    x[i] = { "id" : val.id, "text" : "#"+val.code+" "+val.name, "children":children };
+                })
+                cb(x);
+            });
+        };
+        $('#tree').jstree(true).refresh();
+
+    });
+
+
+    function submitMe(){
+        $("#tree").jstree("get_checked",null,true);
+    }
+
+    var to = false;
+    $('#plugins4_q').change(function () {
+        if(to) { clearTimeout(to); }
+        to = setTimeout(function () {
+            var v = $('#plugins4_q').val();
+            $('#tree').jstree(true).search(v);
+        }, 250);
+    });
+
+    function getJson(value) {
+        var t = [];
+        var  children = [];
+        $.each( value, function( i, val ) {
+            children = getJson(val.children);
+            t[i] = { "id" : val.id, "text" : "#"+val.code+" "+val.name, "children":children };
+        })
+        return t;
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
