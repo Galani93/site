@@ -285,3 +285,24 @@ div#datatable-buttons02_filter{
 .card-body.card-table{
     padding: 16px 5px!important;
 }
+.modal-dialog.modal-create {
+    max-width: 670px;
+    margin: 1.75rem auto;
+}
+
+.modal-sm.modal-choose {
+    max-width: 400px;
+}
+.modal-sm.modal-choose .modal-body{
+    padding: 60px 20px;
+}
+.modal-sm.modal-choose .modal-body button{
+    width: 150px;
+    margin: 0 10px;
+}
+@media (min-width: 576px){
+    .modal-dialog.modal-create {
+        max-width: 670px;
+        margin: 1.75rem auto;
+    }
+}
