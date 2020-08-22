@@ -306,3 +306,13 @@ div#datatable-buttons02_filter{
         margin: 1.75rem auto;
     }
 }
+.name-td{
+    font-size: 16px;
+    padding: 0 10px;
+}
+table.choice-name{
+    margin: 15px 0;
+}
+table.choice-name th.sorting_asc {
+    padding: 15px 0;
+}
