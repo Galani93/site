@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Ստեղծել գնումների պլան</title>
+    <title>ԳՆՈՒՄՆԵՐԻ ՊԼԱՆ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
     <meta content="" name="author">
@@ -408,8 +408,8 @@
                 <div class="page-title-box">
                     <div class="float-right">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item active">Ընթացիկ գնման գործընթացներ</li>
-                            <li class="breadcrumb-item">Կազմակերպել գնման գործընթաց</li>
+                            <li class="breadcrumb-item active">Դիտել</li>
+                            <li class="breadcrumb-item">Ստեղծել</li>
                         </ol>
                     </div>
                     <h4 class="page-title">Ընթացիկ գնման գործընթացներ</h4>
@@ -419,14 +419,494 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h4 class="mt-0 mb-2 header-title">Անվանումը</h4>
+                    <h4 class="mt-0 mb-2 header-title">ԳՆՈՒՄՆԵՐԻ ՊԼԱՆ (ՎԵՐՋԻՆ ԹԱՐՄԱՑՈՒՄԸ՝ 2020-08-19 16:28:44)</h4>
                 </div> <!-- end col -->
             </div>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row third_step">
+                <div class="col-lg-6">
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-sm-2 col-form-label text-right">Պատվիրատու</label>
+                        <div class="col-sm-10">
+                            <span class="form-control" id="example-text-input">ՋՐԱՅԻՆ ԿԱՌՈՒՅՑՆԵՐԻ ՓԲԸ</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-datetime-local-input"
+                               class="col-sm-2 col-form-label text-right">Տարեթիվ</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="datetime-local" value="2020-08-24T10:50:00"
+                                   id="example-datetime-local-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-email-input" class="col-sm-2 col-form-label text-right">Ծածկագիր</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" value="ասդասդասդ" id="example-email-input">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="example-tel-input" class="col-sm-2 col-form-label text-right">Անվանում</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="tex" value="abcafij" id="example-tel-input">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="example-password-input" class="col-sm-2 col-form-label text-right">Ֆինանսական
+                            աղբյուր</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" value=""
+                                   placeholder="ՋՐԱՅԻՆ ԿԱՌՈՒՅՑՆԵՐԻ ՓԲԸ-ի եկամուտների և ծախսերի 2019թ նախահաշիվ"
+                                   id="example-password-input">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-sm-2 col-form-label text-right">Կազմող</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" value="Հայկ Ղազարյան" id="example-number-input">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-6 third_step_col">
+                    <div class="col">
+                        <button class="btn btn-primary buttons-copy" tabindex="0" type="button">
+                            <span><i class="fa fa-download" aria-hidden="true"></i>Արտահանել գնումների պլանըy</span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary buttons-excel" tabindex="0" type="button">
+                            <span><i class="fa fa-print" aria-hidden="true"></i>Արտահանել գնումների պլանը EXCEL</span>
+                        </button>
+                    </div>
+                    <div class="col">
+
+                        <button class="btn btn-primary buttons-pdf" tabindex="0" type="button">
+                            <span><i class="fa fa-print" aria-hidden="true"></i>Արտահանել գնումների պլանը ըստ <br>ֆինանսական դասակարգիչի EXCEL</span>
+                        </button>
+                    </div>
+
 
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title mb-3">Պատասխանատու ստորաբաժանում</h4>
+                            <div id="datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table id="datatable"
+                                               class="table table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
+                                               style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
+                                               role="grid" aria-describedby="datatable_info">
+                                            <thead>
+                                            <tr role="row">
+                                                <th class="sorting_asc" tabindex="0" aria-controls="datatable"
+                                                    rowspan="1" colspan="1" style="width: 100px;" aria-sort="ascending"
+                                                    aria-label="Name: activate to sort column descending">ՀՀ
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 100px;"
+                                                    aria-label="Position: activate to sort column ascending">CPV
+                                                    կոդ(պայմանով/ առանց պայման)
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 100px;"
+                                                    aria-label="Office: activate to sort column ascending">Անվանումը
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 50px;"
+                                                    aria-label="Age: activate to sort column ascending">Չափման միավոր
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 100px;"
+                                                    aria-label="Start date: activate to sort column ascending">Բնութագիր
+                                                    / Դիտել/ սեղմակ
+                                                    date
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 100px;"
+                                                    aria-label="Salary: activate to sort column ascending">Միավորի գին
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 50px;"
+                                                    aria-label="Age: activate to sort column ascending">Քանակ
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 147px;"
+                                                    aria-label="Start date: activate to sort column ascending">Ընդհանուր
+                                                    գումար
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 100px;"
+                                                    aria-label="Salary: activate to sort column ascending">Գնման ձև
+                                                </th>
+
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 100px;"
+                                                    aria-label="Salary: activate to sort column ascending">Ֆինանսական
+                                                    դասակարգիչ
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1"
+                                                    colspan="1" style="width: 50px;"
+                                                    aria-label="Salary: activate to sort column ascending">Գնման ժամկետ
+                                                </th>
+
+                                            </tr>
+                                            <tr>
+                                                <td colspan="11" style="text-align: left">ՄԱՍ 1 ԱՊՐԱՆՔՆԵՐ</td>
+                                            </tr>
+
+                                            </thead>
+                                            <tbody>
+
+
+                                            <tr role="row" class="odd">
+                                                <td tabindex="0" class="sorting_1">1</td>
+                                                <td>03111100/1</td>
+                                                <td>սոյայի սերմեր</td>
+                                                <td>կգ</td>
+                                                <td>20.00</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>4265</td>
+                                                <td><input class="form-control" type="date" value="2020-08-24"
+                                                           id="example-date-input"></td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1" tabindex="0">2</td>
+                                                <td>03111100/2</td>
+                                                <td>սոյայի սերմեր</td>
+                                                <td>կգ</td>
+                                                <td>20.00</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>5268</td>
+                                                <td><input class="form-control" type="date" value="2020-08-24"
+                                                           id="example-date-input"></td>
+
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td tabindex="0" class="sorting_1">3</td>
+                                                <td>03111100/4</td>
+                                                <td>սոյայի սերմեր</td>
+                                                <td>կգ</td>
+                                                <td>200.00</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>6654</td>
+                                                <td><input class="form-control" type="date" value="2020-08-24"
+                                                           id="example-date-input"></td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1" tabindex="0">4</td>
+                                                <td>03111110/1</td>
+                                                <td>գետնանուշ</td>
+                                                <td>կգ</td>
+                                                <td>100.00</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><input class="form-control" type="date" value="2020-08-24"
+                                                           id="example-date-input"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="1" style="text-align: left">Ընդամենը</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>100</td>
+                                                <td></td>
+                                            </tr>
+
+
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1" tabindex="0">5</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td tabindex="0" class="sorting_1">6</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1" tabindex="0">7</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1" tabindex="0">8</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1" tabindex="0">9</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td tabindex="0" class="sorting_1">10</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="1" >Ամբողջ գումարը</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>200</td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr>
+
+                                            </tr>
+
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="row plus">
+                                <button type="button" class="btn btn-primary  waves-effect waves-light"
+                                        data-toggle="modal"
+                                        data-animation="bounce"><i class="fa fa-plus-circle" aria-hidden="true"></i>Ավելացնել
+                                </button>
+                                <button type="button" class="btn btn-primary  waves-effect waves-light"
+                                        data-toggle="modal"
+                                        data-animation="bounce"><i class="fa fa-edit"></i>Խմբագրել
+                                </button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                      <div class="row all">
+                          <a href="#" class="btn btn-xs btn-primary"> Նշել բոլորը</a>
+                          <a href="#" data-tablename="userTable" data-href="/admin/user/delete/85" class="btn btn-xs btn-danger waves-effect waves-light deleteItem">
+                               Ջնջել</a>
+                      </div>
+                        <div class="card-body">
+                            <div class="alert alert-outline-purple b-round" role="alert">
+                                <a href="" class="change-pdf">2020-08-24 10:02:51 Փոփոխություն</a>
+                                <div class="check-dle">
+                                    <input type="checkbox">
+                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="alert alert-outline-purple b-round" role="alert">
+                                <a href="" class="change-pdf">2020-08-19 15:28:44 Փոփոխություն</a>
+                                <div class="check-dle">
+                                    <input type="checkbox">
+                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="alert alert-outline-purple b-round" role="alert">
+                                <a href="" class="change-pdf">2020-08-14 12:45:38 Փոփոխություն</a>
+                                <div class="check-dle">
+                                    <input type="checkbox">
+                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="alert alert-outline-purple b-round" role="alert">
+                                <a href="" class="change-pdf">2020-07-31 14:48:10 Փոփոխություն</a>
+                                <div class="check-dle">
+                                    <input type="checkbox">
+                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="alert alert-outline-purple b-round" role="alert">
+                                <a href="" class="change-pdf">2020-07-13 13:36:32 Փոփոխություն</a>
+                                <div class="check-dle">
+                                    <input type="checkbox">
+                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="alert alert-outline-purple b-round" role="alert">
+                                <a href="" class="change-pdf">2020-07-13 13:34:40 Փոփոխություն</a>
+                                <div class="check-dle">
+                                    <input type="checkbox">
+                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="alert alert-outline-purple b-round" role="alert">
+                                <a href="" class="change-pdf">2020-05-05 19:12:44 Փոփոխություն</a>
+                                <div class="check-dle">
+                                    <input type="checkbox">
+                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="alert alert-outline-purple b-round" role="alert">
+                                <a href="" class="change-pdf">2020-05-05 19:06:57 Փոփոխություն</a>
+                                <div class="check-dle">
+                                    <input type="checkbox">
+                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="loadmore_full">
+                            <a href="#" class="btn btn-xs btn-primary">Տեսնել ավելին</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
 
 

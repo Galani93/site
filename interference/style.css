@@ -323,3 +323,64 @@ table.choice-name th.sorting_asc {
 .btn.btn-primary.apply {
     padding: 1px 10px;
 }
+.row.third_step{
+    margin: 30px 0 10px;
+}
+.row.third_step .third_step_col{
+    display: flex;
+    flex-direction: column;
+}
+.row.third_step .third_step_col button {
+    min-width: 280px;
+    height: 61px;
+    padding: 0;
+}
+@media (max-width: 768px){
+    .row.third_step .third_step_col button{
+        margin: 10px 0;
+    }
+}
+.row.third_step .third_step_col button i{
+    padding: 0 10px;
+}
+.row.plus{
+    display: flex;
+    justify-content: flex-end;
+}
+.row.plus button i{
+    padding: 0 5px;
+}
+.row.plus button{
+    margin: 0 10px;
+    float: right;
+}
+
+.alert{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.change-pdf{
+    color: #6d81f5;
+    font-size: 18px;
+    font-weight: 500;
+}
+.check-dle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.check-dle input{
+    margin: 0 10px;
+}
+.row.all{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.row.all a{
+    margin: 0 10px;
+}
+.loadmore_full{
+    margin: 20px;
+}
