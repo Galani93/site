@@ -330,6 +330,10 @@ table.choice-name th.sorting_asc {
     display: flex;
     flex-direction: column;
 }
+.row.third_step .third_step_col .col{
+    display: flex;
+    justify-content: flex-end;
+}
 .row.third_step .third_step_col button {
     min-width: 280px;
     height: 61px;
