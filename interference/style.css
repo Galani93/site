@@ -388,3 +388,12 @@ table.choice-name th.sorting_asc {
 .loadmore_full{
     margin: 20px;
 }
+/*input.row-text{*/
+/*    width: 70px!important;*/
+/*}*/
+
+.table th, .table td {
+    padding:15px 5px!important;
+    vertical-align: top;
+    border-top: 1px solid #eaf0f7;
+}
