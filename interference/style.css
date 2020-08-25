@@ -397,3 +397,19 @@ table.choice-name th.sorting_asc {
     vertical-align: top;
     border-top: 1px solid #eaf0f7;
 }
+.modal-open .modal{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.bs-example-modal-center-01{
+}
+#exampleModal02{
+
+}
+#exampleModal01{
+    z-index: 20000;
+}
+#exampleModal01 .card-footer button{
+    margin: 0 10px;
+}
