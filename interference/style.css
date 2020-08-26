@@ -413,3 +413,7 @@ table.choice-name th.sorting_asc {
 #exampleModal01 .card-footer button{
     margin: 0 10px;
 }
+.col-form-label{
+    text-align: left!important;
+
+}
