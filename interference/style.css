@@ -335,7 +335,7 @@ table.choice-name th.sorting_asc {
     justify-content: flex-end;
 }
 .row.third_step .third_step_col button {
-    min-width: 280px;
+    min-width: 325px;
     height: 61px;
     padding: 0;
 }
