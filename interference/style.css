@@ -396,15 +396,15 @@ table.choice-name th.sorting_asc {
 #datatable-buttons .child li{
     margin: 10px 0;
 }
-input#example-date-input01 {
-    width: 170px;
-}
-input[type="text"] {
-    width: 100px;
-}
-input[type="number"] {
-    width: 100px;
-}
+/*input#example-date-input01 {*/
+/*    width: 170px;*/
+/*}*/
+/*input[type="text"] {*/
+/*    width: 100px;*/
+/*}*/
+/*input[type="number"] {*/
+/*    width: 100px;*/
+/*}*/
 /*************************************************
 **************************************************
                    BUTTON +

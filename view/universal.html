@@ -372,396 +372,291 @@
     <!-- Page Content-->
     <div class="page-content-tab">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <table id="child_rows"
-                           class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
-                           style="border-collapse: collapse; border-spacing: 0px; width: 100%;" role="grid"
-                           aria-describedby="child_rows_info">
-                        <thead>
-                        <tr role="row">
-                            <th class="details-control sorting_disabled" rowspan="1" colspan="1" style="width: 34px;"
-                                aria-label=""></th>
-                            <th class="sorting_asc" tabindex="0" aria-controls="child_rows" rowspan="1" colspan="1"
-                                style="width: 265px;" aria-sort="ascending"
-                                aria-label="Name: activate to sort column descending">Name
-                            </th>
-                            <th class="sorting" tabindex="0" aria-controls="child_rows" rowspan="1" colspan="1"
-                                style="width: 403px;" aria-label="Position: activate to sort column ascending">Position
-                            </th>
-                            <th class="sorting" tabindex="0" aria-controls="child_rows" rowspan="1" colspan="1"
-                                style="width: 246px;" aria-label="Office: activate to sort column ascending">Office
-                            </th>
-                            <th class="sorting" tabindex="0" aria-controls="child_rows" rowspan="1" colspan="1"
-                                style="width: 164px;" aria-label="Salary: activate to sort column ascending">Salary
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
+            <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
 
-                        <tr role="row" class="odd">
-                            <td class=" details-control" tabindex="0"></td>
-                            <td class="sorting_1">Ashton Cox</td>
-                            <td>Junior Technical Author</td>
-                            <td>San Francisco</td>
-                            <td>$86,000</td>
-                        </tr>
-                        <tr role="row" class="even">
-                            <td class=" details-control" tabindex="0"></td>
-                            <td class="sorting_1">Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>$170,750</td>
-                        </tr>
-                        <tr role="row" class="odd">
-                            <td class=" details-control" tabindex="0"></td>
-                            <td class="sorting_1">Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>$320,800</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane p-3" id="profile-1" role="tabpanel">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="mt-0 header-title">Child rows example</h4>
-                                    <div id="child_rows_wrapper"
-                                         class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <table id="child_rows1"
-                                                       class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
-                                                       style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
-                                                       role="grid" aria-describedby="child_rows_info">
-                                                    <thead>
-                                                    <tr role="row">
-                                                        <th class="details-control sorting_disabled"
-                                                            rowspan="1" colspan="1" style="width: 17px;"
-                                                            aria-label=""></th>
-                                                        <th class="sorting_asc" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 175px;"
-                                                            aria-sort="ascending"
-                                                            aria-label="Ծածկագիր: activate to sort column descending">
-                                                            Ծածկագիր
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 274px;"
-                                                            aria-label="Կատեգորիա: activate to sort column ascending">
-                                                            Կատեգորիա
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 162px;"
-                                                            aria-label=" Գնային առաջարկի ժամկետ: activate to sort column ascending">
-                                                            Գնային առաջարկի ժամկետ
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="Վերջնաժամկետ: activate to sort column ascending">
-                                                            Վերջնաժամկետ
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="   Ստատուսը: activate to sort column ascending">
-                                                            Ստատուսը
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="   Մասնակիցներ: activate to sort column ascending">
-                                                            Մասնակիցներ
-                                                        </th>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
+                               style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
+                               role="grid" aria-describedby="datatable-buttons_info">
+                            <thead>
+                            <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 50px;"
+                                    aria-label="Name: activate to sort column descending"
+                                    aria-sort="ascending">ՀՀ
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 150px;"
+                                    aria-label="Position: activate to sort column ascending">CPV կոդ(պայմանով/ առանց
+                                    պայման)
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 150px;"
+                                    aria-label="Office: activate to sort column ascending">Անվանումը
+                                </th>
 
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
+                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 100px;"
+                                    aria-label="Age: activate to sort column ascending">Չափման միավոր
+                                </th>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 150px;"
+                                    aria-label="Start date: activate to sort column ascending">Բնութագիր
+                                    / Դիտել/ սեղմակ
+                                </th>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end col -->
+
+                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 100px;"
+                                    aria-label="Office: activate to sort column ascending">Միավորի գին
+                                </th>
+                                <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 50px;"
+                                    aria-label="Name: activate to sort column descending"
+                                    aria-sort="ascending">Քանակ
+                                </th>
+
+                                <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 50px;"
+                                    aria-label="Name: activate to sort column descending"
+                                    aria-sort="ascending">Ընդհանուր
+                                </th>
+
+                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 100px;"
+                                    aria-label="Position: activate to sort column ascending">Գնման ձև
+                                </th>
+
+                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 100px;"
+                                    aria-label="Office: activate to sort column ascending">Ֆինանսական դասակարգիչ
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
+                                    rowspan="1" colspan="1" style="width: 100px;"
+                                    aria-label="Age: activate to sort column ascending">Գնման ժամկետ
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="11" style="text-align: left">ՄԱՍ 1 ԱՊՐԱՆՔՆԵՐ</td>
+                            </tr>
+
+
+                            </thead>
+                            <tbody>
+                            <tr role="row" class="odd">
+                                <td tabindex="0" class="sorting_1" style=""> 1</td>
+                                <td class="">03111100/1</td>
+                                <td>սոյայի սերմեր</td>
+                                <td>կգ</td>
+                                <td>
+                                    <button type="button" class="btn btn-info  waves-effect waves-light" data-toggle="modal"
+                                            data-animation="bounce" data-target=".bs-example-modal-center">Ավելացնել
+                                    </button>
+                                </td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td class="">2000</td>
+                                <td>
+                                    <select>
+                                        <option value="0"></option>
+                                        <option value="1">10</option>
+                                        <option value="2">100</option>
+                                        <option value="3">1000</option>
+                                        <option value="4">10000</option>
+                                    </select>
+                                </td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input01">
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-sm">Ավելացնել</button>
+                                </td>
+                                <td> <input type="checkbox"></td>
+                                <td class="details-control" tabindex="0"></td>
+
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td tabindex="0" class="sorting_1" style="">1</td>
+                                <td class="">03111100/501</td>
+                                <td>սոյայի սերմեր</td>
+                                <td>
+                                    <select>
+                                        <option value="0"></option>
+                                        <option value="1">կգ</option>
+                                        <option value="2">կգ 2</option>
+                                        <option value="3">կգ 3</option>
+                                        <option value="4">կգ 4</option>
+                                        <option value="5">կգ 5</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info  waves-effect waves-light" data-toggle="modal"
+                                            data-animation="bounce" data-target=".bs-example-modal-center">Ավելացնել
+                                    </button>
+                                </td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td class="">2000</td>
+                                <td>
+                                    <select>
+                                        <option value="0"></option>
+                                        <option value="1">10</option>
+                                        <option value="2">100</option>
+                                        <option value="3">1000</option>
+                                        <option value="4">10000</option>
+                                    </select>
+                                </td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-sm">Ավելացնել</button>
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class=" details-control" tabindex="0"></td>
+
+                            </tr>
+
+                            <tr role="row" class="even">
+                                <td tabindex="0" class="sorting_1" style="">2</td>
+                                <td class="">03111100/2</td>
+                                <td>Գրքեր</td>
+                                <td>քանակ</td>
+                                <td>
+                                    <button type="button" class="btn btn-info  waves-effect waves-light" data-toggle="modal"
+                                            data-animation="bounce" data-target=".bs-example-modal-center">Ավելացնել
+                                    </button>
+                                </td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td class="">5000</td>
+                                <td>
+                                    <select>
+                                        <option value="0"></option>
+                                        <option value="1">10</option>
+                                        <option value="2">100</option>
+                                        <option value="3">1000</option>
+                                        <option value="4">10000</option>
+                                    </select>
+                                </td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-sm">Ավելացնել</button>
+                                </td>
+                                <td> <input type="checkbox"></td>
+                                <td class="details-control" tabindex="0"></td>
+
+
+
+                            </tr>
+                            <tr role="row" class="even">
+                                <td tabindex="0" class="sorting_1" style="">2</td>
+                                <td class="">03111100/502</td>
+                                <td>Գրքեր</td>
+                                <td>
+                                    <select>
+                                        <option value="0"></option>
+                                        <option value="1">1 հատ</option>
+                                        <option value="2">10 հատ</option>
+                                        <option value="3">10 հատ</option>
+                                        <option value="4">100 հատ</option>
+                                        <option value="5">1000 հատ</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info  waves-effect waves-light" data-toggle="modal"
+                                            data-animation="bounce" data-target=".bs-example-modal-center">Ավելացնել
+                                    </button>
+                                </td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td class="">5000</td>
+                                <td>
+                                    <select>
+                                        <option value="0"></option>
+                                        <option value="1">10</option>
+                                        <option value="2">100</option>
+                                        <option value="3">1000</option>
+                                        <option value="4">10000</option>
+                                    </select>
+                                </td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-sm">Ավելացնել</button>
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class=" details-control" tabindex="0"></td>
+
+
+
+                            </tr>
+
+                            <tr role="row" class="odd">
+                                <td tabindex="0" class="sorting_1" style="">3</td>
+                                <td class=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td tabindex="0" class="sorting_1"></td>
+                                <td class=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td tabindex="0" class="sorting_1" style="">3</td>
+                                <td class=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td tabindex="0" class="sorting_1"></td>
+                                <td class=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+
+                            </tbody>
+                        </table>
                     </div>
-
                 </div>
-                <div class="tab-pane p-3 " id="settings-1" role="tabpanel">
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="mt-0 header-title">Child rows example</h4>
-                                    <div id="child_rows_wrapper"
-                                         class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <table id="child_rows2"
-                                                       class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
-                                                       style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
-                                                       role="grid" aria-describedby="child_rows_info">
-                                                    <thead>
-                                                    <tr role="row">
-                                                        <th class="details-control sorting_disabled"
-                                                            rowspan="1" colspan="1" style="width: 17px;"
-                                                            aria-label=""></th>
-                                                        <th class="sorting_asc" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 175px;"
-                                                            aria-sort="ascending"
-                                                            aria-label="Ծածկագիր: activate to sort column descending">
-                                                            Ծածկագիր
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 274px;"
-                                                            aria-label="Կատեգորիա: activate to sort column ascending">
-                                                            Կատեգորիա
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 162px;"
-                                                            aria-label=" Գնային առաջարկի ժամկետ: activate to sort column ascending">
-                                                            Գնային առաջարկի ժամկետ
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="Վերջնաժամկետ: activate to sort column ascending">
-                                                            Վերջնաժամկետ
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="   Ստատուսը: activate to sort column ascending">
-                                                            Ստատուսը
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="   Մասնակիցներ: activate to sort column ascending">
-                                                            Մասնակիցներ
-                                                        </th>
-
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                    </div>
-                </div>
-                <div class="tab-pane p-3 " id="settings-2" role="tabpanel">
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="mt-0 header-title">Child rows example</h4>
-                                    <div id="child_rows_wrapper"
-                                         class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <table id="child_rows3"
-                                                       class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
-                                                       style="border-collapse: collapse; border-spacing: 0px; width: 100%;"
-                                                       role="grid" aria-describedby="child_rows_info">
-                                                    <thead>
-                                                    <tr role="row">
-                                                        <th class="details-control sorting_disabled"
-                                                            rowspan="1" colspan="1" style="width: 17px;"
-                                                            aria-label=""></th>
-                                                        <th class="sorting_asc" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 175px;"
-                                                            aria-sort="ascending"
-                                                            aria-label="Ծածկագիր: activate to sort column descending">
-                                                            Ծածկագիր
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 274px;"
-                                                            aria-label="Կատեգորիա: activate to sort column ascending">
-                                                            Կատեգորիա
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 162px;"
-                                                            aria-label=" Գնային առաջարկի ժամկետ: activate to sort column ascending">
-                                                            Գնային առաջարկի ժամկետ
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="Վերջնաժամկետ: activate to sort column ascending">
-                                                            Վերջնաժամկետ
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="   Ստատուսը: activate to sort column ascending">
-                                                            Ստատուսը
-                                                        </th>
-                                                        <th class="sorting" tabindex="0"
-                                                            aria-controls="child_rows" rowspan="1"
-                                                            colspan="1" style="width: 105px;"
-                                                            aria-label="   Մասնակիցներ: activate to sort column ascending">
-                                                            Մասնակիցներ
-                                                        </th>
-
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                    </div>
-                </div>
             </div>
         </div>
 
         <footer class="footer text-center text-sm-left">
-            &copy; 2019 - 2020 Metrica <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span></footer>
+            &copy; 2019 - 2020 Metrica <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i
+                class="mdi mdi-heart text-danger"></i> by Mannatthemes</span></footer>
         <!--end footer-->
     </div>
     <!-- end page content -->
 </div>
-<script>
 
-    $(document).ready(function () {
-
-        $("#datatable").DataTable(), $(document).ready(function () {
-            $("#datatable2").DataTable()
-        }), $("#datatable-buttons").DataTable({
-            lengthChange: !1,
-            buttons: ["copy", "excel", "pdf", "colvis"]
-        }).buttons().container().appendTo("#datatable-buttons_wrapper .col-md-6:eq(0)"), $("#row_callback").DataTable({
-            createdRow: function (t, a, e) {
-                15e4 < 1 * a[5].replace(/[\$,]/g, "") && $("td", t).eq(5).addClass("highlight")
-            }
-        });
-
-
-
-
-        var updateTableArr = [
-            "#child_rows1",
-            "#child_rows2",
-            "#child_rows3",
-        ];
-        var updateTable = function ($id) {
-            var e = $($id).DataTable({
-                data: testdata.data,
-                select: "single",
-                columns: [{
-                    className: "details-control",
-                    orderable: !1,
-                    data: null,
-                    defaultContent: ""
-                }, {data: "name"}, {data: "position"}, {data: "office"}, {data: "salary"},{data: "extn2"},{data: "extn3"}],
-                order: [[1, "asc"]]
-            });
-            $($id +" tbody").on("click", "td.details-control", function () {
-                var t = $(this).closest("tr"), a = e.row(t);
-                a.child.isShown() ? (a.child.hide(), t.removeClass("shown")) : (a.child(format(a.data())).show(), t.addClass("shown"))
-            });
-        };
-
-        updateTableArr.map(updateTable);
-
-
-
-        function format(t) {
-            return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
-                '<tr>' +
-                '<td>Չափաբաժին</td>' +
-                '<td>' + "</td>" +
-                "</tr>" +
-                "<tr>" +
-                "<td>Անվանում</td>" +
-                "<td>" + t.name  + "</td>" +
-                "</tr>" +
-                "<" + "tr>" +
-                "<td>Քանակ</td>" +
-                "<td></td>" +
-                "</tr>" +
-                "<tr>" +
-                "<td>Չափման միավոր</td>" +
-                "<td></td>" +
-                "</tr>" +
-                "<tr>" +
-                "<td>Նախահաշիվ</td>" +
-                "<td></td>" +
-                "</tr>" +
-                "</table>"
-        }
-
-    })
-
-    var testdata = {
-        data: [{
-            name: "ՋԿ-ՄԱԱՇՁԲ-19/8",
-            position: "կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ",
-            salary: "",
-            start_date: "2019-11-25 18:26:48",
-            office: "2019-11-03 02:24:58",
-            extn: "0",
-            extn2: "Ավարտված",
-            extn3: "0",
-        }, {
-            name: "ՋԿ-ՄԱԱՇՁԲ-19/6",
-            position: "կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ",
-            salary: "",
-            start_date: "2019-11-25 18:26:48",
-            office: "2019-11-03 02:24:58",
-            extn: "0",
-            extn2: "Չկայացած",
-            extn3: "0",
-        }, {
-            name: "ՋԿ-ՄԱԱՇՁԲ-19/4",
-            position: "կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ",
-            salary: "",
-            start_date: "2019-11-25 18:26:48",
-            office: "2019-11-03 02:24:58",
-            extn: "0",
-            extn2: "Ավարտված",
-            extn3: "0",
-        }]
-    };
-
-
-
-
-</script>
 <!-- end page-wrapper --><!-- jQuery  -->
 <script src="../assets/js/jquery.min.js"></script>
 
