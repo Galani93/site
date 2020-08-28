@@ -625,6 +625,9 @@ div.dtr-bs-modal table.table tr:first-child td {
                    BUTTON +
 **************************************************
 **************************************************/
+ul.dtr-details {
+    float: left;
+}
 span.dtr-title {
     margin-bottom: 10px;
 }
