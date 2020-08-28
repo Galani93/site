@@ -625,3 +625,15 @@ div.dtr-bs-modal table.table tr:first-child td {
                    BUTTON +
 **************************************************
 **************************************************/
+span.dtr-title {
+    margin-bottom: 10px;
+}
+
+.dtr-title button {
+    position: relative;
+    left: 145px;
+}
+.dtr-data button{
+    position: relative;
+    left: 112px;
+}
