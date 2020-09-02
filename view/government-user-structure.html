@@ -26,7 +26,8 @@
         <a href="../crm/crm-index.html" class="logo logo-metrica d-block text-center">
             <span><img src="../assets/images/logo-sm.png" alt="logo-small" class="logo-sm"></span></a>
         <nav class="nav">
-            <a href="#MetricaUikit" class="nav-link" data-toggle="tooltip-custom"data-placement="right" data-trigger="hover" title=""data-original-title="Գործընկերներ">
+            <a href="#MetricaUikit" class="nav-link" data-toggle="tooltip-custom" data-placement="right"
+               data-trigger="hover" title="" data-original-title="Գործընկերներ">
                 <i class="fa fa-font-awesome fas fa-handshake menu-icon icon-dual"></i>.
             </a>
             <!--end MetricaUikit-->
@@ -84,8 +85,6 @@
             </div>
 
 
-
-
             <div id="MetricaPages" class="main-icon-menu-pane">
                 <div class="title-box"><h6 class="menu-title">Pages</h6></div>
                 <ul class="nav">
@@ -140,7 +139,7 @@
                         <div class="float-right">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="javascript:void(0);"> Itender</a></li>
-                                <li class="breadcrumb-item active"> Ստեղծել </li>
+                                <li class="breadcrumb-item active"> Ստեղծել</li>
                             </ol>
                         </div>
                         <h4 class="page-title">Պետական օգտատիրոջ կառուցվածքի սահմանում</h4>
@@ -154,51 +153,65 @@
                     <div class="card dr-pro-pic">
                         <div class="card-body">
                             <div class="">
-                                <form method="POST" action="http://159.203.181.199/admin/user_state/137" accept-charset="UTF-8" class="form-horizontal form-material mb-0" enctype="multipart/form-data"><input name="_token" type="hidden" value="k4pcZIyhEAlkiv2TrpkT5Jq3HqYouXCGEEUnqgbJ">
+                                <form method="POST" action="http://159.203.181.199/admin/user_state/137"
+                                      accept-charset="UTF-8" class="form-horizontal form-material mb-0"
+                                      enctype="multipart/form-data"><input name="_token" type="hidden"
+                                                                           value="k4pcZIyhEAlkiv2TrpkT5Jq3HqYouXCGEEUnqgbJ">
                                     <input type="hidden" name="_method" value="PUT">
                                     <div class="form-group row">
                                         <div class="col-md-4">
                                             <label>Անուն</label>
-                                            <input class="form-control" placeholder="Անուն" name="name" type="text" value="">
-                                            <p style="color:red;height: 14px;width: 100%;">  </p>
+                                            <input class="form-control" placeholder="Անուն" name="name" type="text"
+                                                   value="">
+                                            <p style="color:red;height: 14px;width: 100%;"></p>
                                         </div>
                                         <div class="col-md-4">
-                                            <label>Էլ Փոստ</label>
-                                            <input class="form-control" placeholder="Էլ. Փոստ" name="email" type="text" value="">
-                                            <p style="color:red;height: 14px;width: 100%;">  </p>
+                                            <label for="exampleInputEmail1">Էլ Փոստ</label>
+                                            <input class="form-control" id="exampleInputEmail1"
+                                                   aria-describedby="emailHelp" placeholder="Էլ. Փոստ" name="email"
+                                                   type="text" value="" required>
+                                            <p style="color:red;height: 14px;width: 100%;"></p>
                                         </div>
                                         <div class="col-md-4">
                                             <label>Հեռախոս</label>
-                                            <input class="form-control" placeholder="+374 99 99 99 99" name="phone" type="text" value="">
-                                            <p style="color:red;height: 14px;width: 100%;">  </p>
+                                            <input class="form-control" placeholder="+374 99 99 99 99" name="phone"
+                                                   type="text" value="" pattern="[+]{1}[0-9]{11,14}" required>
+                                            <p style="color:red;height: 14px;width: 100%;"></p>
                                         </div>
                                         <div class="col-md-4">
                                             <label>ՀՎՀՀ</label>
-                                            <input class="form-control" placeholder="ՀՎՀՀ" name="tin" type="text" value="">
-                                            <p style="color:red;height: 14px;width: 100%;">  </p>
+                                            <input class="form-control" placeholder="ՀՎՀՀ" name="tin" type="text"
+                                                   value="" required>
+                                            <p style="color:red;height: 14px;width: 100%;"></p>
                                         </div>
                                         <div class="col-md-4">
                                             <label>Հասցե</label>
-                                            <input class="form-control" placeholder="Հասցե" name="address" type="text" value="">
-                                            <p style="color:red;height: 14px;width: 100%;">  </p>
+                                            <input class="form-control" placeholder="Հասցե" name="address" type="text"
+                                                   value="" required>
+                                            <p style="color:red;height: 14px;width: 100%;"></p>
                                         </div>
                                         <div class="col-md-4">
                                             <label>Կարգավիճակ</label>
-                                            <select class="form-control" name="status"><option value="ACTIVE" selected="selected">ACTIVE</option><option value="BLOCK">BLOCK</option></select>
-                                            <p style="color:red;height: 14px;width: 100%;">  </p>
+                                            <select class="form-control" name="status">
+                                                <option value="ACTIVE" selected="selected">ACTIVE</option>
+                                                <option value="BLOCK">BLOCK</option>
+                                            </select>
+                                            <p style="color:red;height: 14px;width: 100%;"></p>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <div class="col-md-6">
                                             <label>Գաղտնաբառ</label>
-                                            <input class="form-control" placeholder="Գաղտնաբառ" name="password" type="text" value="">
-                                            <p style="color:red;height: 14px;width: 100%;">  </p>
+                                            <input class="form-control" placeholder="Գաղտնաբառ" name="password"
+                                                   type="text" value="">
+                                            <p style="color:red;height: 14px;width: 100%;"></p>
                                         </div>
                                         <div class="col-md-6">
                                             <label>Գաղտնաբառի հաստատում</label>
-                                            <input class="form-control" placeholder="Գաղտնաբառի հաստատում" name="password_confirmation" type="text" value="">
-                                            <p style="color:red;height: 14px;width: 100%;">  </p>
+                                            <input class="form-control" placeholder="Գաղտնաբառի հաստատում"
+                                                   name="password_confirmation" type="text" value="">
+                                            <p style="color:red;height: 14px;width: 100%;"></p>
                                         </div>
                                     </div>
 
@@ -232,42 +245,47 @@
                                     <div class="row">
                                         <div class="col-lg-5">
 
-                                                    <div class="btn-group" style="display: flex;">
-                                                        <button type="button" class="btn btn-primary dropdown-toggle"
-                                                                data-toggle="dropdown" aria-haspopup="true"
-                                                                aria-expanded="false">Ընտրել
-                                                            <i class="mdi mdi-chevron-down"></i></button>
-                                                        <div class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                            <a class="dropdown-item" href="#">
-                                                                <button type="button" class="btn">Վարչություն</button>
+                                            <div class="btn-group" style="display: flex;">
+                                                <button type="button" class="btn btn-primary dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">Ընտրել
+                                                    <i class="mdi mdi-chevron-down"></i></button>
+                                                <div class="dropdown-menu" style="width: 100%;text-align: center;">
+                                                    <a class="dropdown-item" href="#">
+                                                        <button type="button" class="btn">Վարչություն</button>
 
-                                                            </a>
-                                                            <a class="dropdown-item" href="#">
-                                                                <button type="button" class="btn" >Բաժին</button>
-                                                            </a>
-                                                            <a class="dropdown-item" href="#">
-                                                                <button type="button" class="btn" >Համակարգող</button>
-                                                            </a>
-                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <button type="button" class="btn">Բաժին</button>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <button type="button" class="btn">Համակարգող</button>
+                                                    </a>
+                                                </div>
 
-                                                    </div>
+                                            </div>
 
 
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="col-lg-12 userblock ">
-                                                    <div class="page-title-box">
-                                                        <h4 class="page-title"> Վարչություն</h4>
-                                                    </div>
+                                                <div class="page-title-box">
+                                                    <h4 class="page-title"> Վարչություն</h4>
+                                                </div>
                                                 <div class="card profile-card">
                                                     <div class="card-body p-0">
-                                                        <div class="media p-3 align-items-center" style="display: flex;">
+                                                        <div class="media p-3 align-items-center"
+                                                             style="display: flex;">
                                                             <div class="media-body  align-self-center">
                                                                 <h5 class="pro-title textS"> AAAA aaa</h5>
                                                                 <p class="mb-1 text-muted textS">admin@gmail.com</p>
                                                             </div>
-                                                            <div class="action-btn" data-id="1" style="position: inherit!important;display: flex;">
-                                                                <button class="mr-1 btnActive btn btn-sm btn-soft-info eye" data-placement="top" title="" data-original-title="Դիտել" data-trigger="hover" type="button" data-toggle="modal"
+                                                            <div class="action-btn" data-id="1"
+                                                                 style="position: inherit!important;display: flex;">
+                                                                <button class="mr-1 btnActive btn btn-sm btn-soft-info eye"
+                                                                        data-placement="top" title=""
+                                                                        data-original-title="Դիտել" data-trigger="hover"
+                                                                        type="button" data-toggle="modal"
                                                                         data-target=".bs-example-modal-center">
                                                                     <i class="fas fa-pen"></i></button>
                                                             </div>
@@ -283,14 +301,18 @@
                                                 </div>
                                                 <div class="card profile-card">
                                                     <div class="card-body p-0">
-                                                        <div class="media p-3 align-items-center " style="display: flex;">
+                                                        <div class="media p-3 align-items-center "
+                                                             style="display: flex;">
                                                             <div class="media-body  align-self-center">
                                                                 <h5 class="pro-title textS"> BBBB bbbb </h5>
                                                                 <p class="mb-1 text-muted textS">admin@gmail.com</p>
                                                             </div>
-                                                            <div class="action-btn" data-id="1" style="position: inherit!important;display: flex;">
+                                                            <div class="action-btn" data-id="1"
+                                                                 style="position: inherit!important;display: flex;">
                                                                 <button class="mr-1 btnActive btn btn-sm btn-soft-info eye"
-                                                                        data-placement="top" title="" data-original-title="Դիտել" data-trigger="hover" type="button" data-toggle="modal"
+                                                                        data-placement="top" title=""
+                                                                        data-original-title="Դիտել" data-trigger="hover"
+                                                                        type="button" data-toggle="modal"
                                                                         data-target=".bs-example-modal-center02">
                                                                     <i class="fas fa-pen"></i>
                                                                 </button>
@@ -303,14 +325,18 @@
 
                                                 <div class="card profile-card">
                                                     <div class="card-body p-0">
-                                                        <div class="media p-3 align-items-center " style="display: flex;">
+                                                        <div class="media p-3 align-items-center "
+                                                             style="display: flex;">
                                                             <div class="media-body  align-self-center">
                                                                 <h5 class="pro-title textS"> BBBB aaaa</h5>
                                                                 <p class="mb-1 text-muted textS">admin@gmail.com</p>
                                                             </div>
-                                                            <div class="action-btn" data-id="1" style="position: inherit!important;display: flex;">
+                                                            <div class="action-btn" data-id="1"
+                                                                 style="position: inherit!important;display: flex;">
                                                                 <button class="mr-1 btnActive btn btn-sm btn-soft-info eye"
-                                                                        data-placement="top" title="" data-original-title="Դիտել" data-trigger="hover" type="button" data-toggle="modal"
+                                                                        data-placement="top" title=""
+                                                                        data-original-title="Դիտել" data-trigger="hover"
+                                                                        type="button" data-toggle="modal"
                                                                         data-target=".bs-example-modal-center02">
                                                                     <i class="fas fa-pen"></i>
                                                                 </button>
@@ -325,14 +351,18 @@
                                                 </div>
                                                 <div class="card profile-card">
                                                     <div class="card-body p-0">
-                                                        <div class="media p-3 align-items-center " style="display: flex;">
+                                                        <div class="media p-3 align-items-center "
+                                                             style="display: flex;">
                                                             <div class="media-body  align-self-center">
                                                                 <h5 class="pro-title textS"> CCCC cccc</h5>
                                                                 <p class="mb-1 text-muted textS">admin@gmail.com</p>
                                                             </div>
-                                                            <div class="action-btn" data-id="1" style="position: inherit!important;display: flex;">
+                                                            <div class="action-btn" data-id="1"
+                                                                 style="position: inherit!important;display: flex;">
                                                                 <button class="mr-1 btnActive btn btn-sm btn-soft-info eye"
-                                                                        data-placement="top" title="" data-original-title="Դիտել" data-trigger="hover" type="button" data-toggle="modal"
+                                                                        data-placement="top" title=""
+                                                                        data-original-title="Դիտել" data-trigger="hover"
+                                                                        type="button" data-toggle="modal"
                                                                         data-target=".bs-example-modal-center03">
                                                                     <i class="fas fa-pen"></i>
                                                                 </button>
@@ -344,14 +374,18 @@
                                             <div class="col-lg-12 userblock ">
                                                 <div class="card profile-card">
                                                     <div class="card-body p-0">
-                                                        <div class="media p-3 align-items-center " style="display: flex;">
+                                                        <div class="media p-3 align-items-center "
+                                                             style="display: flex;">
                                                             <div class="media-body  align-self-center">
                                                                 <h5 class="pro-title textS"> CCCC aaaa</h5>
                                                                 <p class="mb-1 text-muted textS">admin@gmail.com</p>
                                                             </div>
-                                                            <div class="action-btn" data-id="1" style="position: inherit!important;display: flex;">
+                                                            <div class="action-btn" data-id="1"
+                                                                 style="position: inherit!important;display: flex;">
                                                                 <button class="mr-1 btnActive btn btn-sm btn-soft-info eye"
-                                                                        data-placement="top" title="" data-original-title="Դիտել" data-trigger="hover" type="button" data-toggle="modal"
+                                                                        data-placement="top" title=""
+                                                                        data-original-title="Դիտել" data-trigger="hover"
+                                                                        type="button" data-toggle="modal"
                                                                         data-target=".bs-example-modal-center03">
                                                                     <i class="fas fa-pen"></i>
                                                                 </button>
@@ -364,14 +398,18 @@
 
                                                 <div class="card profile-card">
                                                     <div class="card-body p-0">
-                                                        <div class="media p-3 align-items-center " style="display: flex;">
+                                                        <div class="media p-3 align-items-center "
+                                                             style="display: flex;">
                                                             <div class="media-body  align-self-center">
                                                                 <h5 class="pro-title textS"> CCCC bbbb</h5>
                                                                 <p class="mb-1 text-muted textS">admin@gmail.com</p>
                                                             </div>
-                                                            <div class="action-btn" data-id="1" style="position: inherit!important;display: flex;">
+                                                            <div class="action-btn" data-id="1"
+                                                                 style="position: inherit!important;display: flex;">
                                                                 <button class="mr-1 btnActive btn btn-sm btn-soft-info eye"
-                                                                        data-placement="top" title="" data-original-title="Դիտել" data-trigger="hover" type="button" data-toggle="modal"
+                                                                        data-placement="top" title=""
+                                                                        data-original-title="Դիտել" data-trigger="hover"
+                                                                        type="button" data-toggle="modal"
                                                                         data-target=".bs-example-modal-center03">
                                                                     <i class="fas fa-pen"></i>
                                                                 </button>
@@ -390,22 +428,35 @@
                                                     <div class="card dr-pro-pic">
                                                         <div class="card-body">
                                                             <div class="">
-                                                                <form method="POST" action="http://127.0.0.1:8000/admin/admin/24" accept-charset="UTF-8" class="form-horizontal adminForm form-material mb-0"><input name="_token" type="hidden" value="i9m4fH3JKg8Imd8Yh4EGtF7I7dWmzTmetZnDpxmh">
+                                                                <form method="POST"
+                                                                      action="http://127.0.0.1:8000/admin/admin/24"
+                                                                      accept-charset="UTF-8"
+                                                                      class="form-horizontal adminForm form-material mb-0">
+                                                                    <input name="_token" type="hidden"
+                                                                           value="i9m4fH3JKg8Imd8Yh4EGtF7I7dWmzTmetZnDpxmh">
                                                                     <input type="hidden" name="_method" value="PUT">
                                                                     <div class="form-group row">
                                                                         <div class="col-md-8">
                                                                             <label>Անուն Ազգանուն</label>
-                                                                            <input class="form-control" placeholder="Անուն" name="name" type="text" value="">
-                                                                            <p style="color:red;height: 14px;width: 100%;" id="error_name">  </p>
+                                                                            <input class="form-control"
+                                                                                   placeholder="Անուն" name="name"
+                                                                                   type="text" value="">
+                                                                            <p style="color:red;height: 14px;width: 100%;"
+                                                                               id="error_name"></p>
                                                                         </div>
                                                                         <div class="col-md-8">
                                                                             <label>Էլ-փոստ</label>
-                                                                            <input class="form-control" placeholder="Էլ-փոստ" name="email" type="text" value="">
-                                                                            <p style="color:red;height: 14px;width: 100%;" id="error_email">  </p>
+                                                                            <input class="form-control"
+                                                                                   placeholder="Էլ-փոստ" name="email"
+                                                                                   type="text" value="">
+                                                                            <p style="color:red;height: 14px;width: 100%;"
+                                                                               id="error_email"></p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group">
-                                                                        <button class="btn btn-gradient-primary btn-sm text-light px-4 mt-3 float-right mb-0">Ստեղծել</button>
+                                                                        <button class="btn btn-gradient-secondary btn-clipboard btn-sm text-light px-4 mt-3 float-right mb-0">
+                                                                            Ստեղծել
+                                                                        </button>
                                                                     </div>
                                                                 </form>
                                                             </div>
@@ -418,8 +469,11 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <a href="/admin/user_state" class="btn btn-gradient-danger btn-sm text-light px-4 mt-3 float-right mb-0 ml-2">Չեղարկել</a>
-                                        <button class="btn btn-gradient-primary btn-sm text-light px-4 mt-3 float-right mb-0">Պահպանել</button>
+                                        <a href="/admin/user_state"
+                                           class="btn btn-gradient-danger btn-sm text-light px-4 mt-3 float-right mb-0 ml-2">Չեղարկել</a>
+                                        <button class="btn btn-gradient-primary btn-sm text-light px-4 mt-3 float-right mb-0">
+                                            Պահպանել
+                                        </button>
                                     </div>
                                 </form>
                             </div>
@@ -430,37 +484,43 @@
             </div>
 
 
-            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title mt-0" id="exampleModalLabel">Վարչություն</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
+            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog"
+                 aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title mt-0" id="exampleModalLabel">Վարչություն</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <div class="col mb-4">
+                                    <label>Անուն Ազգանուն</label>
+                                    <p style="color:black;height: 14px;width: 100%;font-size: 16px;">AAAA aaa</p>
+                                </div>
+
+                                <div class="col">
+                                    <label>Էլ-փոստ</label>
+                                    <p style="color:black;height: 14px;width: 100%;font-size: 16px;">
+                                        aaaa80@gmail.com </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <a href="#"
+                                   class="btn btn-gradient-danger btn-sm text-light px-4 mt-3 float-right mb-0 ml-2">Չեղարկել</a>
+                                <button class="btn btn-secondary btn-sm text-light px-4 mt-3 ml-4 float-right mb-0">
+                                    Պահպանել
                                 </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <div class="col mb-4">
-                                        <label>Անուն Ազգանուն</label>
-                                        <p style="color:black;height: 14px;width: 100%;font-size: 16px;">AAAA aaa</p>
-                                    </div>
 
-                                    <div class="col">
-                                        <label>Էլ-փոստ</label>
-                                        <p style="color:black;height: 14px;width: 100%;font-size: 16px;"> aaaa80@gmail.com </p>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <a href="#" class="btn btn-gradient-danger btn-sm text-light px-4 mt-3 float-right mb-0 ml-2">Չեղարկել</a>
-                                    <button class="btn btn-gradient-primary btn-sm text-light px-4 mt-3 ml-4 float-right mb-0">Պահպանել</button>
-
-                                </div>
                             </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-            <div class="modal fade bs-example-modal-center02" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade bs-example-modal-center02" tabindex="-1" role="dialog"
+                 aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -490,14 +550,18 @@
 
 
                             <div class="form-group">
-                                <a href="#" class="btn btn-gradient-danger btn-sm text-light px-4 mt-3 float-right mb-0 ml-2">Չեղարկել</a>
-                                <button class="btn btn-gradient-primary btn-sm text-light px-4 mt-3 ml-4 float-right mb-0">Պահպանել</button>
+                                <a href="#"
+                                   class="btn btn-gradient-danger btn-sm text-light px-4 mt-3 float-right mb-0 ml-2">Չեղարկել</a>
+                                <button class="btn btn-secondary btn-sm text-light px-4 mt-3 ml-4 float-right mb-0">
+                                    Պահպանել
+                                </button>
                             </div>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-            <div class="modal fade bs-example-modal-center03" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal fade bs-example-modal-center03" tabindex="-1" role="dialog"
+                 aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -515,23 +579,21 @@
 
                                 <div class="col">
                                     <label>Էլ-փոստ</label>
-                                    <p style="color:black;height: 14px;width: 100%;font-size: 16px;"> cccc82@gmail.com </p>
+                                    <p style="color:black;height: 14px;width: 100%;font-size: 16px;">
+                                        cccc82@gmail.com </p>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <a href="#" class="btn btn-gradient-danger btn-sm text-light px-4 mt-3 float-right mb-0 ml-2">Չեղարկել</a>
-                                <button class="btn btn-gradient-primary btn-sm text-light px-4 mt-3 ml-4 float-right mb-0">Պահպանել</button>
+                                <a href="#"
+                                   class="btn btn-gradient-danger btn-sm text-light px-4 mt-3 float-right mb-0 ml-2">Չեղարկել</a>
+                                <button class="btn btn-secondary btn-sm text-light px-4 mt-3 ml-4 float-right mb-0">
+                                    Պահպանել
+                                </button>
                             </div>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-
-
-
-
-
-
 
 
             <div class="modal modal-rightbar fade" tabindex="-1" role="dialog" aria-labelledby="MetricaRightbar"
@@ -544,13 +606,17 @@
                         </div>
                         <div class="modal-body"><!-- Nav tabs -->
                             <ul class="nav nav-pills nav-justified mt-2 mb-4" role="tablist">
-                                <li class="nav-item waves-effect waves-light"><a class="nav-link active" data-toggle="tab"
-                                                                                 href="#ActivityTab" role="tab">Activity</a>
+                                <li class="nav-item waves-effect waves-light"><a class="nav-link active"
+                                                                                 data-toggle="tab"
+                                                                                 href="#ActivityTab"
+                                                                                 role="tab">Activity</a>
                                 </li>
                                 <li class="nav-item waves-effect waves-light"><a class="nav-link" data-toggle="tab"
-                                                                                 href="#TasksTab" role="tab">Tasks</a></li>
+                                                                                 href="#TasksTab" role="tab">Tasks</a>
+                                </li>
                                 <li class="nav-item waves-effect waves-light"><a class="nav-link" data-toggle="tab"
-                                                                                 href="#SettingsTab" role="tab">Settings</a>
+                                                                                 href="#SettingsTab"
+                                                                                 role="tab">Settings</a>
                                 </li>
                             </ul><!-- Tab panes -->
                             <div class="tab-content">
@@ -566,7 +632,8 @@
                                                 <div class="activity-info-text mb-2">
                                                     <div class="mb-1"><small class="text-muted d-block mb-1">10 Min
                                                         ago</small> <a href="#" class="m-0 w-75">Task finished</a></div>
-                                                    <p class="text-muted mb-2 text-truncate">There are many variations of
+                                                    <p class="text-muted mb-2 text-truncate">There are many variations
+                                                        of
                                                         passages.</p></div>
                                             </div>
                                             <div class="activity-info">
@@ -575,8 +642,10 @@
                                                 <div class="activity-info-text mb-2">
                                                     <div class="mb-1"><small class="text-muted d-block mb-1">50 Min
                                                         ago</small> <a href="#" class="m-0 w-75">Task Overdue</a></div>
-                                                    <p class="text-muted mb-2 text-truncate">There are many variations of
-                                                        passages.</p><span class="badge badge-soft-secondary">Design</span>
+                                                    <p class="text-muted mb-2 text-truncate">There are many variations
+                                                        of
+                                                        passages.</p><span
+                                                        class="badge badge-soft-secondary">Design</span>
                                                     <span class="badge badge-soft-secondary">HTML</span></div>
                                             </div>
                                             <div class="activity-info">
@@ -585,7 +654,8 @@
                                                 <div class="activity-info-text mb-2">
                                                     <div class="mb-1"><small class="text-muted d-block mb-1">10 hours
                                                         ago</small> <a href="#" class="m-0 w-75">New Task</a></div>
-                                                    <p class="text-muted mb-2 text-truncate">There are many variations of
+                                                    <p class="text-muted mb-2 text-truncate">There are many variations
+                                                        of
                                                         passages.</p></div>
                                             </div>
                                             <div class="activity-info">
@@ -593,10 +663,12 @@
                                                         class="mdi mdi-clipboard-alert bg-soft-warning"></i></div>
                                                 <div class="activity-info-text mb-2">
                                                     <div class="mb-1"><small
-                                                            class="text-muted d-block mb-1">yesterday</small> <a href="#"
-                                                                                                                 class="m-0 w-75">New
+                                                            class="text-muted d-block mb-1">yesterday</small> <a
+                                                            href="#"
+                                                            class="m-0 w-75">New
                                                         Comment</a></div>
-                                                    <p class="text-muted mb-2 text-truncate">There are many variations of
+                                                    <p class="text-muted mb-2 text-truncate">There are many variations
+                                                        of
                                                         passages.</p></div>
                                             </div>
                                             <div class="activity-info">
@@ -604,8 +676,10 @@
                                                         class="mdi mdi-clipboard-alert bg-soft-secondary"></i></div>
                                                 <div class="activity-info-text mb-2">
                                                     <div class="mb-1"><small class="text-muted d-block mb-1">01 feb
-                                                        2020</small> <a href="#" class="m-0 w-75">New Lead Meting</a></div>
-                                                    <p class="text-muted mb-2 text-truncate">There are many variations of
+                                                        2020</small> <a href="#" class="m-0 w-75">New Lead Meting</a>
+                                                    </div>
+                                                    <p class="text-muted mb-2 text-truncate">There are many variations
+                                                        of
                                                         passages.</p></div>
                                             </div>
                                             <div class="activity-info">
@@ -614,11 +688,14 @@
                                                 </div>
                                                 <div class="activity-info-text mb-2">
                                                     <div class="mb-1"><small class="text-muted d-block mb-1">26 jan
-                                                        2020</small> <a href="#" class="m-0 w-75">Task finished</a></div>
-                                                    <p class="text-muted mb-2 text-truncate">There are many variations of
+                                                        2020</small> <a href="#" class="m-0 w-75">Task finished</a>
+                                                    </div>
+                                                    <p class="text-muted mb-2 text-truncate">There are many variations
+                                                        of
                                                         passages.</p></div>
                                             </div>
-                                        </div><!--end activity--></div><!--end activity-scroll--></div><!--end tab-pane-->
+                                        </div><!--end activity--></div><!--end activity-scroll--></div>
+                                <!--end tab-pane-->
                                 <div class="tab-pane" id="TasksTab" role="tabpanel">
                                     <div class="m-0">
                                         <div id="rightbar_chart" class="apex-charts"></div>
@@ -629,18 +706,22 @@
                                     </div>
                                     <div class="slimscroll scroll-rightbar">
                                         <div class="p-2">
-                                            <div class="media mb-3"><img src="../assets/images/widgets/project3.jpg" alt=""
+                                            <div class="media mb-3"><img src="../assets/images/widgets/project3.jpg"
+                                                                         alt=""
                                                                          class="thumb-lg rounded-circle">
                                                 <div class="media-body align-self-center text-truncate ml-3"><p
-                                                        class="text-success font-weight-semibold mb-0 font-14">Project</p>
+                                                        class="text-success font-weight-semibold mb-0 font-14">
+                                                    Project</p>
                                                     <h4 class="mt-0 mb-0 font-weight-semibold text-dark font-18">Payment
                                                         App</h4></div><!--end media-body--></div>
                                             <span><b>Deadline:</b> 02 June 2020</span> <a href="javascript: void(0);"
                                                                                           class="d-block mt-3"><p
-                                                class="text-muted mb-0">Complete Tasks<span class="float-right">75%</span>
+                                                class="text-muted mb-0">Complete Tasks<span
+                                                class="float-right">75%</span>
                                         </p>
                                             <div class="progress mt-2" style="height: 4px;">
-                                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%"
+                                                <div class="progress-bar bg-secondary" role="progressbar"
+                                                     style="width: 75%"
                                                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </a></div>
@@ -650,41 +731,48 @@
                                 <div class="tab-pane" id="SettingsTab" role="tabpanel">
                                     <div class="p-1 bg-light mx-n3"><h6 class="px-3">Account Settings</h6></div>
                                     <div class="p-2 text-left mt-3">
-                                        <div class="custom-control custom-switch switch-primary mb-3"><input type="checkbox"
-                                                                                                             class="custom-control-input"
-                                                                                                             id="settings-switch1"
-                                                                                                             checked="">
-                                            <label class="custom-control-label" for="settings-switch1">Auto updates</label>
+                                        <div class="custom-control custom-switch switch-primary mb-3"><input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="settings-switch1"
+                                                checked="">
+                                            <label class="custom-control-label" for="settings-switch1">Auto
+                                                updates</label>
                                         </div>
-                                        <div class="custom-control custom-switch switch-primary mb-3"><input type="checkbox"
-                                                                                                             class="custom-control-input"
-                                                                                                             id="settings-switch2">
+                                        <div class="custom-control custom-switch switch-primary mb-3"><input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="settings-switch2">
                                             <label class="custom-control-label" for="settings-switch2">Location
                                                 Permission</label></div>
-                                        <div class="custom-control custom-switch switch-primary mb-3"><input type="checkbox"
-                                                                                                             class="custom-control-input"
-                                                                                                             id="settings-switch3"
-                                                                                                             checked="">
+                                        <div class="custom-control custom-switch switch-primary mb-3"><input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="settings-switch3"
+                                                checked="">
                                             <label class="custom-control-label" for="settings-switch3">Show offline
                                                 Contacts</label></div>
                                     </div>
                                     <div class="p-1 bg-light mx-n3"><h6 class="px-3">General Settings</h6></div>
                                     <div class="p-2 text-left mt-3">
-                                        <div class="custom-control custom-switch switch-primary mb-3"><input type="checkbox"
-                                                                                                             class="custom-control-input"
-                                                                                                             id="settings-switch4"
-                                                                                                             checked="">
+                                        <div class="custom-control custom-switch switch-primary mb-3"><input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="settings-switch4"
+                                                checked="">
                                             <label class="custom-control-label" for="settings-switch4">Show me
                                                 Online</label></div>
-                                        <div class="custom-control custom-switch switch-primary mb-3"><input type="checkbox"
-                                                                                                             class="custom-control-input"
-                                                                                                             id="settings-switch5">
+                                        <div class="custom-control custom-switch switch-primary mb-3"><input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="settings-switch5">
                                             <label class="custom-control-label" for="settings-switch5">Status visible to
                                                 all</label></div>
-                                        <div class="custom-control custom-switch switch-primary mb-3"><input type="checkbox"
-                                                                                                             class="custom-control-input"
-                                                                                                             id="settings-switch6"
-                                                                                                             checked="">
+                                        <div class="custom-control custom-switch switch-primary mb-3"><input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="settings-switch6"
+                                                checked="">
                                             <label class="custom-control-label" for="settings-switch6">Notifications
                                                 Popup</label></div>
                                     </div>
@@ -699,19 +787,15 @@
     </div>
 
 
-
     <!-- end page-wrapper --><!-- jQuery  -->
-
-
-
 
 
     <script src="http://159.203.181.199/assets/back/assets/js/jquery.min.js"></script>
     <script>
-        $(document).on("click", ".parentMenu",function (event) {
+        $(document).on("click", ".parentMenu", function (event) {
             event.preventDefault();
             id = $(this).attr("href");
-            window.location.href = $(id +" .nav").eq(0).children(".nav-item").eq(0).children("a").attr("href");
+            window.location.href = $(id + " .nav").eq(0).children(".nav-item").eq(0).children("a").attr("href");
             return false;
         });
     </script>
@@ -735,17 +819,16 @@
         $(".main-icon-menu-pane").removeClass("active");
         $(".parentMenu").removeClass("active");
         $(".subMenuItem").children(".active").parents(".main-icon-menu-pane").addClass("active");
-        $(".parentMenu[href='#"+$(".subMenu").children(".active").attr("id")+"']").addClass("active");
+        $(".parentMenu[href='#" + $(".subMenu").children(".active").attr("id") + "']").addClass("active");
 
 
-
-        $(document).on("click", ".warningLink",function (event) {
+        $(document).on("click", ".warningLink", function (event) {
             event.preventDefault();
-            text   = $(this).data("text");
+            text = $(this).data("text");
             footer = $(this).data("footer");
-            Swal.fire({ icon: "warning", title: "Oops...", text: text, footer: footer });
+            Swal.fire({icon: "warning", title: "Oops...", text: text, footer: footer});
         });
-        $(document).on("click", ".deleteItem",function (event) {
+        $(document).on("click", ".deleteItem", function (event) {
             event.preventDefault();
             href = $(this).data("href");
             remove = $(this).data("remove");
@@ -760,24 +843,29 @@
                 confirmButtonText: "Այո!",
                 cancelButtonText: "Չեղարկել!",
             }).then(function (t) {
-                if(t.value){
+                if (t.value) {
                     $.ajax({
                         type: "GET",
                         url: href,
                         dataType: "json",
                         success: function (data) {
-                            if(data.status){
+                            if (data.status) {
                                 this_.parents("tr").remove();
-                                if (remove != null){
+                                if (remove != null) {
                                     this_.parents(remove).remove();
                                 }
                                 t.value && Swal.fire("ՋՆՋՎԱԾ Է!", "Հաջողությամբ ջնջվել է.", "success");
-                            }else{
-                                Swal.fire({ icon: "error", title: "Oops...", text: "Ինչ որ բան այնպես չգնաց!", footer: "" });
+                            } else {
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "Oops...",
+                                    text: "Ինչ որ բան այնպես չգնաց!",
+                                    footer: ""
+                                });
                             }
                         },
-                        error:function(){
-                            Swal.fire({ icon: "error", title: "Oops...", text: "Ինչ որ բան այնպես չգնաց!", footer: "" });
+                        error: function () {
+                            Swal.fire({icon: "error", title: "Oops...", text: "Ինչ որ բան այնպես չգնաց!", footer: ""});
                         }
                     });
                 }
@@ -787,11 +875,11 @@
         });
 
 
-
         $(".startDataTime").change();
         $(".endDataTime").change();
 
-    </script><script>
+    </script>
+    <script>
         $(".btnActive").on("click", function (e) {
             $(".activeUser").removeClass("activeUser");
             $(this).parents(".userblock").addClass("activeUser");
@@ -801,23 +889,23 @@
 
         $(".edit").on("click", function (e) {
             id = $(this).parents(".action-btn").data("id");
-            $( "#subPage" ).load("/admin/admin/"+id+"/edit", function() {
+            $("#subPage").load("/admin/admin/" + id + "/edit", function () {
 
             });
         });
         $(".eye").on("click", function (e) {
             id = $(this).parents(".action-btn").data("id");
-            $( "#subPage" ).load("/admin/admin/"+id+"", function() {
+            $("#subPage").load("/admin/admin/" + id + "", function () {
 
             });
         });
         $(".permission").on("click", function (e) {
             id = $(this).parents(".action-btn").data("id");
-            $( "#subPage" ).load("/admin/admin/getPermission/"+id, function() {
+            $("#subPage").load("/admin/admin/getPermission/" + id, function () {
 
             });
         });
-        $(document).on("submit", ".adminForm",function(e){
+        $(document).on("submit", ".adminForm", function (e) {
             e.preventDefault();
             $("#error_name").text("");
             $("#error_user_name").text("");
@@ -830,12 +918,12 @@
                 type: 'POST',
                 dataType: 'json',
                 data: $(".adminForm").serialize(),
-                success: function(data){
-                    if(data.status == false){
-                        $.each( data.errors, function( key, value ) {
-                            $("#error_"+key).text(value[0]);
+                success: function (data) {
+                    if (data.status == false) {
+                        $.each(data.errors, function (key, value) {
+                            $("#error_" + key).text(value[0]);
                         });
-                    }else{
+                    } else {
                         location.reload();
                     }
                 }
