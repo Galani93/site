@@ -644,6 +644,19 @@ span.dtr-title {
     position: relative;
     left: 110px;
 }
+.toogle-block.hidden {
+    display:  none;
+}
+.dropdown-item{
+    position: relative;
+}
+
+.toogle-block{
+    box-shadow: #0a0c1a;
+    z-index: 1;
+    width: 100%;
+    //position: absolute;
+}
 
 /*.dropdown-menu.show {*/
 /*    width: 100%;*/
