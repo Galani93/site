@@ -657,6 +657,10 @@ span.dtr-title {
     width: 100%;
     margin-top: 10px;
 }
+button.mr-1.btnActive.btn.btn-sm.btn-soft-info.edit {
+    position: relative;
+    right: 33px;
+}
 
 /*.dropdown-menu.show {*/
 /*    width: 100%;*/
