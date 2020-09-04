@@ -659,10 +659,14 @@ span.dtr-title {
 /*    left: 180px;*/
 /*}*/
 .dtr-data button{
-    /*position: relative;*/
-    /*left: 142px;*/
-    margin: 10px  0 10px 10px;
+    position: relative;
+    left: calc(100% - 300px);
+    margin: 10px  0 10px 5px;
 }
+span.dtr-data i.fa{
+    float: right;
+}
+
 .toogle-block.hidden {
     display:  none;
 }
@@ -686,4 +690,7 @@ button.mr-1.btnActive.btn.btn-sm.btn-soft-info.edit {
 }
 .modal-body.modal-btn button{
     margin: 0 10px;
+}
+ul.dtr-details {
+    width: 50%;
 }
