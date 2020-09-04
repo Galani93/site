@@ -629,9 +629,13 @@ div.dtr-bs-modal table.table tr:first-child td {
                    BUTTON +
 **************************************************
 **************************************************/
-/*span.dtr-data{*/
-/*    float: right;*/
-/*}*/
+span.dtr-data select{
+    float: right;
+}
+span.dtr-data input{
+    float: right;
+}
+
 ul.dtr-details {
     float: left;
 }
@@ -641,11 +645,12 @@ span.dtr-title {
 
 .dtr-title button {
     position: relative;
-    left: 57px;
+    left: 180px;
 }
 .dtr-data button{
     position: relative;
-    left:21px;
+    left: 142px;
+    margin: 10px 0;
 }
 .toogle-block.hidden {
     display:  none;
