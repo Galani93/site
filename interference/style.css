@@ -694,3 +694,6 @@ button.mr-1.btnActive.btn.btn-sm.btn-soft-info.edit {
 ul.dtr-details {
     width: 50%;
 }
+td i.fa{
+    cursor: pointer;
+}
