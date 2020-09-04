@@ -635,7 +635,18 @@ span.dtr-data select{
 span.dtr-data input{
     float: right;
 }
-
+input.number-form {
+    width: 80px;
+}
+.form-control.form-data{
+    width: 145px;
+}
+div#datatable_filter {
+    float: right;
+}
+div#datatable_paginate {
+    float: right;
+}
 ul.dtr-details {
     float: left;
 }
@@ -643,14 +654,14 @@ span.dtr-title {
     margin-bottom: 10px;
 }
 
-.dtr-title button {
-    position: relative;
-    left: 180px;
-}
+/*.dtr-title button {*/
+/*    position: relative;*/
+/*    left: 180px;*/
+/*}*/
 .dtr-data button{
-    position: relative;
-    left: 142px;
-    margin: 10px 0;
+    /*position: relative;*/
+    /*left: 142px;*/
+    margin: 10px  0 10px 10px;
 }
 .toogle-block.hidden {
     display:  none;
@@ -669,7 +680,10 @@ button.mr-1.btnActive.btn.btn-sm.btn-soft-info.edit {
     position: relative;
     right: 33px;
 }
-/*.dropdown-menu.show {*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*}*/
+.modal-body.modal-btn{
+    display: flex;
+    justify-content: center;
+}
+.modal-body.modal-btn button{
+    margin: 0 10px;
+}
