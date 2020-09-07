@@ -1,0 +1,13 @@
+.toogle-block.hidden {
+    display:  none;
+}
+.dropdown-item{
+    position: relative;
+}
+
+.toogle-block{
+    box-shadow: #0a0c1a;
+    z-index: 1;
+    width: 100%;
+    margin-top: 10px;
+}

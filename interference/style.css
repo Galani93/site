@@ -654,10 +654,6 @@ span.dtr-title {
     margin-bottom: 10px;
 }
 
-/*.dtr-title button {*/
-/*    position: relative;*/
-/*    left: 180px;*/
-/*}*/
 .dtr-data button{
     position: relative;
     left: calc(100% - 300px);
@@ -667,19 +663,7 @@ span.dtr-data i.fa{
     float: right;
 }
 
-.toogle-block.hidden {
-    display:  none;
-}
-.dropdown-item{
-    position: relative;
-}
 
-.toogle-block{
-    box-shadow: #0a0c1a;
-    z-index: 1;
-    width: 100%;
-    margin-top: 10px;
-}
 button.mr-1.btnActive.btn.btn-sm.btn-soft-info.edit {
     position: relative;
     right: 33px;
