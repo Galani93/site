@@ -734,7 +734,6 @@
                                     </div>
 
                                 </div>
-
                             </div>
 
                         </div>
@@ -764,7 +763,8 @@
                             </div>
                             <div class="modal-body">
                                 <div class="alert alert-outline-purple b-round" role="alert">
-                                    <a href="" class="change-pdf">2020-08-14 12:45:38 Փոփոխություն</a>
+                                    <a href="" class="change-pdf" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-lg">2020-07-13 13:36:32 Փոփոխություն</a>
+
                                     <div class="check-dle">
                                         <input type="checkbox">
                                         <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
@@ -773,7 +773,7 @@
                                     </div>
                                 </div>
                                 <div class="alert alert-outline-purple b-round" role="alert">
-                                    <a href="" class="change-pdf">2020-07-31 14:48:10 Փոփոխություն</a>
+                                    <a href="" class="change-pdf" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-lg">2020-07-31 14:48:10 Փոփոխություն</a>
                                     <div class="check-dle">
                                         <input type="checkbox">
                                         <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
@@ -782,16 +782,7 @@
 
                                     </div>
                                 </div>
-                                <div class="alert alert-outline-purple b-round" role="alert">
-                                    <a href="" class="change-pdf">2020-07-13 13:36:32 Փոփոխություն</a>
-                                    <div class="check-dle">
-                                        <input type="checkbox">
-                                        <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                            <i class="far fa-trash-alt"></i>
-                                        </a>
 
-                                    </div>
-                                </div>
                         </div>
                     </div>
                 </div>
@@ -799,6 +790,103 @@
                 <!-- /.modal -->
             </div>
 
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-before">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="myLargeModalLabel">Փոփոխությունից առաջ</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                                                   style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead>
+                                                <tr>
+                                                    <th>ՀՀ</th>
+                                                    <th>CPV կոդ</th>
+                                                    <th>Անվանումը</th>
+                                                    <th>Չափման միավոր</th>
+                                                    <th>Տեխնիկական բնութագրեր</th>
+                                                    <th>Քանակ</th>
+                                                    <th>Միավորի գին</th>
+                                                    <th>Ընդհանուր գումար</th>
+                                                    <th>Գնման ձև</th>
+                                                    <th>ֆինանսական դասակարգիչ</th>
+                                                    <th>Գնման լռելայն ժամկետ <br>
+                                                        <button type="button" class="btn btn-primary apply ">Կիրառել բոլորի
+                                                            վրա
+                                                        </button>
+                                                    </th>
+                                                    <th>Պատասխանատու ստորաբաժանում</th>
+                                                    <th>Պայմանով / Առանց պայման</th>
+                                                    <th>Ավելացնել նույն CPV-ից</th>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>03111100/1</td>
+                                                    <td>սոյայի սերմեր</td>
+                                                    <td>կգ</td>
+                                                    <td>
+                                                        <button type="button"
+                                                                class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light"
+                                                                data-toggle="modal" data-animation="bounce"
+                                                                data-target="#exampleModal03">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    </td>
+                                                    <td class="">2000</td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="0"></option>
+                                                            <option value="1">10</option>
+                                                            <option value="2">100</option>
+                                                            <option value="3">1000</option>
+                                                            <option value="4">10000</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control form-data" type="date" value="2011-08-19" id="example-date-input01">
+                                                    </td>
+                                                    <td>
+                                                        <button type="button"
+                                                                class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light"
+                                                                data-toggle="modal" data-animation="bounce"
+                                                                data-target="#exampleModal02">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+
+                                                    </td>
+                                                    <td><input type="checkbox"></td>
+                                                    <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
+
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
         </div>
 
 

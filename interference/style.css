@@ -681,3 +681,10 @@ ul.dtr-details {
 td i.fa{
     cursor: pointer;
 }
+.centered{
+    max-width: 520px;
+}
+
+.modal-dialog.modal-lg.modal-before{
+    max-width: 1560px;
+}

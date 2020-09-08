@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Վարչություն-բաժին-համակարգող</title>
+    <title>Վարչություն </title>
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
     <meta content="" name="author">
@@ -118,6 +118,9 @@
                             </a>
                         </li>
                         <!--end nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="responsible-unit.html">Պատասխանատու ստորաբաժանում</a>
+                        </li>
 
                     </ul>
                 </div>
@@ -392,9 +395,8 @@
                 <div class="page-title-box">
                     <div class="float-right">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);"></a></li>
-                            <li class="breadcrumb-item"><a href="javascript:void(0);"> Itender </a></li>
                             <li class="breadcrumb-item active"> Գնումների Պլան</li>
+                            <li class="breadcrumb-item">Պատասխանատու ստորաբաժանում</li>
                         </ol>
                     </div>
                     <h4 class="page-title">Գնումների Պլան</h4>
@@ -407,8 +409,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="mt-0 header-title">Գնումների պլանի ստեղծման</h4>
-                            <p class="header-title mb-3" style="text-align: center;"></p>
-                            <!--                            Համակարգող                          -->
+                            <p class="text-muted mb-3"></p>
+                            <!--                         Վարչություն                       -->
                             <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
 
                                 <div class="row">
@@ -418,7 +420,7 @@
                                             <thead>
                                             <tr>
                                                 <th>ՀՀ</th>
-                                                <th>Բաժնի կողմից կցված CPV-ներ</th>
+                                                <th>CPV կոդ</th>
                                                 <th>Անվանումը</th>
                                                 <th>Չափման միավոր</th>
                                                 <th>Տեխնիկական բնութագրեր</th>
@@ -428,10 +430,14 @@
                                                 <th>Գնման ձև</th>
                                                 <th>ֆինանսական դասակարգիչ</th>
                                                 <th>Գնման լռելայն ժամկետ <br>
-                                                    <button type="button" class="btn btn-primary apply ">Կիրառել բոլորի վրա</button>
+                                                    <button type="button" class="btn btn-primary apply ">Կիրառել բոլորի
+                                                        վրա
+                                                    </button>
                                                 </th>
-                                                <th>Համակարգողներ</th>
+                                                <th> Բաժիններ</th>
                                                 <th>Պայմանով / Առանց պայման</th>
+                                                <th>Ավելացնել նույն CPV-ից</th>
+
 
                                             </tr>
                                             </thead>
@@ -481,7 +487,7 @@
 
                                                 </td>
                                                 <td><input type="checkbox"></td>
-
+                                                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
 
                                             </tr>
                                             <tr>
@@ -536,8 +542,10 @@
                                                         <i class="fa fa-check"></i>
                                                     </button>
                                                 </td>
-                                                <td><input type="checkbox"></td>
-
+                                                <td>
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
 
                                             </tr>
                                             <tr>
@@ -584,7 +592,7 @@
                                                     </button>
                                                 </td>
                                                 <td><input type="checkbox"></td>
-
+                                                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
 
 
                                             </tr>
@@ -640,8 +648,10 @@
                                                         <i class="fa fa-check"></i>
                                                     </button>
                                                 </td>
-                                                <td><input type="checkbox"></td>
-
+                                                <td>
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
 
                                             </tr>
 
@@ -660,7 +670,7 @@
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
-
+                                                <td></td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
@@ -676,7 +686,7 @@
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
-
+                                                <td></td>
                                             </tr>
 
                                             </tbody>
@@ -687,7 +697,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a class="btn btn-primary" href="#">Փոխանցել գնումների պլանը</a>
+                            <a class="btn btn-primary" href="#">Ստեղծել գնումների պլան</a>
                         </div>
                     </div>
                 </div>
@@ -846,7 +856,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title mt-0" id="exampleModalLabel02">Համակարգողներ</h5>
+                            <h5 class="modal-title mt-0" id="exampleModalLabel02">Պատասխանատու ստորաբաժանում</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
@@ -903,6 +913,10 @@
                             </table>
                         </div>
                         <div class="modal-footer">
+                            <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal"
+                                    data-target="#exampleModal01">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button type="button" class="btn btn-primary">Ավելացնել</button>
                             <button type="button" class="btn btn-danger waves-effect waves-light" data-dismiss="modal">
                                 Չեղարկել
@@ -989,9 +1003,8 @@
                 </div>
             </div>
 
-            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog"
-                 aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered centered">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title mt-0" id="exampleModalLabel">Ավելացնել</h5>
