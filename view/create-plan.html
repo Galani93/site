@@ -503,81 +503,34 @@
                             <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <table id="datatable" class="table table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
-                                           tyle="border-collapse: collapse; border-spacing: 0px; width: 100%;"
-                                           role="grid" aria-describedby="datatable_info">
-
+                                        <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                                               style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
-                                            <tr role="row">
-                                                <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 50px;"
-                                                    aria-label="Name: activate to sort column descending"
-                                                    aria-sort="ascending">ՀՀ
-                                                </th>
-                                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 150px;"
-                                                    aria-label="Position: activate to sort column ascending">CPV կոդ(պայմանով/ առանց
-                                                    պայման)
-                                                </th>
-                                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 150px;"
-                                                    aria-label="Office: activate to sort column ascending">Անվանումը
-                                                </th>
-
-                                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 100px;"
-                                                    aria-label="Age: activate to sort column ascending">Չափման միավոր
-                                                </th>
-
-                                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 150px;"
-                                                    aria-label="Start date: activate to sort column ascending">Բնութագիր
-                                                    / Դիտել/ սեղմակ
-                                                </th>
-
-
-                                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 100px;"
-                                                    aria-label="Office: activate to sort column ascending">Միավորի գին
-                                                </th>
-                                                <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 50px;"
-                                                    aria-label="Name: activate to sort column descending"
-                                                    aria-sort="ascending">Քանակ
-                                                </th>
-
-                                                <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 50px;"
-                                                    aria-label="Name: activate to sort column descending"
-                                                    aria-sort="ascending">Ընդհանուր
-                                                </th>
-
-                                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 100px;"
-                                                    aria-label="Position: activate to sort column ascending">Գնման ձև
-                                                </th>
-
-                                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 100px;"
-                                                    aria-label="Office: activate to sort column ascending">Ֆինանսական դասակարգիչ
-                                                </th>
-                                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons"
-                                                    rowspan="1" colspan="1" style="width: 100px;"
-                                                    aria-label="Age: activate to sort column ascending">Գնման ժամկետ
-                                                </th>
-                                            </tr>
                                             <tr>
-                                                <td colspan="11" style="text-align: left">ՄԱՍ 1 ԱՊՐԱՆՔՆԵՐ</td>
+                                                <th>ՀՀ</th>
+                                                <th>CPV կոդ(պայմանով/ առանց պայման)</th>
+                                                <th>Անվանումը</th>
+                                                <th>Չափման միավոր</th>
+                                                <th>Բնութագիր / Դիտել/ սեղմակ</th>
+                                                <th>Միավորի գին</th>
+                                                <th>Քանակ</th>
+                                                <th>Ընդհանուր </th>
+                                                <th>Գնման ձև</th>
+                                                <th>ֆինանսական դասակարգիչ</th>
+                                                <th>Գնման ժամկետ</th>
+                                                <th>Փոփոխություն</th>
+                                            <tr>
+                                                <td colspan="12" style="text-align: left">ՄԱՍ 1 ԱՊՐԱՆՔՆԵՐ</td>
                                             </tr>
 
 
+                                            </tr>
                                             </thead>
-
                                             <tbody>
 
-                                            <tr role="row" class="odd">
-                                                <td tabindex="0" class="sorting_1" style=""> 1</td>
-                                                <td class="">03111100/1</td>
+                                            <tr>
+                                                <td> 1</td>
+                                                <td>03111100/1</td>
                                                 <td>սոյայի սերմեր</td>
                                                 <td>կգ</td>
                                                 <td>20.00</td>
@@ -589,10 +542,15 @@
                                                 <td>
                                                     <input class="form-control" type="date" value="2020-08-24" id="example-date-input">
                                                 </td>
+                                                <td>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        2020-08-14 12:45:38
+                                                    </button>
+                                                </td>
                                             </tr>
-                                            <tr role="row" class="even">
-                                                <td tabindex="0" class="sorting_1" style="">2</td>
-                                                <td class="">03111100/2</td>
+                                            <tr >
+                                                <td>2</td>
+                                                <td>03111100/2</td>
                                                 <td>սոյայի սերմեր</td>
                                                 <td>կգ</td>
                                                 <td>20.00</td>
@@ -604,11 +562,15 @@
                                                 <td>
                                                     <input class="form-control" type="date" value="2020-08-24" id="example-date-input">
                                                 </td>
-
+                                                <td>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        2020-08-14 12:45:38
+                                                    </button>
+                                                </td>
                                             </tr>
-                                            <tr role="row" class="odd">
-                                                <td tabindex="0" class="sorting_1" style=""> 3</td>
-                                                <td class="">03111100/1</td>
+                                            <t>
+                                                <td> 3</td>
+                                                <td>03111100/1</td>
                                                 <td>սոյայի սերմեր</td>
                                                 <td>կգ</td>
                                                 <td>20.00</td>
@@ -620,10 +582,15 @@
                                                 <td>
                                                     <input class="form-control" type="date" value="2020-08-24" id="example-date-input">
                                                 </td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                                <td tabindex="0" class="sorting_1" style="">4</td>
-                                                <td class="">03111100/2</td>
+                                                <td>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        2020-08-14 12:45:38
+                                                    </button>
+                                                </td>
+                                            </t>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>03111100/2</td>
                                                 <td>սոյայի սերմեր</td>
                                                 <td>կգ</td>
                                                 <td>20.00</td>
@@ -635,12 +602,17 @@
                                                 <td>
                                                     <input class="form-control" type="date" value="2020-08-24" id="example-date-input">
                                                 </td>
+                                                <td>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        2020-08-14 12:45:38
+                                                    </button>
+                                                </td>
 
                                             </tr>
 
 
-                                            <tr role="row" class="odd">
-                                                <td  tabindex="0" class="sorting_1" style="">Ընդամենը</td>
+                                            <tr>
+                                                <td>Ընդամենը</td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
@@ -651,13 +623,14 @@
                                                 <td></td>
                                                 <td>100</td>
                                                 <td></td>
+                                                <td></td>
                                             </tr>
 
 
 
-                                            <tr role="row" class="even">
-                                                <td tabindex="0" class="sorting_1" style="">5</td>
-                                                <td class="">03111100/2</td>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>03111100/2</td>
                                                 <td>սոյայի սերմեր</td>
                                                 <td>կգ</td>
                                                 <td>20.00</td>
@@ -669,11 +642,17 @@
                                                 <td>
                                                     <input class="form-control" type="date" value="2020-08-24" id="example-date-input">
                                                 </td>
+                                                <td>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        2020-08-14 12:45:38
+                                                    </button>
+                                                </td>
+
 
                                             </tr>
-                                            <tr role="row" class="odd">
-                                                <td tabindex="0" class="sorting_1" style=""> 6</td>
-                                                <td class="">03111100/1</td>
+                                            <tr>
+                                                <td> 6</td>
+                                                <td>03111100/1</td>
                                                 <td>սոյայի սերմեր</td>
                                                 <td>կգ</td>
                                                 <td>20.00</td>
@@ -685,10 +664,15 @@
                                                 <td>
                                                     <input class="form-control" type="date" value="2020-08-24" id="example-date-input">
                                                 </td>
+                                                <td>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        2020-08-14 12:45:38
+                                                    </button>
+                                                </td>
                                             </tr>
-                                            <tr role="row" class="even">
-                                                <td tabindex="0" class="sorting_1" style=""> 7</td>
-                                                <td class="">03111100/1</td>
+                                            <tr>
+                                                <td> 7</td>
+                                                <td>03111100/1</td>
                                                 <td>սոյայի սերմեր</td>
                                                 <td>կգ</td>
                                                 <td>20.00</td>
@@ -700,10 +684,15 @@
                                                 <td>
                                                     <input class="form-control" type="date" value="2020-08-24" id="example-date-input">
                                                 </td>
+                                                <td>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        2020-08-14 12:45:38
+                                                    </button>
+                                                </td>
                                             </tr>
-                                            <tr role="row" class="odd">
-                                                <td tabindex="0" class="sorting_1" style="">8</td>
-                                                <td class="">03111100/2</td>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>03111100/2</td>
                                                 <td>սոյայի սերմեր</td>
                                                 <td>կգ</td>
                                                 <td>20.00</td>
@@ -715,13 +704,16 @@
                                                 <td>
                                                     <input class="form-control" type="date" value="2020-08-24" id="example-date-input">
                                                 </td>
+                                                <td>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        2020-08-14 12:45:38
+                                                    </button>
+                                                </td>
 
                                             </tr>
 
-
-
-                                            <tr role="row" class="even">
-                                                <td colspan="1" tabindex="0" class="sorting_1" style="">Ամբողջ գումարը</td>
+                                            <tr>
+                                                <td colspan="1" >Ամբողջ գումարը</td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
@@ -732,9 +724,8 @@
                                                 <td></td>
                                                 <td>200</td>
                                                 <td></td>
+                                                <td></td>
                                             </tr>
-
-
 
                                             </tbody>
 
@@ -743,7 +734,6 @@
                                     </div>
 
                                 </div>
-
                             </div>
 
                         </div>
@@ -762,142 +752,141 @@
 
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card">
-                      <div class="row all">
-                          <a href="#" class="btn btn-xs btn-primary"> Նշել բոլորը</a>
-                          <a href="#" data-tablename="userTable" data-href="/admin/user/delete/85" class="btn btn-xs btn-danger waves-effect waves-light deleteItem">
-                               Ջնջել</a>
-                      </div>
-                        <div class="card-body">
-                            <div class="alert alert-outline-purple b-round" role="alert">
-                                <a href="" class="change-pdf">2020-08-24 10:02:51 Փոփոխություն</a>
-                                <div class="check-dle">
-                                    <input type="checkbox">
-                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="exampleModalLabel">Վերջին փոփոխությունները</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-outline-purple b-round" role="alert">
+                                    <a href="" class="change-pdf" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-lg">2020-07-13 13:36:32 Փոփոխություն</a>
 
+                                    <div class="check-dle">
+                                        <input type="checkbox">
+                                        <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                            <i class="far fa-trash-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="alert alert-outline-purple b-round" role="alert">
+                                    <a href="" class="change-pdf" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-lg">2020-07-31 14:48:10 Փոփոխություն</a>
+                                    <div class="check-dle">
+                                        <input type="checkbox">
+                                        <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
+                                            <i class="far fa-trash-alt"></i>
+                                        </a>
+
+                                    </div>
                                 </div>
 
-
-
-
-
-                            </div>
-                            <div class="alert alert-outline-purple b-round" role="alert">
-                                <a href="" class="change-pdf">2020-08-19 15:28:44 Փոփոխություն</a>
-                                <div class="check-dle">
-                                    <input type="checkbox">
-                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
-
-                                </div>
-
-
-
-
-
-                            </div>
-                            <div class="alert alert-outline-purple b-round" role="alert">
-                                <a href="" class="change-pdf">2020-08-14 12:45:38 Փոփոխություն</a>
-                                <div class="check-dle">
-                                    <input type="checkbox">
-                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
-
-                                </div>
-
-
-
-
-
-                            </div>
-                            <div class="alert alert-outline-purple b-round" role="alert">
-                                <a href="" class="change-pdf">2020-07-31 14:48:10 Փոփոխություն</a>
-                                <div class="check-dle">
-                                    <input type="checkbox">
-                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
-
-                                </div>
-
-
-
-
-
-                            </div>
-                            <div class="alert alert-outline-purple b-round" role="alert">
-                                <a href="" class="change-pdf">2020-07-13 13:36:32 Փոփոխություն</a>
-                                <div class="check-dle">
-                                    <input type="checkbox">
-                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
-
-                                </div>
-
-
-
-
-
-                            </div>
-                            <div class="alert alert-outline-purple b-round" role="alert">
-                                <a href="" class="change-pdf">2020-07-13 13:34:40 Փոփոխություն</a>
-                                <div class="check-dle">
-                                    <input type="checkbox">
-                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
-
-                                </div>
-
-
-
-
-
-                            </div>
-                            <div class="alert alert-outline-purple b-round" role="alert">
-                                <a href="" class="change-pdf">2020-05-05 19:12:44 Փոփոխություն</a>
-                                <div class="check-dle">
-                                    <input type="checkbox">
-                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
-
-                                </div>
-
-
-
-
-
-                            </div>
-                            <div class="alert alert-outline-purple b-round" role="alert">
-                                <a href="" class="change-pdf">2020-05-05 19:06:57 Փոփոխություն</a>
-                                <div class="check-dle">
-                                    <input type="checkbox">
-                                    <a data-href="#" data-remove="" class="btn btn-sm btn-soft-danger dele deleteItem">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="loadmore_full">
-                            <a href="#" class="btn btn-xs btn-primary">Տեսնել ավելին</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- /.modal -->
             </div>
 
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-before">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="myLargeModalLabel">Փոփոխությունից առաջ</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                                                   style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead>
+                                                <tr>
+                                                    <th>ՀՀ</th>
+                                                    <th>CPV կոդ</th>
+                                                    <th>Անվանումը</th>
+                                                    <th>Չափման միավոր</th>
+                                                    <th>Տեխնիկական բնութագրեր</th>
+                                                    <th>Քանակ</th>
+                                                    <th>Միավորի գին</th>
+                                                    <th>Ընդհանուր գումար</th>
+                                                    <th>Գնման ձև</th>
+                                                    <th>ֆինանսական դասակարգիչ</th>
+                                                    <th>Գնման լռելայն ժամկետ <br>
+                                                        <button type="button" class="btn btn-primary apply ">Կիրառել բոլորի
+                                                            վրա
+                                                        </button>
+                                                    </th>
+                                                    <th>Պատասխանատու ստորաբաժանում</th>
+                                                    <th>Պայմանով / Առանց պայման</th>
+                                                    <th>Ավելացնել նույն CPV-ից</th>
 
 
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>03111100/1</td>
+                                                    <td>սոյայի սերմեր</td>
+                                                    <td>կգ</td>
+                                                    <td>
+                                                        <button type="button"
+                                                                class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light"
+                                                                data-toggle="modal" data-animation="bounce"
+                                                                data-target="#exampleModal03">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    </td>
+                                                    <td class="">2000</td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="0"></option>
+                                                            <option value="1">10</option>
+                                                            <option value="2">100</option>
+                                                            <option value="3">1000</option>
+                                                            <option value="4">10000</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control form-data" type="date" value="2011-08-19" id="example-date-input01">
+                                                    </td>
+                                                    <td>
+                                                        <button type="button"
+                                                                class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light"
+                                                                data-toggle="modal" data-animation="bounce"
+                                                                data-target="#exampleModal02">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+
+                                                    </td>
+                                                    <td><input type="checkbox"></td>
+                                                    <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
+
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
         </div>
 
 
