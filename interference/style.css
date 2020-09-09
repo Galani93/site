@@ -686,8 +686,44 @@ td i.fa{
 }
 
 .modal-dialog.modal-lg.modal-before{
-    max-width: 1560px;
+    max-width: 1460px;
 }
 .modal-dialog.modal-dialog-centered.modal-add {
     max-width: 520px;
+}
+
+
+
+
+
+
+
+.text-muted b {
+    float: left;
+}
+h4.text-secondary.font-14.product-title {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+h4.text-primary.font-14.product-title {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+h4.text-success.font-14.product-title {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+.file-box-content.document{
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
 }
