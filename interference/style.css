@@ -688,3 +688,6 @@ td i.fa{
 .modal-dialog.modal-lg.modal-before{
     max-width: 1560px;
 }
+.modal-dialog.modal-dialog-centered.modal-add {
+    max-width: 520px;
+}
