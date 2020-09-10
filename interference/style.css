@@ -733,3 +733,7 @@ h4.text-success.font-14.product-title {
     justify-content: space-around;
    flex-wrap: wrap;
 }
+.inactivity{
+    margin-bottom: 190px;
+    padding: 0;
+}
