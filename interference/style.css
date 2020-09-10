@@ -701,11 +701,16 @@ td i.fa{
 .text-muted b {
     float: left;
 }
+p.text-muted {
+    text-align: left;
+}
 h4.text-secondary.font-14.product-title {
-    float: left;
+text-align: left;
     font-size: 14px;
     font-weight: bold;
     margin: 0;
+
+   
 }
 h4.text-primary.font-14.product-title {
     float: left;
