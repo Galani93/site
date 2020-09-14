@@ -642,7 +642,7 @@ input.number-form {
     width: 145px;
 }
 div#datatable_filter {
-    float: risubdivisionght;
+    float: right;
 }
 div#datatable_paginate {
     float: right;
@@ -654,11 +654,10 @@ span.dtr-title {
     margin-bottom: 10px;
 }
 
-.dtr-data button{
-    position: relative;
-    left: calc(100% - 300px);
-    margin: 10px  0 10px 5px;
+button.btn.btn-info.btn-square.btn-outline-dashed.waves-effect.waves-light {
+        float: right;
 }
+
 span.dtr-data i.fa{
     float: right;
 }
@@ -730,8 +729,11 @@ h4.text-success.font-14.product-title {
 
 .file-box-content.document{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
    flex-wrap: wrap;
+}
+.file-box-content.document .file-box{
+    margin-right: 10px;
 }
 .inactivity{
     margin-bottom: 190px;
@@ -746,17 +748,41 @@ h4.text-success.font-14.product-title {
     font-size: 13px;
     position: relative;
     top: 5px;
-    left: 95px;
+    left: 60px;
 }
 .subdivision .file-box-content .file-box {
     border: 1px solid #f1f5fa;
     border-radius: 5px;
     padding: 0;
-    width: 123px;
+    width: 80px;
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
     background-color: #fff;
     -webkit-box-shadow: 0 2px 4px rgba(31,30,47,0.1);
     box-shadow: 0 2px 4px rgba(31,30,47,0.1);
+}
+.doc-sub.active{
+    opacity: 1;
+}
+.doc-sub{
+    opacity: 0.4;
+}
+/*************************************************
+**************************************************
+            Ընթացիկ գնման գործընթացներ
+**************************************************
+**************************************************/
+
+.file-box-content.file-bloc{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.file-bloc .file-box{
+    min-height: 220px;
+    padding: 15px;
+    width: 150px;
+    margin: 0 5px;
 }
