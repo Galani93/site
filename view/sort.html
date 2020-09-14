@@ -434,6 +434,7 @@
                                                     </button>
                                                 </th>
                                                 <th>Պատասխանատու ստորաբաժանում</th>
+                                                <th>CPV Տեսակ</th>
                                                 <th>Պայմանով / Առանց պայման</th>
                                                 <th>Ավելացնել նույն CPV-ից</th>
 
@@ -484,6 +485,14 @@
                                                         <i class="fa fa-check"></i>
                                                     </button>
 
+                                                </td>
+                                                <td>
+                                                    <select>
+                                                        <option value="0"></option>
+                                                        <option value="1">Ապրանք</option>
+                                                        <option value="2">Ծառայություն</option>
+                                                        <option value="3">Աշխատանք</option>
+                                                    </select>
                                                 </td>
                                                 <td><input type="checkbox"></td>
                                                 <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
@@ -542,6 +551,14 @@
                                                     </button>
                                                 </td>
                                                 <td>
+                                                    <select>
+                                                        <option value="0"></option>
+                                                        <option value="1">Ապրանք</option>
+                                                        <option value="2">Ծառայություն</option>
+                                                        <option value="3">Աշխատանք</option>
+                                                    </select>
+                                                </td>
+                                                <td>
                                                     <input type="checkbox">
                                                 </td>
                                                 <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
@@ -589,6 +606,14 @@
                                                             data-target="#exampleModal02">
                                                         <i class="fa fa-check"></i>
                                                     </button>
+                                                </td>
+                                                <td>
+                                                    <select>
+                                                        <option value="0"></option>
+                                                        <option value="1">Ապրանք</option>
+                                                        <option value="2">Ծառայություն</option>
+                                                        <option value="3">Աշխատանք</option>
+                                                    </select>
                                                 </td>
                                                 <td><input type="checkbox"></td>
                                                 <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
@@ -648,6 +673,14 @@
                                                     </button>
                                                 </td>
                                                 <td>
+                                                    <select>
+                                                        <option value="0"></option>
+                                                        <option value="1">Ապրանք</option>
+                                                        <option value="2">Ծառայություն</option>
+                                                        <option value="3">Աշխատանք</option>
+                                                    </select>
+                                                </td>
+                                                <td>
                                                     <input type="checkbox">
                                                 </td>
                                                 <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
@@ -670,10 +703,12 @@
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
+                                                <td></td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
                                                 <td>03111100/502</td>
+                                                <td></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
@@ -860,56 +895,75 @@
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <table class="choice-name">
-                                <tbody>
-                                <thead>
-                                <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
-                                        rowspan="1" colspan="1" style="width: 150px;"
-                                        aria-label="Name: activate to sort column descending"
-                                        aria-sort="ascending">Պատասխ. ստոր. 1
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tr role="row" class="odd">
-                                    <td>
-                                        <input type="checkbox"><span class="name-td">AAAAAA</span>
-                                    </td>
+                        <div class="modal-body row">
+                           <div class="col-12">
+                               <table class="choice-name">
+                                   <tbody>
+                                   <thead>
+                                   <tr role="row">
+                                       <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
+                                           rowspan="1" colspan="1" style="width: 150px;"
+                                           aria-label="Name: activate to sort column descending"
+                                           aria-sort="ascending">Պատասխ. ստոր. 1
+                                       </th>
+                                   </tr>
 
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td>
-                                        <input type="checkbox"> <span class="name-td">BBBBBB</span>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <table class="choice-name">
-                                <tbody>
-                                <thead>
-                                <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
-                                        rowspan="1" colspan="1" style="width: 150px;"
-                                        aria-label="Name: activate to sort column descending"
-                                        aria-sort="ascending">Պատասխ. ստոր. 2
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tr role="row" class="odd">
-                                    <td>
-                                        <input type="checkbox"><span class="name-td">CCCCCC</span>
-                                    </td>
 
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td>
-                                        <input type="checkbox"> <span class="name-td">DDDDDD</span>
-                                    </td>
+                                   </thead>
+                                   <tr role="row" class="odd">
+                                       <td>
+                                           <input type="checkbox"><span class="name-td">AAAAAA</span>
+                                       </td>
 
-                                </tr>
-                                </tbody>
-                            </table>
+                                   </tr>
+                                   <tr role="row" class="odd">
+                                       <td>
+                                           <input type="checkbox"> <span class="name-td">BBBBBB</span>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                               <table class="choice-name">
+                                   <tbody>
+                                   <thead>
+                                   <tr role="row">
+                                       <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
+                                           rowspan="1" colspan="1" style="width: 150px;"
+                                           aria-label="Name: activate to sort column descending"
+                                           aria-sort="ascending">Պատասխ. ստոր. 2
+                                       </th>
+                                   </tr>
+                                   </thead>
+                                   <tr role="row" class="odd">
+                                       <td>
+                                           <input type="checkbox"><span class="name-td">CCCCCC</span>
+                                       </td>
+
+                                   </tr>
+                                   <tr role="row" class="odd">
+                                       <td>
+                                           <input type="checkbox"> <span class="name-td">DDDDDD</span>
+                                       </td>
+
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                            <div class="col-6 subdivision">
+                                <div class="file-box-content">
+                                    <div class="file-box">
+                                        <a href="#" class="download-icon-link">
+                                            <i class="dripicons-download file-download-icon"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="far fa-file-alt text-primary"></i>
+                                            <h6 class="text-truncate">DOC</h6>
+                                            <small class="text-muted">06.03.2019 / 5MB</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal"
@@ -937,55 +991,55 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <table class="choice-name">
-                                <tbody>
-                                <thead>
-                                <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
-                                        rowspan="1" colspan="1" style="width: 150px;"
-                                        aria-label="Name: activate to sort column descending"
-                                        aria-sort="ascending">Բնութագիր 1
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tr role="row" class="odd">
-                                    <td>
-                                        <input type="checkbox"><span class="name-td">ABABAB</span>
-                                    </td>
+                                <table class="choice-name">
+                                    <tbody>
+                                    <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
+                                            rowspan="1" colspan="1" style="width: 150px;"
+                                            aria-label="Name: activate to sort column descending"
+                                            aria-sort="ascending">Բնութագիր 1
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tr role="row" class="odd">
+                                        <td>
+                                            <input type="checkbox"><span class="name-td">ABABAB</span>
+                                        </td>
 
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td>
-                                        <input type="checkbox"> <span class="name-td">CDCDCD</span>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <table class="choice-name">
-                                <tbody>
-                                <thead>
-                                <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
-                                        rowspan="1" colspan="1" style="width: 150px;"
-                                        aria-label="Name: activate to sort column descending"
-                                        aria-sort="ascending"> Բնութագիր 2
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tr role="row" class="odd">
-                                    <td>
-                                        <input type="checkbox"><span class="name-td">EFEFEF</span>
-                                    </td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td>
+                                            <input type="checkbox"> <span class="name-td">CDCDCD</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <table class="choice-name">
+                                    <tbody>
+                                    <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons"
+                                            rowspan="1" colspan="1" style="width: 150px;"
+                                            aria-label="Name: activate to sort column descending"
+                                            aria-sort="ascending"> Բնութագիր 2
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tr role="row" class="odd">
+                                        <td>
+                                            <input type="checkbox"><span class="name-td">EFEFEF</span>
+                                        </td>
 
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td>
-                                        <input type="checkbox"> <span class="name-td">GHGHGH</span>
-                                    </td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td>
+                                            <input type="checkbox"> <span class="name-td">GHGHGH</span>
+                                        </td>
 
-                                </tr>
-                                </tbody>
-                            </table>
+                                    </tr>
+                                    </tbody>
+                                </table>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal"
