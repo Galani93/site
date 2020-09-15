@@ -703,9 +703,13 @@ ul.dtr-details {
 span.dtr-title {
     margin-bottom: 10px;
 }
-
-button.btn.btn-info.btn-square.btn-outline-dashed.waves-effect.waves-light {
-    float: right;
+@media (max-width: 1700px) {
+    button.btn.btn-info.btn-square.btn-outline-dashed.waves-effect.waves-light {
+        float: right;
+    }
+}
+.modal03{
+ float: inherit!important;
 }
 
 span.dtr-data i.fa {
