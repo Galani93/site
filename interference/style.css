@@ -859,3 +859,21 @@ h4.text-success.font-14.product-title {
     text-align: left!important;
 }
 
+.modal-dialog-centered .form-parsley .form-group .input-user input{
+    margin: 5px;
+}
+.time_indicator tr td button.btn{
+    float: right;
+}
+.files-nav.cpv-skroll{
+    height: 300px;
+    overflow-y: scroll;
+}
+.invitation-bloc .form-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.invitation-bloc .form-group input{
+    margin: 5px;
+}

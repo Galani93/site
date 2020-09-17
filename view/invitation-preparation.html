@@ -346,72 +346,145 @@
                     <div class="float-right">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="competitive.html">Ընթացիկ գնման գործընթացներ</a></li>
-                            <li class="breadcrumb-item active">Կազմակերպել գնման գործընթաց</li>
+                            <li class="breadcrumb-item active">Հրավերի պատրաստում</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Կազմակերպել գնման գործընթաց</h4>
+                    <h4 class="page-title">Հրավերի պատրաստում</h4>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="col-sm-6 radio-primary">
-                <p class=" font-14 mt-3 mb-2">Փաստաթղթի տեսակը</p>
-                <div class="radio form-check-inline mr-5">
-                    <input type="radio" name="radio3" id="radio14" value="option3">
-                    <label for="radio14">Թղթային</label>
-                </div>
-                <div class="radio form-check-inline">
-                    <input type="radio" name="radio3" id="radio13" value="option3">
-                    <label for="radio13">Էլեկտրոնային</label>
-                </div>
-            </div>
             <div class="row mt-5">
-                <div class="col-lg-12">
+                <div class="col-lg-8 col-md-12 col-sm-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="default-table" class="table " style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <thead>
-                                    <tr>
-                                        <th>CPV</th>
-                                        <th>CPV Տիպ</th>
-                                        <th>Գնման ձև</th>
-                                        <th>Մնացորդ</th>
-                                        <th>Քանակ</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="cpv-left">
-                                            <a class="jstree-anchor" href="#" >
-                                                #14000000 հանքարդյունաբերությանը վերաբերող արտադրանք, հիմնական ետաղներ և հարակից արտադրանք
-                                            </a>
-                                        </td>
-                                        <td>Ծառայություն</td>
-                                        <td>100</td>
-                                        <td>2000</td>
-                                        <td><input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cpv-left">
-                                            <a class="jstree-anchor" href="#" >
-                                                #14000000 հանքարդյունաբերությանը վերաբերող արտադրանք, հիմնական ետաղներ և հարակից արտադրանք
-                                            </a>
-                                        </td>
-                                        <td>Ապրանք</td>
-                                        <td>100</td>
-                                        <td>1500</td>
-                                        <td><input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+                            <form class="form-parsley invitation-bloc" action="#" novalidate="">
 
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <a href="#" id="but_add" class="btn btn-primary float-right mt-5">Հաջորդը</a>
-                        </div>
+                                <div class="form-group">
+                                    <label>1. Հրավերի և հայտարարության տեքստերի հաստատման՝</label>
+                                    <div class="input-user">
+                                        <input class="form-control form-data" type="date" value=""
+                                               placeholder="Ամսաթիվը" id="example-date-input">
+                                    </div>
+                                    <div class="input-user ">
+                                        <input type="text" class="form-control shorten_input"
+                                               placeholder="Որոշման համարը" value="" name="invitationNumber">
+                                    </div>
 
+                                </div>
+
+                                <div class="form-group">
+                                    <label>2. Գնման ընթացակարգի անվանումը</label>
+                                    <div class="input-user" >
+                                        <input type="text" class="invitation-form form-control short_input floatLeft gnman_ararka" name="processName" value="" placeholder="Հայերեն">
+                                    </div>
+                                    <div class="input-user" >
+                                        <input type="text" class="invitation-form form-control short_input floatRight gnman_ararka_ru" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label>3. Գնման ընթացակարգի ծածկագիրը</label>
+                                    <div class="input-user ">
+                                        <input type="text" class="invitation-form form-control short_input floatLeft yntacakargi_cackagir_am" name="processPass" value="" placeholder="Հայերեն">
+                                    </div>
+                                    <div class="input-user">
+                                        <input type="text" class="invitation-form form-control short_input floatRight yntacakargi_cackagir_ru" name="processPassRu" value="" placeholder="Ռուսերեն">
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label>4. Հրավերի հրապարակման ամսաթիվը</label>
+                                    <div class="input-user ">
+                                        <input type="date" class="invitation-form form-control shorten_input floatLeft hraveri_hraparakman_amsativ" name="invitationPublishDate" value="" placeholder="17.09.2020">
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>5. Հայտերի</label>
+                                </div>
+                                    <div class="form-group">
+                                        <label>Ներկայացման ժամկետը</label>
+                                        <div class="input-user">
+                                            <input type="text" class="invitation-form form-control shorten_input" placeholder="Oր" name="applicationTime" value="">
+                                        </div>
+
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Բացման ամսաթիվը</label>
+                                        <div class="input-user ">
+                                            <input class="form-control" type="datetime-local" value="" id="example-datetime-local-input">
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                <div class="form-group d-flex">
+                                    <label>6. Կանխավճարի նախատեսում</label>
+                                    <div class="input-user col-4">
+                                        <div class="radio form-check-inline mr-5">
+                                            <input type="radio" name="radio3" id="radio1" value="option3">
+                                            <label for="radio1">Այո</label>
+                                        </div>
+                                        <div class="radio form-check-inline">
+                                            <input type="radio" name="radio3" id="radio2" value="option3">
+                                            <label for="radio2">Ոչ</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label>7. Թղթային ձևով հրավերի տրամադրումն</label>
+                                    <div class="input-user col-4">
+                                        <div class="radio form-check-inline mr-5">
+                                            <input type="radio" name="radio3" id="radio3" value="option3">
+                                            <label for="radio3">Անվճար</label>
+                                        </div>
+                                        <div class="radio form-check-inline">
+                                            <input type="radio" name="radio3" id="radio4" value="option3">
+                                            <label for="radio4">Վճարովի</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label>8. Եթե առաջարկվող գները ներկայացված են երկու կամ ավելի արժեքներով, ապա
+                                        դրանք համեմատվում են ՀՀ դրամով</label>
+                                    <div class="input-user m-1">
+                                        <input type="text" name="exchange" placeholder="Հայերեն"
+                                               class="invitation-form form-control shorten_input"
+                                               value="">
+                                    </div>
+                                    <div class="input-user m-1">
+                                        <input type="text" name="exchangeRu" placeholder="Ռուսերեն"
+                                               class="invitation-form form-control shorten_input"
+                                               value="">
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="form-group justify-content-lg-end mb-0">
+                                    <button type="submit" class="btn btn-gradient-primary waves-effect waves-light mr-2">Պահպանել</button>
+                                    <button type="reset" class="btn btn-gradient-danger waves-effect m-l-5">
+                                        <a href="procurement-plan.html" class="a-plan">Հաջորդ</a>
+                                    </button>
+                                </div>
+                                <!--end form-group-->
+                            </form><!--end form-->
+                        </div><!--end card-body-->
                     </div>
+                    <!--end card-->
                 </div>
             </div>
 
