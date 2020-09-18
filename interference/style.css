@@ -865,7 +865,7 @@ h4.text-success.font-14.product-title {
 .time_indicator tr td button.btn{
     float: right;
 }
-.files-nav.cpv-skroll{
+.cpv-skroll{
     height: 300px;
     overflow-y: scroll;
 }
@@ -876,4 +876,21 @@ h4.text-success.font-14.product-title {
 }
 .invitation-bloc .form-group input{
     margin: 5px;
+}
+/*.todo-box:hover{*/
+/*    background: linear-gradient(14deg, #506ee4 0%, rgba(80, 110, 228, 0.6));*/
+/*    -webkit-box-shadow: 0 7px 14px 0 rgba(80, 110, 228, 0.5);*/
+/*    box-shadow: 0 7px 14px 0 rgba(80, 110, 228, 0.5);*/
+/*    border-radius: 0;*/
+/*}*/
+/*.name-cpv{*/
+/*  color:#7286a2;*/
+/*}*/
+/*.name-cpv:hover{*/
+/*    color: #fff!important;*/
+/*}*/
+.todo-box:hover{
+    box-shadow: 0 7px 14px 0 rgba(80,110,228,0.5);
+    border: none;
+    cursor: pointer;
 }
