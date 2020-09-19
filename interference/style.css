@@ -887,9 +887,15 @@ h4.text-success.font-14.product-title {
     display: block;
     width: 100%;
 }
-.fa-check.check{
-    background: #41cbd8;
-}
+
+
 .fa-arrow-right.arrow{
     background: #9ba7ca;
+}
+.slimscroll .todo-box .remove{
+    position: static;
+    float: right;
+}
+.cpv-check{
+    visibility: hidden;
 }
