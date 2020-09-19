@@ -363,7 +363,10 @@
                                     <div class="btn-group btn-group-toggle mb-4 d-flex justify-content-between" data-toggle="buttons">
                                         <label class="btn btn-outline-primary active">
                                             <input type="checkbox" checked=""> Նոր հրավեր (մալուխների ձեռքբերում)
-                                            <br>
+                                        </label>
+                                    </div>
+                                    <div class="btn-group btn-group-toggle mb-4 d-flex justify-content-between" data-toggle="buttons">
+                                        <label class="btn btn-outline-primary" style="border: none;">
                                             <a id="settings_detail_tab01" href="#settings_detail02"
                                                data-toggle="pill"><input type="checkbox"> Ծածկագիր (ՋԿ-ԳՀԱՊՁԲ-20/8)</a>
                                         </label>
@@ -371,47 +374,46 @@
 
                                 </div>
 
-                                <form class="form-parsley responsible " action="#" novalidate="">
 
+                                <form class="form-parsley responsible " action="#" novalidate="">
                                         <div class="card">
-                                                <div class="todo-list slimscroll">
-                                                    <div class="todo-box p-1">
+                                                <div class="todo-list slimscroll nav nav-pills" id="files-tab" aria-orientation="vertical">
+                                                    <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
                                                         <i class="remove far fa-trash-alt "></i>
                                                         <div class="todo-task">
                                                             <span class="name-cpv">CPV 1</span>
                                                         </div>
                                                     </div>
-                                                    <div class="todo-box p-1">
+                                                    <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="true">
                                                         <i class="remove far fa-trash-alt"></i>
                                                         <div class="todo-task">
                                                             <span class="name-cpv">CPV 2</span>
                                                         </div>
                                                     </div>
-                                                    <div class="todo-box p-1"><i class="remove far fa-trash-alt"></i>
+                                                    <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false"><i class="remove far fa-trash-alt"></i>
                                                         <div class="todo-task">
                                                             <span class="name-cpv">CPV 3</span>
                                                         </div>
                                                     </div>
-                                                    <div class="todo-box p-1">
+                                                    <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
                                                         <i class="remove far fa-trash-alt"></i>
                                                         <div class="todo-task">
                                                             <span class="name-cpv">CPV 4</span>
                                                         </div>
                                                     </div>
-
-                                                    <div class="todo-box p-1">
+                                                    <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
                                                         <i class="remove far fa-trash-alt"></i>
                                                         <div class="todo-task">
                                                             <span class="name-cpv">CPV 5</span>
                                                         </div>
                                                     </div>
-                                                    <div class="todo-box p-1">
+                                                    <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
                                                         <i class="remove far fa-trash-alt"></i>
                                                         <div class="todo-task">
                                                             <span class="name-cpv">CPV 6</span>
                                                         </div>
                                                     </div>
-                                                    <div class="todo-box p-1"><i class="remove far fa-trash-alt"></i>
+                                                    <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false"><i class="remove far fa-trash-alt"></i>
                                                         <div class="todo-task">
                                                             <div class="todo-task">
                                                                 <span class="name-cpv">CPV 7</span>
@@ -439,62 +441,68 @@
 
 
 </div>
-
-
                                     <button type="button" class="btn btn-sm btn-outline-primary btn-round dual-btn-icon"
                                             data-toggle="modal" data-animation="bounce"
                                             data-target=".bd-example-modal-xl">CPV
                                         <i class="fas fa-plus"></i>
                                     </button>
                                 </form>
-
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="form-group mb-2 mt-4">
                                     <button type="button"
-                                            class="btn btn-sm btn-outline-primary btn-round dual-btn-icon"
+                                            class="btn btn-sm btn-round dual-btn-icon   btn-outline-info dropdown-toggle"
                                             data-toggle="modal" data-animation="bounce"
-                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողովի
-                                        <i class="fa fa-arrow-right"></i>
+                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողով
+                                        <i class="fa fa-arrow-right arrow"></i>
+                                    </button>
+
+                                </div>
+                                <div class="form-group mb-2 mt-4">
+                                    <button type="button"
+                                            class="btn btn-sm btn-outline-secondary btn-round dual-btn-icon"
+                                            data-toggle="modal" data-animation="bounce"
+                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողով
+                                        <i class="fas fa-check check"></i>
                                     </button>
 
                                 </div>
 
                             </div>
                         </div>
-
                     </div>
                     <div class="col-lg-5 col-md-12 col-sm-12">
                         <div class="card">
                             <div class="card-body">
-<!--                                <h4 class="mt-0 header-title">Չափաբաժիններ</h4>-->
                                 <form class="form-parsley " action="#" novalidate="">
-
-                                    <div class="form-group d-flex justify-content-between">
-                                        <label>1. Հրավերի և հայտարարության տեքստերի հաստատման՝</label>
-                                        <div class="input-user ">
-                                            <input class="form-control form-data m-1" type="date" value="2020-09-17"
-                                                   placeholder="Ամսաթիվը" id="example-date-input">
-                                            <input type="text" class="form-control shorten_input m-1"
-                                                   placeholder="Որոշման համարը" value="2" name="invitationNumber">
+                                    <div class="form-group d-block">
+                                        <label>1. Հրավերի և հայտարարության տեքստերի հաստատման</label>
+                                        <div class="form-group  m-1 d-flex justify-content-between align-items-center">
+                                            <label>Ամսաթիվը</label>
+                                            <div class="input-user" >
+                                                <input class="form-control form-data" type="date" value="2020-09-17" placeholder="Ամսաթիվը" id="example-date-input">
+                                            </div>
                                         </div>
-
+                                        <div class="form-group  m-1 d-flex justify-content-between align-items-center">
+                                            <label>Որոշման համարը</label>
+                                            <div class="input-user" style="width: 145px;">
+                                                <input type="" class="form-control"  placeholder="Որոշման համարը"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="form-group  d-flex justify-content-between">
                                         <label>2. Գնման ընթացակարգի անվանումը</label>
                                         <div class="input-user m-1">
-                                            <input type="text"
-                                                   class="invitation-form form-control short_input floatLeft gnman_ararka"
-                                                   name="processName" value="մալուխների ձեռքբերում"
+                                            <input type="text" class="invitation-form form-control short_input floatLeft gnman_ararka"
+                                                   name="processName" value=""
                                                    placeholder="Հայերեն">
                                         </div>
                                         <div class="input-user m-1">
-                                            <input type="text"
-                                                   class="invitation-form form-control short_input floatRight gnman_ararka_ru"
-                                                   name="processNameRu" value="преобретение кабелей"
+                                            <input type="text" class="invitation-form form-control short_input floatRight gnman_ararka_ru"
+                                                   name="processNameRu" value=""
                                                    placeholder="Ռուսերեն">
                                         </div>
 
@@ -503,14 +511,12 @@
                                     <div class="form-group  d-flex justify-content-between">
                                         <label>3. Գնման ընթացակարգի ծածկագիրը</label>
                                         <div class="input-user  m-1">
-                                            <input type="text"
-                                                   class="invitation-form form-control short_input floatLeft yntacakargi_cackagir_am"
-                                                   name="processPass" value="ՋԿ-ԳՀԱՊՁԲ-20/8" placeholder="Հայերեն">
+                                            <input type="text" class="invitation-form form-control short_input floatLeft yntacakargi_cackagir_am"
+                                                   name="processPass" value="" placeholder="Հայերեն">
                                         </div>
                                         <div class="input-user m-1">
-                                            <input type="text"
-                                                   class="invitation-form form-control short_input floatRight yntacakargi_cackagir_ru"
-                                                   name="processPassRu" value="JK-GHAPDZB-20/8" placeholder="Ռուսերեն">
+                                            <input type="text" class="invitation-form form-control short_input floatRight yntacakargi_cackagir_ru"
+                                                   name="processPassRu" value="" placeholder="Ռուսերեն">
                                         </div>
 
                                     </div>
@@ -518,10 +524,8 @@
                                     <div class="form-group  d-flex justify-content-between">
                                         <label>4. Հրավերի հրապարակման ամսաթիվը</label>
                                         <div class="input-user  m-1">
-                                            <input type="date"
-                                                   class="invitation-form form-control shorten_input floatLeft hraveri_hraparakman_amsativ"
-                                                   name="invitationPublishDate" value="2020-06-01"
-                                                   placeholder="17.09.2020">
+                                            <input class="form-control form-data" type="date" value="2020-09-19" placeholder="Ամսաթիվը" id="example-date-input">
+
                                         </div>
 
                                     </div>
@@ -530,17 +534,16 @@
                                         <label>5. Հայտերի</label>
                                         <div class="form-group  m-1 d-flex justify-content-between">
                                             <label>Ներկայացման ժամկետը</label>
-                                            <div class="input-user" style="width: 213px;">
-                                                <input type="text" class="invitation-form form-control shorten_input"
-                                                       placeholder="օր" name="applicationTime" value="7">
+                                            <div class="input-user" style="width: 145px;">
+                                                <input type="" class="form-control"  placeholder="Oր"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+
                                             </div>
 
                                         </div>
                                         <div class="form-group  m-1  d-flex justify-content-between">
                                             <label>Բացման ամսաթիվը</label>
                                             <div class="input-user">
-                                                <input class="form-control" type="datetime-local"
-                                                       value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
                                             </div>
 
 
@@ -582,15 +585,13 @@
                                         <label>8. Եթե առաջարկվող գները ներկայացված են երկու կամ ավելի արժեքներով, ապա
                                             դրանք համեմատվում են ՀՀ դրամով</label>
                                         <div class="input-user m-1">
-                                            <input type="text" name="exchange" placeholder="հայերեն"
+                                            <input type="text" name="exchange" placeholder="Հայերեն"
                                                    class="invitation-form form-control shorten_input"
-                                                   value="հայտը ներկայացնելու օրվա դրությամբ ՀՀ կենտրոնական բանկի կողմից սահմանված փոխարժեքով։"
+                                                   value=""
                                                    style="text-overflow: ellipsis;">
                                         </div>
                                         <div class="input-user m-1">
-                                            <input type="text" name="exchangeRu" placeholder="ռուսերեն"
-                                                   class="invitation-form form-control shorten_input"
-                                                   value="հայտը ներկայացնելու օրվա դրությամբ ՀՀ կենտրոնական բանկի կողմից սահմանված փոխարժեքով։"
+                                            <input type="text" name="exchangeRu" placeholder="Ռուսերեն" class="invitation-form form-control shorten_input" value=""
                                                    style="text-overflow: ellipsis;">
                                         </div>
 
@@ -606,7 +607,6 @@
                                 </form><!--end form-->
                             </div><!--end card-body-->
                         </div>
-                        <!--end card-->
                     </div>
                 </div>
                 <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog"
@@ -628,10 +628,10 @@
                                         <div class="input-user">
                                             <input type="text"
                                                    class="form-control gnahatox_andam  shorten_input floatLeft gnahatox_naxagah"
-                                                   value="նախագահ" placeholder="Հայերեն">
+                                                   value="" placeholder="Հայերեն">
                                             <input type="text"
                                                    class="form-control gnahatox_andam  shorten_input floatLeft margin_left_20 gnahatox_naxagah_ru"
-                                                   value="нагага" placeholder="Ռուսերեն">
+                                                   value="" placeholder="Ռուսերեն">
                                         </div>
 
                                     </div>
@@ -640,10 +640,10 @@
                                         <div class="input-user">
                                             <input type="text"
                                                    class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam1"
-                                                   value="անդամ 1" placeholder="Հայերեն">
+                                                   value="" placeholder="Հայերեն">
                                             <input type="text"
                                                    class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru1"
-                                                   value="андам 1" placeholder="Ռուսերեն">
+                                                   value="" placeholder="Ռուսերեն">
                                         </div>
 
                                     </div>
@@ -652,10 +652,10 @@
                                         <div class="input-user">
                                             <input type="text"
                                                    class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam2"
-                                                   value="անդամ 2" placeholder="Հայերեն">
+                                                   value="" placeholder="Հայերեն">
                                             <input type="text"
                                                    class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru2"
-                                                   value="андам 2" placeholder="Ռուսերեն">
+                                                   value="" placeholder="Ռուսերեն">
                                         </div>
 
                                     </div>
@@ -664,10 +664,10 @@
                                         <div class="input-user">
                                             <input type="text"
                                                    class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam3"
-                                                   value="անդամ 3" placeholder="Հայերեն">
+                                                   value="" placeholder="Հայերեն">
                                             <input type="text"
                                                    class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru3"
-                                                   value="андам 3" placeholder="Ռուսերեն">
+                                                   value="" placeholder="Ռուսերեն">
                                         </div>
 
                                     </div>
@@ -681,22 +681,22 @@
                                         <div class="input-user">
                                             <input type="text"
                                                    class="form-control gnahatox_andam shorten_input floatLeft gnahatox_qartuxar"
-                                                   value="Հայկ Ղազարյան" placeholder="Հայերեն">
+                                                   value="" placeholder="Հայերեն">
                                         </div>
                                         <div class="input-user">
                                             <input type="text"
                                                    class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_qartuxar_ru"
-                                                   value="Айк Казарян" placeholder="Ռուսերեն">
+                                                   value="" placeholder="Ռուսերեն">
                                         </div>
                                         <div class="input-user">
                                             <input type="email"
                                                    class="form-control shorten_input floatLeft gnahatox_qartuxar_mail"
-                                                   value="hayk_khazaryan@mail.ru" placeholder="info@mail.ru">
+                                                   value="" placeholder="info@mail.ru">
                                         </div>
                                         <div class="input-user">
                                             <input type="number"
                                                    class="form-control shorten_input floatLeft margin_left_20 gnahatox_qartuxar_phone"
-                                                   value="37499033539" placeholder="+374xxxxxxxx">
+                                                   value="" placeholder="+374xxxxxxxx">
                                         </div>
 
                                     </div>
@@ -715,13 +715,14 @@
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title mt-0" id="myModalLabel">Ընթացակարգի տվյալների մուտքագրում</h5>
+                                <h5 class="modal-title mt-0" id="myModalLabel02">Ընթացակարգի տվյալների մուտքագրում</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <div class="col-sm-4">
+                                <div class="row mt-5">
+                                    <div class="col-lg-3">
                                     <div class="card">
                                         <div class="card-body"><h4 class="mt-0 header-title">CPV ծառ</h4>
                                             <div id="jstree-checkbox">
@@ -753,14 +754,15 @@
                                                     <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'></li>
                                                 </ul>
                                             </div>
-                                        </div><!--end card-body--></div><!--end card--></div>
-                                <div class="row mt-5">
-                                    <div class="col-lg-12">
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="col-lg-8">
                                         <div class="card">
-                                            <div class="card-body">
+                                            <div class="card-body p-0">
+<!--                                                <h4 class="mt-0 header-title">Bordered table</h4>-->
                                                 <div class="table-responsive">
-                                                    <table id="default-table" class="table "
-                                                           style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                    <table class="table table-bordered mb-0 table-centered">
                                                         <thead>
                                                         <tr>
                                                             <th>CPV</th>
@@ -773,41 +775,38 @@
                                                         <tbody>
                                                         <tr>
                                                             <td class="cpv-left">
-                                                                <a class="jstree-anchor" href="#">
                                                                     #14000000 հանքարդյունաբերությանը վերաբերող
                                                                     արտադրանք, հիմնական ետաղներ և հարակից արտադրանք
-                                                                </a>
                                                             </td>
                                                             <td>Ծառայություն</td>
-                                                            <td>100</td>
+                                                            <td>ՀԲՄ</td>
                                                             <td>2000</td>
-                                                            <td><input type="text" class="number-form"
-                                                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                            <td>
+                                                                <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                                                             </td>
-                                                            <td></td>
+
                                                         </tr>
                                                         <tr>
                                                             <td class="cpv-left">
-                                                                <a class="jstree-anchor" href="#">
                                                                     #14000000 հանքարդյունաբերությանը վերաբերող
                                                                     արտադրանք, հիմնական ետաղներ և հարակից արտադրանք
-                                                                </a>
                                                             </td>
                                                             <td>Ապրանք</td>
-                                                            <td>100</td>
+                                                            <td>ԳՀ</td>
                                                             <td>1500</td>
-                                                            <td><input type="text" class="number-form"
-                                                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                            <td>
+                                                                <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                                                             </td>
 
                                                         </tr>
                                                         </tbody>
                                                     </table>
+                                                    <!--end /table-->
                                                 </div>
+                                                <!--end /tableresponsive-->
                                             </div>
-
-                                        </div>
-                                    </div>
+                                            <!--end card-body-->
+                                        </div><!--end card--></div>
                                 </div>
                             </div>
                             <div class="form-group mb-2 mt-4 mr-4 d-flex justify-content-lg-end">
@@ -815,8 +814,8 @@
                                     հրավեր
                                 </button>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
                 </div>
             </div>
             <div class="container-fluid tab-pane fade" id="settings_detail02">
@@ -827,192 +826,84 @@
                                 <div class="col-lg-12 p-0">
                                     <div class="btn-group btn-group-toggle mb-4 d-flex justify-content-between"
                                          data-toggle="buttons">
-                                        <label class="btn btn-outline-primary">
-                                            <a id="settings_detail_tab02" href="#general_detail"
-                                               data-toggle="pill">
-                                            <input type="checkbox">Նոր հրավեր (մալուխների ձեռքբերում)
+                                        <label class="btn btn-outline-primary" style="border: none;">
+                                            <a id="settings_detail_tab02" href="#general_detail" data-toggle="pill">
+                                                <input type="checkbox">Նոր հրավեր (մալուխների ձեռքբերում)
                                             </a>
-                                            <br>
+                                        </label>
+                                    </div>
+                                    <div class="btn-group btn-group-toggle mb-4 d-flex justify-content-between"
+                                         data-toggle="buttons">
+                                        <label class="btn btn-outline-primary active">
                                             <input type="checkbox" checked=""> Ծածկագիր (ՋԿ-ԳՀԱՊՁԲ-20/8)
                                         </label>
                                     </div>
                                 </div>
                                 <form class="form-parsley responsible " action="#" novalidate="">
-                                    <div class="files-nav cpv-skroll">
-                                        <div class="nav flex-column nav-pills" id="files-tab" aria-orientation="vertical">
-                                            <a class="nav-link " data-toggle="pill"
-                                               href="#files-projects" aria-selected="true">
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 1</h5>
+                                    <div class="card">
+                                        <div class="todo-list slimscroll nav nav-pills" id="files-tab" aria-orientation="vertical">
+                                            <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <i class="remove far fa-trash-alt "></i>
+                                                <div class="todo-task">
+                                                    <span class="name-cpv">CPV 1</span>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link" data-toggle="pill" href="#files-pdf"
-                                               aria-selected="false">
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 2</h5>
+                                            </div>
+                                            <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="true">
+                                                <i class="remove far fa-trash-alt"></i>
+                                                <div class="todo-task">
+                                                    <span class="name-cpv">CPV 2</span>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
+                                            </div>
+                                            <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false"><i class="remove far fa-trash-alt"></i>
+                                                <div class="todo-task">
+                                                    <span class="name-cpv">CPV 3</span>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link active" data-toggle="pill"
-                                               href="#files-projects" aria-selected="true">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 1</h5>
+                                            </div>
+                                            <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <i class="remove far fa-trash-alt"></i>
+                                                <div class="todo-task">
+                                                    <span class="name-cpv">CPV 4</span>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link" data-toggle="pill" href="#files-pdf"
-                                               aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 2</h5>
+                                            </div>
+                                            <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <i class="remove far fa-trash-alt"></i>
+                                                <div class="todo-task">
+                                                    <span class="name-cpv">CPV 5</span>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
+                                            </div>
+                                            <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <i class="remove far fa-trash-alt"></i>
+                                                <div class="todo-task">
+                                                    <span class="name-cpv">CPV 6</span>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link " data-toggle="pill"
-                                               href="#files-projects" aria-selected="true">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 1</h5>
+                                            </div>
+                                            <div class="todo-box p-1 nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false"><i class="remove far fa-trash-alt"></i>
+                                                <div class="todo-task">
+                                                    <div class="todo-task">
+                                                        <span class="name-cpv">CPV 7</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link" data-toggle="pill" href="#files-pdf"
-                                               aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 2</h5>
+                                                <div class="todo-box p-1"><i class="remove far fa-trash-alt"></i>
+                                                    <div class="todo-task">
+                                                        <span class="name-cpv">CPV 8</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
+                                                <div class="todo-box p-1">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <div class="todo-task">
+                                                        <span class="name-cpv">CPV 9</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link " data-toggle="pill"
-                                               href="#files-projects" aria-selected="true">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 1</h5>
+                                                <div class="todo-box p-1">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <div class="todo-task">
+                                                        <span class="name-cpv">CPV 10</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                            <a class="nav-link" data-toggle="pill" href="#files-pdf"
-                                               aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 2</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link " data-toggle="pill"
-                                               href="#files-projects" aria-selected="true">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 1</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link" data-toggle="pill" href="#files-pdf"
-                                               aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 2</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link " data-toggle="pill"
-                                               href="#files-projects" aria-selected="true">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 1</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link" data-toggle="pill" href="#files-pdf"
-                                               aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 2</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link " data-toggle="pill"
-                                               href="#files-projects" aria-selected="true">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 1</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link" data-toggle="pill" href="#files-pdf"
-                                               aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 2</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link " data-toggle="pill"
-                                               href="#files-projects" aria-selected="true">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 1</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link" data-toggle="pill" href="#files-pdf"
-                                               aria-selected="false">
-
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 2</h5>
-                                                </div>
-                                            </a>
-                                            <a class="nav-link align-items-center" data-toggle="pill"
-                                               href="#files-documents" aria-selected="false">
-                                                <div class="d-inline-block align-self-center">
-                                                    <h5 class="m-0">CPV 3</h5>
-                                                </div>
-                                            </a>
-
+                                            </div>
                                         </div>
+
+
                                     </div>
 
                                     <button type="button" class="btn btn-sm btn-outline-primary btn-round dual-btn-icon mt-2 mb-2"
@@ -1027,23 +918,19 @@
                             <div class="card-body">
                                 <div class="form-group mb-2 mt-4">
                                     <button type="button"
-                                            class="btn btn-sm btn-outline-primary btn-round dual-btn-icon"
+                                            class="btn btn-sm btn-round dual-btn-icon   btn-outline-info dropdown-toggle"
                                             data-toggle="modal" data-animation="bounce"
-                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողովի
-                                        <i class="fa fa-arrow-right"></i>
+                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողով
+                                        <i class="fa fa-arrow-right arrow"></i>
                                     </button>
 
                                 </div>
                                 <div class="form-group mb-2 mt-4">
                                     <button type="button"
-                                            class="btn btn-sm btn-outline-primary btn-round dual-btn-icon"
+                                            class="btn btn-sm btn-outline-secondary btn-round dual-btn-icon"
                                             data-toggle="modal" data-animation="bounce"
-                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողովի
-                                        <i class="fas fa-check "></i>
-                                        <div class="col-4 align-self-center">
-                                            <div class="icon-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square align-self-center icon-lg icon-dual-success"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                                            </div>
-                                        </div>
+                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողով
+                                        <i class="fas fa-check check"></i>
                                     </button>
 
                                 </div>
@@ -1057,7 +944,7 @@
                                 <h4 class="mt-0 header-title">Չափաբաժիններ</h4>
                                 <form class="form-parsley " action="#" novalidate="">
                                     <div class="form-group d-flex justify-content-between align-items-center">
-                                        <label>1. Չ/հ</label>
+                                        <label>1. Չ/Հ</label>
                                         <div class="input-user ">
                                             <input type="text" class="form-control shorten_input m-1" placeholder=""
                                                    value="2" name="invitationNumber">
@@ -1238,7 +1125,7 @@
                                             </thead>
                                             <tbody class="time_indicator">
                                             <tr>
-                                                <td>Հ/հ</td>
+                                                <td>Հ/Հ</td>
                                                 <td>1</td>
 
                                             </tr>
@@ -1385,215 +1272,218 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog"
-                     aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title mt-0" id="exampleModalLabel01">Ընթացակարգի տվյալների
-                                    մուտքագրում</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form class="form-parsley " action="#" novalidate="">
+<!--                <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog"-->
+<!--                     aria-labelledby="mySmallModalLabel" aria-hidden="true">-->
+<!--                    <div class="modal-dialog modal-dialog-centered">-->
+<!--                        <div class="modal-content">-->
+<!--                            <div class="modal-header">-->
+<!--                                <h5 class="modal-title mt-0" id="exampleModalLabel01">Ընթացակարգի տվյալների-->
+<!--                                    մուտքագրում</h5>-->
+<!--                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                                    <span aria-hidden="true">&times;</span>-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                            <div class="modal-body">-->
+<!--                                <form class="form-parsley " action="#" novalidate="">-->
 
-                                    <div class="form-group">
-                                        <label>Նախագահ</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam  shorten_input floatLeft gnahatox_naxagah"
-                                                   value="նախագահ" placeholder="Հայերեն">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam  shorten_input floatLeft margin_left_20 gnahatox_naxagah_ru"
-                                                   value="нагага" placeholder="Ռուսերեն">
-                                        </div>
+<!--                                    <div class="form-group">-->
+<!--                                        <label>Նախագահ</label>-->
+<!--                                        <div class="input-user">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam  shorten_input floatLeft gnahatox_naxagah"-->
+<!--                                                   value="նախագահ" placeholder="Հայերեն">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam  shorten_input floatLeft margin_left_20 gnahatox_naxagah_ru"-->
+<!--                                                   value="нагага" placeholder="Ռուսերեն">-->
+<!--                                        </div>-->
 
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Անդամ</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam1"
-                                                   value="անդամ 1" placeholder="Հայերեն">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru1"
-                                                   value="андам 1" placeholder="Ռուսերեն">
-                                        </div>
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label>Անդամ</label>-->
+<!--                                        <div class="input-user">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam1"-->
+<!--                                                   value="անդամ 1" placeholder="Հայերեն">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru1"-->
+<!--                                                   value="андам 1" placeholder="Ռուսերեն">-->
+<!--                                        </div>-->
 
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Անդամ</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam2"
-                                                   value="անդամ 2" placeholder="Հայերեն">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru2"
-                                                   value="андам 2" placeholder="Ռուսերեն">
-                                        </div>
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label>Անդամ</label>-->
+<!--                                        <div class="input-user">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam2"-->
+<!--                                                   value="անդամ 2" placeholder="Հայերեն">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru2"-->
+<!--                                                   value="андам 2" placeholder="Ռուսերեն">-->
+<!--                                        </div>-->
 
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Անդամ</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam3"
-                                                   value="անդամ 3" placeholder="Հայերեն">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru3"
-                                                   value="андам 3" placeholder="Ռուսերեն">
-                                        </div>
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label>Անդամ</label>-->
+<!--                                        <div class="input-user">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam3"-->
+<!--                                                   value="անդամ 3" placeholder="Հայերեն">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru3"-->
+<!--                                                   value="андам 3" placeholder="Ռուսերեն">-->
+<!--                                        </div>-->
 
-                                    </div>
-                                    <a href="#" class="btn btn-gradient-primary waves-effect waves-light mt-2 mb-2"
-                                       style="box-shadow: none;" data-toggle="tooltip-custom" data-placement="right"
-                                       data-trigger="hover" title=""
-                                       data-original-title="Ցանկանում եք փոփոխել տվյալները"> <i class="fas fa-plus"></i></a>
+<!--                                    </div>-->
+<!--                                    <a href="#" class="btn btn-gradient-primary waves-effect waves-light mt-2 mb-2"-->
+<!--                                       style="box-shadow: none;" data-toggle="tooltip-custom" data-placement="right"-->
+<!--                                       data-trigger="hover" title=""-->
+<!--                                       data-original-title="Ցանկանում եք փոփոխել տվյալները"> <i class="fas fa-plus"></i></a>-->
 
-                                    <div class="form-group">
-                                        <label>Քարտուղար</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_qartuxar"
-                                                   value="Հայկ Ղազարյան" placeholder="Հայերեն">
-                                        </div>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_qartuxar_ru"
-                                                   value="Айк Казарян" placeholder="Ռուսերեն">
-                                        </div>
-                                        <div class="input-user">
-                                            <input type="email"
-                                                   class="form-control shorten_input floatLeft gnahatox_qartuxar_mail"
-                                                   value="hayk_khazaryan@mail.ru" placeholder="info@mail.ru">
-                                        </div>
-                                        <div class="input-user">
-                                            <input type="number"
-                                                   class="form-control shorten_input floatLeft margin_left_20 gnahatox_qartuxar_phone"
-                                                   value="37499033539" placeholder="+374xxxxxxxx">
-                                        </div>
+<!--                                    <div class="form-group">-->
+<!--                                        <label>Քարտուղար</label>-->
+<!--                                        <div class="input-user">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_qartuxar"-->
+<!--                                                   value="Հայկ Ղազարյան" placeholder="Հայերեն">-->
+<!--                                        </div>-->
+<!--                                        <div class="input-user">-->
+<!--                                            <input type="text"-->
+<!--                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_qartuxar_ru"-->
+<!--                                                   value="Айк Казарян" placeholder="Ռուսերեն">-->
+<!--                                        </div>-->
+<!--                                        <div class="input-user">-->
+<!--                                            <input type="email"-->
+<!--                                                   class="form-control shorten_input floatLeft gnahatox_qartuxar_mail"-->
+<!--                                                   value="hayk_khazaryan@mail.ru" placeholder="info@mail.ru">-->
+<!--                                        </div>-->
+<!--                                        <div class="input-user">-->
+<!--                                            <input type="number"-->
+<!--                                                   class="form-control shorten_input floatLeft margin_left_20 gnahatox_qartuxar_phone"-->
+<!--                                                   value="37499033539" placeholder="+374xxxxxxxx">-->
+<!--                                        </div>-->
 
-                                    </div>
+<!--                                    </div>-->
 
-                                </form>
-                            </div>
-                            <div class="form-group mb-2 mt-4 mr-4 d-flex justify-content-lg-end">
-                                <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">
-                                    Պահպանել
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title mt-0" id="myModalLabel02">Ընթացակարգի տվյալների մուտքագրում</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="col-sm-4">
-                                    <div class="card">
-                                        <div class="card-body"><h4 class="mt-0 header-title">CPV ծառ</h4>
-                                            <div id="jstree-checkbox">
-                                                <!-- in this example the tree is populated from inline HTML -->
-                                                <ul>
-                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'
-                                                        class="jstree-open">
-                                                        CPV 1
-                                                        <ul>
-                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
-                                                                cpv 01
-                                                            </li>
-                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
-                                                                cpv 02
-                                                            </li>
-                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'
-                                                                class="jstree-open">CPV 2
-                                                                <ul>
-                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
-                                                                        cpv 01
-                                                                    </li>
-                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
-                                                                        cpv 02
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'></li>
-                                                </ul>
-                                            </div>
-                                        </div><!--end card-body--></div><!--end card--></div>
-                                <div class="row mt-5">
-                                    <div class="col-lg-12">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="table-responsive">
-                                                    <table id="default-table" class="table "
-                                                           style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                                        <thead>
-                                                        <tr>
-                                                            <th>CPV</th>
-                                                            <th>CPV Տիպ</th>
-                                                            <th>Գնման ձև</th>
-                                                            <th>Մնացորդ</th>
-                                                            <th>Քանակ</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="cpv-left">
-                                                                <a class="jstree-anchor" href="#">
-                                                                    #14000000 հանքարդյունաբերությանը վերաբերող
-                                                                    արտադրանք, հիմնական ետաղներ և հարակից արտադրանք
-                                                                </a>
-                                                            </td>
-                                                            <td>Ծառայություն</td>
-                                                            <td>100</td>
-                                                            <td>2000</td>
-                                                            <td><input type="text" class="number-form"
-                                                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                                                            </td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="cpv-left">
-                                                                <a class="jstree-anchor" href="#">
-                                                                    #14000000 հանքարդյունաբերությանը վերաբերող
-                                                                    արտադրանք, հիմնական ետաղներ և հարակից արտադրանք
-                                                                </a>
-                                                            </td>
-                                                            <td>Ապրանք</td>
-                                                            <td>100</td>
-                                                            <td>1500</td>
-                                                            <td><input type="text" class="number-form"
-                                                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                                                            </td>
+<!--                                </form>-->
+<!--                            </div>-->
+<!--                            <div class="form-group mb-2 mt-4 mr-4 d-flex justify-content-lg-end">-->
+<!--                                <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">-->
+<!--                                    Պահպանել-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true">-->
+<!--                    <div class="modal-dialog modal-xl">-->
+<!--                        <div class="modal-content">-->
+<!--                            <div class="modal-header">-->
+<!--                                <h5 class="modal-title mt-0" id="myModalLabel02">Ընթացակարգի տվյալների մուտքագրում</h5>-->
+<!--                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                                    <span aria-hidden="true">&times;</span>-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                            <div class="modal-body">-->
+<!--                                <div class="col-sm-4">-->
+<!--                                    <div class="card">-->
+<!--                                        <div class="card-body"><h4 class="mt-0 header-title">CPV ծառ</h4>-->
+<!--                                            <div id="jstree-checkbox">-->
+<!--                                                &lt;!&ndash; in this example the tree is populated from inline HTML &ndash;&gt;-->
+<!--                                                <ul>-->
+<!--                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'-->
+<!--                                                        class="jstree-open">-->
+<!--                                                        CPV 1-->
+<!--                                                        <ul>-->
+<!--                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>-->
+<!--                                                                cpv 01-->
+<!--                                                            </li>-->
+<!--                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>-->
+<!--                                                                cpv 02-->
+<!--                                                            </li>-->
+<!--                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'-->
+<!--                                                                class="jstree-open">CPV 2-->
+<!--                                                                <ul>-->
+<!--                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>-->
+<!--                                                                        cpv 01-->
+<!--                                                                    </li>-->
+<!--                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>-->
+<!--                                                                        cpv 02-->
+<!--                                                                    </li>-->
+<!--                                                                </ul>-->
+<!--                                                            </li>-->
+<!--                                                        </ul>-->
+<!--                                                    </li>-->
+<!--                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'></li>-->
+<!--                                                </ul>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="row mt-5">-->
+<!--                                    <div class="col-lg-10">-->
+<!--                                        <div class="card">-->
+<!--                                            <div class="card-body">-->
+<!--                                                <h4 class="mt-0 header-title">Bordered table</h4>-->
+<!--                                                <div class="table-responsive">-->
+<!--                                                    <table class="table table-bordered mb-0 table-centered">-->
+<!--                                                        <thead>-->
+<!--                                                        <tr>-->
+<!--                                                            <th>CPV</th>-->
+<!--                                                            <th>CPV Տիպ</th>-->
+<!--                                                            <th>Գնման ձև</th>-->
+<!--                                                            <th>Մնացորդ</th>-->
+<!--                                                            <th>Քանակ</th>-->
+<!--                                                        </tr>-->
+<!--                                                        </thead>-->
+<!--                                                        <tbody>-->
+<!--                                                        <tr>-->
+<!--                                                            <td class="cpv-left">-->
+<!--                                                                <a class="jstree-anchor" href="#">-->
+<!--                                                                    #14000000 հանքարդյունաբերությանը վերաբերող-->
+<!--                                                                    արտադրանք, հիմնական ետաղներ և հարակից արտադրանք-->
+<!--                                                                </a>-->
+<!--                                                            </td>-->
+<!--                                                            <td>Ծառայություն</td>-->
+<!--                                                            <td>100</td>-->
+<!--                                                            <td>2000</td>-->
+<!--                                                            <td><input type="text" class="number-form"-->
+<!--                                                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>-->
+<!--                                                            </td>-->
+<!--                                                            <td></td>-->
+<!--                                                        </tr>-->
+<!--                                                        <tr>-->
+<!--                                                            <td class="cpv-left">-->
+<!--                                                                <a class="jstree-anchor" href="#">-->
+<!--                                                                    #14000000 հանքարդյունաբերությանը վերաբերող-->
+<!--                                                                    արտադրանք, հիմնական ետաղներ և հարակից արտադրանք-->
+<!--                                                                </a>-->
+<!--                                                            </td>-->
+<!--                                                            <td>Ապրանք</td>-->
+<!--                                                            <td>100</td>-->
+<!--                                                            <td>1500</td>-->
+<!--                                                            <td><input type="text" class="number-form"-->
+<!--                                                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>-->
+<!--                                                            </td>-->
 
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group mb-2 mt-4 mr-4 d-flex justify-content-lg-end">
-                                <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">Ստեղծել
-                                    հրավեր
-                                </button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div>
+<!--                                                        </tr>-->
+<!--                                                        </tbody>-->
+<!--                                                    </table>-->
+<!--                                                    &lt;!&ndash;end /table&ndash;&gt;-->
+<!--                                                </div>-->
+<!--                                                &lt;!&ndash;end /tableresponsive&ndash;&gt;-->
+<!--                                            </div>-->
+<!--                                            &lt;!&ndash;end card-body&ndash;&gt;-->
+<!--                                        </div>&lt;!&ndash;end card&ndash;&gt;</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="form-group mb-2 mt-4 mr-4 d-flex justify-content-lg-end">-->
+<!--                                <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">Ստեղծել-->
+<!--                                    հրավեր-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+<!--                    </div>&lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--                </div>-->
             </div>
 
         </div>
