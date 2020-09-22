@@ -931,6 +931,9 @@ h4.text-success.font-14.product-title {
         flex: 0 0 50%;
         max-width: 50%;
     }
+    div.btn-search-cpv{
+        float: left!important;
+    }
 }
 @media (max-width: 1600px) {
     .btn-choice {
@@ -941,4 +944,10 @@ h4.text-success.font-14.product-title {
         display: flex;
         flex-wrap: wrap;
     }
+}
+.btn-search-cpv .fa-search{
+    position: relative;
+    left: -10px;
+    top: -23px;
+    float: right;
 }
