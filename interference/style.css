@@ -878,11 +878,11 @@ h4.text-success.font-14.product-title {
     margin: 5px;
 }
 
-/*.todo-box:hover{*/
-/*    box-shadow: 0 7px 14px 0 rgba(80,110,228,0.5);*/
-/*    border: none;*/
-/*    cursor: pointer;*/
-/*}*/
+.todo-box:hover{
+    box-shadow: 0 7px 14px 0 rgba(80,110,228,0.5);
+    border: none;
+    cursor: pointer;
+}
 .todo-box-link{
     display: block;
     width: 100%;
@@ -898,4 +898,14 @@ h4.text-success.font-14.product-title {
 }
 .cpv-check{
     visibility: hidden;
+}
+.file-box-content .file-box.pdf-hraman  .download-icon-link .file-download-icon{
+    left: 100px;
+    top: 0;
+}
+.file-box-content .file-box.pdf-hraman{
+    padding: 10px;
+}
+.radio.form-check-inline.voch{
+    margin-right: 56px;
 }
