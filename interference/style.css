@@ -919,9 +919,24 @@ h4.text-success.font-14.product-title {
         display: flex;
         flex-direction: column;
     }
-
+    .col-xl-bloc{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-xl-bloc-3{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 @media (max-width: 1600px) {
+    .btn-choice {
+        display: flex;
+        flex-direction: column;
+    }
     #settings_detail02 > div.row{
         display: flex;
         flex-wrap: wrap;
