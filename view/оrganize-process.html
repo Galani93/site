@@ -392,14 +392,14 @@
         <div class="tab-content detail-list" id="pills-tabContent">
             <div class="container-fluid tab-pane fade show active" id="general_detail">
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="col-lg-4  col-md-12 col-sm-12">
                         <div class="card">
                             <div class="card-body">
                                 <div class="col-lg-12 p-0">
                                     <div class="btn-group btn-group-toggle mb-4 d-flex justify-content-between"
                                          data-toggle="buttons">
                                         <label class="btn btn-outline-primary active">
-                                            <input type="checkbox" checked=""> Նոր հրավեր (մալուխների ձեռքբերում)
+                                            <input type="checkbox" checked=""> Նոր հրավեր (մալուխների ձեռքբերում) <br>
                                             <span>
                                                 Ծածկագիր (ՋԿ-ԳՀԱՊՁԲ-20/8)
                                             </span>
@@ -515,14 +515,13 @@
                                     <div class="form-group d-block">
                                         <label>1. Հրավերի և հայտարարության տեքստերի հաստատման</label>
                                         <div class="form-group  m-1 d-flex justify-content-between align-items-center">
-                                            <label>Ամսաթիվը</label>
+                                            <label>Ամսաթիվ</label>
                                             <div class="input-user">
-                                                <input class="form-control form-data" type="date" value="2020-09-17"
-                                                       placeholder="Ամսաթիվը" id="example-date-input">
+                                                <input class="form-control form-data pl-1" type="date" value="2020-09-17" placeholder="Ամսաթիվ" id="example-date-input">
                                             </div>
                                         </div>
                                         <div class="form-group  m-1 d-flex justify-content-between align-items-center">
-                                            <label>Որոշման համարը</label>
+                                            <label>Որոշման համար</label>
                                             <div class="input-user" style="width: 145px;">
                                                 <input class="form-control" placeholder="Որոշման համարը"
                                                        onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
@@ -531,56 +530,42 @@
                                     </div>
 
                                     <div class="form-group  d-flex justify-content-between">
-                                        <label>2. Գնման ընթացակարգի անվանումը</label>
-                                        <div class="input-user m-1">
-                                            <input type="text"
-                                                   class="invitation-form form-control short_input floatLeft gnman_ararka"
-                                                   name="processName" value=""
-                                                   placeholder="Հայերեն">
-                                        </div>
-                                        <div class="input-user m-1">
-                                            <input type="text"
-                                                   class="invitation-form form-control short_input floatRight gnman_ararka_ru"
-                                                   name="processNameRu" value=""
-                                                   placeholder="Ռուսերեն">
+                                        <label>2. Գնման ընթացակարգի անվանում</label>
+                                        <div class="input-user m-1 password-input">
+                                            <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                            <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
                                         </div>
 
                                     </div>
 
                                     <div class="form-group  d-flex justify-content-between">
-                                        <label>3. Գնման ընթացակարգի ծածկագիրը</label>
-                                        <div class="input-user  m-1">
-                                            <input type="text"
-                                                   class="invitation-form form-control short_input floatLeft yntacakargi_cackagir_am"
-                                                   name="processPass" value="" placeholder="Հայերեն">
+                                        <label>3. Գնման ընթացակարգի ծածկագիր</label>
+                                        <div class="input-user  m-1 password-input">
+                                            <input type="text" class="form-control m-1" name="processPass" value="" placeholder="Հայերեն">
+                                            <input type="text" class="form-control m-1" name="processPassRu" value="" placeholder="Ռուսերեն">
                                         </div>
-                                        <div class="input-user m-1">
-                                            <input type="text"
-                                                   class="invitation-form form-control short_input floatRight yntacakargi_cackagir_ru"
-                                                   name="processPassRu" value="" placeholder="Ռուսերեն">
-                                        </div>
+
 
                                     </div>
 
                                     <div class="form-group  d-flex justify-content-between">
-                                        <label>4. Հրավերի հրապարակման ամսաթիվը</label>
+                                        <label>4. Հրավերի հրապարակման ամսաթիվ</label>
                                         <div class="input-user  m-1">
-                                            <input class="form-control form-data pl-1" type="date" value="2020-09-19"
-                                                   placeholder="Ամսաթիվը" id="example-date-input002">
+                                            <input class="form-control form-data pl-1" type="date" value="2020-09-19" placeholder="Ամսաթիվ" id="example-date-input02">
                                         </div>
 
                                     </div>
                                     <div class="form-group d-block">
                                         <label>5. Հայտերի</label>
                                         <div class="form-group  m-1 d-flex justify-content-between">
-                                            <label>Ներկայացման ժամկետը</label>
+                                            <label>Ներկայացման ժամկետ</label>
                                             <div class="input-user" style="width: 145px;">
                                                 <input class="form-control" placeholder="Oր" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                                             </div>
 
                                         </div>
                                         <div class="form-group  m-1  d-flex justify-content-between">
-                                            <label>Բացման ամսաթիվը</label>
+                                            <label>Բացման ամսաթիվ</label>
                                             <div class="input-user">
                                                 <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
                                             </div>
@@ -588,7 +573,7 @@
                                     </div>
                                     <div class="form-group  d-flex justify-content-between">
                                         <label>6. Կանխավճարի նախատեսում</label>
-                                        <div class="input-user col-5">
+                                        <div class="input-user col-5 btn-choice">
                                             <div class="radio form-check-inline mr-5">
                                                 <input type="radio" name="radio1" id="radio1" value="option3">
                                                 <label for="radio1">Այո</label>
@@ -601,7 +586,7 @@
                                     </div>
                                     <div class="form-group  d-flex justify-content-between">
                                         <label>7. Թղթային ձևով հրավերի տրամադրումն</label>
-                                        <div class="input-user col-5">
+                                        <div class="input-user col-5 btn-choice">
                                             <div class="radio form-check-inline mr-5">
                                                 <input type="radio" name="radio3" id="radio3" value="option3">
                                                 <label for="radio3">Անվճար</label>
@@ -701,7 +686,7 @@
                                     <a href="#" class="btn btn-gradient-primary waves-effect waves-light mt-2 mb-2"
                                        style="box-shadow: none;" data-toggle="tooltip-custom" data-placement="right"
                                        data-trigger="hover" title=""
-                                       data-original-title="Ցանկանում եք փոփոխել տվյալները"> <i class="fas fa-plus"></i></a>
+                                       data-original-title="Ավելացնել"> <i class="fas fa-plus"></i></a>
 
                                     <div class="form-group">
                                         <label>Քարտուղար</label>
@@ -753,10 +738,9 @@
                                         <div class="card">
                                             <div class="card-header pt-1">
                                                 <div id="datatable_filter" class="dataTables_filter">
-                                                    <label class="mb-0">Որոնել:<input type="search"
-                                                                                      class="form-control form-control-sm"
-                                                                                      placeholder=""
-                                                                                      aria-controls="datatable"></label>
+                                                    <label class="mb-0">Որոնել<input type="search"
+                                                                                     class="form-control form-control-sm"
+                                                                                      placeholder="" aria-controls="datatable"></label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
@@ -764,30 +748,28 @@
                                                 <div id="jstree-checkbox">
                                                     <!-- in this example the tree is populated from inline HTML -->
                                                     <ul>
-                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'
-                                                            class="jstree-open">
+                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' class="jstree-open">
                                                             CPV 1
                                                             <ul>
                                                                 <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
                                                                     cpv 01
                                                                 </li>
                                                                 <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
-                                                                    cpv 02
-                                                                </li>
-                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'
-                                                                    class="jstree-open">CPV 2
-                                                                    <ul>
-                                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
-                                                                            cpv 01
-                                                                        </li>
-                                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
-                                                                            cpv 02
-                                                                        </li>
-                                                                    </ul>
+                                                                    cpv 01
                                                                 </li>
                                                             </ul>
                                                         </li>
-                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'></li>
+                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' class="jstree-open">
+                                                            CPV 2
+                                                            <ul>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 02
+                                                                </li>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 02
+                                                                </li>
+                                                            </ul>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -865,7 +847,7 @@
             </div>
             <div class="container-fluid tab-pane fade" id="settings_detail02">
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="card">
                             <div class="card-body">
                                 <div class="col-lg-12 p-0">
@@ -982,7 +964,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="col-lg-5 col-md-6 col-sm-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Չափաբաժիններ</h4>
@@ -1174,8 +1156,7 @@
                                             <tr>
                                                 <td>Հունվար</td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1183,8 +1164,7 @@
                                             <tr>
                                                 <td>Փետրվար</td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1193,8 +1173,7 @@
                                                 <td>Մարտ
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1204,8 +1183,7 @@
                                                 <td>Ապրիլ
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1214,8 +1192,7 @@
                                                 <td>Մայիս
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1224,8 +1201,7 @@
                                                 <td>Հունիս
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1235,8 +1211,7 @@
                                                 <td>Հուլիս
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1245,8 +1220,7 @@
                                                 <td>Օգոստոս
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1255,8 +1229,7 @@
                                                 <td>Սեպտեմբեր
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1266,8 +1239,7 @@
                                                 <td>Հոկտեմբեր
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
 
@@ -1276,8 +1248,7 @@
                                                 <td>Նոյեմբեր
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
                                             </tr>
@@ -1285,8 +1256,7 @@
                                                 <td>Դեկտեմբեր
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="number-form"
-                                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                                     <span>%</span>
                                                 </td>
                                             </tr>

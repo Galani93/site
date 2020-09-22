@@ -860,7 +860,7 @@ h4.text-success.font-14.product-title {
 }
 
 .modal-dialog-centered .form-parsley .form-group .input-user input{
-    margin: 5px;
+    margin: 5px 5px 5px 0;
 }
 .time_indicator tr td button.btn{
     float: right;
@@ -900,7 +900,8 @@ h4.text-success.font-14.product-title {
     visibility: hidden;
 }
 .file-box-content .file-box.pdf-hraman  .download-icon-link .file-download-icon{
-    left: 100px;
+    left: 0;
+    float: right;
     top: 0;
 }
 .file-box-content .file-box.pdf-hraman{
@@ -908,4 +909,18 @@ h4.text-success.font-14.product-title {
 }
 .radio.form-check-inline.voch{
     margin-right: 56px;
+}
+@media (max-width: 1366px) {
+    .btn-choice {
+        display: flex;
+        flex-direction: column;
+    }
+    .password-input{
+        display: flex;
+        flex-direction: column;
+    }
+    #settings_detail02 > div.row{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
