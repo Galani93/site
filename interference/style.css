@@ -919,6 +919,9 @@ h4.text-success.font-14.product-title {
         display: flex;
         flex-direction: column;
     }
+
+}
+@media (max-width: 1600px) {
     #settings_detail02 > div.row{
         display: flex;
         flex-wrap: wrap;
