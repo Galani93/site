@@ -691,7 +691,7 @@ input.number-form {
 }
 
 div#datatable_filter {
-    float: right;
+    float: inherit;
 }
 
 div#datatable_paginate {
