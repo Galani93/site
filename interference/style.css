@@ -686,9 +686,9 @@ input.number-form {
     width: 80px;
 }
 
-.form-control.form-data {
-    width: 145px;
-}
+/*.form-control.form-data {*/
+/*    width: 145px;*/
+/*}*/
 
 div#datatable_filter {
     float: inherit;
