@@ -1877,6 +1877,58 @@
             </div>
 
         </div>
+        <form method="POST" class="form-horizontal well">
+            <fieldset>
+                <div class="repeater-default">
+                    <div data-repeater-list="car">
+                        <div data-repeater-item="">
+                            <div class="form-group row d-flex align-items-end">
+
+                                <div class="col-sm-4">
+                                    <label class="control-label">Նախագահ</label>
+                                    <input type="text" class="form-control gnahatox_andam " value="" placeholder="Հայերեն">
+                                    <input type="text" class="form-control gnahatox_andam " value="" placeholder="Ռուսերեն">
+                                </div><!--end col-->
+
+                                <div class="col-sm-4">
+                                    <label class="control-label">Model</label>
+                                    <input type="text" name="car[0][model]" value="Beetle" class="form-control">
+                                </div><!--end col-->
+
+                            </div>
+                        </div>
+
+                        <div data-repeater-item="">
+                            <div class="form-group row d-flex align-items-end">
+
+                                <div class="col-sm-4">
+                                    <label class="control-label">Make</label>
+                                    <select name="car[1][make]" class="form-control">
+                                        <option value="volkswagon">Volkswagon</option>
+                                        <option value="honda" selected="">Honda</option>
+                                        <option value="ford">Ford</option>
+                                    </select>
+                                </div><!--end col-->
+
+                                <div class="col-sm-4">
+                                    <label class="control-label">Model</label>
+                                    <input type="text" name="car[1][model]" value="Accord" class="form-control">
+                                </div><!--end col-->
+
+                            </div>
+                            <!--end row-->
+                        </div><!--end /div-->
+                    </div><!--end repet-list-->
+                    <div class="form-group mb-0 row">
+                        <div class="col-sm-12">
+                                                        <span data-repeater-create="" class="btn btn-gradient-secondary">
+                                                            <span class="fas fa-plus"></span> Add
+                                                        </span>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div> <!--end repeter-->
+            </fieldset><!--end fieldset-->
+        </form>
 
         <footer class="footer text-center text-sm-left">&copy; 2019 - 2020 Metrica
             <span class="text-muted d-none d-sm-inline-block float-right">Crafted with
@@ -1893,7 +1945,8 @@
 <script src="../assets/js/jquery-ui.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../../../Metrika-Master/itenderHtml-master/plugins/treeview/jstree.min.js"></script>
-
+<script src="../plugins/repeater/jquery.repeater.min.js"></script>
+<script src="../assets/pages/jquery.form-repeater.js"></script>
 
 <script src="../assets/pages/jquery.treeview.init.js"></script>
 <script src="../assets/js/metismenu.min.js"></script>

@@ -572,7 +572,7 @@
                                         <label>6. Կանխավճարի նախատեսում</label>
                                         <div class="input-user col-5 btn-choice">
                                             <div class="radio form-check-inline mr-5">
-                                                <input type="radio" name="radio1" id="radio1" value="option3">
+                                                <input type="radio" name="radio1" id="radio1" value="option3" data-toggle="modal" data-target="#exampleModalAyo"  data-animation="bounce">
                                                 <label for="radio1">Այո</label>
                                             </div>
                                             <div class="radio form-check-inline voch">
@@ -589,7 +589,7 @@
                                                 <label for="radio3">Անվճար</label>
                                             </div>
                                             <div class="radio form-check-inline">
-                                                <input type="radio" name="radio3" id="radio4" value="option3">
+                                                <input type="radio" name="radio4" id="radio4" value="option3" data-toggle="modal" data-target="#exampleModalVcharir"  data-animation="bounce">
                                                 <label for="radio4">Վճարովի</label>
                                             </div>
                                         </div>
@@ -598,11 +598,11 @@
                                         <label>8. Գնման գործընթացի կազմակերպման եղանակ</label>
                                         <div class="input-user col-5 btn-choice">
                                             <div class="radio form-check-inline mr-5">
-                                                <input type="radio" name="radio3" id="radio5" value="option3" checked>
+                                                <input type="radio" name="radio5" id="radio5" value="option3" checked>
                                                 <label for="radio5">Էլեկտրոնային </label>
                                             </div>
                                             <div class="radio form-check-inline">
-                                                <input type="radio" name="radio3" id="radio6" value="option3">
+                                                <input type="radio" name="radio6" id="radio6" value="option3">
                                                 <label for="radio6">Թղթային</label>
                                             </div>
                                         </div>
@@ -648,61 +648,81 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form class="form-parsley " action="#" novalidate="">
 
-                                    <div class="form-group">
-                                        <label>Նախագահ</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam  shorten_input floatLeft gnahatox_naxagah"
-                                                   value="" placeholder="Հայերեն">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam  shorten_input floatLeft margin_left_20 gnahatox_naxagah_ru"
-                                                   value="" placeholder="Ռուսերեն">
+                                <form method="POST" class="form-horizontal well">
+                                    <fieldset>
+                                        <div class="repeater-default">
+                                            <div data-repeater-list="car">
+                                                <div data-repeater-item="">
+                                                    <div class="form-group">
+                                                        <label>Նախագահ</label>
+                                                        <div class="input-user">
+                                                            <input type="text"
+                                                                   class="form-control gnahatox_andam  shorten_input floatLeft gnahatox_naxagah"
+                                                                   value="" placeholder="Հայերեն">
+                                                            <input type="text"
+                                                                   class="form-control gnahatox_andam  shorten_input floatLeft margin_left_20 gnahatox_naxagah_ru"
+                                                                   value="" placeholder="Ռուսերեն">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Անդամ</label>
+                                                    <div class="input-user">
+                                                        <input type="text"
+                                                               class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam1"
+                                                               value="" placeholder="Հայերեն">
+                                                        <input type="text"
+                                                               class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru1"
+                                                               value="" placeholder="Ռուսերեն">
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Անդամ</label>
+                                                    <div class="input-user">
+                                                        <input type="text"
+                                                               class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam2"
+                                                               value="" placeholder="Հայերեն">
+                                                        <input type="text"
+                                                               class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru2"
+                                                               value="" placeholder="Ռուսերեն">
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Անդամ</label>
+                                                    <div class="input-user">
+                                                        <input type="text"
+                                                               class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam3"
+                                                               value="" placeholder="Հայերեն">
+                                                        <input type="text"
+                                                               class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru3"
+                                                               value="" placeholder="Ռուսերեն">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group mb-0 row">
+                                                <div class="col-sm-12">
+                                           <span data-repeater-create="" class="btn btn-gradient-primary"
+                                                 data-placement="right"
+                                                 data-trigger="hover" title="" data-original-title="Ավելացնել">
+                                               <span class="fas fa-plus"></span>
+                                           </span>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Անդամ</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam1"
-                                                   value="" placeholder="Հայերեն">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru1"
-                                                   value="" placeholder="Ռուսերեն">
-                                        </div>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Անդամ</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam2"
-                                                   value="" placeholder="Հայերեն">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru2"
-                                                   value="" placeholder="Ռուսերեն">
-                                        </div>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Անդամ</label>
-                                        <div class="input-user">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_andam3"
-                                                   value="" placeholder="Հայերեն">
-                                            <input type="text"
-                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_andam_ru3"
-                                                   value="" placeholder="Ռուսերեն">
-                                        </div>
-
-                                    </div>
-                                    <a href="#" class="btn btn-gradient-primary waves-effect waves-light mt-2 mb-2"
-                                       style="box-shadow: none;" data-toggle="tooltip-custom" data-placement="right"
-                                       data-trigger="hover" title=""
-                                       data-original-title="Ավելացնել"> <i class="fas fa-plus"></i></a>
-
+                                        <!--end row-->
+                                        <!--                                    <a href="#" class="btn btn-gradient-primary waves-effect waves-light mt-2 mb-2"-->
+                                        <!--                                       style="box-shadow: none;" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Ավելացնել">-->
+                                        <!--                                        <i class="fas fa-plus"></i>-->
+                                        <!--                                    </a>-->
+                                    </fieldset>
                                     <div class="form-group">
                                         <label>Քարտուղար</label>
                                         <div class="input-user">
@@ -882,6 +902,75 @@
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
                 </div>
+                <div class="modal fade" id="exampleModalAyo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="exampleModalLabel03">Կանխավճարի հատկացում</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                                <div class="modal-body">
+                                    <form class="form-parsley " action="#" novalidate="">
+                                        <div class="form-group d-flex justify-content-between align-items-center">
+                                            <div class="form-group  m-1 ">
+                                                <label class="text-center">Առավելագույն չափ </label>
+                                                <div class="input-user">
+                                                    <input class="form-control" placeholder="ՀՀ դրամ" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group  m-1 ">
+                                                <label class="text-center">ժամկետ</label>
+                                                <div class="input-user" style="width: 159px;">
+                                                    <input class="form-control form-data pl-1" type="date" value="" placeholder="ամիս / տարեթիվ" id="example-date-input03">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="modal fade" id="exampleModalVcharir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="exampleModalLabel04">Վճարովի տրամադրում</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-parsley " action="#" novalidate="">
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <div class="form-group  m-1 ">
+                                            <label class="text-center">Գումարի չափը</label>
+                                            <div class="input-user">
+                                                <input class="form-control" placeholder="ՀՀ դրամ" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                            </div>
+                                        </div>
+                                        <div class="form-group  m-1 ">
+                                            <label class="text-center">Գումարի չափը տառերով</label>
+                                            <div class="input-user">
+                                                <input class="form-control" placeholder="ՀՀ դրամ" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group  m-1 ">
+                                        <label class="text-center">Վճարումն անհրաժեշտ է իրականացնել </label>
+                                        <div class="input-user" >
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <label class="text-center mb-1"> հաշվեհամարին</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="container-fluid tab-pane fade" id="settings_detail02">
                 <div class="row mt-5">
@@ -1377,5 +1466,7 @@
 <script src="../plugins/treeview/jstree.min.js"></script>
 <script src="../assets/pages/jquery.treeview.init.js"></script><!-- App js -->
 
+<script src="../plugins/repeater/jquery.repeater.min.js"></script>
+<script src="../assets/pages/jquery.form-repeater.js"></script>
 </body>
 </html>
