@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Հայտերի գնահատում</title>
+    <title>Հրավերի պատրաստում</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
     <meta content="" name="author">
@@ -10,22 +10,34 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
     <!-- App css -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/metisMenu.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css">
+    <link href="../interference/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets" rel="stylesheet" type="text/css">
+
+    <link rel="shortcut icon" href="../assets/images/favicon.ico"><!-- Nestable css -->
+    <link href="../plugins/nestable/jquery.nestable.min.css" rel="stylesheet"><!-- App css -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/metisMenu.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css">
+
+
     <link rel="shortcut icon" href="../assets/images/favicon.ico"><!--Form Wizard-->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link href="../plugins/treeview/themes/default/style.css" rel="stylesheet">
+    <link href="../.plugins/treeview/file-explore.css" rel="stylesheet"><!-- App css -->
+
     <link rel="stylesheet" href="../plugins/jquery-steps/jquery.steps.css"><!-- App css -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/metisMenu.min.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets" rel="stylesheet" type="text/css">
-
-
-    <link rel="shortcut icon" href="../assets/images/favicon.ico">
-    <link href="../plugins/treeview/themes/default/style.css" rel="stylesheet">
-    <link href="../.plugins/treeview/file-explore.css" rel="stylesheet"><!-- App css -->
-
-    <link rel="shortcut icon" href="../assets/images/favicon.ico"><!--Form Wizard-->
-    <link rel="stylesheet" href="../plugins/jquery-steps/jquery.steps.css"><!-- App css -->
 
 </head>
 <body>
@@ -371,66 +383,242 @@
     </nav>
 </div>
 
-<div class="page-wrapper">
+
+<div class="page-wrapper"><!-- Page Content-->
     <div class="page-content-tab">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card">
-                    <div class="card-body"><h4 class="mt-0 header-title">Jquery Steps Wizard Vertical</h4>
-                        <p class="text-muted mb-3">A powerful jQuery wizard plugin that supports accessibility and
-                            HTML5</p>
-                        <form id="form-vertical" class="form-horizontal form-wizard-wrapper"><h3>Create Account</h3>
-                            <fieldset>
-                                <div class="form-group"><label for="example-email-input1" class="col-form-label">Email</label>
-                                    <div class=""><input class="form-control" type="email" value=""
-                                                         id="example-email-input1" placeholder="@Example.com"></div>
-                                </div><!--end form-group-->
-                                <div class="form-group"><label for="example-password-input1" class="col-form-label">Password</label>
-                                    <div class=""><input class="form-control" type="password"
-                                                         id="example-password-input1" placeholder="Password"></div>
-                                </div><!--end form-group-->
-                                <div class="form-group"><label for="example-password-input01"
-                                                               class="col-form-label">Confirm Password</label>
-                                    <div class=""><input class="form-control" type="password"
-                                                         id="example-password-input01"
-                                                         placeholder="Confirm Password"></div>
-                                </div><!--end form-group-->
-                                <div class="custom-control custom-checkbox my-3"><input type="checkbox"
-                                                                                        class="custom-control-input"
-                                                                                        id="customCheck1"> <label
-                                        class="custom-control-label" for="customCheck1">I accept the terms and
-                                    conditions</label></div>
-                            </fieldset><!--end fieldset--><h3>Basic Form</h3>
-                            <fieldset>
-                                <div class="form-group row">
-                                    <div class="col-sm-12 col-lg-6"><input class="form-control" type="text"
-                                                                           id="name" placeholder="Name"></div>
-                                    <div class="col-sm-12 col-lg-6"><input class="form-control" type="email"
-                                                                           id="example-email-input3"
-                                                                           placeholder="Email"></div>
-                                </div><!--end form-group-->
-                                <div class="form-group row">
-                                    <div class="col-sm-12"><input class="form-control" type="text" id="subject2"
-                                                                  placeholder="Subject"></div>
-                                </div><!--end form-group-->
-                                <div class="form-group"><textarea class="form-control"
-                                                                  id="exampleFormControlTextarea1" rows="4"
-                                                                  placeholder="Your message"></textarea></div>
-                                <!--end form-group-->
-                                <div class="custom-control custom-radio my-2"><input type="radio" id="customRadio1"
-                                                                                     name="customRadio"
-                                                                                     class="custom-control-input"
-                                                                                     checked=""> <label
-                                        class="custom-control-label" for="customRadio1">Male</label></div>
-                                <!--end form-group-->
-                                <div class="custom-control custom-radio my-2"><input type="radio" id="customRadio2"
-                                                                                     name="customRadio"
-                                                                                     class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Female</label></div>
-                            </fieldset><!--end fieldset--><h3>Confurm Detail</h3>
-                            <fieldset><p>I agree with the Terms and Conditions.</p></fieldset><!--end fieldset-->
-                        </form><!--end form--></div><!--end card-body--></div><!--end card--></div><!--end col-->
+        <div class="container-fluid"><!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="float-right">
+                            <ol class="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="competitive.html">Ընթացիկ գնման գործընթացներ</a></li>
+                                    <li class="breadcrumb-item active">Մասնակիցների տվյալների մուտքագրում</li>
+                                </ol>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">Մասնակիցների տվյալների մուտքագրում</h4>
+                    </div>
+                 </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title"> Համատեղ գործունեություն </h4>
+
+                            <form id="form-vertical" class="form-horizontal form-wizard-wrapper ">
+                                <h3>1 (գլխավոր)</h3>
+                                <fieldset class="pt-0">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="alert alert-info alert-dismissible fade show float-left" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                     <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                                                </button>
+                                                Մասնակից 1 (գլխավոր) &#160;&#160;
+                                                <strong>«ԷՅՉ ԷՍ ՓԱՐԹՆԵՐՍ» ՍՊԸ</strong>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-2 col-form-label ">ՀՎՀՀ</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" id="example-text-input" type="text" value=""  placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label  class="col-sm-2 col-form-label">Անվանում</label>
+                                        <div class="col-sm-8">
+                                            <div class="input-user">
+                                                <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                            </div>
+                                            <div class="input-user">
+                                                <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label  class="col-sm-2 col-form-label ">Հասցե</label>
+                                        <div class="col-sm-8">
+                                            <div class="input-user">
+                                                <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                            </div>
+                                                <div class="input-user">
+                                                <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label ">Էլ․ հասցե</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Էլ․ փոստ" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label  class="col-sm-2 col-form-label ">Հեռախոսահամար</label>
+                                        <div class="col-sm-8">
+                                            <input type="tel" class="form-control"  placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label  class="col-sm-2 col-form-label ">Հայտի ներկայացման օր</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" type="date" value="2020-09-26" id="example-date-input01">
+                                        </div>
+                                    </div>
+
+
+                                    <h4 class="mt-0 mb-2 header-title">Գնային առաջարկը</h4>
+
+                                    <div class="custom-control custom-checkbox my-3">
+                                        <label for="input-file-now-custom-2">Վերբեռնեք տենդերի ֆայլը</label>
+                                        <input type="file" id="input-file-now-custom-2" class="dropify"  accept="image/jpeg,image/png,image/gif">
+                                        <div id="preview"></div>
+                                    </div>
+                                </fieldset>
+
+                                <h3>2</h3>
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="alert alert-info alert-dismissible fade show float-left" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                                                </button>
+                                                Մասնակից 2  &#160;&#160;
+                                                <strong>«ՆՈՐԱՅՐ-ՌՈՒԲԻՆԱ» ՍՊԸ</strong>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 col-lg-6">
+                                            <input class="form-control" type="text" id="name" placeholder="Name">
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <input class="form-control" type="email" id="example-email-input3" placeholder="Email">
+                                        </div>
+                                    </div><!--end form-group-->
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <input class="form-control" type="text" id="subject2" placeholder="Subject">
+                                        </div>
+                                    </div><!--end form-group-->
+                                    <div class="form-group"><textarea class="form-control"
+                                                                      id="exampleFormControlTextarea1" rows="4"
+                                                                      placeholder="Your message"></textarea></div>
+                                    <!--end form-group-->
+                                    <div class="custom-control custom-radio my-2"><input type="radio" id="customRadio1"
+                                                                                         name="customRadio"
+                                                                                         class="custom-control-input"
+                                                                                         checked=""> <label
+                                            class="custom-control-label" for="customRadio1">Male</label></div>
+                                    <!--end form-group-->
+                                    <div class="custom-control custom-radio my-2"><input type="radio" id="customRadio2"
+                                                                                         name="customRadio"
+                                                                                         class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Female</label></div>
+                                </fieldset>
+
+                                <h3>3</h3>
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="alert alert-info alert-dismissible fade show float-left" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                                                </button>
+                                                Մասնակից 3 &#160;&#160;
+                                                <strong>BBBBBBBBBBB</strong>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <p>I agree with the Terms and Conditions.</p>
+                                </fieldset>
+
+
+                            </form>
+
+                        </div>
+                        <!--end card-body-->
+                    </div>
+                    <!--end card-->
+                </div>
+                <!--end col-->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Default Datatable</h4>
+                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <thead>
+                                <tr>
+                                    <th>Չ/Հ</th>
+                                    <th>CPV կոդ</th>
+                                    <th>Գնման առարկայի անվանում</th>
+                                    <th>Ինքնարժեք</th>
+                                    <th>Շահույթ</th>
+                                    <th>Տարբերություն</th>
+                                    <th>Արժեք ԱԱՀ <input type="checkbox"></th>
+                                    <th>Ընդհամենը</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <select>
+                                            <option value="">Ընտրել</option>
+                                            <option value="1">Ապրանք</option>
+                                            <option value="2">Ծառայություն</option>
+                                            <option value="3">Աշխատանք</option>
+                                        </select>
+                                    </td>
+                                    <td>aaa</td>
+                                    <td>
+                                        <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                    </td>
+                                    <td>3500</td>
+                                    <td>
+                                        <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                    </td>
+                                </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+
         </div>
+
+
+
+
+
+
 
         <footer class="footer text-center text-sm-left">&copy; 2019 - 2020 Metrica
             <span class="text-muted d-none d-sm-inline-block float-right">Crafted with
@@ -444,6 +632,45 @@
 <!-- jQuery  -->
 
 
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/metismenu.min.js"></script>
+<script src="../assets/js/waves.js"></script>
+<script src="../assets/js/feather.min.js"></script>
+<script src="../assets/js/jquery.slimscroll.min.js"></script>
+<script src="../plugins/apexcharts/apexcharts.min.js"></script><!-- Required datatable js -->
+<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script><!-- Buttons examples -->
+<script src="../plugins/datatables/dataTables.buttons.min.js"></script>
+<script src="../plugins/datatables/buttons.bootstrap4.min.js"></script>
+<script src="../plugins/datatables/jszip.min.js"></script>
+<script src="../plugins/datatables/pdfmake.min.js"></script>
+<script src="../plugins/datatables/vfs_fonts.js"></script>
+<script src="../plugins/datatables/buttons.html5.min.js"></script>
+<script src="../plugins/datatables/buttons.print.min.js"></script>
+<script src="../plugins/datatables/buttons.colVis.min.js"></script><!-- Responsive examples -->
+<script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+<script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+<script src="../assets/pages/jquery.datatable.init.js"></script><!-- App js -->
+<script src="../assets/js/app.js"></script>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/metismenu.min.js"></script>
+<script src="../assets/js/waves.js"></script>
+
+<script src="../assets/pages/jquery.projects-index.init.js"></script><!-- App js -->
+
+<script src="../assets/js/feather.min.js"></script>
+<script src="../assets/js/jquery.slimscroll.min.js"></script>
+<script src="../plugins/apexcharts/apexcharts.min.js"></script>
+<script src="../plugins/treeview/jstree.min.js"></script>
+<script src="../assets/pages/jquery.treeview.init.js"></script><!-- App js -->
+
+<script src="../plugins/repeater/jquery.repeater.min.js"></script>
+<script src="../assets/pages/jquery.form-repeater.js"></script>
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/jquery-ui.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
