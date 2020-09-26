@@ -935,6 +935,7 @@ h4.text-success.font-14.product-title {
         float: left!important;
     }
 }
+
 @media (max-width: 1600px) {
     .btn-choice {
         display: flex;
