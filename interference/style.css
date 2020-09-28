@@ -961,3 +961,9 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+.card-footer.card-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
