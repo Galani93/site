@@ -967,3 +967,6 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
     right: 0;
     width: 100%;
 }
+.card.border.mb-1.shadow-none{
+    width: 100%;
+}
