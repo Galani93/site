@@ -982,3 +982,11 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
 .card.border.mb-1.shadow-none{
     width: 100%;
 }
+.gnahatman_row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gnahatman_row input {
+    float: left;
+}
