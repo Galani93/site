@@ -937,12 +937,13 @@ h4.text-success.font-14.product-title {
     .card-footer.card-bottom{
         position: relative!important;
     }
-    .accordion.col-lg-6.col-sm-12.accordion-col , .card.accordion-col {
+    .accordion.col-lg-6.col-sm-12.accordion-col , .card.accordion-col{
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
     }
+
 }
 
 @media (max-width: 1600px) {

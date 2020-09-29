@@ -676,14 +676,15 @@
 
                                                                         </div>
                                                                     </div>
-                                                                    <div class="card accordion-col">
+                                                                    <div class="card accordion-col col-lg-6">
                                                                         <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                                                             <thead>
                                                                             <tr>
                                                                                 <th>Չ/Հ</th>
                                                                                 <th>CPV կոդ</th>
                                                                                 <th>Գնման առարկայի անվանում</th>
-                                                                                <th>Արժեք ԱԱՀ <input type="checkbox"></th>
+                                                                                <th>Արժեք </th>
+                                                                                <th>ԱԱՀ <input type="checkbox"></th>
                                                                                 <th>Ընդհամենը</th>
                                                                             </tr>
                                                                             </thead>
@@ -699,10 +700,12 @@
                                                                                     </select>
                                                                                 </td>
                                                                                 <td>aaa</td>
+                                                                                <td>
+                                                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                                                                </td>
                                                                                 <td class="d-flex align-items-center">
                                                                                     <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
-                                                                                    <input type="checkbox">
-                                                                                </td>
+                                                                                    <input type="checkbox"></td>
                                                                                 <td>
                                                                                     <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                                                                                 </td>
@@ -733,7 +736,6 @@
                                                             <div class="card-header" id="headingTwo">
 
                                                                 <a href="" class="collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-
                                                                     <div class="alert alert-info alert-dismissible fade show" role="alert">
                                                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                                             <span aria-hidden="true"><i class="fa fa-times"></i></span>
@@ -743,10 +745,331 @@
                                                                     </div>
                                                                 </a>
                                                             </div>
+
                                                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                                <div class="row d-flex justify-content-between pl-4 pr-4">
+                                                                    <div class="accordion col-lg-6 col-sm-12 accordion-col"  id="accordionExample01">
+                                                                        <div class="card border  shadow-none">
+                                                                            <div class="card-header" id="headingOne01">
+                                                                                <a href="" class="" >
+                                                                                    <div class="checkbox checkbox-info">
+                                                                                        <input id="checkbox4" type="checkbox" data-toggle="collapse" data-target="#collapseOne01" aria-expanded="true" aria-controls="collapseOne01">
+                                                                                        <label for="checkbox4"> Համատեղ գործունեություն</label>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div id="collapseOne01" class="collapse show" aria-labelledby="headingOne01" data-parent="#accordionExample01">
+                                                                                <div class="card-body">
+                                                                                    <div class="" id="toggle-bloc">
+                                                                                        <div class="form-group row">
+                                                                                            <label for="example-text-input05"
+                                                                                                   class="col-sm-3 col-form-label ">ՀՎՀՀ</label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input class="form-control"
+                                                                                                       id="example-text-input05"
+                                                                                                       type="text" value="" placeholder="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label class="col-sm-3 col-form-label">Անվանում</label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <div class="input-user">
+                                                                                                    <input type="text" class=" form-control m-1"
+                                                                                                           name="processName" value=""
+                                                                                                           placeholder="Հայերեն">
+                                                                                                </div>
+                                                                                                <div class="input-user">
+                                                                                                    <input type="text"
+                                                                                                           class=" form-control  m-1"
+                                                                                                           name="processNameRu" value=""
+                                                                                                           placeholder="Ռուսերեն">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label class="col-sm-3 col-form-label ">Հասցե</label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <div class="input-user">
+                                                                                                    <input type="text" class=" form-control m-1"
+                                                                                                           name="processName" value=""
+                                                                                                           placeholder="Հայերեն">
+                                                                                                </div>
+                                                                                                <div class="input-user">
+                                                                                                    <input type="text"
+                                                                                                           class=" form-control  m-1"
+                                                                                                           name="processNameRu" value=""
+                                                                                                           placeholder="Ռուսերեն">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label class="col-sm-3 col-form-label ">Էլ․
+                                                                                                հասցե</label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="email" class="form-control"
+                                                                                                       id="exampleInputEmail4"
+                                                                                                       aria-describedby="emailHelp"
+                                                                                                       placeholder="Էլ․ փոստ"
+                                                                                                       required>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="tel" class="form-control"
+                                                                                                       placeholder="+374 99 99 99 99" id="phone"
+                                                                                                       name="phone"
+                                                                                                       pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label class="col-sm-3 col-form-label ">Հայտի
+                                                                                                ներկայացման օր</label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input class="form-control" type="date"
+                                                                                                       value="2020-09-26"
+                                                                                                       id="example-date-input04">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="collapseOne01" class="collapse " aria-labelledby="headingOne01" data-parent="#accordionExample01">
+                                                                                <div class="col-lg-12">
+                                                                                    <div class="card">
+                                                                                        <div class="card-body">
+                                                                                            <!-- Nav tabs -->
+                                                                                            <ul class="nav nav-pills nav-justified" role="tablist">
+                                                                                                <li class="nav-item waves-effect waves-light">
+                                                                                                    <a class="nav-link active" data-toggle="tab" href="#home-1" role="tab">Մասնակից 1 (գլխավոր)</a>
+                                                                                                </li>
+                                                                                                <li class="nav-item waves-effect waves-light">
+                                                                                                    <a class="nav-link" data-toggle="tab" href="#profile-1" role="tab">Մասնակից 2</a>
+                                                                                                </li>
+                                                                                                <li class="nav-item waves-effect waves-light">
+                                                                                                    <a class="nav-link" data-toggle="tab" href="#settings-1" role="tab">Մասնակից <i class="fa fa-plus"></i></a>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                            <!-- Tab panes -->
+                                                                                            <div class="tab-content">
+                                                                                                <div class="tab-pane pt-3 pl-0 pr-0 active" id="home-1" role="tabpanel">
+                                                                                                    <span class="card-header d-flex justify-content-center">Մասնակից 1 (գլխավոր)</span>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label for="example-text-input02"
+                                                                                                               class="col-sm-3 col-form-label ">ՀՎՀՀ</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input class="form-control" id="example-text-input02" type="text" value="" placeholder="">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label">Անվանում</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                                                                                            </div>
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Հասցե</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                                                                                            </div>
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Էլ․
+                                                                                                            հասցե</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input type="email"
+                                                                                                                   class="form-control"
+                                                                                                                   id="exampleInputEmail1"
+                                                                                                                   aria-describedby="emailHelp"
+                                                                                                                   placeholder="Էլ․ փոստ"
+                                                                                                                   required>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input type="tel"
+                                                                                                                   class="form-control"
+                                                                                                                   placeholder="+374 99 99 99 99"
+                                                                                                                   id="phone"
+                                                                                                                   name="phone"
+                                                                                                                   pattern="[+]{1}[0-9]{11,14}"
+                                                                                                                   required>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Հայտի
+                                                                                                            ներկայացման
+                                                                                                            օր</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input class="form-control"
+                                                                                                                   type="date"
+                                                                                                                   value="2020-09-26"
+                                                                                                                   id="example-date-input01">
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                                <div class="tab-pane p-3" id="profile-1" role="tabpanel">
+                                                                                                    <span class="card-header d-flex justify-content-center">Մասնակից 2</span>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label for="example-text-input02" class="col-sm-3 col-form-label ">ՀՎՀՀ</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input class="form-control" id="example-text-input02" type="text" value="" placeholder="">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label">Անվանում</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                                                                                            </div>
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Հասցե</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                                                                                            </div>
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Էլ․ հասցե</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Էլ․ փոստ" required>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                                <div class="tab-pane p-3" id="settings-1" role="tabpanel">
+                                                                                                    <span class="card-header d-flex justify-content-center">Մասնակից  </span>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label for="example-text-input02"
+                                                                                                               class="col-sm-3 col-form-label ">ՀՎՀՀ</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input class="form-control" id="example-text-input02" type="text" value="" placeholder="">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label">Անվանում</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                                                                                            </div>
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Հասցե</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                                                                                            </div>
+                                                                                                            <div class="input-user">
+                                                                                                                <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Էլ․ հասցե</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Էլ․ փոստ" required>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group row">
+                                                                                                        <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card accordion-col">
+                                                                        <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                                            <thead>
+                                                                            <tr>
+                                                                                <th>Չ/Հ</th>
+                                                                                <th>CPV կոդ</th>
+                                                                                <th>Գնման առարկայի անվանում</th>
+                                                                                <th>Արժեք </th>
+                                                                                <th>ԱԱՀ <input type="checkbox"></th>
+                                                                                <th>Ընդհամենը</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>
+                                                                                    <select>
+                                                                                        <option value="">Ընտրել</option>
+                                                                                        <option value="1">Ապրանք</option>
+                                                                                        <option value="2">Ծառայություն</option>
+                                                                                        <option value="3">Աշխատանք</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>aaa</td>
+                                                                                <td>
+                                                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                                                                </td>
+                                                                                <td class="d-flex align-items-center">
+                                                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                                                                    <input type="checkbox">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                                                                </td>
+                                                                            </tr>
+                                                                            </tbody>
+
+                                                                        </table>
+                                                                        <div class="card-footer card-bottom">
+                                                                            <button type="submit" class="btn btn-secondary ">
+                                                                                Հաստատել
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                                 <div class="card-body">
-                                                                    <p class="mb-0 text-muted">
-                                                                    </p>
+                                                                    <h4 class="mt-0 mb-2 header-title">Գնային առաջարկը</h4>
+                                                                    <div class="custom-control custom-checkbox my-3 pl-0">
+                                                                        <label for="input-file-now-custom-2">Վերբեռնեք տենդերի ֆայլը</label>
+                                                                        <input type="file" id="input-file-now-custom-2" class="dropify"  accept="image/jpeg,image/png,image/gif">
+                                                                        <div id="preview"></div>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -822,7 +1145,7 @@
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-xl-6">
                                         <div class="card">
-                                            <div class="card-body d-flex justify-content-between">
+                                            <div class="card-body d-flex justify-content-between ">
                                                 <h4 class="mt-0 header-title">Արտահանել Excel</h4>
                                                 <div class="file-box-content">
                                                     <div class="file-box">
@@ -837,7 +1160,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card-body d-flex">
+                                            <div class="card-body d-flex justify-content-between ">
                                                 <h4 class="mt-0 header-title">Հայտերի գնահատման նպատակով բացման նիստի կասեցման արձանագրություն</h4>
                                                 <div class="file-box-content">
                                                     <div class="file-box">
@@ -934,8 +1257,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </fieldset>
                                 <!--end fieldset-->
