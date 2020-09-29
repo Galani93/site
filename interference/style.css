@@ -984,9 +984,12 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
 }
 .gnahatman_row{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 .gnahatman_row input {
     float: left;
+}
+.radio_bavarar1_1, .radio_anbavarar1_1{
+    margin-right: 10px;
 }
