@@ -934,6 +934,15 @@ h4.text-success.font-14.product-title {
     div.btn-search-cpv{
         float: left!important;
     }
+    .card-footer.card-bottom{
+        position: relative!important;
+    }
+    .accordion.col-lg-6.col-sm-12.accordion-col , .card.accordion-col {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1600px) {
@@ -967,6 +976,8 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
     right: 0;
     width: 100%;
 }
+
+
 .card.border.mb-1.shadow-none{
     width: 100%;
 }

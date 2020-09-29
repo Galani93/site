@@ -365,8 +365,6 @@
 <div class="page-wrapper">
 
     <div class="page-content-tab">
-
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
@@ -382,7 +380,6 @@
                         <h4 class="page-title">Մասնակիցների տվյալների մուտքագրում</h4>
                     </div>
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-sm-12">
@@ -392,7 +389,7 @@
                                 <h3>Մասնակիցների տվյալների մուտքագրում</h3>
                                 <fieldset>
                                     <div class="row">
-                                        <div class="col-md-12 col-lg-10 col-xl-12">
+                                        <div class="col-lg-12">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="accordion" id="accordionExample">
@@ -411,7 +408,7 @@
 
                                                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                                                 <div class="row d-flex justify-content-between pl-4 pr-4">
-                                                                    <div class="accordion col-lg-6  col-sm-12"  id="accordionExample01">
+                                                                    <div class="accordion col-lg-6 col-sm-12 accordion-col"  id="accordionExample01">
                                                                         <div class="card border  shadow-none">
                                                                             <div class="card-header" id="headingOne01">
                                                                                 <a href="" class="" >
@@ -680,14 +677,13 @@
 
                                                                         </div>
                                                                     </div>
-                                                                    <div class="card">
+                                                                    <div class="card accordion-col">
                                                                         <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                                                             <thead>
                                                                             <tr>
                                                                                 <th>Չ/Հ</th>
                                                                                 <th>CPV կոդ</th>
                                                                                 <th>Գնման առարկայի անվանում</th>
-
                                                                                 <th>Արժեք ԱԱՀ <input type="checkbox"></th>
                                                                                 <th>Ընդհամենը</th>
                                                                             </tr>
@@ -789,20 +785,21 @@
                                         <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
-                                                <th>Չ/Հ</th>
-                                                <th>CPV կոդ</th>
-                                                <th>Գնման առարկայի անվանում</th>
-                                                <th>Նախահաշվային ընդհանուր գին</th>
-                                                <th colspan="2">
-                                                    Նվազագույն գնային առաջարկ
-                                               Արժեք
-                                               Ընդհամենը
-                                                </th>
-                                                <th>Մասնակիցների ընդհանուր քանակ</th>
-                                                <th colspan="2">Մասնակցի <br>անվանումը կարգավիճակը</th>
-                                                <th>Ստացված արդյունքները</th>
-                                                <th>Կարգավիճակ</th>
-
+                                                <th rowspan="2">Չ/Հ</th>
+                                                <th rowspan="2">CPV կոդ</th>
+                                                <th rowspan="2">Գնման առարկայի անվանում</th>
+                                                <th rowspan="2">Նախահաշվային ընդհանուր գին</th>
+                                                <th colspan="2">Նվազագույն գնային առաջարկ</th>
+                                                <th rowspan="2">Մասնակիցների ընդհանուր քանակ</th>
+                                                <th colspan="2">Մասնակցի</th>
+                                                <th rowspan="2">Ստացված արդյունքները</th>
+                                                <th rowspan="2">Կարգավիճակ</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Արժեք</th>
+                                                <th>Ընդհամենը</th>
+                                                <th>անվանումը</th>
+                                                <th>կարգավիճակը</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -855,7 +852,7 @@
                                                                 <tr>
                                                                     <th></th>
                                                                     <th>Մասնակցի անվանումը</th>
-                                                                    <th>Հիմնավորում/th>
+                                                                    <th>Հիմնավորում</th>
 
                                                                 </tr>
                                                                 </thead>
@@ -907,7 +904,7 @@
                                                             </div>
                                                             <div class="mt-3">
                                                                 <label class="mb-2">Նիստի բովանդակությունը</label>
-                                                                <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder=" Համատեղ գործունեություն"></textarea>
+                                                                <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder=""></textarea>
                                                             </div>
                                                             <div class="mt-3">
                                                                 <label class="mb-2">Հաջորդ նիստի օրն ու ժամը</label>
