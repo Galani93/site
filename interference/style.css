@@ -965,11 +965,13 @@ h4.text-success.font-14.product-title {
 a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-horizontal-t-3, a#form-horizontal-t-4 {
     font-size: 12px;
 }
+
 .steps.clearfix ul{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+
 .card-footer.card-bottom{
     position: absolute;
     bottom: 0;
