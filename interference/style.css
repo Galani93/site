@@ -994,3 +994,32 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
 .radio_bavarar1_1, .radio_anbavarar1_1{
     margin-right: 10px;
 }
+.page-content-tab.page-content-tab02{
+    width: calc(100% - 90px)!important;
+    margin-left: auto;
+    position: relative;
+    min-height: calc(100vh - 70px);
+    padding: 0 10px 60px 10px;
+    margin-top: 70px;
+}
+.navbar-custom.navbar-custom01{
+    background: #fff;
+    margin-left:110px;
+    min-height: 70px;
+    -webkit-box-shadow: 6px 0px 6px rgba(31,30,47,0.06);
+    box-shadow: 6px 0px 6px rgba(31,30,47,0.06);
+    position: relative;
+}
+.nav-link > .number {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 38px;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 10px;
+    background-color: rgba(80,110,228,0.15);
+    float: left;
+}
