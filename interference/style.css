@@ -1023,3 +1023,10 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
     background-color: rgba(80,110,228,0.15);
     float: left;
 }
+/*.dropdown-menu.dropdown-menu-right.show {*/
+/*    position: relative!important;*/
+/*    will-change: transform;*/
+/*    top: -35px!important;*/
+/*    left: 0px;*/
+/*    transform: translate3d(-120px, 39px, 0px);*/
+/*}*/
