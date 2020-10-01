@@ -1030,3 +1030,40 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
 /*    left: 0px;*/
 /*    transform: translate3d(-120px, 39px, 0px);*/
 /*}*/
+
+
+
+/*.nav-wizard a#v-pills-home-tab  , a#v-pills-session-tab {*/
+/*    margin: 3px;*/
+/*    padding: 0!important;*/
+/*    border-radius: 50px;*/
+/*    background: #eee;*/
+/*    cursor: default;*/
+/*    color: #506ee4;*/
+/*}*/
+/*.nav-wizard  .nav-link.active {*/
+/*    border-radius: 50px;*/
+/*    background: linear-gradient(14deg, #506ee4 0%, rgba(80,110,228,0.6));*/
+/*    color: #fff;*/
+/*    -webkit-box-shadow: 0px 3px 10px 0 rgba(80,110,228,0.4);*/
+/*    box-shadow: 0px 3px 10px 0 rgba(80,110,228,0.4);*/
+
+/*}*/
+
+.nav.nav-wizard > .nav-link.active{
+    border-radius: 50px;
+    background: linear-gradient(14deg, #506ee4 0%, rgba(80,110,228,0.6));
+    color: #fff;
+    padding: 2px 20px 2px 2px;
+    -webkit-box-shadow: 0px 3px 10px 0 rgba(80,110,228,0.4);
+    box-shadow: 0px 3px 10px 0 rgba(80,110,228,0.4);
+}
+.nav.nav-wizard > .nav-link{
+    border-radius: 50px;
+
+    background-color: rgba(80,110,228,0.1);
+    color: #506ee4;
+    padding: 0 20px 0 0;
+    -webkit-box-shadow: 0px 0px 0px 2.25px rgba(80,110,228,0.5);
+    box-shadow: 0px 0px 0px 2.25px rgba(80,110,228,0.5);
+}
