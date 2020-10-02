@@ -17,6 +17,12 @@
     <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css">
 
 
+    <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <!-- Responsive datatable examples -->
+    <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+
+
     <link href="../interference/style.css" rel="stylesheet" type="text/css">
     <link href="../assets" rel="stylesheet" type="text/css">
     <link href="../plugins/nestable/jquery.nestable.min.css" rel="stylesheet"><!-- App css -->
@@ -374,36 +380,8 @@
                                                     </div>
                                                     <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                                                        <a class="nav-link waves-effect waves-light active m-2" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home-participant" role="tab" aria-controls="v-pills-home-participant" aria-selected="true">
-                                                            <div class="alert alert-dismissible fade show p-0" role="alert">
-                                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                                <span aria-hidden="true"><i class="fa fa-times"></i></span>
-                                                            </button>
-                                                            Մասնակից 1 «ԷՅՉ ԷՍ ՓԱՐԹՆԵՐՍ» ՍՊԸ
-                                                           </div>
-                                                        </a>
-
-                                                        <a class="nav-link waves-effect waves-light m-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile-participant" role="tab" aria-controls="v-pills-profile-participant" aria-selected="false">
-                                                            <div class="alert  alert-dismissible fade show p-0" role="alert">
-                                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                                    <span aria-hidden="true"><i class="fa fa-times"></i></span>
-                                                                </button>
-                                                                <strong> Մասնակից 2 &#160;&#160;</strong>
-                                                            </div>
-                                                        </a>
-
-                                                        <a class="nav-link waves-effect waves-light m-2" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings-participant" role="tab" aria-controls="v-pills-settings-participant"
-                                                           aria-selected="false">
-                                                            <div class="alert alert-dismissible fade show p-0" role="alert">
-                                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                                    <span aria-hidden="true"><i class="fa fa-times"></i></span>
-                                                                </button>
-                                                                <strong> Մասնակից 3</strong>
-                                                            </div>
-                                                        </a>
-
                                                         <a href="" class="text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                                            <div class="alert alert-info alert-dismissible fade show"  id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home-participant" role="tab">
                                                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                                     <span aria-hidden="true"><i class="fa fa-times"></i></span>
                                                                 </button>
@@ -413,22 +391,21 @@
                                                         </a>
                                                         <a href="" class="collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 
-                                                            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                                            <div class="alert alert-info alert-dismissible fade show"  id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile-participant" role="tab" aria-controls="v-pills-profile-participant" aria-selected="false">
                                                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                                     <span aria-hidden="true"><i class="fa fa-times"></i></span>
                                                                 </button>
                                                                 <strong> Մասնակից 2 &#160;&#160;</strong>
-                                                                <!--                                                    ՋԿ-ԳՀԱՊՁԲ-20/8-->
                                                             </div>
                                                         </a>
                                                         <a href="" class="collapsed text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                                    <div class="alert alert-info alert-dismissible fade show" role="alert">
-                                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                                            <span aria-hidden="true"><i class="fa fa-times"></i></span>
-                                                                        </button>
-                                                                        <strong> Մասնակից 3</strong>
-                                                                    </div>
-                                                                </a>
+                                                           <div class="alert alert-info alert-dismissible fade show"  id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings-participant" role="tab" aria-controls="v-pills-settings-participant" aria-selected="false">
+                                                               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                                   <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                                                               </button>
+                                                               <strong> Մասնակից 3</strong>
+                                                           </div>
+                                                        </a>
 
                                                     </div>
                                                 </div>
@@ -503,11 +480,9 @@
                                                                                 <div class="form-group row">
                                                                                     <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                     <div class="col-sm-9">
-                                                                                        <input type="tel" class="form-control"
-                                                                                               placeholder="+374 99 99 99 99" id="phone"
-                                                                                               name="phone"
-                                                                                               pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                        <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                     </div>
+
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label class="col-sm-3 col-form-label ">Հայտի
@@ -586,13 +561,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel"
-                                                                                                           class="form-control"
-                                                                                                           placeholder="+374 99 99 99 99"
-                                                                                                           id="phone"
-                                                                                                           name="phone"
-                                                                                                           pattern="[+]{1}[0-9]{11,14}"
-                                                                                                           required>
+                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="form-group row">
@@ -647,7 +616,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
 
@@ -692,7 +661,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                                            <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -732,7 +701,7 @@
                                                                             <td>
                                                                                 <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                                                                             </td>
-                                                                            <td class="d-flex align-items-center">
+                                                                            <td class="d-flex align-items-center justify-content-between">
                                                                                 <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                                                                                 <input type="checkbox"></td>
                                                                             <td>
@@ -828,10 +797,7 @@
                                                                                 <div class="form-group row">
                                                                                     <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                     <div class="col-sm-9">
-                                                                                        <input type="tel" class="form-control"
-                                                                                               placeholder="+374 99 99 99 99" id="phone"
-                                                                                               name="phone"
-                                                                                               pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                        <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
@@ -911,13 +877,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel"
-                                                                                                           class="form-control"
-                                                                                                           placeholder="+374 99 99 99 99"
-                                                                                                           id="phone"
-                                                                                                           name="phone"
-                                                                                                           pattern="[+]{1}[0-9]{11,14}"
-                                                                                                           required>
+                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="form-group row">
@@ -972,7 +932,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                                            <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
 
@@ -1017,7 +977,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                                            <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -1057,7 +1017,7 @@
                                                                             <td>
                                                                                 <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                                                                             </td>
-                                                                            <td class="d-flex align-items-center">
+                                                                            <td class="d-flex align-items-center justify-content-between">
                                                                                 <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                                                                                 <input type="checkbox"></td>
                                                                             <td>
@@ -1153,10 +1113,7 @@
                                                                                 <div class="form-group row">
                                                                                     <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                     <div class="col-sm-9">
-                                                                                        <input type="tel" class="form-control"
-                                                                                               placeholder="+374 99 99 99 99" id="phone"
-                                                                                               name="phone"
-                                                                                               pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                        <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
@@ -1236,13 +1193,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel"
-                                                                                                           class="form-control"
-                                                                                                           placeholder="+374 99 99 99 99"
-                                                                                                           id="phone"
-                                                                                                           name="phone"
-                                                                                                           pattern="[+]{1}[0-9]{11,14}"
-                                                                                                           required>
+                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="form-group row">
@@ -1297,7 +1248,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                                            <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
 
@@ -1342,7 +1293,7 @@
                                                                                             <div class="form-group row">
                                                                                                 <label class="col-sm-3 col-form-label ">Հեռախոսահամար</label>
                                                                                                 <div class="col-sm-9">
-                                                                                                    <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                                                                                                            <input type="tel" class="form-control" placeholder="+374 99 99 99 99" id="phone" name="phone" oninput="this.value = this.value.replace(/[^0-9+.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -1382,7 +1333,7 @@
                                                                             <td>
                                                                                 <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                                                                             </td>
-                                                                            <td class="d-flex align-items-center">
+                                                                            <td class="d-flex align-items-center justify-content-between">
                                                                                 <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                                                                                 <input type="checkbox"></td>
                                                                             <td>
@@ -1425,9 +1376,7 @@
                                                                     <i class="far fa-file-excel text-success font-30"></i>
                                                                 </button>
                                                             </div>
-                                                            <table id="datatable"
-                                                                   class="table table-bordered dt-responsive nowrap"
-                                                                   style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                                                 <thead>
                                                                 <tr>
                                                                     <th rowspan="2">Չ/Հ</th>
@@ -1490,9 +1439,7 @@
                                                                              aria-labelledby="headingOne"
                                                                              data-parent="#accordionExample">
                                                                             <div class="card-body">
-                                                                                <table id="datatable"
-                                                                                       class="table table-bordered dt-responsive nowrap"
-                                                                                       style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                                                <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                                                                     <thead>
                                                                                     <tr>
                                                                                         <th></th>
@@ -1776,6 +1723,24 @@
 <script src="../assets/js/jquery.slimscroll.min.js"></script>
 <script src="../plugins/apexcharts/apexcharts.min.js"></script>
 <script src="../assets/pages/jquery.projects-index.init.js"></script><!-- App js -->
+
+
+
+
+<!-- Required datatable js -->
+<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+<!-- Buttons examples -->
+
+<!-- Responsive examples -->
+
+<script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+<script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+<script src="../assets/pages/jquery.datatable.init.js"></script>
+
+
+
+
 <script src="../assets/js/app.js"></script>
 </body>
 </html>
