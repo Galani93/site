@@ -1063,10 +1063,12 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
 }
 .nav.nav-wizard > .nav-link{
     border-radius: 50px;
-
     background-color: rgba(80,110,228,0.1);
     color: #506ee4;
     padding: 0 20px 0 0;
     -webkit-box-shadow: 0 0 0 2.25px rgba(80,110,228,0.5);
     box-shadow: 0 0 0 2.25px rgba(80,110,228,0.5);
+}
+.tab-pane-session01, .tab-pane-session02{
+    display: none;
 }
