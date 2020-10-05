@@ -25,5 +25,11 @@ $( document ).ready(function() {
         // stop clouse
     });
 
+
+
+
 });
 
+$( "#v-pills-profile-tab" ).click(function() {
+    $( "#v-pills-02" ).show( "slow" );
+});

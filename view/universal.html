@@ -27,7 +27,8 @@
     <link href="../assets" rel="stylesheet" type="text/css">
     <link href="../plugins/nestable/jquery.nestable.min.css" rel="stylesheet"><!-- App css -->
     <link href="../plugins/treeview/themes/default/style.css" rel="stylesheet">
-    <link href="../plugins/treeview/file-explore.css" rel="stylesheet"><!-- App css -->
+    <link href="../plugins/treeview/file-explore.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -365,10 +366,10 @@
                             Բացման և Գնահատման  Նիստի<br> Արդյունքների Ամփոփում
                         </a>
 
-                        <div class="tab-content mo-mt-2" id="v-pills-tabContent">
-                            <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="tab-content mo-mt-2" id="v-pills-tabContent02">
+                            <div class="tab-pane fade " id="v-pills-01"  role="tabpanel" aria-labelledby="v-pills-home-tab">
                             </div>
-                            <div class="tab-pane fade" id="v-pills-profile01" role="tabpanel" aria-labelledby="v-pills-profile-tab01">
+                            <div class="tab-pane fade " id="v-pills-02"  role="tabpanel" aria-labelledby="v-pills-profile-tab01">
                                     <div class="card-body">
                                         <a href="#" class="btn btn-outline-light float-left">Հայտերի գնահատման նպատակով
                                             բացման նիստի կասեցման արձանագրություն
@@ -376,7 +377,7 @@
                                         </a>
                                     </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="tab-pane fade" id="v-pills-03"  role="tabpanel" aria-labelledby="v-pills-settings-tab">
                                 <div class="card-body">
                                     <a href="#" class="btn btn-outline-light float-left mb-1">Գնահատման թերթիկ -դատարկ
                                         <i class="far fa-file-code text-info font-30 pl-1"></i>
@@ -391,7 +392,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-negotiations" role="tabpanel" aria-labelledby="v-pills-negotiations">
+                            <div class="tab-pane fade" id="v-pills-04"  role="tabpanel" aria-labelledby="v-pills-negotiations">
                                 <div class="row pl-2 pr-2">
                                     <div class="card ">
                                         <div class="card-body">
@@ -429,7 +430,7 @@
                                 </div>
 
                             </div>
-                            <div class="tab-pane tab-pane-session01" id="v-pills-session" role="tabpanel" aria-labelledby="v-pills-session">
+                            <div class="tab-pane fade" id="v-pills-05"  role="tabpanel" aria-labelledby="v-pills-session">
                                 <div class="card-body">
 
                                     <a href="#" class="btn btn-outline-light m-1">Բացման և գնահատման նիստի վերջնական արձանագրություն
@@ -1467,63 +1468,54 @@
 
                                                     <div class="row">
                                                         <div class="card">
-<!--                                                            <div class="text-left">-->
-<!--                                                                <h4 class="page-title">Նախնական համեմատում</h4>-->
-<!--                                                            </div>-->
                                                             <div class="text-left mb-2">
                                                                 <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="right" data-trigger="hover" title="Արտահանել Excel" data-original-title="Արտահանել Excel">
                                                                     <i class="far fa-file-excel text-success font-30"></i>
                                                                 </button>
                                                             </div>
-                                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                                                <thead>
-                                                                <tr>
-                                                                    <th rowspan="2">Չ/Հ</th>
-                                                                    <th rowspan="2">CPV կոդ</th>
-                                                                    <th rowspan="2">Գնման առարկայի անվանում</th>
-                                                                    <th rowspan="2">Նախահաշվային ընդհանուր գին</th>
-                                                                    <th colspan="2">Նվազագույն գնային առաջարկ</th>
-                                                                    <th rowspan="2">Մասնակիցների ընդհանուր քանակ</th>
-                                                                    <th colspan="2">Մասնակցի</th>
-                                                                    <th rowspan="2">Ստացված արդյունքները</th>
-                                                                    <th rowspan="2">Կարգավիճակ</th>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th>Արժեք</th>
-                                                                    <th>Ընդհամենը</th>
-                                                                    <th>անվանումը</th>
-                                                                    <th>կարգավիճակը</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>00000001</td>
-                                                                    <td>Ապրանք1</td>
-                                                                    <td>100000</td>
-                                                                    <td>10.00</td>
-                                                                    <td>10.00</td>
-                                                                    <td>3</td>
-                                                                    <td>«ԷՅՉ ԷՍ ՓԱՐԹՆԵՐՍ» ՍՊԸ</td>
-                                                                    <td>Անորոշ</td>
+                                                                <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th rowspan="2">Չ/Հ</th>
+                                                                        <th rowspan="2">CPV կոդ</th>
+                                                                        <th rowspan="2">Գնման առարկայի անվանում</th>
+                                                                        <th rowspan="2">Նախահաշվային ընդհանուր գին</th>
+                                                                        <th colspan="2">Նվազագույն գնային առաջարկ</th>
+                                                                        <th rowspan="2">Մասնակիցների ընդհանուր քանակ</th>
+                                                                        <th colspan="2">Մասնակցի</th>
+                                                                        <th rowspan="2">Ստացված արդյունքները</th>
+                                                                        <th rowspan="2">Կարգավիճակ</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Արժեք</th>
+                                                                        <th>Ընդհամենը</th>
+                                                                        <th>անվանումը</th>
+                                                                        <th>կարգավիճակը</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>00000001</td>
+                                                                        <td>Ապրանք1</td>
+                                                                        <td>100000</td>
+                                                                        <td>10.00</td>
+                                                                        <td>10.00</td>
+                                                                        <td>3</td>
+                                                                        <td>«ԷՅՉ ԷՍ ՓԱՐԹՆԵՐՍ» ՍՊԸ</td>
+                                                                        <td>Անորոշ</td>
 
-                                                                    <td>Նվազագույն գին</td>
-                                                                    <td>Կայացած
-                                                                        Բանակցություններ (15-րդ հոդվածի 6-րդ մաս)
-                                                                    </td>
-                                                                </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <a href="#" class="download-icon-link">Հայտերի գնահատման նպատակով
-                                                                բացման նիստի կասեցման արձանագրություն
-                                                                <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                            </a>
+                                                                        <td>Նվազագույն գին</td>
+                                                                        <td>Կայացած
+                                                                            Բանակցություններ (15-րդ հոդվածի 6-րդ մաս)
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
                                                         </div>
                                                         <div class="col-md-12 col-lg-12 col-xl-6">
                                                             <div class="card">
-
                                                                 <div class="accordion" id="accordionExample">
                                                                     <div class="card border mb-1 shadow-none">
                                                                         <div class="card-header" id="headingOne">
@@ -1694,19 +1686,6 @@
                                                         </table>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <a href="#" class="btn btn-outline-light">Գնահատման թերթիկ -դատարկ
-                                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                    </a>
-                                                    <a href="#" class="btn btn-outline-light">
-                                                        Գնահատման թերթիկ
-                                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                    </a>
-                                                    <a href="#" class="btn btn-outline-light">
-                                                        Բացման և գնահատման նիստի շարունակություն շտկում
-                                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                    </a>
-                                                </div>
                                             </div>
 
                                         </div>
@@ -1755,43 +1734,8 @@
                                                     </tr>
                                                     </tbody>
                                                 </table>
-                                            <div class="row">
-                                                <div class="card col-6">
-                                                    <h5 class="card-header bg-primary text-white mt-0">Ծանուցում բանակցությունների վերաբերյալ</h5>
-                                                    <div class="card-body">
-                                                        <!--                                                    <h4 class="card-title mt-0">Card title</h4>-->
-                                                        <a href="#" class="btn btn-outline-light m-1">«ԷՅՉ ԷՍ ՓԱՐԹՆԵՐՍ»
-                                                            ՍՊԸ
-                                                            <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                        </a>
-                                                        <br>
-                                                        <a href="#" class="btn btn-outline-light m-1">
-                                                            «ՆՈՐԱՅՐ-ՌՈՒԲԻՆԱ» ՍՊԸ
-                                                            <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                        </a>
-                                                        <br>
-                                                        <a href="#" class="btn btn-outline-light m-1">
-                                                            BBBBBBBBBBBBBBBBB ՍՊԸ
-                                                            <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="card col-6">
-                                                    <h5 class="card-header bg-primary text-white mt-0">Արձանագրություն</h5>
-                                                    <div class="card-body">
-                                                        <a href="#" class="btn btn-outline-light m-1">
-                                                            Բանակցությունների նպատակով նիստի կասեցման արձանագրություն
-                                                            <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-outline-light m-1">
-                                                            Շտկման նպատակով նիստի կասեցման արձանագրություն
-                                                            <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
                                                 <div class="row">
-                                                <div class="card col-12">
+                                                <div class="card col-12 pb-2">
                                                     <div class="accordion" id="accordionExample">
                                                         <div class="card border mb-1 shadow-none">
                                                             <div class="card-header" id="headingOne">
@@ -1955,75 +1899,84 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="accordion" id="accordionExample">
-                                                            <div class="card mb-1 border shadow-none">
-                                                                <div class="card-header" id="headingTwo02">
-                                                                    <a href="" class="collapsed text-dark alert alert-info alert-dismissible fade show" data-toggle="collapse" data-target="#collapseTwo02" aria-expanded="false" aria-controls="collapseTwo02">
-                                                                        Արտահերթ նիստ
-                                                                    </a>
-                                                                </div>
-                                                                <div id="collapseTwo02" class="collapse" aria-labelledby="headingTwo02" data-parent="#accordionExample">
-
-                                                                    <h4 class="mt-0 header-title ml-4">Ում նախաձեռնությամբ է հրավիրված նիստը</h4>
-                                                                    <div class="col-lg-10 d-flex flex-column ml-4">
-                                                                        <div class="radio radio-info form-check-inline">
-
-                                                                            <input type="radio" id="inlineRadio1"
-                                                                                   value="option1" name="radioInline"
-                                                                                   checked="">
-                                                                            <label for="inlineRadio1">Պատվիրատուի
-                                                                                ղեկավարի</label>
-                                                                        </div>
-                                                                        <div class="radio form-check-inline">
-
-                                                                            <input type="radio" id="inlineRadio2"
-                                                                                   value="option2" name="radioInline">
-                                                                            <label for="inlineRadio2">Գնահատող
-                                                                                հանձնաժողովի</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="card-body">
-
-                                                                        <div class="mt-3">
-                                                                            <label class="mb-2">Նիստի օրակարգը</label>
-                                                                            <textarea id="textarea" class="form-control"
-                                                                                      maxlength="225" rows="3"
-                                                                                      placeholder=""></textarea>
-                                                                        </div>
-                                                                        <div class="mt-3">
-                                                                            <label class="mb-2">Նիստի
-                                                                                բովանդակությունը</label>
-                                                                            <textarea id="textarea" class="form-control"
-                                                                                      maxlength="225" rows="3"
-                                                                                      placeholder=""></textarea>
-                                                                        </div>
-                                                                        <div class="mt-3">
-                                                                            <label class="mb-2">Հաջորդ նիստի օրն ու
-                                                                                ժամը</label>
-                                                                            <input class="form-control"
-                                                                                   type="datetime-local"
-                                                                                   value="2011-08-19T13:45:00"
-                                                                                   id="example-datetime-local-input">
-                                                                        </div>
-
-                                                                    </div>
-                                                                    <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
-                                                                        <button type="button"
-                                                                                class="btn btn-secondary apply p-2">
-                                                                            Հաստատել
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
 
                                                 </div>
+                                                </div>
+                                            <div class="col-6 p-0">
+                                                <div class="card">
+                                                    <div class="accordion" id="accordionExample">
+                                                        <div class="card mb-1 border shadow-none">
+                                                            <div class="card-header" id="headingTwo">
+                                                                <a href=""
+                                                                   class="collapsed text-dark alert alert-info alert-dismissible fade show"
+                                                                   data-toggle="collapse" data-target="#collapseTwo"
+                                                                   aria-expanded="false"
+                                                                   aria-controls="collapseTwo">
+                                                                    Արտահերթ նիստ
+                                                                </a>
+                                                            </div>
+                                                            <div id="collapseTwo" class="collapse"
+                                                                 aria-labelledby="headingTwo"
+                                                                 data-parent="#accordionExample">
 
+                                                                <h4 class="mt-0 header-title ml-4">Ում
+                                                                    նախաձեռնությամբ է հրավիրված նիստը</h4>
+                                                                <div class="col-lg-10 d-flex flex-column ml-4">
+                                                                    <div class="radio radio-info form-check-inline">
+
+
+                                                                        <input type="radio" id="inlineRadio1"
+                                                                               value="option1" name="radioInline"
+                                                                               checked="">
+                                                                        <label for="inlineRadio1">Պատվիրատուի
+                                                                            ղեկավարի</label>
+                                                                    </div>
+                                                                    <div class="radio form-check-inline">
+
+                                                                        <input type="radio" id="inlineRadio2"
+                                                                               value="option2" name="radioInline">
+                                                                        <label for="inlineRadio2">Գնահատող
+                                                                            հանձնաժողովի</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+
+                                                                    <div class="mt-3">
+                                                                        <label class="mb-2">Նիստի օրակարգը</label>
+                                                                        <textarea id="textarea" class="form-control"
+                                                                                  maxlength="225" rows="3"
+                                                                                  placeholder=""></textarea>
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <label class="mb-2">Նիստի
+                                                                            բովանդակությունը</label>
+                                                                        <textarea id="textarea" class="form-control"
+                                                                                  maxlength="225" rows="3"
+                                                                                  placeholder=""></textarea>
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <label class="mb-2">Հաջորդ նիստի օրն ու
+                                                                            ժամը</label>
+                                                                        <input class="form-control"
+                                                                               type="datetime-local"
+                                                                               value="2011-08-19T13:45:00"
+                                                                               id="example-datetime-local-input">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
+                                                                    <button type="button"
+                                                                            class="btn btn-secondary apply p-2">
+                                                                        Հաստատել
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-
                                         </div>
-                                        <div class="tab-pane tab-pane-session02 " id="v-pills-session" role="tabpanel" aria-labelledby="v-pills-session">
+                                        <div class="tab-pane fade" id="v-pills-session" role="tabpanel" aria-labelledby="v-pills-session">
                                             <div class="text-left mb-2">
                                                 <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="right" data-trigger="hover" title="Արտահանել Excel" data-original-title="Արտահանել Excel">
                                                     <i class="far fa-file-excel text-success font-30"></i>
@@ -2067,72 +2020,55 @@
                                                 </tr>
                                                 </tbody>
                                             </table>
-                                            <div class="card-body">
-
-                                                <a href="#" class="btn btn-outline-light m-1">Բացման և գնահատման նիստի վերջնական արձանագրություն
-
-                                                    <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                </a>
-                                                <br>
-                                                <a href="#" class="btn btn-outline-light m-1">Հարցում ՊԵԿ (պատճառաբանված որոշման դեպքում)
-
-                                                    <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                </a>
-                                                <br>
-                                                <a href="#" class="btn btn-outline-light m-1">
-                                                    Բացման և գնահատման նիստի շարունակություն շտկում
-                                                    <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                </a>
-                                                <br>
-                                                <a href="#" class="btn btn-outline-light m-1">
-                                                    Բացման և գնահատման նիստի բանակցության շարունակություն
-
-                                                    <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                </a>
-                                                <br>
-                                                <a href="#" class="btn btn-outline-light m-1">
-                                                    Բացման և գնահատման նիստի շարունակություն
-                                                    <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                                </a>
-
-                                                <div class="card mb-1 border shadow-none">
-                                                    <div class="card-header" id="headingTwo">
-                                                        <a href="" class="collapsed text-dark alert alert-info alert-dismissible fade show"
-                                                           data-toggle="collapse" data-target="#collapseTwo"
-                                                           aria-expanded="false"
-                                                           aria-controls="collapseTwo">
-                                                            Արտահերթ նիստ
-                                                        </a>
-                                                    </div>
-                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-
-                                                        <h4 class="mt-0 header-title ml-4">Ում նախաձեռնությամբ է հրավիրված նիստը</h4>
-                                                        <div class="col-lg-10 d-flex flex-column ml-4">
-                                                            <div class="radio radio-info form-check-inline">
-                                                                <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
-                                                                <label for="inlineRadio1">Պատվիրատուի ղեկավարի</label>
+                                            <div class="col-6 p-0">
+                                                <div class="card">
+                                                    <div class="accordion" id="accordionExample">
+                                                        <div class="card mb-1 border shadow-none">
+                                                            <div class="card-header" id="headingTwo">
+                                                                <a href=""
+                                                                   class="collapsed text-dark alert alert-info alert-dismissible fade show"
+                                                                   data-toggle="collapse" data-target="#collapseTwo"
+                                                                   aria-expanded="false"
+                                                                   aria-controls="collapseTwo">
+                                                                    Արտահերթ նիստ
+                                                                </a>
                                                             </div>
-                                                            <div class="radio form-check-inline">
-                                                                <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
-                                                                <label for="inlineRadio2">Գնահատող հանձնաժողովի</label>
+                                                            <div id="collapseTwo" class="collapse"
+                                                                 aria-labelledby="headingTwo"
+                                                                 data-parent="#accordionExample">
+
+                                                                <h4 class="mt-0 header-title ml-4">Ում նախաձեռնությամբ է հրավիրված նիստը</h4>
+                                                                <div class="col-lg-10 d-flex flex-column ml-4">
+                                                                    <div class="radio radio-info form-check-inline">
+                                                                        <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+                                                                        <label for="inlineRadio1">Պատվիրատուի ղեկավարի</label>
+                                                                    </div>
+                                                                    <div class="radio form-check-inline">
+                                                                        <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                                                        <label for="inlineRadio2">Գնահատող հանձնաժողովի</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="mt-3">
+                                                                        <label class="mb-2">Նիստի բովանդակությունը</label>
+                                                                        <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder=""></textarea>
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <label class="mb-2">Հաջորդ նիստի օրն ու ժամը</label>
+                                                                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
+                                                                    <button type="button"
+                                                                            class="btn btn-secondary apply p-2">
+                                                                        Հաստատել
+                                                                    </button>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="mt-3">
-                                                                <label class="mb-2">Նիստի բովանդակությունը</label>
-                                                                <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder=""></textarea>
-                                                            </div>
-                                                            <div class="mt-3">
-                                                                <label class="mb-2">Հաջորդ նիստի օրն ու ժամը</label>
-                                                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
-                                                            <button type="button" class="btn btn-secondary apply p-2">Հաստատել</button>
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
 
                                         </div>
@@ -2219,13 +2155,10 @@
     </div>
 
 </div>
-<script>
-    if ( display === true ) {
-        $( ".tab-pane-session01 " ).show();
-    } else if ( display === false ) {
-        $( ".tab-pane-session02" ).hide();
-    }
-</script>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
 
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/jquery-ui.min.js"></script>
@@ -2237,7 +2170,7 @@
 <script src="../plugins/apexcharts/apexcharts.min.js"></script>
 <script src="../assets/pages/jquery.projects-index.init.js"></script><!-- App js -->
 
-
+<script src="../assets/js/script.js"></script><!-- App css -->
 
 
 <!-- Required datatable js -->
