@@ -1069,6 +1069,21 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
     -webkit-box-shadow: 0 0 0 2.25px rgba(80,110,228,0.5);
     box-shadow: 0 0 0 2.25px rgba(80,110,228,0.5);
 }
-.tab-pane-session01, .tab-pane-session02{
-    display: none;
+
+a.btn.btn-outline-light.float-left {
+    width: 358px;
+    text-align: left;
+}
+a.btn.btn-outline-light{
+    width: 358px;
+    text-align: left;
+}
+i.far.fa-file-code.text-info.font-30.pl-1 {
+    float: right;
+}
+.recommended_product td input{
+    width: 100%;
+}
+.recommended_product td textarea{
+    width: 100%;
 }
