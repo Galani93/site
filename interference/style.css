@@ -1071,7 +1071,7 @@ a#form-horizontal-t-0 , a#form-horizontal-t-1 , a#form-horizontal-t-2, a#form-ho
 }
 
 a.btn.btn-outline-light.float-left {
-    width: 358px;
+    width: 100%;
     text-align: left;
 }
 a.btn.btn-outline-light{
