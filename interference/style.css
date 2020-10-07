@@ -945,7 +945,12 @@ h4.text-success.font-14.product-title {
     .nav-link{
         font-size: 10px;
     }
-
+    span.dtr-data {
+        float: inherit;
+    }
+    ul.dtr-details {
+        width: 100%;
+    }
 
 }
 
@@ -1086,4 +1091,7 @@ i.far.fa-file-code.text-info.font-30.pl-1 {
 }
 .recommended_product td textarea{
     width: 100%;
+}
+span.dtr-data {
+    float: right;
 }

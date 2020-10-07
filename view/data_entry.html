@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <title>Հրավերի պատրաստում</title>
@@ -1513,9 +1513,7 @@
                                                                 Բացման նիստի կասեցում շտկման նպատակով
                                                             </a>
                                                         </div>
-                                                        <div id="collapseOne" class="collapse"
-                                                             aria-labelledby="headingOne"
-                                                             data-parent="#accordionExample">
+                                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                                             <div class="card-body">
                                                                 <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                                                     <thead>
@@ -1523,7 +1521,6 @@
                                                                         <th></th>
                                                                         <th>Մասնակցի անվանումը</th>
                                                                         <th>Հիմնավորում</th>
-
                                                                     </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -1533,15 +1530,18 @@
                                                                         </td>
                                                                         <td>«ԷՅՉ ԷՍ ՓԱՐԹՆԵՐՍ» ՍՊԸ</td>
                                                                         <td>
-                                                                            <input type="text" class=""
-                                                                                   style="margin: 0 auto;">
+                                                                            <input type="text" class="" style="margin: 0 auto; width: 100%;">
                                                                         </td>
 
                                                                     </tr>
                                                                     </tbody>
 
                                                                 </table>
-
+                                                                <div class="card-footer d-flex justify-content-lg-end mb-2 mt-2">
+                                                                    <button type="button" class="btn btn-secondary apply p-2">
+                                                                        Հաստատել
+                                                                    </button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1588,25 +1588,19 @@
                                                                               placeholder=""></textarea>
                                                                 </div>
                                                                 <div class="mt-3">
-                                                                    <label class="mb-2">Նիստի
-                                                                        բովանդակությունը</label>
-                                                                    <textarea id="textarea" class="form-control"
-                                                                              maxlength="225" rows="3"
-                                                                              placeholder=""></textarea>
+                                                                    <label class="mb-2">Նիստի բովանդակությունը</label>
+                                                                    <textarea id="textarea" class="form-control" maxlength="225" rows="3"></textarea>
+                                                                    <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder=""></textarea>
                                                                 </div>
                                                                 <div class="mt-3">
-                                                                    <label class="mb-2">Հաջորդ նիստի օրն ու
-                                                                        ժամը</label>
+                                                                    <label class="mb-2">Հաջորդ նիստի օրն ու ժամը</label>
                                                                     <input class="form-control"
-                                                                           type="datetime-local"
-                                                                           value="2011-08-19T13:45:00"
-                                                                           id="example-datetime-local-input">
+                                                                           type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
                                                                 </div>
 
                                                             </div>
-                                                            <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
-                                                                <button type="button"
-                                                                        class="btn btn-secondary apply p-2">
+                                                            <div class="card-footer d-flex justify-content-lg-end mb-2 mt-2">
+                                                                <button type="button" class="btn btn-secondary apply p-2">
                                                                     Հաստատել
                                                                 </button>
                                                             </div>
@@ -1616,7 +1610,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                                     <div class="row">
