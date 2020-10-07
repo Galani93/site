@@ -37,17 +37,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
     $("#datatable").DataTable(), $(document).ready(function () {
         $("#datatable3").DataTable()
@@ -79,16 +68,6 @@ $(document).ready(function () {
         }
     })
 }),
-
-
-
-
-
-
-
-
-
-
 
 
 $(document).ready(function () {
