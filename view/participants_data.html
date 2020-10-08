@@ -7,31 +7,23 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
     <meta content="" name="author">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <link rel="shortcut icon" href="../assets/images/favicon.ico"><!--Form Wizard-->
-    <link rel="stylesheet" href="../plugins/jquery-steps/jquery.steps.css"><!-- App css -->
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <!-- App css -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/metisMenu.min.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css">
-
-
-    <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
-    <!-- Responsive datatable examples -->
-    <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
-
-
     <link href="../interference/style.css" rel="stylesheet" type="text/css">
     <link href="../assets" rel="stylesheet" type="text/css">
     <link href="../plugins/nestable/jquery.nestable.min.css" rel="stylesheet"><!-- App css -->
     <link href="../plugins/treeview/themes/default/style.css" rel="stylesheet">
-    <link href="../plugins/treeview/file-explore.css" rel="stylesheet">
-
+    <link href="../plugins/treeview/file-explore.css" rel="stylesheet"><!-- App css -->
 
 </head>
 <body>
+
 
 <div class="leftbar-tab-menu mm-active active">
     <div class="main-icon-menu in mm-show">
@@ -82,6 +74,7 @@
                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                 </svg>
             </a>
+
             <a href="#MetricaHelp" class="nav-link" data-toggle="tooltip-custom" data-placement="right"
                data-trigger="hover" title="" data-original-title="Լայվ օգնություն">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -94,9 +87,57 @@
 
         </nav>
     </div>
+    <div class="main-menu-inner active">
+        <div class="topbar-left">
+            <a href="../crm/crm-index.html" class="logo">
+            <span>
+                <img src="../assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
+                <img src="../assets/images/logo.png" alt="logo-large" class="logo-lg logo-light">
+            </span>
+            </a>
+        </div>
+        <div class="slimScrollDiv mm-active active"
+             style="position: relative; overflow: hidden; width: auto; height: 937px;">
+            <div class="menu-body slimscroll mm-show" style="overflow: hidden; width: auto; height: 937px;">
+                <div id="MetricaDashboard" class="main-icon-menu-pane">
+                    <div class="title-box ">
+                        <h6 class="menu-title">Գլխավոր</h6>
+                    </div>
+                </div>
+                <div id="MetricaApps" class="main-icon-menu-pane ">
+                    <div class="title-box">
+                        <h6 class="menu-title">Պլանավորում</h6>
+                    </div>
+                    <ul class="nav metismenu in mm-show">
+                        <li class="nav-item">
+                            <a class="nav-link" href="procurement-plan.html"><span class="w-100"> Գնումների Պլան</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="responsible-unit.html">Պատասխանատու ստորաբաժանում</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="MetricaUikit" class="main-icon-menu-pane mm-active active">
+                    <div class="title-box active">
+                        <h6 class="menu-title">Կազմակերպում</h6>
+                    </div>
+                </div>
+                <div id="MetricaPages" class="main-icon-menu-pane">
+                    <div class="title-box"><h6 class="menu-title">Պայմանագրի կառավարում</h6></div>
+                </div>
+                <div id="MetricaHelp" class="main-icon-menu-pane">
+                    <div class="title-box"><h6 class="menu-title">Լայվ օգնություն</h6></div>
+                </div>
+            </div>
+            <div class="slimScrollBar"
+                 style="background: rgba(162, 177, 208, 0.13); width: 7px; position: absolute; top: 0px; opacity: 1; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 869px;"></div>
+            <div class="slimScrollRail"
+                 style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+        </div>
+    </div>
 </div>
 <div class="topbar">
-    <nav class="navbar-custom navbar-custom01">
+    <nav class="navbar-custom">
         <ul class="list-unstyled topbar-nav float-right mb-0">
             <li class="hidden-sm">
                 <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown"
@@ -325,247 +366,1105 @@
 </div>
 
 <div class="page-wrapper">
-
-    <div class="page-content-tab page-content-tab02">
-        <div class="container-fluid">
-            <div class="row">
-                <div class=" col-sm-12">
-                    <div class="page-title-box">
-                        <div class="float-right">
-                            <ol class="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="competitive.html">Ընթացիկ գնման գործընթացներ</a></li>
-                                    <li class="breadcrumb-item active">Ընտրված մասնակիցների տվյալների մուտքագրում</li>
-                                </ol>
-                            </ol>
-                        </div>
-                        <h4 class="page-title">Ընտրված մասնակիցների տվյալների մուտքագրում</h4>
+    <div class="page-content-tab">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title-box">
+                    <div class="float-right">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="competitive.html">Ընթացիկ գնման գործընթացներ</a></li>
+                            <li class="breadcrumb-item active">Կազմակերպել գնման գործընթաց</li>
+                        </ol>
                     </div>
+                    <h4 class="page-title">Ընթացակարգի տվյալների մուտքագրում</h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-12">
-                    <div class="nav nav-wizard  flex-column nav-pills text-center  p-1" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="min-height: 1045px;">
-
-
-                        <div class="tab-content mo-mt-2" id="v-pills-tabContent02">
-                            <div class="tab-pane fade active show" id="v-pills-05"  role="tabpanel" aria-labelledby="v-pills-session">
-                                <div class="card-body">
-
-                                    <a href="#" class="btn btn-outline-light m-1">Պայմանագիր կնքելու որոշում
-                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                    </a>
-                                    <br>
-                                    <a href="#" class="btn btn-outline-light m-1">Обьявление о решении заключения договора
-                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                    </a>
-                                    <br>
-                                    <a href="#" class="btn btn-outline-light m-1">
-                                        Կնքված պայմանագրի հայտարարություն
-                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                    </a>
-                                    <br>
-                                    <a href="#" class="btn btn-outline-light m-1">
-                                        Обьявление о заключенном договоре
-                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                    </a>
-                                    <br>
-                                    <a href="#" class="btn btn-outline-light m-1">
-                                        Պայմանագիր Qqq
-                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                    </a>
-                                    <br>
-                                    <a href="#" class="btn btn-outline-light m-1">
-                                        Պայմանագիր կնքելու առաջարկ
-                                        <i class="far fa-file-code text-info font-30 pl-1"></i>
-                                    </a>
+        </div>
+        <div class="tab-content detail-list" id="pills-tabContent">
+            <div class="container-fluid tab-pane fade show active" id="general_detail">
+                <div class="row mt-5">
+                    <div class="col-lg-4  col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-lg-12 p-0">
+                                    <div class="btn-group btn-group-toggle mb-4 d-flex justify-content-between"
+                                         data-toggle="buttons">
+                                        <label class="btn btn-outline-primary active">
+                                            <input type="checkbox" checked=""> Նոր հրավեր (մալուխների ձեռքբերում) <br>
+                                            <span>
+                                                Ծածկագիր (ՋԿ-ԳՀԱՊՁԲ-20/8)
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
+                                <form class="form-parsley responsible " action="#" novalidate="">
+                                    <div class="card">
+                                        <div class="todo-list slimscroll nav nav-pills" id="files-tab" aria-orientation="vertical">
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 1</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="true">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 2</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 3</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 4</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 5</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 6</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 7</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt "></i>
+                                                    <span class="name-cpv">CPV 8</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="true">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 9</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#settings_detail02" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button type="button" class="btn btn-sm btn-outline-primary btn-round dual-btn-icon"
+                                            data-toggle="modal" data-animation="bounce"
+                                            data-target=".bd-example-modal-xl">CPV
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group mb-2 mt-4">
+                                    <button type="button" class="btn btn-sm btn-round dual-btn-icon   btn-outline-info dropdown-toggle"
+                                            data-toggle="modal" data-animation="bounce"
+                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողով
+                                        <i class="fa fa-arrow-right arrow"></i>
+                                    </button>
+
+                                </div>
+                                <div class="file-box-content mb-2 mt-4 d-flex justify-content-between">
+                                    <h5 class="text">Հանձնաժողովի հրաման</h5>
+                                    <div class="file-box pdf-hraman">
+                                        <a href="#" class="download-icon-link">
+                                            <i class="dripicons-download file-download-icon"></i>
+                                        </a>
+                                        <div class="text-center pdf-hraman">
+                                            <i class="far fa-file-pdf text-danger"></i>
+                                            <h6 class="text-truncate">Հրաման.pdf</h6>
+                                            <small class="text-muted">15 March 2019 / 8MB</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="form-parsley " action="#" novalidate="">
+                                    <div class="form-group d-block">
+                                        <label>1. Հրավերի և հայտարարության տեքստերի հաստատման</label>
+                                        <div class="form-group  m-1 d-flex justify-content-between align-items-center">
+                                            <label class="ml-4">Ամսաթիվ</label>
+                                            <div class="input-user">
+                                                <input class="form-control form-data pl-1" type="date" value="2020-09-17" placeholder="Ամսաթիվ" id="example-date-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group  m-1 d-flex justify-content-between align-items-center">
+                                            <label class="ml-4">Որոշման համար</label>
+                                            <div class="input-user" style="width: 159px;">
+                                                <input class="form-control" placeholder="Որոշման համար"
+                                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between">
+                                        <label>2. Գնման ընթացակարգի անվանում</label>
+                                        <div class="input-user m-1 password-input">
+                                            <input type="text" class=" form-control m-1" name="processName" value="" placeholder="Հայերեն">
+                                            <input type="text" class=" form-control  m-1" name="processNameRu" value="" placeholder="Ռուսերեն">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between">
+                                        <label>3. Գնման ընթացակարգի ծածկագիր</label>
+                                        <div class="input-user  m-1 password-input">
+                                            <input type="text" class="form-control m-1" name="processPass" value="" placeholder="Հայերեն">
+                                            <input type="text" class="form-control m-1" name="processPassRu" value="" placeholder="Ռուսերեն">
+                                        </div>
+
+
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between">
+                                        <label>4. Հրավերի հրապարակման ամսաթիվ</label>
+                                        <div class="input-user  m-1">
+                                            <input class="form-control form-data pl-1" type="date" value="2020-09-19" placeholder="Ամսաթիվ" id="example-date-input02">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group d-block">
+                                        <label>5. Հայտերի</label>
+                                        <div class="form-group  m-1 d-flex justify-content-between">
+                                            <label class="ml-4">Ներկայացման ժամկետ</label>
+                                            <div class="input-user" style="width: 159px;">
+                                                <input class="form-control" placeholder="Oր" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group  m-1  d-flex justify-content-between">
+                                            <label class="ml-4">Բացման ամսաթիվ</label>
+                                            <div class="input-user">
+                                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between">
+                                        <label>6. Կանխավճարի նախատեսում</label>
+                                        <div class="input-user col-5 btn-choice">
+                                            <div class="radio form-check-inline mr-5">
+                                                <input type="radio" name="radio1" id="radio1" value="option3" data-toggle="modal" data-target="#exampleModalAyo"  data-animation="bounce">
+                                                <label for="radio1">Այո</label>
+                                            </div>
+                                            <div class="radio form-check-inline voch">
+                                                <input type="radio" name="radio2" id="radio2" value="option3">
+                                                <label for="radio2">Ոչ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between">
+                                        <label>7. Թղթային ձևով հրավերի տրամադրում</label>
+                                        <div class="input-user col-5 btn-choice">
+                                            <div class="radio form-check-inline mr-5">
+                                                <input type="radio" name="radio3" id="radio3" value="option3">
+                                                <label for="radio3">Անվճար</label>
+                                            </div>
+                                            <div class="radio form-check-inline">
+                                                <input type="radio" name="radio4" id="radio4" value="option3" data-toggle="modal" data-target="#exampleModalVcharir"  data-animation="bounce">
+                                                <label for="radio4">Վճարովի</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between">
+                                        <label>8. Գնման գործընթացի կազմակերպման եղանակ</label>
+                                        <div class="input-user col-5 btn-choice">
+                                            <div class="radio form-check-inline mr-5">
+                                                <input type="radio" name="radio5" id="radio5" value="option3" checked>
+                                                <label for="radio5">Էլեկտրոնային </label>
+                                            </div>
+                                            <div class="radio form-check-inline">
+                                                <input type="radio" name="radio6" id="radio6" value="option3">
+                                                <label for="radio6">Թղթային</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>9. Եթե առաջարկվող գները ներկայացված են երկու կամ ավելի արժեքներով, ապա
+                                            դրանք համեմատվում են ՀՀ դրամով</label>
+                                        <div class="input-user m-1">
+                                            <input type="text" name="exchange" placeholder="Հայերեն"
+                                                   class="invitation-form form-control shorten_input" value="" style="text-overflow: ellipsis;">
+                                        </div>
+                                        <div class="input-user m-1">
+                                            <input type="text" name="exchangeRu" placeholder="Ռուսերեն"
+                                                   class="invitation-form form-control shorten_input" value="" style="text-overflow: ellipsis;">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group d-flex justify-content-lg-end mb-0">
+                                        <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">
+                                            Պահպանել
+                                        </button>
+                                    </div>
+                                    <!--end form-group-->
+                                </form><!--end form-->
+                            </div><!--end card-body-->
+                        </div>
+                        <div class="card col-12 d-flex justify-content-lg-end mb-2 mt-4">
+                            <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
+                                <button type="button" class="btn btn-secondary apply p-2">Հաստատել</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-9 col-sm-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                <thead>
-                                <tr>
-                                    <th>Մասնակցի անվանում</th>
-                                    <th>Չափաբաժիններ</th>
-                                </tr>
-                                <tr>
-                                    <td>Qqq</td>
-                                    <td>1, 2</td>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <form class="form-parsley responsible " action="#" novalidate="">
+                <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog"
+                     aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="exampleModalLabel">Գնահատող հանձնաժողով</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form method="POST" class="form-horizontal well">
+                                    <fieldset>
+                                        <div class="repeater-default">
+                                            <div data-repeater-list="car">
+                                                <div class="form-group">
+                                                    <label>Նախագահ</label>
+                                                    <div class="input-user">
+                                                        <input type="text" class="form-control m-1 " value="" placeholder="Հայերեն">
+                                                        <input type="text" class="form-control form-control m-1" value="" placeholder="Ռուսերեն">
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Անդամ</label>
+                                                    <div class="input-user">
+                                                        <input type="text" class="form-control m-1 gnahatox_andam1" value="" placeholder="Հայերեն">
+                                                        <input type="text" class="form-control m-1 m-1 gnahatox_andam_ru1" value="" placeholder="Ռուսերեն">
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Անդամ</label>
+                                                    <div class="input-user">
+                                                        <input type="text" class="form-control m-1 gnahatox_andam2" value="" placeholder="Հայերեն">
+                                                        <input type="text" class="form-control m-1m-1gnahatox_andam_ru2" value="" placeholder="Ռուսերեն">
+                                                    </div>
+
+                                                </div>
+                                                <div data-repeater-item="">
                                                     <div class="form-group">
-                                                        <label>Բանկ</label>
+                                                        <label>Անդամ</label>
                                                         <div class="input-user">
-                                                            <input placeholder="Հայերեն" type="text" name="company_city" class="user_name_short" value="" required="">
-                                                            <input placeholder="Ռուսերեն" type="text" name="company_address" class="user_name_short" value="" required="">
+                                                            <input type="text" class="form-control m-1 gnahatox_andam3" value="" placeholder="Հայերեն">
+                                                            <input type="text" class="form-control m-1gnahatox_andam_ru3" value="" placeholder="Ռուսերեն">
                                                         </div>
 
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Հ/հ</label>
-                                                        <div class="input-user">
-                                                            <input type="text" class="user_name_short" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"  style="width: 100%;" >
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Տնօրենի Անուն Ազգանուն</label>
-                                                        <div class="input-user">
-                                                            <input placeholder="Հայերեն" type="text" name="company_city" class="user_name_short" value="" required="">
-                                                            <input placeholder="Ռուսերեն" type="text" name="company_address" class="user_name_short" value="" required="">
-                                                        </div>
-
-                                                    </div>
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <table id="" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                        <thead>
-                                        <tr>
-                                            <th rowspan="2">Չափաբաժնի համար</th>
-                                            <th colspan="5">Առաջարկվող ապրանքի</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Անվանում</td>
-                                            <td>Ապրանքային նշան</td>
-                                            <td>Արտադրողի անվանում</td>
-                                            <td>ծագման երկիր</td>
-                                            <td>Տեխնիկական բնութագրեր</td>
-                                        </tr>
-                                        </thead>
-
-                                        <tbody>
-                                        <tr class="recommended_product">
-                                            <td>1</td>
-                                            <td>
-                                                <input type="text" name="chapabajin_name" value="արջուկ 1" class="user_name_short">
-                                            </td>
-                                            <td>
-                                                <input type="text" name="apranqayin_nshan" value="թեստ 1" class="user_name_short">
-                                                <input type="hidden" value="1" class="win_product_row3">
-                                            </td>
-                                            <td>
-                                                <input type="text" name="artadroxi_anvanum" value="թեստ 1" class="user_name_short">
-                                            </td>
-                                            <td>
-                                                <input type="text" name="cagman_yerkir" value="թեստ 1" class="user_name_short">
-                                            </td>
-                                            <td>
-                                                <textarea name="texnikakan_bnutagir" class="user_name_short">բնութագրերը 1</textarea>
-                                            </td>
-                                        </tr>
+                                                </div>
 
 
-                                        <tr class="recommended_product">
-                                            <td>2</td>
-                                            <td>
-                                                <input type="text" name="chapabajin_name" value="արջուկ 1" class="user_name_short">
-                                            </td><td>
-                                            <input type="text" name="apranqayin_nshan" value="թեստ 2" class="user_name_short">
-                                            <input type="hidden" value="2" class="win_product_row3">
-                                        </td>
-                                            <td>
-                                                <input type="text" name="artadroxi_anvanum" value="թեստ 2" class="user_name_short">
-                                            </td>
-                                            <td>
-                                                <input type="text" name="cagman_yerkir" value="թեստ 2" class="user_name_short">
-                                            </td>
-                                            <td>
-                                                <textarea name="texnikakan_bnutagir" class="user_name_short">բնութագրերը 2</textarea>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                            <div class="form-group m-1 row">
+                                                <div class="col-sm-12">
+                                           <span data-repeater-create="" class="btn btn-gradient-primary"
+                                                 data-placement="right" data-trigger="hover" title="" data-original-title="Ավելացնել">
+                                               <span class="fas fa-plus"></span>
+                                           </span>
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                    </fieldset>
+                                    <div class="form-group">
+                                        <label>Քարտուղար</label>
+                                        <div class="input-user">
+                                            <input type="text"
+                                                   class="form-control gnahatox_andam shorten_input floatLeft gnahatox_qartuxar m-1"
+                                                   value="" placeholder="Հայերեն">
+                                        </div>
+                                        <div class="input-user">
+                                            <input type="text"
+                                                   class="form-control gnahatox_andam shorten_input floatLeft margin_left_20 gnahatox_qartuxar_ru m-1"
+                                                   value="" placeholder="Ռուսերեն">
+                                        </div>
+                                        <div class="input-user">
+                                            <input type="email"
+                                                   class="form-control shorten_input floatLeft gnahatox_qartuxar_mail m-1"
+                                                   value="" placeholder="info@mail.ru">
+                                        </div>
+                                        <div class="input-user">
+                                            <input type="number"
+                                                   class="form-control shorten_input floatLeft margin_left_20 gnahatox_qartuxar_phone m-1"
+                                                   value="" placeholder="+374xxxxxxxx">
+                                        </div>
 
-                                        </tbody>
-                                    </table>
-                                </tr>
-                                </tbody>
-                                <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
-                                    <button type="button" class="btn btn-secondary apply p-2">
-                                        Հաստատել
-                                    </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="form-group mb-2 mt-4 mr-4 d-flex justify-content-lg-end">
+                                <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">
+                                    Պահպանել
+                                </button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+                <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="myModalLabel02">Չափաբաժիններ</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row mt-5">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <div class="card-header pt-1">
+                                                <div id="datatable_filter" class="dataTables_filter btn-search-cpv">
+                                                    <label class="mb-0"><span class="ml-2">Որոնել</span>
+                                                        <input type="search"  class="form-control form-control-sm" placeholder="" aria-controls="datatable">
+                                                        <i class="fas fa-search"></i>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="mt-0 header-title">CPV ծառ</h4>
+                                                <div id="jstree-checkbox">
+                                                    <!-- in this example the tree is populated from inline HTML -->
+                                                    <ul>
+                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' class="jstree-open">
+                                                            CPV 1
+                                                            <ul>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 01
+                                                                </li>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 01
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' >
+                                                            CPV 2
+                                                            <ul>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 02
+                                                                </li>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 02
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' >
+                                                            CPV 3
+                                                            <ul>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 03
+                                                                </li>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 03
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' >
+                                                            CPV 4
+                                                            <ul>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 04
+                                                                </li>
+                                                                <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                    cpv 04
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button type="submit"
+                                                        class="btn btn-gradient-primary waves-effect waves-light">
+                                                    Ավելացնել
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card">
+                                            <div class="card-body p-0">
+                                                <!--                                                <h4 class="mt-0 header-title">Bordered table</h4>-->
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered mb-0 table-centered">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>CPV</th>
+                                                            <th>CPV Տիպ</th>
+                                                            <th>Գնման ձև</th>
+                                                            <th>Մնացորդ</th>
+                                                            <th>Քանակ</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="cpv-left">
+                                                                #14000000 հանքարդյունաբերությանը վերաբերող
+                                                                արտադրանք, հիմնական ետաղներ և հարակից արտադրանք
+                                                            </td>
+                                                            <td>Ծառայություն</td>
+                                                            <td>ՀԲՄ</td>
+                                                            <td>2000</td>
+                                                            <td>
+                                                                <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cpv-left">
+                                                                #14000000 հանքարդյունաբերությանը վերաբերող
+                                                                արտադրանք, հիմնական ետաղներ և հարակից արտադրանք
+                                                            </td>
+                                                            <td>Ապրանք</td>
+                                                            <td>ԳՀ</td>
+                                                            <td>1500</td>
+                                                            <td>
+                                                                <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                                            </td>
+
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <!--end /table-->
+                                                </div>
+                                                <!--end /tableresponsive-->
+                                            </div>
+                                            <!--end card-body-->
+                                        </div><!--end card--></div>
                                 </div>
-                            </table>
+                            </div>
+                            <div class="form-group mb-2 mt-4 mr-4 d-flex justify-content-lg-end">
+                                <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">
+                                    Հաստատել
+                                </button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+                <div class="modal fade" id="exampleModalAyo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="exampleModalLabel03">Կանխավճարի հատկացում</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-parsley " action="#" novalidate="">
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <div class="form-group  m-1 ">
+                                            <label class="text-center">Առավելագույն չափ </label>
+                                            <div class="input-user">
+                                                <input class="form-control" placeholder="ՀՀ դրամ" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group  m-1 ">
+                                            <label class="text-center">ժամկետ</label>
+                                            <div class="input-user" style="width: 170px;">
+                                                <input class="form-control form-data pl-1" type="date" value="" placeholder="ամիս / տարեթիվ" id="example-date-input03">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="exampleModalVcharir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="exampleModalLabel04"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-parsley " action="#" novalidate="">
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <div class="form-group  m-1 ">
+                                            <label class="text-center">Գումարի չափ</label>
+                                            <div class="input-user">
+                                                <input class="form-control" placeholder="ՀՀ դրամ" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                            </div>
+                                        </div>
+                                        <div class="form-group  m-1 ">
+                                            <label class="text-center">Գումարի չափ (տառերով) </label>
+                                            <div class="input-user">
+                                                <input class="form-control" placeholder="ՀՀ դրամ" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group  m-1 ">
+                                        <label class="text-center">Վճարումն անհրաժեշտ է իրականացնել </label>
+                                        <div class="input-user" >
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <label class="text-center mb-1"> հաշվեհամարին</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!-- modal -->
+            <div class="container-fluid tab-pane fade" id="settings_detail02">
+                <div class="row mt-5">
+                    <div class="col-xl-bloc col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-lg-12 p-0">
+                                    <div class="btn-group btn-group-toggle mb-4 d-flex justify-content-between"
+                                         data-toggle="buttons">
+                                        <label class="btn btn-outline-primary" style="border: none;">
+                                            <a id="settings_detail_tab02" href="#general_detail" data-toggle="pill">
+                                                <input type="checkbox">Նոր հրավեր (մալուխների ձեռքբերում) <br>
+                                                <span>Ծածկագիր (ՋԿ-ԳՀԱՊՁԲ-20/8)</span>
+                                            </a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <form class="form-parsley responsible " action="#" novalidate="">
+                                    <div class="card">
+                                        <div class="todo-list slimscroll nav nav-pills" id="files-tab02" aria-orientation="vertical">
+                                            <div class="todo-box  nav-link todo-box-link active" href="#files-projects" data-toggle="pill" aria-selected="true">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt "></i>
+                                                    <span class="name-cpv">CPV 1</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 2</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 3</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 4</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 5</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 6</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 7</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt "></i>
+                                                    <span class="name-cpv">CPV 8</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="true">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 9</span>
+                                                </div>
+                                            </div>
+                                            <div class="todo-box  nav-link todo-box-link" href="#files-projects" data-toggle="pill" aria-selected="false">
+                                                <div class="todo-task">
+                                                    <i class="remove far fa-trash-alt"></i>
+                                                    <span class="name-cpv">CPV 10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button type="button"
+                                            class="btn btn-sm btn-outline-primary btn-round dual-btn-icon mt-2 mb-2"
+                                            data-toggle="modal" data-animation="bounce"
+                                            data-target=".bd-example-modal-xl">CPV <i class="fas fa-plus"></i>
+                                    </button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group mb-2 mt-4">
+                                    <button type="button" class="btn btn-sm btn-round dual-btn-icon   btn-outline-info dropdown-toggle"
+                                            data-toggle="modal" data-animation="bounce"
+                                            data-target=".bs-example-modal-center">Գնահատող հանձնաժողով
+                                        <i class="fa fa-arrow-right arrow"></i>
+                                    </button>
+
+                                </div>
+                                <div class="file-box-content mb-2 mt-4 d-flex justify-content-between">
+                                    <h5 class="text">Հանձնաժողովի հրաման</h5>
+                                    <div class="file-box pdf-hraman">
+                                        <a href="#" class="download-icon-link">
+                                            <i class="dripicons-download file-download-icon"></i>
+                                        </a>
+                                        <div class="text-center pdf-hraman">
+                                            <i class="far fa-file-pdf text-danger"></i>
+                                            <h6 class="text-truncate">Հրաման.pdf</h6>
+                                            <small class="text-muted">15 March 2019 / 8MB</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-bloc-3 col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mt-0 header-title">Չափաբաժիններ</h4>
+                                <form class="form-parsley " action="#" novalidate="">
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>1. Չ/Հ</label>
+                                        <div class="input-user ">
+                                            <input type="text" class="form-control shorten_input m-1" placeholder="" value="2" name="invitationNumber">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>2. CPV կոդ</label>
+                                        <div class="input-user m-1">
+                                            <input type="text" class="form-control m-1" name="processName" value="03111100/1" placeholder="">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>3. Ծածկագիր *</label>
+                                        <div class="input-user m-1">
+                                            <input type="text" class="form-control m-1" name="processName" value="ԱԱ-ՄԱԱՊՁԲ-19/1" placeholder="">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>4.Գնման ժամանակացույց *</label>
+                                        <div class="input-user m-1">
+                                            <input  class="number-form form-control" placeholder="2" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>5. Գնման առարկայի անվանում</label>
+                                        <div class="input-user  m-1">
+                                            <input type="text" class="form-control m-1" name="processPass" value="" placeholder="սոյայի սերմեր">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>6. Տեխնիկական բնութագրեր</label>
+                                        <div class="input-user  m-1">
+                                            <input type="text" class="form-control m-1" name="processPass" value="" placeholder=" Մալուխ 4x10 ալյում...">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>7. Չափման միավոր <br></label>
+                                        <div class="input-user" style="width: 213px;">
+                                            <select class="measure-selection1 form-control pl-1" onchange="changeMeasure(1)"
+                                                    style="width: 100% !important;">
+                                                <option value="" disabled="" selected="">Ընտրել չափման միավոր</option>
+                                                <option value="դրամ">դրամ</option>
+                                                <option value="հատ">հատ</option>
+                                                <option value="լիտր">լիտր</option>
+                                                <option value="կիլոգրամ">կիլոգրամ</option>
+                                                <option value="տոննա">տոննա</option>
+                                                <option value="խմ">խմ</option>
+                                                <option value="քմ">քմ</option>
+                                                <option value="տուփ">տուփ</option>
+                                                <option value="սրվակ">սրվակ</option>
+                                                <option value="դեղահատ">դեղահատ</option>
+                                                <option value="դոզա">դոզա</option>
+                                                <option value="գրամ">գրամ</option>
+                                                <option value="մետր">մետր</option>
+                                                <option value="մլ">մլ</option>
+                                                <option value="մմ">մմ</option>
+                                                <option value="կվտ/ժ">կվտ/ժ</option>
+                                                <option value="լրակազմ">լրակազմ</option>
+                                                <option value="հավաքածու">հավաքածու</option>
+                                                <option value="զույգ">զույգ</option>
+                                                <option value="րոպե">րոպե</option>
+                                                <option value="գծամետր">գծամետր</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>8.Նախահաշվային միավոր գին/ ՀՀ դրամ</label>
+                                        <div class="input-user m-1">
+                                            <input  class="number-form form-control" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>9. Քանակ</label>
+                                        <div class="input-user m-1">
+                                            <input  class="number-form form-control" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>10. Նախահաշվային ընդհանուր գին/ՀՀ դրամ</label>
+                                        <div class="input-user m-1">
+                                            <input  class="number-form form-control" placeholder="0" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>11.Մատակարարման հասցե</label>
+                                        <div class="input-user m-1">
+                                            <input class="form-control"  placeholder="Հասցե" type="text" name="company_region" value="" required="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>12. Մատակարարման ենթակա քանակ</label>
+                                        <div class="input-user m-1">
+                                            <input  class="number-form form-control" placeholder="0" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>13. Մատակարարման ժամկետ</label>
+                                        <div class="input-user m-1">
+                                            <input type="date" class="form-control m-1" name="invitationPublishDate" value="2020-09-22" placeholder="17.09.2020">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>14. Հիմնական միջոց հանդիսացող <br>
+                                        </label>
+                                        <div class="input-user m-1">
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>15. Հայտի ապահովման ներկայացման պահանջ <br>
+                                        </label>
+                                        <div class="input-user m-1">
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>16.Մասնակցի կողմից առաջարկվող ապրանքի, ապրանքային նշանի, ֆիրմային
+                                            անվանման, մակնիշի և արտադրողի անվանման և ծագման երկրի վերաբերյալ
+                                            տեղեկատվության ներկայացում <br>
+                                        </label>
+                                        <div class="input-user m-1">
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label> Այլ պահանջներ</label>
+                                        <div class="input-user m-1">
+                                            <textarea placeholder="Օրինակ: Լիցենզիա, Սերտիֆիկատ և այլ նմանատիպ փաստաթղթեր"  class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group d-flex justify-content-lg-end mb-0">
+                                        <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">
+                                            Պահպանել
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-bloc-3 col">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title">Վճարման ժամանակացույց</h4>
+                                        <p class="text-muted mb-3">* Վճարման ենթակա գումարները ներկայացված են աճողական
+                                            կարգով:</p>
+                                        <table class="table table-bordered dt-responsive nowrap"
+                                               style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                            <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+
+                                            </tr>
+                                            </thead>
+                                            <tbody class="time_indicator">
+                                            <tr>
+                                                <td>Հ/Հ</td>
+                                                <td>1</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>CPV կոդ</td>
+                                                <td></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Անվանում</td>
+                                                <td></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Հունվար</td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Փետրվար</td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Մարտ
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Ապրիլ
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Մայիս
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Հունիս
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Հուլիս
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Օգոստոս
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Սեպտեմբեր
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Հոկտեմբեր
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Նոյեմբեր
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Դեկտեմբեր
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="number-form" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                                    <span>%</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+
+                                        </table>
+                                        <div class="form-group d-flex justify-content-lg-end mb-2 mt-4">
+                                            <button type="button" class="btn btn-primary apply p-2">Կիրառել բոլորի վրա
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="card col-12 d-flex justify-content-lg-end">
+                            <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
+                                <button type="button" class="btn  waves-effect waves-light btn btn-secondary apply p-2" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-lg">Հաստատել</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
+<!--                            <h5 class="modal-title mt-0" id="myLargeModalLabel"></h5>-->
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         </div>
                         <div class="modal-body">
-                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                <thead>
-                                <tr>
-                                    <th>Հ/հ</th>
-                                    <th>Մասնակցի հայտի գնահատման չափանիշները</th>
-                                    <th>Գնահատականը</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Հայտեր պարունակող ծրարներ կազմելու և ներկայացնելու համապատասխանությունը սահմանված կարգին</td>
-                                    <td>
-                                        <div class="gnahatman_row">
-                                            <input type="radio" value="1" name="radio_gnahatwum1_1_1" class="radio_bavarar1_1" checked="">
-                                            <label>Բավարար</label>
-                                        </div>
-                                        <div class="gnahatman_row">
-                                            <input type="radio" value="2" name="radio_gnahatwum1_1_1" class="radio_anbavarar1_1">
-                                            <label>Անբավարար</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Բացված յուրաքանչյուր ծրարում պահանջվող նախատեսված փաստաթղթերի առկայությունը և դրանց կազմման համապատասխանությունը հրավերով սահմանված վավերապայմաններին</td>
-                                    <td>
-                                        <div class="gnahatman_row">
-                                            <input type="radio" value="1" name="radio_gnahatwum1_1_1" class="radio_bavarar1_1" checked="">
-                                            <span>Բավարար</span>
-                                        </div>
-                                        <div class="gnahatman_row">
-                                            <input type="radio" value="2" name="radio_gnahatwum1_1_1" class="radio_anbavarar1_1">
-                                            <span>Անբավարար</span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td><p class="final_result_1_1">Բավարար</p></td>
-                                </tr>
-                                </tbody>
+                            <div class="form-group d-flex align-items-start flex-column">
+                                <label>Հաղթողին որոշելու կարգը</label>
+                                <div class=" m-1">
+                                    <input type="checkbox" checked>
+                                    <label> Ըստ առանձին չափաբաժինների</label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group d-flex  align-items-start flex-column">
+                                <label>ՀՐԱՎԵՐՆ ՈՒՂԱՐԿԵԼ</label>
+                                <div class=" m-1">
+                                    <input type="checkbox">
+                                    <label> Համակարգում գրանցված բոլոր մասնակիցներին</label>
+                                </div>
+                                <div class=" m-1">
+                                    <input type="checkbox" checked>
+                                    <label> Նախընտրած մասնակիցներին</label>
+                                </div>
+                            </div>
 
-                            </table>
+                            <form method="POST" class="form-horizontal well">
+                                    <fieldset>
+                                        <div class="repeater-default">
+                                            <div data-repeater-list="car">
+                                                <div data-repeater-item="">
+                                                    <div class="form-group row d-flex align-items-center mt-2 mb-2">
+                                                        <div class="col-sm-8">
+                                                            <input type="text" name="car[0][model]" value="ՀՎՀՀ / Սոց. Քարտ" class="form-control">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                                <span data-repeater-delete="" class="btn btn-gradient-danger btn-sm">
+                                                                   <i class="fa fa-times" aria-hidden="true"></i>
+                                                                </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group mb-0 row">
+                                                <div class="col-sm-12">
+                                                        <span data-repeater-create="" class="btn btn-gradient-secondary" data-toggle="Ավելացնել" data-placement="top" title="Ավելացնել">
+                                                            <span class="fas fa-plus"></span>
+                                                        </span>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+                                </form>
+
+                            <div class="form-group  m-1 d-flex  align-items-start flex-column">
+                                <label class="">Ուղարկել Գնային առաջարկի ներկայացման վերջնաժամկետ (օր) *</label>
+                                <div class="input-user" style="width: 159px;">
+                                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" placeholder="Oր" id="example-datetime-local-input">
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="card-body d-flex justify-content-lg-end mb-2 mt-2">
-                            <button type="button"
-                                    class="btn btn-secondary apply p-2">
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-gradient-primary waves-effect waves-light">
                                 Հաստատել
                             </button>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
-            </div>
-            <!-- /.modal -->
+            </div><!-- /.modal -->
         </div>
+
+
 
 
 
@@ -575,11 +1474,10 @@
         </footer>
 
     </div>
-
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
+<!-- jQuery  -->
 
 
 <script src="../assets/js/jquery.min.js"></script>
@@ -589,26 +1487,21 @@
 <script src="../assets/js/waves.js"></script>
 <script src="../assets/js/feather.min.js"></script>
 <script src="../assets/js/jquery.slimscroll.min.js"></script>
-<script src="../plugins/apexcharts/apexcharts.min.js"></script>
+<script src="../plugins/apexcharts/apexcharts.min.js"></script><!-- Required datatable js -->
+<script src="../assets/pages/jquery.datatable.init.js"></script><!-- App js -->
+
 <script src="../assets/pages/jquery.projects-index.init.js"></script><!-- App js -->
-
-<script src="../assets/js/script.js"></script><!-- App css -->
-
-
-<!-- Required datatable js -->
-<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
-<!-- Buttons examples -->
-
-<!-- Responsive examples -->
-
-<script src="../plugins/datatables/dataTables.responsive.min.js"></script>
-<script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
-<script src="../assets/pages/jquery.datatable.init.js"></script>
+<script src="../plugins/treeview/jstree.min.js"></script>
+<script src="../assets/pages/jquery.treeview.init.js"></script><!-- App js -->
+<script src="../plugins/repeater/jquery.repeater.min.js"></script>
+<script src="../assets/pages/jquery.form-repeater.js"></script>
 
 
 
-
+<script src="../plugins/repeater/jquery.repeater.min.js"></script>
+<script src="../assets/pages/jquery.form-repeater.js"></script>
+<!-- App js -->
 <script src="../assets/js/app.js"></script>
+
 </body>
 </html>
