@@ -392,18 +392,58 @@
                                                         <a href="sort.html" id="but_add" class="btn btn-primary float-right mb-5">Խմբավորել</a>
                                                     </div> <!-- end col -->
                                                 </div>
-                                                <ul class="jstree-container-ul jstree-children" role="group">
-                                                    <li role="treeitem" aria-selected="false" aria-level="1"
-                                                        aria-labelledby="1_anchor" aria-expanded="false" id="1"
-                                                        class="jstree-node  jstree-closed">
-                                                        <i class="jstree-icon jstree-ocl" role="presentation"></i>
-                                                        <a class="jstree-anchor" href="#" tabindex="-1" id="1_anchor">
-                                                            <i class="jstree-icon jstree-checkbox" role="presentation"></i>
-                                                            <i class="jstree-icon jstree-themeicon" role="presentation"></i>
-                                                            #14000000 հանքարդյունաբերությանը վերաբերող արտադրանք, հիմնական մետաղներ և հարակից արտադրանք</a>
-                                                    </li>
-
-                                                </ul>
+                                                <div class="card-body">
+                                                    <h4 class="mt-0 header-title">CPV ծառ</h4>
+                                                    <div id="jstree-checkbox">
+                                                        <!-- in this example the tree is populated from inline HTML -->
+                                                        <ul>
+                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' class="jstree-open">
+                                                                CPV 1
+                                                                <ul>
+                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                        cpv 01
+                                                                    </li>
+                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                        cpv 01
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' >
+                                                                CPV 2
+                                                                <ul>
+                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                        cpv 02
+                                                                    </li>
+                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                        cpv 02
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' >
+                                                                CPV 3
+                                                                <ul>
+                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                        cpv 03
+                                                                    </li>
+                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                        cpv 03
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}' >
+                                                                CPV 4
+                                                                <ul>
+                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                        cpv 04
+                                                                    </li>
+                                                                    <li data-jstree='{"icon":"fa fa-folder text-warning font-18"}'>
+                                                                        cpv 04
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- end col -->
@@ -504,181 +544,6 @@
     <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
     <script src="../assets/pages/jquery.datatable.init.js"></script><!-- App js -->
     <script src="../assets/js/app.js"></script>
-
-<script>
-
-    $(function () {
-        "use strict";
-        $("#jstree").jstree(), $("#jstree-checkbox").jstree({
-            checkbox: {keep_selected_style: !1},
-            plugins: ["checkbox"]
-        })
-    });
-</script>
-
-
-<script>
-
-
-    $(".main-icon-menu-pane").removeClass("active");
-    $(".parentMenu").removeClass("active");
-    $(".subMenuItem").children(".active").parents(".main-icon-menu-pane").addClass("active");
-    $(".parentMenu[href='#"+$(".subMenu").children(".active").attr("id")+"']").addClass("active");
-
-
-
-    $(document).on("click", ".warningLink",function (event) {
-        event.preventDefault();
-        text   = $(this).data("text");
-        footer = $(this).data("footer");
-        Swal.fire({ icon: "warning", title: "Oops...", text: text, footer: footer });
-    });
-    $(document).on("click", ".deleteItem",function (event) {
-        event.preventDefault();
-        href = $(this).data("href");
-        remove = $(this).data("remove");
-        this_ = $(this);
-        Swal.fire({
-            title: "Համոզված ես?",
-            text: "Դուք չեք կարողանա վերադարձնել դա!",
-            type: "warning",
-            showCancelButton: !0,
-            confirmButtonColor: "$success",
-            cancelButtonColor: "$danger",
-            confirmButtonText: "Այո!",
-            cancelButtonText: "Չեղարկել!",
-        }).then(function (t) {
-            if(t.value){
-                $.ajax({
-                    type: "GET",
-                    url: href,
-                    dataType: "json",
-                    success: function (data) {
-                        if(data.status){
-                            this_.parents("tr").remove();
-                            if (remove != null){
-                                this_.parents(remove).remove();
-                            }
-                            t.value && Swal.fire("ՋՆՋՎԱԾ Է!", "Հաջողությամբ ջնջվել է.", "success");
-                        }else{
-                            Swal.fire({ icon: "error", title: "Oops...", text: "Ինչ որ բան այնպես չգնաց!", footer: "" });
-                        }
-                    },
-                    error:function(){
-                        Swal.fire({ icon: "error", title: "Oops...", text: "Ինչ որ բան այնպես չգնաց!", footer: "" });
-                    }
-                });
-            }
-        });
-        return false;
-
-    });
-
-</script>
-
-<script src="../plugins/treeview/jstree.min.js"></script>
-
-<script src="../plugins/dropify/js/dropify.min.js"></script>
-<script src="../assets/pages/jquery.form-upload.init.js"></script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.1/tinymce.min.js"></script>
-
-<script src="http://159.203.181.199/assets/back/assets/pages/jquery.form-editor.init.js?12ewqdsdcv"></script>
-
-
-<script>
-    $("#youtube_link").on("change", function () {
-        $("#iframeYoutube").attr("src",$(this).val());
-    });
-
-    $(".dataTime").bootstrapMaterialDatePicker({format:"YYYY-MM-DD HH:mm:ss"});
-
-
-    $('#tree').jstree({
-        "plugins" : [ "search" ,"checkbox"],
-        "checkbox" : { "three_state": false, "keep_selected_style" : false },
-        'core' : {
-            data : function (node, cb) {
-                $.ajax({ url : "/admin/cpv/tree/json/1","dataType" : "json" }).done(function (data) {
-                    x = [];
-                    children = [];
-
-                    $.each( data, function( i, val ) {
-                        children = getJson(val.children);
-                        x[i] = { "id" : val.id, "text" : "#"+val.code+" "+val.name, "children":children };
-                    })
-                    cb(x);
-                });
-            }
-        }
-    });
-
-
-    $(".append").on('click',function(event) {
-        checked  = $("#tree").jstree("get_checked",true);
-
-        for (let index = 0; index < checked.length; index++) {
-            $("#cpvSelect").append("<option selected value='"+checked[index].id+"'>"+checked[index].text+"</option>");
-        }
-
-    })
-
-
-    $(".cpvCat").on('click',function(event) {
-        event.preventDefault();
-        /* Act on the event */
-
-        type = $(this).data("type");
-        $("#cpvCatText").text($(this).text());
-
-        $('#tree').jstree(true).settings.core.data = function (node, cb) {
-            $.ajax({ url : "/admin/cpv/tree/json/"+type,"dataType" : "json" }).done(function (data) {
-                x = [];
-                children = [];
-
-                $.each( data, function( i, val ) {
-                    children = getJson(val.children);
-                    x[i] = { "id" : val.id, "text" : "#"+val.code+" "+val.name, "children":children };
-                })
-                cb(x);
-            });
-        };
-        $('#tree').jstree(true).refresh();
-
-    });
-
-
-    function submitMe(){
-        $("#tree").jstree("get_checked",null,true);
-    }
-
-    var to = false;
-    $('#plugins4_q').change(function () {
-        if(to) { clearTimeout(to); }
-        to = setTimeout(function () {
-            var v = $('#plugins4_q').val();
-            $('#tree').jstree(true).search(v);
-        }, 250);
-    });
-
-    function getJson(value) {
-        var t = [];
-        var  children = [];
-        $.each( value, function( i, val ) {
-            children = getJson(val.children);
-            t[i] = { "id" : val.id, "text" : "#"+val.code+" "+val.name, "children":children };
-        })
-        return t;
-    }
-
-</script>
-
-
-
-
-
-
-
 
 
 
