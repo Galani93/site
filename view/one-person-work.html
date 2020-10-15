@@ -1062,56 +1062,66 @@
                     <div class="col-xl-bloc-3 col-lg-5">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="mt-0 header-title">Չափաբաժիններ</h4>
+                                <h4 class="mt-0 header-title">Վճարման պայմաններ</h4>
                                 <form class="form-parsley " action="#" novalidate="">
                                     <div class="form-group d-flex justify-content-between align-items-center">
-                                        <label>1. Չ/Հ</label>
+                                        <label>1. Հ/Հ</label>
                                         <div class="input-user ">
-                                            <input type="text" class="form-control shorten_input m-1" placeholder="" value="2" name="invitationNumber">
+                                            <input type="text" class="form-control shorten_input m-1" placeholder=""
+                                                   value="2" name="invitationNumber">
                                         </div>
 
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
                                         <label>2. CPV կոդ</label>
                                         <div class="input-user m-1">
-                                            <input type="text" class="form-control m-1" name="processName" value="03111100/1" placeholder="">
+                                            <input type="text" class="form-control m-1" name="processName"
+                                                   value="03111100/1" placeholder="">
                                         </div>
 
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
-                                        <label>3. Ծածկագիր *</label>
-                                        <div class="input-user m-1">
-                                            <input type="text" class="form-control m-1" name="processName" value="ԱԱ-ՄԱԱՊՁԲ-19/1" placeholder="">
-                                        </div>
-
-                                    </div>
-                                    <div class="form-group  d-flex justify-content-between align-items-center">
-                                        <label>4.Գնման ժամանակացույց *</label>
-                                        <div class="input-user m-1">
-                                            <input  class="number-form form-control" placeholder="2" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
-                                        </div>
-
-                                    </div>
-                                    <div class="form-group  d-flex justify-content-between align-items-center">
-                                        <label>5. Գնման առարկայի անվանում</label>
+                                        <label>3. Գնման առարկայի անվանում</label>
                                         <div class="input-user  m-1">
-                                            <input type="text" class="form-control m-1" name="processPass" value="" placeholder="սոյայի սերմեր">
+                                            <input type="text" class="form-control m-1" name="processPass" value=""
+                                                   placeholder="սոյայի սերմեր">
                                         </div>
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
-                                        <label>6. Տեխնիկական բնութագրեր</label>
+                                        <label>4. Գնման առարկայի բնութագիրը </label>
                                         <div class="input-user  m-1">
-                                            <button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-sm">   <i class="fa fa-eye"></i></button>
+                                            <button type="button"
+                                                    class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03"
+                                                    data-toggle="modal" data-animation="bounce"
+                                                    data-target=".bs-example-modal-sm"><i class="fa fa-eye"></i>
+                                            </button>
                                             <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFileLang" lang="es">
-                                                <label class="custom-file-label" for="customFileLang">Մալուխ 4x10...</label>
+                                                <input type="file" class="custom-file-input" id="customFileLang"
+                                                       lang="es">
+                                                <label class="custom-file-label" for="customFileLang">Մալուխ
+                                                    4x10...</label>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>5. Գնման ձև</label>
+                                        <div class="input-user m-1">
+                                            <select class="measure-selection1 form-control pl-1">
+                                                <option value="ԳՀ" data-id="1">ԳՀ</option>
+                                                <option value="ԲՄ" data-id="2">ԲՄ</option>
+                                                <option value="ՀԲՄ" data-id="3">ՀԲՄ</option>
+                                                <option value="ՀՄԱ" data-id="4">ՀՄԱ</option>
+                                                <option value="ԷԱՃ" disabled="">ԷԱՃ</option>
+                                                <option value="ԵՄ" disabled="">ԵՄ</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
                                     <div class="form-group d-flex justify-content-between align-items-center">
-                                        <label>7. Չափման միավոր <br></label>
+                                        <label>6. Չափման միավոր <br></label>
                                         <div class="input-user" style="width: 220px;">
-                                            <select class="measure-selection1 form-control pl-1" onchange="changeMeasure(1)" style="width: 100% !important;">
+                                            <select class="measure-selection1 form-control pl-1"
+                                                    onchange="changeMeasure(1)" style="width: 100% !important;">
                                                 <option value="" disabled="" selected="">Ընտրել չափման միավոր</option>
                                                 <option value="դրամ">դրամ</option>
                                                 <option value="հատ">հատ</option>
@@ -1138,42 +1148,41 @@
                                         </div>
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
-                                        <label>8.Նախահաշվային միավոր գին/ ՀՀ դրամ</label>
+                                        <label>7. Միավորի գինը</label>
                                         <div class="input-user m-1">
-                                            <input  class="number-form form-control" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                            <input class="number-form form-control" placeholder="2" value="49000.0"
+                                                   onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>8. Քանակ</label>
+                                        <div class="input-user m-1">
+                                            <input class="number-form form-control" value="2.00"
+                                                   onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
                                         </div>
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
-                                        <label>9. Քանակ</label>
+                                        <label>9. Մնացորդ</label>
                                         <div class="input-user m-1">
-                                            <input  class="number-form form-control" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                            <input class="number-form form-control" value="1.00"
+                                                   onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                        </div>
+                                    </div>
+                                    <div class="form-group  d-flex justify-content-between align-items-center">
+                                        <label>10.Ընդամենը ծախսերը (ՀՀ դրամ)</label>
+                                        <div class="input-user m-1">
+                                            <input class="number-form form-control" value="980000"
+                                                   onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
                                         </div>
                                     </div>
                                     <div class="form-group d-flex justify-content-between align-items-center">
-                                        <label>10. Նախահաշվային ընդհանուր գին/ՀՀ դրամ</label>
+                                        <label>11. Պահանջվող քանակ</label>
                                         <div class="input-user m-1">
-                                            <input  class="number-form form-control" placeholder="0" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                            <input class="number-form form-control" placeholder="0"
+                                                   onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
                                         </div>
                                     </div>
-                                    <div class="form-group d-flex justify-content-between align-items-center">
-                                        <label>11.Մատակարարման հասցե</label>
-                                        <div class="input-user m-1">
-                                            <input class="form-control"  placeholder="Հասցե" type="text" name="company_region" value="" required="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group d-flex justify-content-between align-items-center">
-                                        <label>12. Մատակարարման ենթակա քանակ</label>
-                                        <div class="input-user m-1">
-                                            <input  class="number-form form-control" placeholder="0" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
-                                        </div>
-                                    </div>
-                                    <div class="form-group d-flex justify-content-between align-items-center">
-                                        <label>13. Մատակարարման ժամկետ</label>
-                                        <div class="input-user m-1">
-                                            <input type="date" class="form-control m-1" name="invitationPublishDate" value="2020-09-22" placeholder="17.09.2020">
-                                        </div>
-                                    </div>
-
 
                                 <h4 class="mt-0 header-title text-right mt-4 mb-4">Ընդհանուր <span>0</span>  դր.</h4>
 
@@ -1256,6 +1265,25 @@
                                             <div class="input-user m-1">
                                                 <input class="form-control"  placeholder="Հասցե" type="text" name="company_region" value="Հալաբյան 31/2" required="">
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>Ծածկագիր </label>
+                                        <div class="input-user m-1">
+                                            <input type="text" class="form-control m-1" name="processName" value="ԱԱ-ՄԱԱՊՁԲ-19/1" placeholder="">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label>Ընթացիկ տարում ՝պատվերը ստանալուց՝ աշխատանքային օրվա ընթացքում</label>
+                                        <div class="input-user m-1">
+                                            <input  class="number-form form-control" placeholder="0" value="2" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                                        </div>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label> Մատակարարման հասցե</label>
+                                        <div class="input-user m-1">
+                                            <input class="form-control" placeholder="Հասցե" type="text" name="company_region" value="ՀՀ ,ք. Երևան,Հալաբյան 31/2" required="">
                                         </div>
                                     </div>
                                     <div class="form-group d-flex justify-content-between align-items-center">

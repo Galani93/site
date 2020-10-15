@@ -392,8 +392,8 @@
                 <div class="page-title-box">
                     <div class="float-right">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item active">Ընթացիկ գնման գործընթացներ</li>
-                            <li class="breadcrumb-item">Կազմակերպել գնման գործընթաց</li>
+                            <li class="breadcrumb-item"><a href="competitive.html">Ընթացիկ գնման գործընթացներ</a></li>
+                            <li class="breadcrumb-item active">Կազմակերպել գնման գործընթաց</li>
                         </ol>
                     </div>
                     <h4 class="page-title">Գնման գործընթացներ</h4>
@@ -404,8 +404,7 @@
 
             <div class="row">
                 <div class="col-12">
-<!--                    <h4 class="mt-0 mb-2 ml-4 header-title"></h4>-->
-                </div> <!-- end col -->
+                </div>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -419,12 +418,13 @@
                                         <thead>
                                         <tr>
                                             <th>Չափաբաժին</th>
-                                            <th>Անվանում</th>
-                                            <th></th>
-                                            <th>	Քանակ</th>
-                                            <th>Չափման միավոր</th>
+                                            <th>Կատեգորիա</th>
+                                            <th>Գնային առաջարկի ժամկետ</th>
+                                            <th>Վերջնաժամկետ</th>
+                                            <th>Ստատուսը</th>
                                             <th>Մասնակիցներ</th>
-                                            <th>Նախահաշիվ</th>
+                                            <th>Դիտել</th>
+                                            <th></th>
 
                                         </tr>
                                         </thead>
@@ -448,9 +448,9 @@
                                             <td><input class="form-control form-data pl-1" type="date" value="2020-10-20" placeholder="Ամսաթիվ" id="example-date-input02"></td>
                                             <td>Ավարտված</td>
                                             <td>0</td>
-                                            <td><button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal" data-animation="bounce" data-target="#exampleModal05">
-                                                <i class="fa fa-eye"></i>
-                                            </button></td>
+                                            <td>
+                                                <button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03"><i class="fa fa-eye"></i></button>
+                                            </td>
                                             <td></td>
                                         </tr>
                                         </tbody>
@@ -460,7 +460,44 @@
                         </div><!--end card-body-->
                     </div><!--end card-->
                 </div>
+             </div>
+            <div class="row">
+                <div class="col-lg-4 inactivity">
+                    <div class="btn-group" style="display: flex;">
+                        <button type="button" class="btn btn-info dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ԱՆԳՈՐԾՈՒԹՅՈՒՆ
+                        </button>
+                        <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
+                            <div class="dropdown-item item-hover">
+                                <button type="button" class="btn"></button>
+                                <div class="row hidden toogle-block">
+                                    <div class="card-body">
+                                        <form action="#">
+                                            <div class="form-group row d-flex justify-content-around">
+                                                <div class="radio radio-info form-check-inline">
+                                                    <input type="radio" id="inlineRadio1" value="option1" name="radioInline" >
+                                                    <label for="inlineRadio1">Կիրառելի է *</label>
+                                                </div>
+                                                <div class="radio form-check-inline">
+                                                    <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                                    <label for="inlineRadio2">Կիրառելի չէ *</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-gradient-success btn-clipboard btn-sm text-light px-4 mt-3 float-right mb-0">
+                                                    Ստեղծել
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
 
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-4">
@@ -552,72 +589,118 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                        <thead>
-                        <tr>
-                            <th>Ծածկագիր</th>
-                            <th>Կատեգորիա</th>
-                            <th>Գնային առաջարկի ժամկետ</th>
-                            <th>Վերջնաժամկետ</th>
-                            <th>Ստատուսը</th>
-                            <th>Մասնակիցներ</th>
-                            <th>Դիտել</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>AA4-111</td>
-                            <td>կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ</td>
-                            <td><input class="form-control form-data pl-1" type="date" value="2020-09-19" placeholder="Ամսաթիվ" id="example-date-input02"></td>
-                            <td><input class="form-control form-data pl-1" type="date" value="2020-10-20" placeholder="Ամսաթիվ" id="example-date-input02"></td>
-                            <td>Ակտիվ</td>
-                            <td>0</td>
-                            <td><button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal" data-animation="bounce" data-target="#exampleModal05">
-                                <i class="fa fa-eye"></i>
-                            </button></td>
-                            <td><button type="button" class="btn btn-primary">Չեղարկել</button></td>
-                        </tr>
-                        <tr>
-                            <td>AA4dde</td>
-                            <td>կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ</td>
-                            <td><input class="form-control form-data pl-1" type="date" value="2020-09-19" placeholder="Ամսաթիվ" id="example-date-input02"></td>
-                            <td><input class="form-control form-data pl-1" type="date" value="2020-10-20" placeholder="Ամսաթիվ" id="example-date-input02"></td>
-                            <td>Ավարտված</td>
-                            <td>0</td>
-                            <td><button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal" data-animation="bounce" data-target="#exampleModal05">
-                                <i class="fa fa-eye"></i>
-                            </button></td>
-                            <td></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <h4 class="header-title mt-0 mb-3">ԳՆՄԱՆ ԱՌԱՐԿԱՆԵՐ</h4>
+                   <div class="card">
+                    <div class="card-body">
+                            <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                                   style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <thead>
+                                <tr>
+                                    <th>Չափաբաժին</th>
+                                    <th>Անվանում</th>
+                                    <th>Քանակ</th>
+                                    <th>Չափման միավոր</th>
+                                    <th>Նախահաշիվ</th>
+                                    <th>Դիտել</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Չափաբաժին 1</td>
+                                    <td>ցածր լարման մալուխներ</td>
+                                    <td>20</td>
+                                    <td>մետր</td>
+                                    <td>485.00</td>
+                                    <td><button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal"
+                                                data-animation="bounce" data-target=".bs-example-modal-lg">
+                                        <i class="fa fa-eye"></i>
+                                    </button></td>
+                                </tr>
+                                <tr>
+                                    <td>Չափաբաժին 1</td>
+                                    <td>ցածր լարման մալուխներ</td>
+                                    <td>20</td>
+                                    <td>մետր</td>
+                                    <td>485.00</td>
+                                    <td><button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal"
+                                                data-animation="bounce" data-target=".bs-example-modal-lg01">
+                                        <i class="fa fa-eye"></i>
+                                    </button></td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="modal fade" id="exampleModal05" tabindex="-1" role="dialog"
-                 aria-labelledby="exampleModalLabel02" style="display: none;" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class=" modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title mt-0" id="exampleModalLabel03">ԳՆՄԱՆ ԱՌԱՐԿԱՆԵՐ</h5>
+                            <h5 class="modal-title mt-0" id="exampleModalLabel03"></h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
                         <div class="modal-body">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Զբաղեցրած տեղ</th>
+                                        <th scope="col">Մասնակցի անվանում</th>
+                                        <th scope="col">Առանց ԱԱՀ</th>
+                                        <th scope="col">ԱԱՀ (դր.)</th>
+                                        <th scope="col">Ընդհանուր</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="table-success">
+                                        <th scope="row" class="text-center">1</th>
+                                        <td>ՈՍԿԵ ԿԱՐ </td>
+                                        <td>8083</td>
+                                        <td>1617.00</td>
+                                        <td>9700</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
 
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal"
-                                    data-animation="bounce" data-target=".bs-example-modal-center">
-                                <i class="fa fa-plus"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bs-example-modal-lg01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class=" modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title mt-0" id="exampleModalLabel03"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
                             </button>
-                            <button type="button" class="btn btn-primary">Ավելացնել</button>
-                            <button type="button" class="btn btn-danger waves-effect waves-light" data-dismiss="modal">
-                                Չեղարկել
-                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Զբաղեցրած տեղ</th>
+                                    <th scope="col">Մասնակցի անվանում</th>
+                                    <th scope="col">Առանց ԱԱՀ</th>
+                                    <th scope="col">ԱԱՀ (դր.)</th>
+                                    <th scope="col">Ընդհանուր</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="table-danger">
+                                    <th scope="row" colspan="5" class="text-center">Չկայացած</th>
+
+                                </tr>
+                                </tbody>
+                            </table>
 
                         </div>
+
                     </div>
                 </div>
             </div>
