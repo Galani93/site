@@ -1106,68 +1106,26 @@
                                     <div class="form-group  d-flex justify-content-between align-items-center">
                                         <label>5. Գնման ձև</label>
                                         <div class="input-user m-1">
-                                            <select class="measure-selection1 form-control pl-1">
-                                                <option value="ԳՀ" data-id="1">ԳՀ</option>
-                                                <option value="ԲՄ" data-id="2">ԲՄ</option>
-                                                <option value="ՀԲՄ" data-id="3">ՀԲՄ</option>
-                                                <option value="ՀՄԱ" data-id="4">ՀՄԱ</option>
-                                                <option value="ԷԱՃ" disabled="">ԷԱՃ</option>
-                                                <option value="ԵՄ" disabled="">ԵՄ</option>
-                                            </select>
+                                            ԳՀ
                                         </div>
 
                                     </div>
                                     <div class="form-group d-flex justify-content-between align-items-center">
                                         <label>6. Չափման միավոր <br></label>
-                                        <div class="input-user" style="width: 220px;">
-                                            <select class="measure-selection1 form-control pl-1"
-                                                    onchange="changeMeasure(1)" style="width: 100% !important;">
-                                                <option value="" disabled="" selected="">Ընտրել չափման միավոր</option>
-                                                <option value="դրամ">դրամ</option>
-                                                <option value="հատ">հատ</option>
-                                                <option value="լիտր">լիտր</option>
-                                                <option value="կիլոգրամ">կիլոգրամ</option>
-                                                <option value="տոննա">տոննա</option>
-                                                <option value="խմ">խմ</option>
-                                                <option value="քմ">քմ</option>
-                                                <option value="տուփ">տուփ</option>
-                                                <option value="սրվակ">սրվակ</option>
-                                                <option value="դեղահատ">դեղահատ</option>
-                                                <option value="դոզա">դոզա</option>
-                                                <option value="գրամ">գրամ</option>
-                                                <option value="մետր">մետր</option>
-                                                <option value="մլ">մլ</option>
-                                                <option value="մմ">մմ</option>
-                                                <option value="կվտ/ժ">կվտ/ժ</option>
-                                                <option value="լրակազմ">լրակազմ</option>
-                                                <option value="հավաքածու">հավաքածու</option>
-                                                <option value="զույգ">զույգ</option>
-                                                <option value="րոպե">րոպե</option>
-                                                <option value="գծամետր">գծամետր</option>
-                                            </select>
-                                        </div>
+                                        <div class="input-user m-1">դրամ</div>
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
                                         <label>7. Միավորի գինը</label>
-                                        <div class="input-user m-1">
-                                            <input class="number-form form-control" placeholder="2" value="49000.0"
-                                                   onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
-                                        </div>
+                                        <div class="input-user m-1">49000.0</div>
 
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
                                         <label>8. Քանակ</label>
-                                        <div class="input-user m-1">
-                                            <input class="number-form form-control" value="2.00"
-                                                   onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
-                                        </div>
+                                        <div class="input-user m-1">2.00</div>
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
                                         <label>9. Մնացորդ</label>
-                                        <div class="input-user m-1">
-                                            <input class="number-form form-control" value="1.00"
-                                                   onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
-                                        </div>
+                                        <div class="input-user m-1">1.00</div>
                                     </div>
                                     <div class="form-group  d-flex justify-content-between align-items-center">
                                         <label>10.Ընդամենը ծախսերը (ՀՀ դրամ)</label>
@@ -1189,15 +1147,14 @@
                                     <div class="form-group d-flex justify-content-between align-items-center">
                                         <label>Ծածկագիր </label>
                                         <div class="input-user m-1">
-                                            <input type="text" class="form-control m-1" name="processName" value="ԱԱ-ՄԱԱՊՁԲ-19/1" placeholder="">
+                                            <input type="text" class="form-control m-1" name="processName" value="" placeholder="ԱԱ-ՄԱԱՊՁԲ-19/1">
 
                                         </div>
                                     </div>
                                     <div class="form-group d-flex justify-content-between align-items-center">
                                         <label> Գնման ժամանակացույց </label>
                                         <div class="input-user m-1">
-                                            <input type="date" class="form-control m-1" name="invitationPublishDate"
-                                                   value="2020-09-22" placeholder="17.09.2020">
+                                            <input type="text" class="number-form" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                                         </div>
                                     </div>
                                     <div class="form-group d-flex justify-content-between align-items-center">
@@ -1212,7 +1169,7 @@
                                         <label> Այլ պահանջներ</label>
                                         <div class="input-user m-1">
                                             <textarea
-                                                    placeholder="Օրինակ: Լիցենզիա, Սերտիֆիկատ և այլ նմանատիպ փաստաթղթեր"
+                                                    placeholder="Օրինակ՝ Լիցենզիա"
                                                     class="form-control"></textarea>
                                         </div>
                                     </div>
@@ -1398,24 +1355,23 @@
                         <div class="modal-body">
                             <div class="form-group d-flex align-items-start flex-column">
                                 <label>Հաղթողին որոշելու կարգը</label>
-                                <div class=" m-1">
-                                    <input type="checkbox" checked>
-                                    <label> Ըստ առանձին չափաբաժինների</label>
+                                <div class="radio m-1">
+                                    <input type="radio" id="inlineRadio3" value="option3" name="radioInline1" checked="">
+                                    <label for="inlineRadio3"> Ըստ առանձին չափաբաժինների</label>
                                 </div>
                             </div>
                             <hr>
                             <div class="form-group d-flex  align-items-start flex-column">
                                 <label>ՀՐԱՎԵՐՆ ՈՒՂԱՐԿԵԼ</label>
-                                <div class=" m-1">
-                                    <input type="checkbox">
-                                    <label> Համակարգում գրանցված բոլոր մասնակիցներին</label>
+                                <div class="radio m-1">
+                                    <input type="radio" id="inlineRadio1" value="option1" name="radioInline">
+                                    <label for="inlineRadio1"> Համակարգում գրանցված բոլոր մասնակիցներին</label>
                                 </div>
-                                <div class=" m-1">
-                                    <input type="checkbox" checked>
-                                    <label> Նախընտրած մասնակիցներին</label>
+                                <div class="radio m-1">
+                                    <input type="radio" id="inlineRadio2" value="option1" name="radioInline" checked="">
+                                    <label for="inlineRadio2"> Նախընտրած մասնակիցներին</label>
                                 </div>
                             </div>
-
                             <form method="POST" class="form-horizontal well">
                                 <fieldset>
                                     <div class="repeater-default">
