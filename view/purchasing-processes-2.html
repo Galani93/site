@@ -20,6 +20,7 @@
     <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css">
     <link href="../interference/style.css" rel="stylesheet" type="text/css">
     <link href="../assets" rel="stylesheet" type="text/css">
+    <script src="../assets/js/script.js" defer></script>
 
 </head>
 <body>
@@ -404,11 +405,6 @@
             </div><!--end col-->
         </div>
         <div class="container-fluid">
-
-            <div class="row">
-                <div class="col-12">
-                </div>
-            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -435,36 +431,43 @@
                                         <tr>
                                             <td>AA4-111</td>
                                             <td>կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ</td>
-                                            <td><input class="form-control form-data pl-1" type="date" value="2020-09-19" placeholder="Ամսաթիվ" id="example-date-input02"></td>
-                                            <td><input class="form-control form-data pl-1" type="date" value="2020-10-20" placeholder="Ամսաթիվ" id="example-date-input02"></td>
+                                            <td>
+                                                2020-10-20 18:58:14
+                                            </td>
+                                            <td id="timer">
+                                                    <span id="days"></span>օր
+                                                    <span id="hours"></span>ժամ
+                                                    <span id="minutes"></span>րոպե
+                                                    <span id="seconds"></span>վայրկյան
+                                            </td>
                                             <td>Ակտիվ</td>
                                             <td>0</td>
-                                            <td><button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal" data-animation="bounce" data-target="#exampleModal05">
-                                                <i class="fa fa-eye"></i>
-                                            </button></td>
+                                            <td>
+                                                <a href="purchasing-items.html" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" >    <i class="fa fa-eye"></i></a>
+                                             </td>
                                             <td><button type="button" class="btn btn-primary">Չեղարկել</button></td>
                                         </tr>
                                         <tr>
                                             <td>AA4dde</td>
                                             <td>կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ</td>
-                                            <td><input class="form-control form-data pl-1" type="date" value="2020-09-19" placeholder="Ամսաթիվ" id="example-date-input02"></td>
-                                            <td><input class="form-control form-data pl-1" type="date" value="2020-10-20" placeholder="Ամսաթիվ" id="example-date-input02"></td>
+                                            <td>2020-10-08 13:52:25</td>
+                                            <td></td>
                                             <td>Ավարտված</td>
                                             <td>0</td>
                                             <td>
-                                                <button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03"><i class="fa fa-eye"></i></button>
+                                                <a href="purchasing-items.html" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" >    <i class="fa fa-eye"></i></a>
                                             </td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td>AB5dde</td>
                                             <td>կուտակիչներ, չվերալիցքավորվող և գալվանական մարտկոցներ</td>
-                                            <td><input class="form-control form-data pl-1" type="date" value="2020-09-19" placeholder="Ամսաթիվ" id="example-date-input02"></td>
-                                            <td><input class="form-control form-data pl-1" type="date" value="2020-10-20" placeholder="Ամսաթիվ" id="example-date-input02"></td>
+                                            <td>2020-07-13 14:43:12</td>
+                                            <td></td>
                                             <td>Ավարտված</td>
                                             <td>0</td>
                                             <td>
-                                                <button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03"><i class="fa fa-eye"></i></button>
+                                                <a href="purchasing-items.html" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" >    <i class="fa fa-eye"></i></a>
                                             </td>
                                             <td></td>
                                         </tr>
@@ -476,327 +479,7 @@
                     </div><!--end card-->
                 </div>
              </div>
-            <div class="row">
-                <div class="col-lg-4 inactivity">
-                    <div class="btn-group" style="display: flex;">
-                        <button type="button" class="btn btn-info dropdown-toggle"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ԱՆԳՈՐԾՈՒԹՅՈՒՆ
-                        </button>
-                        <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                            <div class="dropdown-item item-hover">
-                                <button type="button" class="btn"></button>
-                                <div class="row hidden toogle-block">
-                                    <div class="card-body">
-                                        <form action="#">
-                                            <div class="form-group row d-flex justify-content-around">
-                                                <div class="radio radio-info form-check-inline">
-                                                    <input type="radio" id="inlineRadio1" value="option1" name="radioInline" >
-                                                    <label for="inlineRadio1">Կիրառելի է *</label>
-                                                </div>
-                                                <div class="radio form-check-inline">
-                                                    <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
-                                                    <label for="inlineRadio2">Կիրառելի չէ *</label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn btn-gradient-success btn-clipboard btn-sm text-light px-4 mt-3 float-right mb-0">
-                                                    Ստեղծել
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
 
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="tab-pane fade show active" id="files-projects">
-                        <h4 class="header-title mt-0 mb-3">ՓԱՍՏԱԹՂԹԵՐ</h4>
-                        <div class="file-box-content document">
-                            <div class="file-box">
-                                <a href="#" class="download-icon-link">
-                                    <i class="dripicons-download file-download-icon"></i>
-                                </a>
-                                <div class="text-center">
-                                    <i class="far fa-file-alt text-primary"></i>
-                                    <h6 class="">Գնման հայտ</h6>
-                                    <small class="text-muted">06 March 2019 / 5MB</small>
-                                </div>
-                            </div>
-                            <div class="file-box">
-                                <a href="#" class="download-icon-link">
-                                    <i class="dripicons-download file-download-icon"></i>
-                                </a>
-                                <div class="text-center">
-                                    <i class="far fa-file-alt text-primary"></i>
-                                    <h6 class="">Հայտերի գնահատման նիստի արձանագրություն</h6>
-                                    <small class="text-muted">06 March 2019 / 5MB</small>
-                                </div>
-                            </div>
-                            <div class="file-box">
-                                <a href="#" class="download-icon-link">
-                                    <i class="dripicons-download file-download-icon"></i>
-                                </a>
-                                <div class="text-center">
-                                    <i class="far fa-file-alt text-primary"></i>
-                                    <h6 class="">Պայմանագիր կնքելու որոշման մասին հայտարարություն</h6>
-                                    <small class="text-muted">06 March 2019 / 5MB</small>
-                                </div>
-                            </div>
-                            <div class="file-box">
-                                <a href="#" class="download-icon-link">
-                                    <i class="dripicons-download file-download-icon"></i>
-                                </a>
-                                <div class="text-center">
-                                    <i class="far fa-file-alt text-primary"></i>
-                                    <h6 class="">Обьявление о решении заключения договора</h6>
-                                    <small class="text-muted">06 March 2019 / 5MB</small>
-                                </div>
-                            </div>
-
-                            <div class="file-box">
-                                <a href="#" class="download-icon-link">
-                                    <i class="dripicons-download file-download-icon"></i>
-                                </a>
-                                <div class="text-center">
-                                    <i class="far fa-file-alt text-primary"></i>
-                                    <h6 class="">Պայմանագիր «ՈՍԿԵ ԿԱՐ» ՍՊԸ</h6>
-                                    <small class="text-muted">06 March 2019 / 5MB</small>
-                                </div>
-                            </div>
-                            <div class="file-box">
-                                <a href="#" class="download-icon-link">
-                                    <i class="dripicons-download file-download-icon"></i>
-                                </a>
-                                <div class="text-center">
-                                    <i class="far fa-file-alt text-primary"></i>
-                                    <h6 class="">ԳՆԱՅԻՆ ԱՌԱՋԱՐԿ «ՈՍԿԵ ԿԱՐ» ՍՊԸ</h6>
-                                    <small class="text-muted">06 March 2019 / 5MB</small>
-                                </div>
-                            </div>
-                            <div class="file-box">
-                                <a href="#" class="download-icon-link">
-                                    <i class="dripicons-download file-download-icon"></i>
-                                </a>
-                                <div class="text-center">
-                                    <i class="far fa-file-alt text-primary"></i>
-                                    <h6 class="">Կնքված պայմանագրի մասին հայտարարություն</h6>
-                                    <small class="text-muted">06 March 2019 / 5MB</small>
-                                </div>
-                            </div>
-                            <div class="file-box">
-                                <a href="#" class="download-icon-link">
-                                    <i class="dripicons-download file-download-icon"></i>
-                                </a>
-                                <div class="text-center">
-                                    <i class="far fa-file-alt text-primary"></i>
-                                    <h6 class="">Обьявление о заключенном договоре</h6>
-                                    <small class="text-muted">06 March 2019 / 5MB</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <h4 class="header-title mt-0 mb-3">ԳՆՄԱՆ ԱՌԱՐԿԱՆԵՐ</h4>
-                   <div class="card">
-                    <div class="card-body">
-                            <table id="datatable" class="table table-bordered dt-responsive nowrap"
-                                   style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                <thead>
-                                <tr>
-                                    <th>Չափաբաժին</th>
-                                    <th>Անվանում</th>
-                                    <th>Քանակ</th>
-                                    <th>Չափման միավոր</th>
-                                    <th>Նախահաշիվ</th>
-                                    <th>Դիտել</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Չափաբաժին 1</td>
-                                    <td>ցածր լարման մալուխներ</td>
-                                    <td>20</td>
-                                    <td>մետր</td>
-                                    <td>485.00</td>
-                                    <td><button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal"
-                                                data-animation="bounce" data-target=".bs-example-modal-lg">
-                                        <i class="fa fa-eye"></i>
-                                    </button></td>
-                                </tr>
-                                <tr>
-                                    <td>Չափաբաժին 1</td>
-                                    <td>ցածր լարման մալուխներ</td>
-                                    <td>20</td>
-                                    <td>մետր</td>
-                                    <td>485.00</td>
-                                    <td><button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light modal03" data-toggle="modal"
-                                                data-animation="bounce" data-target=".bs-example-modal-lg01">
-                                        <i class="fa fa-eye"></i>
-                                    </button></td>
-                                </tr>
-
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                                <table class="table table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">Զբաղեցրած տեղ</th>
-                                        <th scope="col">Մասնակցի անվանում</th>
-                                        <th scope="col">Առանց ԱԱՀ</th>
-                                        <th scope="col">ԱԱՀ (դր.)</th>
-                                        <th scope="col">Ընդհանուր</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr class="table-success">
-                                        <th scope="row" class="text-center">1</th>
-                                        <td>ՈՍԿԵ ԿԱՐ </td>
-                                        <td>8083</td>
-                                        <td>1617.00</td>
-                                        <td>9700</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                    </div>
-                    <div class="card">
-                         <div class="card-body">
-                                <table class="table table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">Զբաղեցրած տեղ</th>
-                                        <th scope="col">Մասնակցի անվանում</th>
-                                        <th scope="col">Առանց ԱԱՀ</th>
-                                        <th scope="col">ԱԱՀ (դր.)</th>
-                                        <th scope="col">Ընդհանուր</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr class="table-danger">
-                                        <th scope="row" colspan="5" class="text-center">Չկայացած</th>
-
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="header-title mt-0 mb-3">Մասնակիցներ չլինելու պատճառով տվյալ գնման ընթացակարգը չի կայացել</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-secondary ">
-                                Հաստատել
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="header-title mt-0 mb-3">Խնդրում ենք 2 օրվա ընթացքում ամփոփել արդյունքները</h4>
-                            <p class="card-text text-muted">
-                                <i class="fa fa-exclamation-triangle btn-outline-warning" aria-hidden="true"></i>
-                                2 օրվա ընթացքում չամփոփելու դեպքում համակարգը ավտոմատ կշարունակի գործընթացը
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-secondary ">
-                                Ամփոփել
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <button type="button" class="btn btn-gradient-primary waves-effect waves-light float-right" id="sa-success">Շարունակել գործընթացը</button>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class=" modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title mt-0" id="exampleModalLabel03"></h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                                <table class="table table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">Զբաղեցրած տեղ</th>
-                                        <th scope="col">Մասնակցի անվանում</th>
-                                        <th scope="col">Առանց ԱԱՀ</th>
-                                        <th scope="col">ԱԱՀ (դր.)</th>
-                                        <th scope="col">Ընդհանուր</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr class="table-success">
-                                        <th scope="row" class="text-center">1</th>
-                                        <td>ՈՍԿԵ ԿԱՐ </td>
-                                        <td>8083</td>
-                                        <td>1617.00</td>
-                                        <td>9700</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade bs-example-modal-lg01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class=" modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title mt-0" id="exampleModalLabel03"></h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Զբաղեցրած տեղ</th>
-                                    <th scope="col">Մասնակցի անվանում</th>
-                                    <th scope="col">Առանց ԱԱՀ</th>
-                                    <th scope="col">ԱԱՀ (դր.)</th>
-                                    <th scope="col">Ընդհանուր</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr class="table-danger">
-                                    <th scope="row" colspan="5" class="text-center">Չկայացած</th>
-
-                                </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
         </div>
 
 
