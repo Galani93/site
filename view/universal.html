@@ -401,7 +401,6 @@
             </div><!--end col-->
         </div>
         <div class="container-fluid">
-
             <div class="col-lg-4 inactivity">
                 <div class="btn-group" style="display: flex;">
                     <button type="button" class="btn btn-success dropdown-toggle"
@@ -438,7 +437,6 @@
 
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-12">
                     <h4 class="mt-0 mb-2 ml-4 header-title">ԳՆՄԱՆ ԱՌԱՐԿԱՆԵՐ</h4>
@@ -665,9 +663,137 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="page-wrapper">
+
+            <div class="page-content-tab page-content-tab02">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class=" col-sm-12">
+                            <div class="page-title-box">
+                                <div class="float-right">
+                                    <ol class="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">Անձնական տվյալներ</a></li>
+                                            <li class="breadcrumb-item active">Մասնակից /Վաճառող/</li>
+                                        </ol>
+                                    </ol>
+                                </div>
+                                <h4 class="page-title">Մասնակից /Վաճառող/</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header mb-3">Ընթացիկ փաթեթը</div>
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-2 col-form-label text-right">Ընթացիկ փաթեթ</label>
+                                        <div class="col-sm-4">
+                                            <span class="form-control" id="example-text-input">Գոլդ փաթեթ</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-2 col-form-label text-right">Գործողության ժամկետ </label>
+                                        <div class="col-sm-4">
+                                            <span class="form-control" id="example-text-input">18.05.2020 - 18.05.2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">Անհրաժեշտ է լրացնել *-ով նշված դաշտերը</div>
+                                <div class="card-body">
+                                    <form class="form-parsley" action="#" novalidate="">
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-3 col-form-label text-right">Իրավաբանական անվանում</label>
+                                            <div class="col-sm-9 d-flex">
+                                                <span class="form-control" id="example-text-input">Գլոբալ Սոլուշն</span>
+                                                <select name="company_type" class="user_name user_name_short" style="width: 110px">
+                                                    <option value="">Ընտրել</option>
+                                                    <option selected="" value="ՍՊԸ">ՍՊԸ</option>
+                                                    <option value="ՊՈԱԿ">ՊՈԱԿ</option>
+                                                    <option value="Ա/Ձ">Ա/Ձ</option>
+                                                    <option value="ԲԲԸ">ԲԲԸ</option>
+                                                    <option value="Ա/Կ">Ա/Կ</option>
+                                                    <option value="ՓԲԸ">ՓԲԸ</option>
+                                                    <option value="Հիմնադրամ">Հիմնադրամ</option>
+                                                    <option value="Հ/Կ">Հ/Կ</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-3 col-form-label text-right">Իրավաբանական անվանում ռուսերեն </label>
+                                            <div class="col-sm-9 d-flex">
+                                                <input placeholder="" type="text" name="form-control" class="form-control" value="" required="">
+                                                <select name="company_type_ru" class="user_name user_name_short" style="width: 110px">
+                                                    <option>Выбрать</option>
+                                                    <option value="ООО">ООО</option>
+                                                    <option value="ГНКО">ГНКО</option>
+                                                    <option value="И/П">И/П</option>
+                                                    <option value="ОАО">ОАО</option>
+                                                    <option value="П/О">П/О</option>
+                                                    <option value="К/О">К/О</option>
+                                                    <option value="ЗАО">ЗАО</option>
+                                                    <option value="ФОНД">ФОНД</option>
+                                                    <option value="ФОНД">Հ/Կ</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-3 col-form-label text-right">Գործունեության հասցե</label>
+                                            <div class="input-user col-sm-9 d-flex">
+                                                <input placeholder="Մարզ" type="text" name="company_region" class="user_name_short" value="">
+                                                <input placeholder="Քաղաք / Գյուղ" type="text" name="company_city" class="user_name_short" value="" required="">
+                                                <input placeholder="Հասցե" type="text" name="company_address" class="user_name_short" value="" required="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label text-right">Հաշվեհամար</label>
+                                            <div class="input-user col-sm-9 d-flex">
+                                                <input type="tel" class="form-control" required="" placeholder="077 22 22 77">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label text-right">ՀՎՀՀ</label>
+                                            <div class="input-user col-sm-9 d-flex">
+                                                <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="ՀՎՀՀ">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label text-right">Տնօրենի Անուն Ազգանուն *</label>
+                                            <div class="input-user col-sm-9 d-flex">
+                                                <input data-parsley-type="alphanum" type="text" class="form-control" required="" placeholder="Անուն Ազգանուն">
+                                            </div>
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <footer class="footer text-center text-sm-left">&copy; 2019 - 2020 Metrica
+                    <span class="text-muted d-none d-sm-inline-block float-right">Crafted with
+            <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+                </footer>
+
+            </div>
 
         </div>
-
 
         <footer class="footer text-center text-sm-left">&copy; 2019 - 2020 Metrica
             <span class="text-muted d-none d-sm-inline-block float-right">Crafted with
