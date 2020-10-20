@@ -1084,3 +1084,17 @@ span.dtr-data {
 #timer span:first-child {
     margin-left: 0;
 }
+.form-control-1{
+    width: 115px;
+    height: 40px;
+    padding: 12px;
+    display: block;
+    font-size: .845rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #303e67;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e8ebf3;
+    border-radius: .25rem;
+}
