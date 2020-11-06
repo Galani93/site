@@ -1098,3 +1098,6 @@ span.dtr-data {
     border: 1px solid #e8ebf3;
     border-radius: .25rem;
 }
+.text-bloc span{
+    width: 400px;
+}
