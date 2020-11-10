@@ -1101,3 +1101,6 @@ span.dtr-data {
 .text-bloc span{
     width: 400px;
 }
+.first_child.mb-2.d-flex.justify-content-between.align-items-center span{
+    width: 480px!important;
+}
