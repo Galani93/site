@@ -1104,3 +1104,10 @@ span.dtr-data {
 .first_child.mb-2.d-flex.justify-content-between.align-items-center span{
     width: 480px!important;
 }
+.select2-results__group{
+    cursor: default;
+    display: block;
+    padding: 6px;
+    background: #e2e2e2;
+    font-size: 14px;
+}
