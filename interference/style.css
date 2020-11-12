@@ -1117,3 +1117,13 @@ span.dtr-data {
         margin: 0 5px;
     }
 }
+.select-categories{
+    max-height: 200px;
+    overflow-y: auto;
+}
+.category-input{
+    padding: 10px;
+    margin: 10px 0;
+    font-size:16px;
+    border-bottom: 1px solid #ccc;
+}

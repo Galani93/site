@@ -15,6 +15,7 @@
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="../interference/style.css" rel="stylesheet" type="text/css">
     <link href="../assets" rel="stylesheet" type="text/css">
 
 
@@ -342,7 +343,7 @@
 
 <div class="page-wrapper">
     <div class="page-content-tab">
-<div class="row">
+        <div class="row mb-5">
     <div class="col-lg-10 d-flex align-items-center justify-content-between mt-5">
     <h4 class="alert-heading font-18 text-dark">Ընթացիկ փաթեթը</h4>
     <div class="form-group d-flex justify-content-lg-end mb-0">
@@ -366,73 +367,514 @@
                                         <h4 class="alert-heading font-20 text-dark">Կատեգորիա</h4>
                                         <div class="p-2 d-flex  flex-wrap">
 
-                                            <div class="d-flex flex-column align-content-start m-2">
+                                            <div class="d-flex flex-column align-content-start m-2 ">
                                                 <lebel class="font-16 pt-2 pb-2">Ապրանք</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել կատեգորիա" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="card-header">
+                                                        <h4 class=" font-18 text-dark text-left">Վառելիք</h4>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Վառելիք</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Դիզելային վառելիք /ամառային/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բենզին /ռեգուլյար</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բենզին /պրեմիում</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բենզին / սուպեր /</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Դիզելային վառելիք / ձմեռային/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Վառելափայտ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ավիավառելանյութ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սեղմված բնական գազ</span>
+                                                    </div>
+                                                    <div class="card-header">
+                                                        <h4 class=" font-18 text-dark text-left">Սննդամթերք</h4>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սննդամթերք</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Հացահատիկ, հատիկեղեն և ձավարեղեն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ալյուր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բանջարեղեն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Մրգեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Հատապտուղներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կանաչեղեն</span>
+                                                    </div>
+                                                       <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Միս, մսամթերք և մսի սննդային ենթամթերքներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ձկնեղեն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Հրուշակեղեն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Նպարեղեն /մակարոնեղեն/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կաթնամթերք /պանրեղեն, կարագ, մարգարին, յուղ/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ձեթ</span>
+                                                    </div>
+                                                           <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Շաքար, շաքարավազ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Հաց և հացաբուլկեղեն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ջուր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Թեյ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սուրճ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ձու, ձվի փոշի</span>
+                                                    </div>
+                                                       <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Պահածոներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Տարբեր տեսակի համեմունքներ և սոուսներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Դրոժ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Քացախ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Քացախ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Աղ</span>
+                                                    </div>
 
-
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Աղանդներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Մանկական սնունդ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սպորտային սնունդ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ըմպելիքներ /ալկոհոլային և ոչ ալկոհոլային/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կենդանիների կե</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Այլ սննդամթերք</span>
+                                                    </div>
+                                                    <div class="card-header">
+                                                        <h4 class=" font-18 text-dark text-left">Գրենական պիտույքներ և գրասենյակային նյութեր</h4>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրենական պիտույքներ և գրասենյակային նյութեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կնիք</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Թուղթ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ֆաքսի թուղթ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Թուղթ կտրող սարք</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կազմարար, գիրք կարելու կազմ, զսպանակ, կազմ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Լամինատոր, լամինացիոն թաղանթ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրատախտակ, թղթե գրատախտակ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Թղթապանակ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Թղթապանակ-ֆայլ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրենական պիտույքների հավաքածու՝ լրակազմ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Դրոշներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Դակիչ /ծակոտիչ/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կարիչ /ստեպլեր/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ապակարիչ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կարիչի մետաղալարե կապեր՝ ասեղներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրասենյակային պայուսակ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ստեղնաշարեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Թղթադարակ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Նշումների թուղթ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Նշումների թուղթ կպչուն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրիչ, գրչաման</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Մատիտ, գունավոր մատիտ, ֆլոմաստեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Մատիտի միջուկներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ռետին /լաստիկ/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ամրակ, ամրակի տուփ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սեղմակ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կոճգամ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Քանոն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բաղադրանյութ /շտրիխ/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գծանշիչ /մարկեր/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրասենյակային գիրք</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Նոթատետր, օրատետր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Օրացույց</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Տակդիր, սկոչի տակդիր, օրացույցի տակդիր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Շտամպի թանաք</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բարձիկ՝ կնիքի, շտամպի</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կնիքի սարք</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Էջաբաժանիչ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Հաշվիչ մեքենա /հաշվասարք/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Պլաստիրին</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրասենյակային դանակ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրասենյակային մկրատ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սոսինձ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Պոլիմերային ինքնակպչուն ժապավեն /սկոչ/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ծրար</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրասենյակային թել</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրաֆիտե միջուկ /գրիֆել/</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բունիվիլ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրենական այլ պիտուքներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գրասենյակային այլ նյութեր</span>
+                                                    </div>
+                                                    <div class="card-header">
+                                                        <h4 class=" font-18 text-dark text-left">Ավտոպահեստամասեր</h4>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ավտոպահեստամասեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Շարժիչ, շարժիչի մասեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ղեկավարման, սնման և յուղման համակարգեր, համակարգերի մասեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սառեցման և արտածման համակարգեր, համակարգերի մասեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կցորդում, փոխանցման տուփեր, ավտոմատ փոխանցման տուփեր, մասեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բաշխիչ տուփի, կարդանային լիսեռի մասեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Առջևի և հետևի կամրջակների մասեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կախոց</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ղեկային մեխանիզմի սարքավորումներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Արգելակային համակարգ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Էլեկտրասարքավորումներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ավտոյուղեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Անվադողեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Մարտկոցներ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Այլ ավտոպահեստամասեր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span></span>
                                                     </div>
                                                 </div>
 
@@ -1459,9 +1901,8 @@
 
             </div>
         </div>
-
         <div class="row">
-            <div class="col-md-12 col-lg-12 col-xl-10">
+            <div class="col-md-12 col-lg-10">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="mt-0 header-title"></h4>
