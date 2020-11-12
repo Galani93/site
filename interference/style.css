@@ -1111,3 +1111,9 @@ span.dtr-data {
     background: #e2e2e2;
     font-size: 14px;
 }
+@media (max-width: 768px) {
+    input.filter_cat_other_name.filter_cat_other_name7 {
+        width: 100%;
+        margin: 0 5px;
+    }
+}
