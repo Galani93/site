@@ -345,7 +345,7 @@
     <div class="page-content-tab">
         <div class="row mb-5">
     <div class="col-lg-10 d-flex align-items-center justify-content-between mt-5">
-    <h4 class="alert-heading font-18 text-dark">Ընթացիկ փաթեթը</h4>
+    <h4 class="alert-heading font-18 text-dark">ԱԿՏԻՎ ՏԵՆԴԵՐՆԵՐ</h4>
     <div class="form-group d-flex justify-content-lg-end mb-0">
         <a class="btn btn-gradient-primary waves-effect waves-light" href="#">ՈՒՂԵՑՈՒՅՑ</a>
     </div>
@@ -2111,212 +2111,80 @@
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Նախարարություններ</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Աշխատանքի եւ սոցիալական հարցերի նախարարություն</span>
                                                     </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Առողջապահության նախարարություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Արդարադատության նախարարություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Արտակարգ իրավիճակների նախարարություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Արտաքին գործերի նախարարություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բարձր տեխնոլոգիական արդյունաբերության նախարարություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Էկոնոմիկայի նախարարություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կրթության, գիտության, մշակույթի և սպորտի նախարարությու</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Շրջակա միջավայրի նախարարություն</span>
+                                                    </div>
+
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Պաշտպանության նախարարություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Տարածքային կառավարման և ենթակառուցվածքների նախարարություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ֆինանսների նախարարություն</span>
+                                                    </div>
+
+
                                                 </div>
 
                                             </div>
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Երևանի քաղաքապետարան</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                   <div class="category-input d-flex justify-content-start align-items-center">
+                                                    <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                    <span>Երևանի քաղաքապետարան</span>
+                                                   </div>
                                                 </div>
+
 
                                             </div>
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Պետական եկամուտների կոմիտե</lebel>
                                                 <input type="text" class=" dropdown-toggle  p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Պետական եկամուտների կոմիտե</span>
                                                     </div>
                                                 </div>
 
@@ -2327,70 +2195,10 @@
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Կառավարություն</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կառավարություն</span>
                                                     </div>
                                                 </div>
 
@@ -2398,70 +2206,18 @@
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Վարչապետին ենթակա մարմիններ</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ազգային անվտանգության ծառայություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ոստիկանություն</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Պետական վերահսկողական ծառայություն</span>
                                                     </div>
                                                 </div>
 
@@ -2469,71 +2225,52 @@
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Կառավարությանը ենթակա մարմիններ</lebel>
                                                 <input type="text" class=" dropdown-toggle  p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Առողջապահական և աշխատանքի տեսչական մարմին</span>
                                                     </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Բնապահպանության և ընդերքի տեսչական մարմին</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կադաստրի կոմիտե</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կրթության տեսչական մարմին</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Միջուկային անվտանգության կարգավորման կոմիտե</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Շուկայի վերահսկողության տեսչական մարմին</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Պետական եկամուտների կոմիտե</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սննդամթերքի անվտանգության տեսչական մարմին</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Վիճակագրական կոմիտե</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Քաղաքաշինության կոմիտե</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Քաղաքաշինության, տեխնիկական և հրդեհային անվտանգության տեսչական մարմին</span>
+                                                    </div>
+
                                                 </div>
 
                                             </div>
@@ -2543,141 +2280,22 @@
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Նախագահի աշխատակազմ</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Նախագահի աշխատակազմ</span>
                                                     </div>
+
                                                 </div>
 
                                             </div>
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Ազգային ժողով</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Ազգային ժողով</span>
                                                     </div>
                                                 </div>
 
@@ -2685,144 +2303,63 @@
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Դատախազություն</lebel>
                                                 <input type="text" class=" dropdown-toggle  p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Դատախազություն</span>
                                                     </div>
                                                 </div>
 
                                             </div>
                                         </div>
                                         <div class="p-2 d-flex  flex-wrap">
-
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Մարզեր</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Արագածոտնի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Արարատի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Արմավիրի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Գեղարքունիքի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Լոռու մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Կոտայքի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Շիրակի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Սյունիքի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Վայոց ձորի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Տավուշի մարզ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>Երևան</span>
                                                     </div>
                                                 </div>
 
@@ -2830,70 +2367,30 @@
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Ըստ տիպի</lebel>
                                                 <input type="text" class=" dropdown-toggle p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>թղթային</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>էլեկտրոնային</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>պետական</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>մասնավոր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>10 մլն-ից բարձր</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>10 մլն-ից ցածր</span>
                                                     </div>
                                                 </div>
 
@@ -2901,70 +2398,22 @@
                                             <div class="d-flex flex-column align-content-start m-2">
                                                 <lebel class="font-16 pt-2 pb-2">Ըստ Ընթացակարգի</lebel>
                                                 <input type="text" class=" dropdown-toggle  p-2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Ընտրել Ֆիլտրը" style="width: 300px;">
-                                                <div id="toggle-itmes" class="dropdown-menu" style="width: 100%;text-align: center;">
-                                                    <div class="dropdown-item">
-                                                        <div class="form-group row d-flex justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Հիդրոտեխնիկական լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between align-items-center">
-                                                            <input type="checkbox" name="" class="cat_others_checkbox" style="width:17px;height:17px" value="99">
-                                                            <span>Տրանսպորտային լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ" data-compare="0" class="form-control" name="" value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Կապի լիցենզիային համապատասխանող շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Բնակելի, հասարակական, արտադրական լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Էներգետիկ լիցենզիային համապատասխանող շինարարարկան աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row d-flex  justify-content-between  align-items-center">
-                                                            <input type="checkbox" name=""
-                                                                   class="cat_others_checkbox"
-                                                                   style="width:17px;height:17px" value="99">
-                                                            <span>Այլ շինարարական աշխատանքներ</span>
-                                                            <div class="filter_cat_mail">
-                                                                <input type="email" placeholder="էլ․ փոստ"
-                                                                       data-compare="0" class="form-control" name=""
-                                                                       value="">
-                                                            </div>
-                                                        </div>
-
-
+                                                <div id="toggle-itmes" class="dropdown-menu select-categories" style="width: 50%;text-align: center;">
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>ԳՀ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>ԲՄ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>ՀԲՄ</span>
+                                                    </div>
+                                                    <div class="category-input d-flex justify-content-start align-items-center">
+                                                        <input type="checkbox" name="" class="cat_others_checkbox mr-2" style="width:17px;height:17px" value="99">
+                                                        <span>ՀՄԱ</span>
                                                     </div>
                                                 </div>
 
@@ -3006,22 +2455,20 @@
                                 <td>Համակարգչային ծրագրերի ներդրման և սպասարկման ծառայություններ</td>
                                 <td>06.11.2020 - 13.11.2020 12:00</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Տեսնել
                                     </button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Հայտ
                                     </button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Բեռնել
                                     </button>
+
                                 </td>
                             </tr>
                             <tr>
@@ -3029,22 +2476,20 @@
                                 <td>Համակարգչային ծրագրերի ներդրման և սպասարկման ծառայություններ</td>
                                 <td>06.11.2020 - 13.11.2020 15:00</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Տեսնել
                                     </button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Հայտ
                                     </button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Բեռնել
                                     </button>
+
                                 </td>
                             </tr>
                             <tr>
@@ -3052,20 +2497,17 @@
                                 <td>Համակարգչային ծրագրերի ներդրման և սպասարկման ծառայություններ</td>
                                 <td>02.10.2020 - 31.12.2020 15:07</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Տեսնել
                                     </button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Հայտ
                                     </button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary  waves-effect waves-light float-right"
-                                            data-toggle="modal" data-animation="bounce">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Բեռնել
                                     </button>
                                 </td>
@@ -3073,6 +2515,36 @@
 
                             </tbody>
                         </table>
+                    </div>
+
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0" id="exampleModalLabel">ՍԱԾ ԳՀԾՁԲ-21/2 ծածկագրով ծրագրային ապահովման սպասարկման ծառայությունների գնման ընթացակարգ</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-light p-3 mt-2 mb-2">
+                                    <h4 class="mt-0 header-title">Դուք պետք է մուտքագրեք PIN կոդը</h4>
+                                    <div class="highlighter-rouge" style="color: red">
+                                        3 անգամ սխալ հավաքելու դեպքում էջը կարգելափակվի
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <input type="text"  placeholder="PIN կոդը" class="form-control d-block">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Հաստատել</button>
+                                <button type="button" class="btn btn-info waves-effect waves-light">Ստանալ PIN կոդը</button>
+                                <button type="button" class="btn btn-success waves-effect waves-light">Պին կոդը ուղարկվել է Ձեր էլ․ փոստին</button>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
