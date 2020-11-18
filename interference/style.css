@@ -201,14 +201,25 @@ h4.title-firm {
         margin: 10px 5px;
     }
 
+
     .input-user input[placeholder] {
         font-size: 14px;
+        width: 100% !important;
+        margin-top: 5px;
     }
-
+    .input-user {
+        width: 100% !important;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    .legal-name{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 1000px) {
-
     .row.mob-row {
         display: flex;
         flex-direction: column;
@@ -1128,3 +1139,9 @@ span.dtr-data {
     border-bottom: 1px solid #ccc;
 }
 
+.cat_others_checkbox{
+    margin-right: 5px;
+}
+button.btn.btn-info.dropdown-toggle {
+    margin-left: 10px;
+}
