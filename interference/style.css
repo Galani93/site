@@ -1145,3 +1145,7 @@ span.dtr-data {
 button.btn.btn-info.dropdown-toggle {
     margin-left: 10px;
 }
+
+.star-color i.far.fa-star{
+   cursor: pointer;
+}
