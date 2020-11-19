@@ -10,6 +10,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
     <!-- App css -->
+    <link rel="stylesheet" href="../plugins/rating/themes/rating.css"><!-- App css -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -2170,11 +2171,23 @@
                                         Բեռնել
                                     </button>
 
-                                    <a href="" title="Ավելացնել հետաքրքրող տենդերների մեջ"
-                                       class="my_favorite favorite_passive">
-                                        <i class="far fa-star" style="color: #EDB867;font-size: 20px;"></i>
-                                    </a>
-
+                                    <div class="br-wrapper br-theme-fontawesome-stars">
+                                        <select id="example-fontawesome" style="display: none;">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        <div class="br-widget">
+                                            <a href="#" data-rating-value="1" data-rating-text="1" class="br-selected br-current"></a>
+                                            <a href="#" data-rating-value="2" data-rating-text="2"></a>
+                                            <a href="#" data-rating-value="3" data-rating-text="3"></a>
+                                            <a href="#" data-rating-value="4" data-rating-text="4"></a>
+                                            <a href="#" data-rating-value="5" data-rating-text="5"></a>
+                                        </div>
+                                    </div>
+                                    </div>
 
                                 </td>
                             </tr>
@@ -2423,6 +2436,9 @@
 <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
 <script src="../assets/pages/jquery.datatable.init.js"></script>
 
+
+<script src="../plugins/rating/jquery.barrating.min.js"></script>
+<script src="../assets/pages/jquery.rating.init.js"></script><!-- App js -->
 
 <script src="../assets/js/jquery.core.js"></script>
 <script src="../assets/js/app.js"></script>
