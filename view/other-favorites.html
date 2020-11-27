@@ -61,7 +61,6 @@
             </a>
         </div>
     </div><!--end main-icon-menu-->
-
     <div class=" main-menu-inner active">
         <!-- LOGO -->
         <div class="topbar-left">
@@ -112,21 +111,21 @@
                 <div class="title-box">
                     <h6 class="menu-title">Այլ մրցույթներ, մասնակիցներ, գներ, հաղթողներ</h6>
                 </div>
-                <ul class="nav metismenu" style="height: 400px;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="active_tenders.html"><span class="w-100">Ակտիվ տենդերներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav metismenu">
+                    <li class="nav-item pt-4 pb-4">
+                        <a class="nav-link p-0" href="active_tenders.html"><span class="w-100">Ակտիվ տենդերներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                     </li><!--end nav-item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="completed_tenders.html"><span class="w-100">Ավարտված տենդերների մասնակիցներ, գներ, հաղթողներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                    <li class="nav-item pt-4 pb-4">
+                        <a class="nav-link p-0" href="completed_tenders.html"><span class="w-100">Ավարտված տենդերների մասնակիցներ, գներ, հաղթողներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                     </li><!--end nav-item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="other-favorites.html"><span class="w-100">Հետաքրքրող  Մրցույթներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                    <li class="nav-item pt-4 pb-4">
+                        <a class="nav-link p-0" href="other-favorites.html"><span class="w-100">Հետաքրքրող  Մրցույթներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                     </li><!--end nav-item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="winning-competitions.html"><span class="w-100">Հաղթած մրցույթներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                    <li class="nav-item pt-4 pb-4">
+                        <a class="nav-link p-0" href="winning-competitions.html"><span class="w-100">Հաղթած մրցույթներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                     </li><!--end nav-item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="international-tenders.html"><span class="w-100">Միջազգային տենդերներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                    <li class="nav-item pt-4 pb-4">
+                        <a class="nav-link p-0" href="international-tenders.html"><span class="w-100">Միջազգային տենդերներ</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                     </li><!--end nav-item-->
                 </ul><!--end nav-->
             </div><!-- end Others -->
@@ -401,7 +400,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="mt-0 header-title"></h4>
-                        <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                        <table id="datatable" class="table table-bordered dt-responsive nowrap text-center" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                             <thead>
                             <tr>
                                 <th>Անվանումը</th>
@@ -415,7 +414,7 @@
 
                                     Նախահաշվային գին
                                 </th>
-
+                                <th>Պատրաստել հայտ</th>
                                 <th>Մրցույթի հրավեր</th>
                             </tr>
                             </thead>
@@ -429,18 +428,21 @@
                                         Տեսնել
                                     </button>
                                 </td>
-
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
+                                        Հայտ
+                                    </button>
+                                </td>
                                 <td>
                                     <button type="button" class="btn btn-primary mb-2" data-toggle="modal"
                                             data-target="#exampleModal3">
                                         Բեռնել
                                     </button>
 
-                                    <div class="br-wrapper br-theme-fontawesome-stars">
-                                        <select id="example-fontawesome" style="display: none;">
-                                            <option value="2">2</option>
-                                        </select>
-                                    </div>
+                                    <a href="" title="Ավելացնել հետաքրքրող տենդերների մեջ"
+                                       class="my_favorite favorite_passive">
+                                        <i class="far fa-star" style="color: #EDB867;font-size: 20px;"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -450,11 +452,13 @@
                                 <td>Համակարգչային ծրագրերի ներդրման և սպասարկման ծառայություններ</td>
                                 <td>06.10.2020 - 06.10.2021 15:52</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                        Տեսնել
+
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
+                                        Հայտ
                                     </button>
                                 </td>
-
                                 <td>
                                     <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModal3">
                                         Բեռնել
@@ -473,11 +477,13 @@
                                 <td>Համակարգչային ծրագրերի ներդրման և սպասարկման ծառայություններ</td>
                                 <td>24.09.2020 - 24.09.2021 15:19</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                        Տեսնել
+
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
+                                        Հայտ
                                     </button>
                                 </td>
-
                                 <td>
                                     <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModal3">
                                         Բեռնել
