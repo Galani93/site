@@ -1149,3 +1149,13 @@ button.btn.btn-info.dropdown-toggle {
 .star-color i.far.fa-star{
    cursor: pointer;
 }
+.email-bloc{
+    width: 320px;
+    display: flex;
+align-items: center;
+
+}
+.email-bloc input.filter_cat_other_name.filter_cat_other_name7{
+    width: 100%;
+    height: 26px;
+}
